@@ -1,0 +1,2533 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:47.879Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "microservices",
+      "path": "packages/microservices",
+      "purpose": "Enhanced directory analysis of microservices",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "tokens.ts",
+        "path": "packages/microservices/tokens.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [
+          {
+            "name": "REQUEST",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CONTEXT",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CONTEXT",
+            "type": "const",
+            "signature": "const CONTEXT"
+          }
+        ]
+      },
+      {
+        "name": "nest-microservice.ts",
+        "path": "packages/microservices/nest-microservice.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 358,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 278,
+              "endLine": 285
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "closeApplication",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 334,
+              "endLine": 340
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "createServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 84,
+              "endLine": 114
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "dispose",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 342,
+              "endLine": 349
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "init",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 241,
+              "endLine": 248
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "listen",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 255,
+              "endLine": 271
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 316,
+              "endLine": 321
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "registerListeners",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 138,
+              "endLine": 143
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "registerModules",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 116,
+              "endLine": 136
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "resolveAsyncOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 351,
+              "endLine": 356
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "setIsInitHookCalled",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 307,
+              "endLine": 309
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "setIsInitialized",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 291,
+              "endLine": 293
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "setIsTerminated",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 299,
+              "endLine": 301
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "status",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 55,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 327,
+              "endLine": 332
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "useGlobalFilters",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 167,
+              "endLine": 181
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "useGlobalGuards",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 225,
+              "endLine": 239
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "useGlobalInterceptors",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 209,
+              "endLine": 223
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "useGlobalPipes",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 188,
+              "endLine": 202
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/nest-microservice.ts",
+            "functionName": "useWebSocketAdapter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 152,
+              "endLine": 160
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate",
+              "ExceptionFilter",
+              "INestMicroservice",
+              "NestInterceptor",
+              "PipeTransform",
+              "WebSocketAdapter"
+            ]
+          },
+          {
+            "name": "NestMicroserviceOptions",
+            "sourceModule": "@nestjs/common/interfaces/microservices/nest-microservice-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestMicroserviceOptions"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "MESSAGES",
+            "sourceModule": "@nestjs/core/constants",
+            "isDefault": false,
+            "namedImports": [
+              "MESSAGES"
+            ]
+          },
+          {
+            "name": "optionalRequire",
+            "sourceModule": "@nestjs/core/helpers/optional-require",
+            "isDefault": false,
+            "namedImports": [
+              "optionalRequire"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "@nestjs/core/injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "NestApplicationContext",
+            "sourceModule": "@nestjs/core/nest-application-context",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContext"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "./enums/transport.enum",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "AsyncMicroserviceOptions",
+            "sourceModule": "./interfaces/microservice-configuration.interface",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncMicroserviceOptions",
+              "MicroserviceOptions"
+            ]
+          },
+          {
+            "name": "MicroservicesModule",
+            "sourceModule": "./microservices-module",
+            "isDefault": false,
+            "namedImports": [
+              "MicroservicesModule"
+            ]
+          },
+          {
+            "name": "Server",
+            "sourceModule": "./server/server",
+            "isDefault": false,
+            "namedImports": [
+              "Server"
+            ]
+          },
+          {
+            "name": "ServerFactory",
+            "sourceModule": "./server/server-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ServerFactory"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestMicroservice",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestMicroservice",
+            "type": "class",
+            "signature": "class NestMicroservice"
+          },
+          {
+            "name": "CompleteMicroserviceOptions",
+            "type": "type",
+            "signature": "type CompleteMicroserviceOptions"
+          }
+        ]
+      },
+      {
+        "name": "microservices-module.ts",
+        "path": "packages/microservices/microservices-module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 122,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "bindClients",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 107,
+              "endLine": 114
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "bindListeners",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 93,
+              "endLine": 105
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 116,
+              "endLine": 120
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "register",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "setupClients",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 79,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/microservices-module.ts",
+            "functionName": "setupListeners",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 69,
+              "endLine": 77
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "@nestjs/common/interfaces/nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "@nestjs/core/guards",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer",
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "@nestjs/core/injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "@nestjs/core/injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "@nestjs/core/interceptors",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer",
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "@nestjs/core/pipes",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer",
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "ClientProxyFactory",
+            "sourceModule": "./client",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxyFactory"
+            ]
+          },
+          {
+            "name": "ClientsContainer",
+            "sourceModule": "./container",
+            "isDefault": false,
+            "namedImports": [
+              "ClientsContainer"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "./context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          },
+          {
+            "name": "RpcContextCreator",
+            "sourceModule": "./context/rpc-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "RpcContextCreator"
+            ]
+          },
+          {
+            "name": "RpcProxy",
+            "sourceModule": "./context/rpc-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RpcProxy"
+            ]
+          },
+          {
+            "name": "ListenersController",
+            "sourceModule": "./listeners-controller",
+            "isDefault": false,
+            "namedImports": [
+              "ListenersController"
+            ]
+          },
+          {
+            "name": "Server",
+            "sourceModule": "./server/server",
+            "isDefault": false,
+            "namedImports": [
+              "Server"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MicroservicesModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MicroservicesModule",
+            "type": "class",
+            "signature": "class MicroservicesModule"
+          }
+        ]
+      },
+      {
+        "name": "listeners-controller.ts",
+        "path": "packages/microservices/listeners-controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 345,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "assignClientsToProperties",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 204,
+              "endLine": 214
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "assignClientToInstance",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 216,
+              "endLine": 222
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 51,
+              "endLine": 59
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "createRequestScopedHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 224,
+              "endLine": 300
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "eventHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "forkJoinHandlersIfAttached",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 187,
+              "endLine": 202
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "getContextId",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 302,
+              "endLine": 321
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "insertEntrypointDefinition",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 161,
+              "endLine": 185
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "registerPatternHandlers",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 61,
+              "endLine": 159
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "requestScopedHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listeners-controller.ts",
+            "functionName": "transformToObservable",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 331,
+              "endLine": 343
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "isUndefined",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "ContextIdFactory",
+            "sourceModule": "@nestjs/core/helpers/context-id-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ContextIdFactory"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "@nestjs/core/injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "@nestjs/core/injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "ContextId",
+            "sourceModule": "@nestjs/core/injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId",
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/core/injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "@nestjs/core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "REQUEST_CONTEXT_ID",
+            "sourceModule": "@nestjs/core/router/request/request-constants",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST_CONTEXT_ID"
+            ]
+          },
+          {
+            "name": "forkJoin",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "forkJoin",
+              "fromPromise",
+              "isObservable",
+              "mergeMap",
+              "Observable",
+              "ObservedValueOf",
+              "of"
+            ]
+          },
+          {
+            "name": "IClientProxyFactory",
+            "sourceModule": "./client/client-proxy-factory",
+            "isDefault": false,
+            "namedImports": [
+              "IClientProxyFactory"
+            ]
+          },
+          {
+            "name": "ClientsContainer",
+            "sourceModule": "./container",
+            "isDefault": false,
+            "namedImports": [
+              "ClientsContainer"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "./context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          },
+          {
+            "name": "RequestContextHost",
+            "sourceModule": "./context/request-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "RequestContextHost"
+            ]
+          },
+          {
+            "name": "RpcContextCreator",
+            "sourceModule": "./context/rpc-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "RpcContextCreator"
+            ]
+          },
+          {
+            "name": "DEFAULT_CALLBACK_METADATA",
+            "sourceModule": "./context/rpc-metadata-constants",
+            "isDefault": false,
+            "namedImports": [
+              "DEFAULT_CALLBACK_METADATA",
+              "DEFAULT_GRPC_CALLBACK_METADATA"
+            ]
+          },
+          {
+            "name": "BaseRpcContext",
+            "sourceModule": "./ctx-host/base-rpc.context",
+            "isDefault": false,
+            "namedImports": [
+              "BaseRpcContext"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "./enums",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "MessageHandler",
+            "sourceModule": "./interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MessageHandler",
+              "PatternMetadata",
+              "RequestContext"
+            ]
+          },
+          {
+            "name": "MicroserviceEntrypointMetadata",
+            "sourceModule": "./interfaces/microservice-entrypoint-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceEntrypointMetadata"
+            ]
+          },
+          {
+            "name": "EventOrMessageListenerDefinition",
+            "sourceModule": "./listener-metadata-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "EventOrMessageListenerDefinition",
+              "ListenerMetadataExplorer"
+            ]
+          },
+          {
+            "name": "ServerGrpc",
+            "sourceModule": "./server",
+            "isDefault": false,
+            "namedImports": [
+              "ServerGrpc"
+            ]
+          },
+          {
+            "name": "Server",
+            "sourceModule": "./server/server",
+            "isDefault": false,
+            "namedImports": [
+              "Server"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ListenersController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ListenersController",
+            "type": "class",
+            "signature": "class ListenersController"
+          }
+        ]
+      },
+      {
+        "name": "listener-metadata-explorer.ts",
+        "path": "packages/microservices/listener-metadata-explorer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 104,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/listener-metadata-explorer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 36,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listener-metadata-explorer.ts",
+            "functionName": "explore",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 38,
+              "endLine": 47
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listener-metadata-explorer.ts",
+            "functionName": "exploreMethodMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 49,
+              "endLine": 81
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/listener-metadata-explorer.ts",
+            "functionName": "scanForClientHooks",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 83,
+              "endLine": 102
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "@nestjs/core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "CLIENT_CONFIGURATION_METADATA",
+            "sourceModule": "./constants",
+            "isDefault": false,
+            "namedImports": [
+              "CLIENT_CONFIGURATION_METADATA",
+              "CLIENT_METADATA",
+              "PATTERN_EXTRAS_METADATA",
+              "PATTERN_HANDLER_METADATA",
+              "PATTERN_METADATA",
+              "TRANSPORT_METADATA"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "./enums",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "PatternHandler",
+            "sourceModule": "./enums/pattern-handler.enum",
+            "isDefault": false,
+            "namedImports": [
+              "PatternHandler"
+            ]
+          },
+          {
+            "name": "ClientOptions",
+            "sourceModule": "./interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientOptions",
+              "PatternMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientProperties",
+            "type": "interface"
+          },
+          {
+            "name": "EventOrMessageListenerDefinition",
+            "type": "interface"
+          },
+          {
+            "name": "MessageRequestProperties",
+            "type": "interface"
+          },
+          {
+            "name": "ListenerMetadataExplorer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ListenerMetadataExplorer",
+            "type": "class",
+            "signature": "class ListenerMetadataExplorer"
+          },
+          {
+            "name": "ClientProperties",
+            "type": "interface",
+            "signature": "interface ClientProperties"
+          },
+          {
+            "name": "EventOrMessageListenerDefinition",
+            "type": "interface",
+            "signature": "interface EventOrMessageListenerDefinition"
+          },
+          {
+            "name": "MessageRequestProperties",
+            "type": "interface",
+            "signature": "interface MessageRequestProperties"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/microservices/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "reflect-metadata",
+            "sourceModule": "reflect-metadata",
+            "isDefault": false
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "container.ts",
+        "path": "packages/microservices/container.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 18,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/container.ts",
+            "functionName": "addClient",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/container.ts",
+            "functionName": "clear",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 16
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/container.ts",
+            "functionName": "getAllClients",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client/client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientsContainer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientsContainer",
+            "type": "class",
+            "signature": "class ClientsContainer"
+          }
+        ]
+      },
+      {
+        "name": "constants.ts",
+        "path": "packages/microservices/constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 63,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/constants.ts",
+            "functionName": "NO_EVENT_HANDLER",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/constants.ts",
+            "functionName": "RQM_NO_EVENT_HANDLER",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/constants.ts",
+            "functionName": "RQM_NO_MESSAGE_HANDLER",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "ROUTE_ARGS_METADATA"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "TCP_DEFAULT_PORT",
+            "type": "const"
+          },
+          {
+            "name": "TCP_DEFAULT_HOST",
+            "type": "const"
+          },
+          {
+            "name": "REDIS_DEFAULT_PORT",
+            "type": "const"
+          },
+          {
+            "name": "REDIS_DEFAULT_HOST",
+            "type": "const"
+          },
+          {
+            "name": "NATS_DEFAULT_URL",
+            "type": "const"
+          },
+          {
+            "name": "MQTT_DEFAULT_URL",
+            "type": "const"
+          },
+          {
+            "name": "GRPC_DEFAULT_URL",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_URL",
+            "type": "const"
+          },
+          {
+            "name": "KAFKA_DEFAULT_BROKER",
+            "type": "const"
+          },
+          {
+            "name": "KAFKA_DEFAULT_CLIENT",
+            "type": "const"
+          },
+          {
+            "name": "KAFKA_DEFAULT_GROUP",
+            "type": "const"
+          },
+          {
+            "name": "MQTT_SEPARATOR",
+            "type": "const"
+          },
+          {
+            "name": "MQTT_WILDCARD_SINGLE",
+            "type": "const"
+          },
+          {
+            "name": "MQTT_WILDCARD_ALL",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_QUEUE",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_PREFETCH_COUNT",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_IS_GLOBAL_PREFETCH_COUNT",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_QUEUE_OPTIONS",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_NOACK",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_PERSISTENT",
+            "type": "const"
+          },
+          {
+            "name": "RQM_DEFAULT_NO_ASSERT",
+            "type": "const"
+          },
+          {
+            "name": "RMQ_SEPARATOR",
+            "type": "const"
+          },
+          {
+            "name": "RMQ_WILDCARD_SINGLE",
+            "type": "const"
+          },
+          {
+            "name": "RMQ_WILDCARD_ALL",
+            "type": "const"
+          },
+          {
+            "name": "ECONNREFUSED",
+            "type": "const"
+          },
+          {
+            "name": "CONN_ERR",
+            "type": "const"
+          },
+          {
+            "name": "EADDRINUSE",
+            "type": "const"
+          },
+          {
+            "name": "ENOTFOUND",
+            "type": "const"
+          },
+          {
+            "name": "PATTERN_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "PATTERN_EXTRAS_METADATA",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RQM_NO_EVENT_HANDLER",
+            "type": "function",
+            "signature": "const RQM_NO_EVENT_HANDLER = () =>"
+          },
+          {
+            "name": "RQM_NO_MESSAGE_HANDLER",
+            "type": "function",
+            "signature": "const RQM_NO_MESSAGE_HANDLER = () =>"
+          },
+          {
+            "name": "NO_EVENT_HANDLER",
+            "type": "function",
+            "signature": "const NO_EVENT_HANDLER = () =>"
+          },
+          {
+            "name": "TCP_DEFAULT_PORT",
+            "type": "const",
+            "signature": "const TCP_DEFAULT_PORT"
+          },
+          {
+            "name": "TCP_DEFAULT_HOST",
+            "type": "const",
+            "signature": "const TCP_DEFAULT_HOST"
+          },
+          {
+            "name": "REDIS_DEFAULT_PORT",
+            "type": "const",
+            "signature": "const REDIS_DEFAULT_PORT"
+          },
+          {
+            "name": "REDIS_DEFAULT_HOST",
+            "type": "const",
+            "signature": "const REDIS_DEFAULT_HOST"
+          },
+          {
+            "name": "NATS_DEFAULT_URL",
+            "type": "const",
+            "signature": "const NATS_DEFAULT_URL"
+          },
+          {
+            "name": "MQTT_DEFAULT_URL",
+            "type": "const",
+            "signature": "const MQTT_DEFAULT_URL"
+          },
+          {
+            "name": "GRPC_DEFAULT_URL",
+            "type": "const",
+            "signature": "const GRPC_DEFAULT_URL"
+          },
+          {
+            "name": "RQM_DEFAULT_URL",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_URL"
+          },
+          {
+            "name": "KAFKA_DEFAULT_BROKER",
+            "type": "const",
+            "signature": "const KAFKA_DEFAULT_BROKER"
+          },
+          {
+            "name": "KAFKA_DEFAULT_CLIENT",
+            "type": "const",
+            "signature": "const KAFKA_DEFAULT_CLIENT"
+          },
+          {
+            "name": "KAFKA_DEFAULT_GROUP",
+            "type": "const",
+            "signature": "const KAFKA_DEFAULT_GROUP"
+          },
+          {
+            "name": "MQTT_SEPARATOR",
+            "type": "const",
+            "signature": "const MQTT_SEPARATOR"
+          },
+          {
+            "name": "MQTT_WILDCARD_SINGLE",
+            "type": "const",
+            "signature": "const MQTT_WILDCARD_SINGLE"
+          },
+          {
+            "name": "MQTT_WILDCARD_ALL",
+            "type": "const",
+            "signature": "const MQTT_WILDCARD_ALL"
+          },
+          {
+            "name": "RQM_DEFAULT_QUEUE",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_QUEUE"
+          },
+          {
+            "name": "RQM_DEFAULT_PREFETCH_COUNT",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_PREFETCH_COUNT"
+          },
+          {
+            "name": "RQM_DEFAULT_IS_GLOBAL_PREFETCH_COUNT",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_IS_GLOBAL_PREFETCH_COUNT"
+          },
+          {
+            "name": "RQM_DEFAULT_QUEUE_OPTIONS",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_QUEUE_OPTIONS"
+          },
+          {
+            "name": "RQM_DEFAULT_NOACK",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_NOACK"
+          },
+          {
+            "name": "RQM_DEFAULT_PERSISTENT",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_PERSISTENT"
+          },
+          {
+            "name": "RQM_DEFAULT_NO_ASSERT",
+            "type": "const",
+            "signature": "const RQM_DEFAULT_NO_ASSERT"
+          },
+          {
+            "name": "RMQ_SEPARATOR",
+            "type": "const",
+            "signature": "const RMQ_SEPARATOR"
+          },
+          {
+            "name": "RMQ_WILDCARD_SINGLE",
+            "type": "const",
+            "signature": "const RMQ_WILDCARD_SINGLE"
+          },
+          {
+            "name": "RMQ_WILDCARD_ALL",
+            "type": "const",
+            "signature": "const RMQ_WILDCARD_ALL"
+          },
+          {
+            "name": "ECONNREFUSED",
+            "type": "const",
+            "signature": "const ECONNREFUSED"
+          },
+          {
+            "name": "CONN_ERR",
+            "type": "const",
+            "signature": "const CONN_ERR"
+          },
+          {
+            "name": "EADDRINUSE",
+            "type": "const",
+            "signature": "const EADDRINUSE"
+          },
+          {
+            "name": "ENOTFOUND",
+            "type": "const",
+            "signature": "const ENOTFOUND"
+          },
+          {
+            "name": "PATTERN_METADATA",
+            "type": "const",
+            "signature": "const PATTERN_METADATA"
+          },
+          {
+            "name": "PATTERN_EXTRAS_METADATA",
+            "type": "const",
+            "signature": "const PATTERN_EXTRAS_METADATA"
+          },
+          {
+            "name": "TRANSPORT_METADATA",
+            "type": "const",
+            "signature": "const TRANSPORT_METADATA"
+          },
+          {
+            "name": "CLIENT_CONFIGURATION_METADATA",
+            "type": "const",
+            "signature": "const CLIENT_CONFIGURATION_METADATA"
+          },
+          {
+            "name": "PATTERN_HANDLER_METADATA",
+            "type": "const",
+            "signature": "const PATTERN_HANDLER_METADATA"
+          },
+          {
+            "name": "CLIENT_METADATA",
+            "type": "const",
+            "signature": "const CLIENT_METADATA"
+          },
+          {
+            "name": "PARAM_ARGS_METADATA",
+            "type": "const",
+            "signature": "const PARAM_ARGS_METADATA"
+          },
+          {
+            "name": "REQUEST_PATTERN_METADATA",
+            "type": "const",
+            "signature": "const REQUEST_PATTERN_METADATA"
+          },
+          {
+            "name": "REPLY_PATTERN_METADATA",
+            "type": "const",
+            "signature": "const REPLY_PATTERN_METADATA"
+          },
+          {
+            "name": "RQM_NO_EVENT_HANDLER",
+            "type": "const",
+            "signature": "const RQM_NO_EVENT_HANDLER"
+          },
+          {
+            "name": "RQM_NO_MESSAGE_HANDLER",
+            "type": "const",
+            "signature": "const RQM_NO_MESSAGE_HANDLER"
+          },
+          {
+            "name": "GRPC_DEFAULT_PROTO_LOADER",
+            "type": "const",
+            "signature": "const GRPC_DEFAULT_PROTO_LOADER"
+          },
+          {
+            "name": "NO_EVENT_HANDLER",
+            "type": "const",
+            "signature": "const NO_EVENT_HANDLER"
+          },
+          {
+            "name": "NO_MESSAGE_HANDLER",
+            "type": "const",
+            "signature": "const NO_MESSAGE_HANDLER"
+          },
+          {
+            "name": "DISCONNECTED_RMQ_MESSAGE",
+            "type": "const",
+            "signature": "const DISCONNECTED_RMQ_MESSAGE"
+          },
+          {
+            "name": "CONNECTION_FAILED_MESSAGE",
+            "type": "const",
+            "signature": "const CONNECTION_FAILED_MESSAGE"
+          },
+          {
+            "name": "NATS_DEFAULT_GRACE_PERIOD",
+            "type": "const",
+            "signature": "const NATS_DEFAULT_GRACE_PERIOD"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "client",
+        "relativePath": "client",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of client",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "context",
+        "relativePath": "context",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of context",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "ctx-host",
+        "relativePath": "ctx-host",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of ctx-host",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "decorators",
+        "relativePath": "decorators",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of decorators",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "deserializers",
+        "relativePath": "deserializers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of deserializers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "enums",
+        "relativePath": "enums",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of enums",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "errors",
+        "relativePath": "errors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of errors",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "events",
+        "relativePath": "events",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of events",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exceptions",
+        "relativePath": "exceptions",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exceptions",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "external",
+        "relativePath": "external",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of external",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "factories",
+        "relativePath": "factories",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of factories",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "helpers",
+        "relativePath": "helpers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of helpers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "module",
+        "relativePath": "module",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of module",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "record-builders",
+        "relativePath": "record-builders",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of record-builders",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "serializers",
+        "relativePath": "serializers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of serializers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "server",
+        "relativePath": "server",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of server",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "test",
+        "relativePath": "test",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of test",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

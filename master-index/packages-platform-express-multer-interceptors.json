@@ -1,0 +1,922 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:48.489Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interceptors",
+      "path": "packages/platform-express/multer/interceptors",
+      "purpose": "Enhanced directory analysis of interceptors",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "no-files.interceptor.ts",
+        "path": "packages/platform-express/multer/interceptors/no-files.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 62,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/no-files.interceptor.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 39
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/no-files.interceptor.ts",
+            "functionName": "intercept",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/no-files.interceptor.ts",
+            "functionName": "NoFilesInterceptor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler",
+              "ExecutionContext",
+              "Inject",
+              "mixin",
+              "NestInterceptor",
+              "Optional",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as multer",
+            "sourceModule": "multer",
+            "isDefault": false,
+            "namedImports": [
+              "* as multer"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "../files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleOptions"
+            ]
+          },
+          {
+            "name": "MulterOptions",
+            "sourceModule": "../interfaces/multer-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterOptions"
+            ]
+          },
+          {
+            "name": "transformException",
+            "sourceModule": "../multer/multer.utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NoFilesInterceptor",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NoFilesInterceptor",
+            "type": "function",
+            "signature": "function NoFilesInterceptor()"
+          },
+          {
+            "name": "MixinInterceptor",
+            "type": "class",
+            "signature": "class MixinInterceptor"
+          },
+          {
+            "name": "I",
+            "type": "const",
+            "signature": "const I"
+          },
+          {
+            "name": "MulterInstance",
+            "type": "type",
+            "signature": "type MulterInstance"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-express/multer/interceptors/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 6,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "files.interceptor.ts",
+        "path": "packages/platform-express/multer/interceptors/files.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 71,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/files.interceptor.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 35,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/files.interceptor.ts",
+            "functionName": "FilesInterceptor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 70
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/files.interceptor.ts",
+            "functionName": "intercept",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 46,
+              "endLine": 66
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler",
+              "ExecutionContext",
+              "Inject",
+              "mixin",
+              "NestInterceptor",
+              "Optional",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as multer",
+            "sourceModule": "multer",
+            "isDefault": false,
+            "namedImports": [
+              "* as multer"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "../files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleOptions"
+            ]
+          },
+          {
+            "name": "MulterOptions",
+            "sourceModule": "../interfaces/multer-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterOptions"
+            ]
+          },
+          {
+            "name": "transformException",
+            "sourceModule": "../multer/multer.utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "FilesInterceptor",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "FilesInterceptor",
+            "type": "function",
+            "signature": "function FilesInterceptor()"
+          },
+          {
+            "name": "MixinInterceptor",
+            "type": "class",
+            "signature": "class MixinInterceptor"
+          },
+          {
+            "name": "I",
+            "type": "const",
+            "signature": "const I"
+          },
+          {
+            "name": "MulterInstance",
+            "type": "type",
+            "signature": "type MulterInstance"
+          }
+        ]
+      },
+      {
+        "name": "file.interceptor.ts",
+        "path": "packages/platform-express/multer/interceptors/file.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 68,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file.interceptor.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 41
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file.interceptor.ts",
+            "functionName": "FileInterceptor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file.interceptor.ts",
+            "functionName": "intercept",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 43,
+              "endLine": 63
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler",
+              "ExecutionContext",
+              "Inject",
+              "mixin",
+              "NestInterceptor",
+              "Optional",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as multer",
+            "sourceModule": "multer",
+            "isDefault": false,
+            "namedImports": [
+              "* as multer"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "../files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleOptions"
+            ]
+          },
+          {
+            "name": "MulterOptions",
+            "sourceModule": "../interfaces/multer-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterOptions"
+            ]
+          },
+          {
+            "name": "transformException",
+            "sourceModule": "../multer/multer.utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "FileInterceptor",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "FileInterceptor",
+            "type": "function",
+            "signature": "function FileInterceptor()"
+          },
+          {
+            "name": "MixinInterceptor",
+            "type": "class",
+            "signature": "class MixinInterceptor"
+          },
+          {
+            "name": "I",
+            "type": "const",
+            "signature": "const I"
+          },
+          {
+            "name": "MulterInstance",
+            "type": "type",
+            "signature": "type MulterInstance"
+          }
+        ]
+      },
+      {
+        "name": "file-fields.interceptor.ts",
+        "path": "packages/platform-express/multer/interceptors/file-fields.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 70,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file-fields.interceptor.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 34,
+              "endLine": 43
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file-fields.interceptor.ts",
+            "functionName": "FileFieldsInterceptor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 69
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/file-fields.interceptor.ts",
+            "functionName": "intercept",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 45,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler",
+              "ExecutionContext",
+              "Inject",
+              "mixin",
+              "NestInterceptor",
+              "Optional",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as multer",
+            "sourceModule": "multer",
+            "isDefault": false,
+            "namedImports": [
+              "* as multer"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "../files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleOptions"
+            ]
+          },
+          {
+            "name": "MulterField",
+            "sourceModule": "../interfaces/multer-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterField",
+              "MulterOptions"
+            ]
+          },
+          {
+            "name": "transformException",
+            "sourceModule": "../multer/multer.utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "FileFieldsInterceptor",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "FileFieldsInterceptor",
+            "type": "function",
+            "signature": "function FileFieldsInterceptor()"
+          },
+          {
+            "name": "MixinInterceptor",
+            "type": "class",
+            "signature": "class MixinInterceptor"
+          },
+          {
+            "name": "I",
+            "type": "const",
+            "signature": "const I"
+          },
+          {
+            "name": "MulterInstance",
+            "type": "type",
+            "signature": "type MulterInstance"
+          }
+        ]
+      },
+      {
+        "name": "any-files.interceptor.ts",
+        "path": "packages/platform-express/multer/interceptors/any-files.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 62,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/any-files.interceptor.ts",
+            "functionName": "AnyFilesInterceptor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/any-files.interceptor.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 39
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/interceptors/any-files.interceptor.ts",
+            "functionName": "intercept",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler",
+              "ExecutionContext",
+              "Inject",
+              "mixin",
+              "NestInterceptor",
+              "Optional",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as multer",
+            "sourceModule": "multer",
+            "isDefault": false,
+            "namedImports": [
+              "* as multer"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "../files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleOptions"
+            ]
+          },
+          {
+            "name": "MulterOptions",
+            "sourceModule": "../interfaces/multer-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterOptions"
+            ]
+          },
+          {
+            "name": "transformException",
+            "sourceModule": "../multer/multer.utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AnyFilesInterceptor",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AnyFilesInterceptor",
+            "type": "function",
+            "signature": "function AnyFilesInterceptor()"
+          },
+          {
+            "name": "MixinInterceptor",
+            "type": "class",
+            "signature": "class MixinInterceptor"
+          },
+          {
+            "name": "I",
+            "type": "const",
+            "signature": "const I"
+          },
+          {
+            "name": "MulterInstance",
+            "type": "type",
+            "signature": "type MulterInstance"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

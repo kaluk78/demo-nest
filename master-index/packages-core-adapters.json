@@ -1,0 +1,872 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:26.695Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "adapters",
+      "path": "packages/core/adapters",
+      "purpose": "Enhanced directory analysis of adapters",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/core/adapters/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "http-adapter.ts",
+        "path": "packages/core/adapters/http-adapter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 195,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "all",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 107,
+              "endLine": 109
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "copy",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 83,
+              "endLine": 85
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "delete",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 49
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "get",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "getHttpServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 129,
+              "endLine": 131
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "getInstance",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 141,
+              "endLine": 143
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "getOnRouteTriggered",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 155,
+              "endLine": 157
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "head",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 43
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "init",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "listen",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 125,
+              "endLine": 127
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "lock",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 95,
+              "endLine": 97
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "mkcol",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 79
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "move",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 89,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "normalizePath",
+            "classification": "likely-legitimate",
+            "confidence": 30,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 145,
+              "endLine": 147
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "options",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 119,
+              "endLine": 121
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "patch",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "post",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 35,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "propfind",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "proppatch",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 71,
+              "endLine": 73
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "put",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 53,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "search",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 113,
+              "endLine": 115
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "setHttpServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 133,
+              "endLine": 135
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "setInstance",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 137,
+              "endLine": 139
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "setOnRequestHook",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 159,
+              "endLine": 159
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "setOnResponseHook",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 161,
+              "endLine": 161
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "setOnRouteTriggered",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 149,
+              "endLine": 153
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "unlock",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 101,
+              "endLine": 103
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/adapters/http-adapter.ts",
+            "functionName": "use",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer",
+              "RequestMethod",
+              "VersioningOptions"
+            ]
+          },
+          {
+            "name": "RequestHandler",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "RequestHandler",
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "NestApplicationOptions",
+            "sourceModule": "@nestjs/common/interfaces/nest-application-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AbstractHttpAdapter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AbstractHttpAdapter",
+            "type": "class",
+            "signature": "class AbstractHttpAdapter"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:30.488Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/core/inspector/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "serialized-graph-metadata.interface.ts",
+        "path": "packages/core/inspector/interfaces/serialized-graph-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "name": "InjectorDependencyContext",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "InjectorDependencyContext"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SerializedGraphMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SerializedGraphMetadata",
+            "type": "interface",
+            "signature": "interface SerializedGraphMetadata"
+          }
+        ]
+      },
+      {
+        "name": "serialized-graph-json.interface.ts",
+        "path": "packages/core/inspector/interfaces/serialized-graph-json.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "importedModules": [
+          {
+            "name": "SerializedGraphStatus",
+            "sourceModule": "../serialized-graph",
+            "isDefault": false,
+            "namedImports": [
+              "SerializedGraphStatus"
+            ]
+          },
+          {
+            "name": "Edge",
+            "sourceModule": "./edge.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Edge"
+            ]
+          },
+          {
+            "name": "Entrypoint",
+            "sourceModule": "./entrypoint.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Entrypoint"
+            ]
+          },
+          {
+            "name": "Extras",
+            "sourceModule": "./extras.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Extras"
+            ]
+          },
+          {
+            "name": "Node",
+            "sourceModule": "./node.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Node"
+            ]
+          },
+          {
+            "name": "SerializedGraphMetadata",
+            "sourceModule": "./serialized-graph-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "SerializedGraphMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SerializedGraphJson",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SerializedGraphJson",
+            "type": "interface",
+            "signature": "interface SerializedGraphJson"
+          }
+        ]
+      },
+      {
+        "name": "node.interface.ts",
+        "path": "packages/core/inspector/interfaces/node.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "importedModules": [
+          {
+            "name": "InjectionToken",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "InjectionToken",
+              "Scope"
+            ]
+          },
+          {
+            "name": "EnhancerSubtype",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "EnhancerSubtype"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ModuleNode",
+            "type": "type"
+          },
+          {
+            "name": "ClassNode",
+            "type": "type"
+          },
+          {
+            "name": "Node",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ModuleNode",
+            "type": "type",
+            "signature": "type ModuleNode"
+          },
+          {
+            "name": "ClassNode",
+            "type": "type",
+            "signature": "type ClassNode"
+          },
+          {
+            "name": "Node",
+            "type": "type",
+            "signature": "type Node"
+          }
+        ]
+      },
+      {
+        "name": "extras.interface.ts",
+        "path": "packages/core/inspector/interfaces/extras.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "EnhancerSubtype",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "EnhancerSubtype"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AttachedEnhancerDefinition",
+            "type": "interface"
+          },
+          {
+            "name": "OrphanedEnhancerDefinition",
+            "type": "interface"
+          },
+          {
+            "name": "Extras",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AttachedEnhancerDefinition",
+            "type": "interface",
+            "signature": "interface AttachedEnhancerDefinition"
+          },
+          {
+            "name": "OrphanedEnhancerDefinition",
+            "type": "interface",
+            "signature": "interface OrphanedEnhancerDefinition"
+          },
+          {
+            "name": "Extras",
+            "type": "interface",
+            "signature": "interface Extras"
+          }
+        ]
+      },
+      {
+        "name": "entrypoint.interface.ts",
+        "path": "packages/core/inspector/interfaces/entrypoint.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 25,
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HttpEntrypointMetadata",
+            "type": "type"
+          },
+          {
+            "name": "MiddlewareEntrypointMetadata",
+            "type": "type"
+          },
+          {
+            "name": "Entrypoint",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpEntrypointMetadata",
+            "type": "type",
+            "signature": "type HttpEntrypointMetadata"
+          },
+          {
+            "name": "MiddlewareEntrypointMetadata",
+            "type": "type",
+            "signature": "type MiddlewareEntrypointMetadata"
+          },
+          {
+            "name": "Entrypoint",
+            "type": "type",
+            "signature": "type Entrypoint"
+          }
+        ]
+      },
+      {
+        "name": "enhancer-metadata-cache-entry.interface.ts",
+        "path": "packages/core/inspector/interfaces/enhancer-metadata-cache-entry.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 14,
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "EnhancerSubtype",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "EnhancerSubtype"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "EnhancerMetadataCacheEntry",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "EnhancerMetadataCacheEntry",
+            "type": "interface",
+            "signature": "interface EnhancerMetadataCacheEntry"
+          }
+        ]
+      },
+      {
+        "name": "edge.interface.ts",
+        "path": "packages/core/inspector/interfaces/edge.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 32,
+        "importedModules": [
+          {
+            "name": "InjectionToken",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "InjectionToken"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Edge",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Edge",
+            "type": "interface",
+            "signature": "interface Edge"
+          },
+          {
+            "name": "CommonEdgeMetadata",
+            "type": "type",
+            "signature": "type CommonEdgeMetadata"
+          },
+          {
+            "name": "ModuleToModuleEdgeMetadata",
+            "type": "type",
+            "signature": "type ModuleToModuleEdgeMetadata"
+          },
+          {
+            "name": "ClassToClassEdgeMetadata",
+            "type": "type",
+            "signature": "type ClassToClassEdgeMetadata"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

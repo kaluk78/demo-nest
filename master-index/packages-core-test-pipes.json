@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:35.837Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "pipes",
+      "path": "packages/core/test/pipes",
+      "purpose": "Enhanced directory analysis of pipes",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "pipes-context-creator.spec.ts",
+        "path": "packages/core/test/pipes/pipes-context-creator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 124,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "PipesContextCreator",
+            "sourceModule": "../../pipes/pipes-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "PipesContextCreator"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Pipe",
+            "type": "class",
+            "signature": "class Pipe"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          }
+        ]
+      },
+      {
+        "name": "pipes-consumer.spec.ts",
+        "path": "packages/core/test/pipes/pipes-consumer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 51,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/pipes/pipes-consumer.spec.ts",
+            "functionName": "createPipe",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "../../../common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../../pipes/pipes-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createPipe",
+            "type": "function",
+            "signature": "const createPipe = () =>"
+          }
+        ]
+      },
+      {
+        "name": "params-token-factory.spec.ts",
+        "path": "packages/core/test/pipes/params-token-factory.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 41,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "../../../common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "ParamsTokenFactory",
+            "sourceModule": "../../pipes/params-token-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ParamsTokenFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:06.968Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "directives",
+      "path": "sample/12-graphql-schema-first/src/common/directives",
+      "purpose": "Enhanced directory analysis of directives",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "upper-case.directive.ts",
+        "path": "sample/12-graphql-schema-first/src/common/directives/upper-case.directive.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 33,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/12-graphql-schema-first/src/common/directives/upper-case.directive.ts",
+            "functionName": "upperDirectiveTransformer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -72,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "getDirective",
+            "sourceModule": "@graphql-tools/utils",
+            "isDefault": false,
+            "namedImports": [
+              "getDirective",
+              "MapperKind",
+              "mapSchema"
+            ]
+          },
+          {
+            "name": "defaultFieldResolver",
+            "sourceModule": "graphql",
+            "isDefault": false,
+            "namedImports": [
+              "defaultFieldResolver",
+              "GraphQLSchema"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "upperDirectiveTransformer",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "upperDirectiveTransformer",
+            "type": "function",
+            "signature": "function upperDirectiveTransformer()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

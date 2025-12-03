@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:52.564Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "factories",
+      "path": "packages/websockets/factories",
+      "purpose": "Enhanced directory analysis of factories",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-params-factory.ts",
+        "path": "packages/websockets/factories/ws-params-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 26,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/factories/ws-params-factory.ts",
+            "functionName": "exchangeKeyForValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction"
+            ]
+          },
+          {
+            "name": "WsParamtype",
+            "sourceModule": "../enums/ws-paramtype.enum",
+            "isDefault": false,
+            "namedImports": [
+              "WsParamtype"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "WsParamsFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WsParamsFactory",
+            "type": "class",
+            "signature": "class WsParamsFactory"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      },
+      {
+        "name": "server-and-event-streams-factory.ts",
+        "path": "packages/websockets/factories/server-and-event-streams-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/factories/server-and-event-streams-factory.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ReplaySubject",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "ReplaySubject",
+              "Subject"
+            ]
+          },
+          {
+            "name": "ServerAndEventStreamsHost",
+            "sourceModule": "../interfaces/server-and-event-streams-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ServerAndEventStreamsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ServerAndEventStreamsFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ServerAndEventStreamsFactory",
+            "type": "class",
+            "signature": "class ServerAndEventStreamsFactory"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,684 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:04.267Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "cats",
+      "path": "sample/06-mongoose/src/cats",
+      "purpose": "Enhanced directory analysis of cats",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "cats.service.ts",
+        "path": "sample/06-mongoose/src/cats/cats.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 38,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -53,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "delete",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Utility function with clear purpose; Intentionally unused parameter/variable (prefixed with _); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -78,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 17,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "findOne",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Moderate context score; Intentionally unused parameter/variable (prefixed with _); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -52,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.service.ts",
+            "functionName": "update",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -43,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "InjectModel",
+            "sourceModule": "@nestjs/mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "InjectModel"
+            ]
+          },
+          {
+            "name": "Model",
+            "sourceModule": "mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "Model"
+            ]
+          },
+          {
+            "name": "CreateCatDto",
+            "sourceModule": "./dto/create-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateCatDto"
+            ]
+          },
+          {
+            "name": "UpdateCatDto",
+            "sourceModule": "./dto/update-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "UpdateCatDto"
+            ]
+          },
+          {
+            "name": "Cat",
+            "sourceModule": "./schemas/cat.schema",
+            "isDefault": false,
+            "namedImports": [
+              "Cat"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CatsService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CatsService",
+            "type": "class",
+            "signature": "class CatsService"
+          }
+        ]
+      },
+      {
+        "name": "cats.service.spec.ts",
+        "path": "sample/06-mongoose/src/cats/cats.service.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 151,
+        "importedModules": [
+          {
+            "name": "getModelToken",
+            "sourceModule": "@nestjs/mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "getModelToken"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "Model",
+            "sourceModule": "mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "Model",
+              "Types"
+            ]
+          },
+          {
+            "name": "CatsService",
+            "sourceModule": "./cats.service",
+            "isDefault": false,
+            "namedImports": [
+              "CatsService"
+            ]
+          },
+          {
+            "name": "CreateCatDto",
+            "sourceModule": "./dto/create-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateCatDto"
+            ]
+          },
+          {
+            "name": "Cat",
+            "sourceModule": "./schemas/cat.schema",
+            "isDefault": false,
+            "namedImports": [
+              "Cat"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "cats.module.ts",
+        "path": "sample/06-mongoose/src/cats/cats.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "MongooseModule",
+            "sourceModule": "@nestjs/mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "MongooseModule"
+            ]
+          },
+          {
+            "name": "CatsController",
+            "sourceModule": "./cats.controller",
+            "isDefault": false,
+            "namedImports": [
+              "CatsController"
+            ]
+          },
+          {
+            "name": "CatsService",
+            "sourceModule": "./cats.service",
+            "isDefault": false,
+            "namedImports": [
+              "CatsService"
+            ]
+          },
+          {
+            "name": "Cat",
+            "sourceModule": "./schemas/cat.schema",
+            "isDefault": false,
+            "namedImports": [
+              "Cat",
+              "CatSchema"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CatsModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CatsModule",
+            "type": "class",
+            "signature": "class CatsModule"
+          }
+        ]
+      },
+      {
+        "name": "cats.controller.ts",
+        "path": "sample/06-mongoose/src/cats/cats.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 36,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "delete",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 34
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "findOne",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/06-mongoose/src/cats/cats.controller.ts",
+            "functionName": "update",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Body",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Body",
+              "Controller",
+              "Delete",
+              "Get",
+              "Param",
+              "Post"
+            ]
+          },
+          {
+            "name": "CatsService",
+            "sourceModule": "./cats.service",
+            "isDefault": false,
+            "namedImports": [
+              "CatsService"
+            ]
+          },
+          {
+            "name": "CreateCatDto",
+            "sourceModule": "./dto/create-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateCatDto"
+            ]
+          },
+          {
+            "name": "UpdateCatDto",
+            "sourceModule": "./dto/update-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "UpdateCatDto"
+            ]
+          },
+          {
+            "name": "Cat",
+            "sourceModule": "./schemas/cat.schema",
+            "isDefault": false,
+            "namedImports": [
+              "Cat"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CatsController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CatsController",
+            "type": "class",
+            "signature": "class CatsController"
+          }
+        ]
+      },
+      {
+        "name": "cats.controller.spec.ts",
+        "path": "sample/06-mongoose/src/cats/cats.controller.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 146,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "Types",
+            "sourceModule": "mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "Types"
+            ]
+          },
+          {
+            "name": "CatsController",
+            "sourceModule": "./cats.controller",
+            "isDefault": false,
+            "namedImports": [
+              "CatsController"
+            ]
+          },
+          {
+            "name": "CatsService",
+            "sourceModule": "./cats.service",
+            "isDefault": false,
+            "namedImports": [
+              "CatsService"
+            ]
+          },
+          {
+            "name": "CreateCatDto",
+            "sourceModule": "./dto/create-cat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateCatDto"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "dto",
+        "relativePath": "dto",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dto",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "schemas",
+        "relativePath": "schemas",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of schemas",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

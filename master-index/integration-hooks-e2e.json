@@ -1,0 +1,810 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:02.135Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/hooks/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "on-module-init.spec.ts",
+        "path": "integration/hooks/e2e/on-module-init.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 115,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 87,
+              "endLine": 87
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 87,
+              "endLine": 87
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "forRoot",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 53,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "onModuleInit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 89,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "onModuleInit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 89,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-init.spec.ts",
+            "functionName": "onModuleInit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 89,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "OnModuleInit"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          },
+          {
+            "name": "CC",
+            "type": "class",
+            "signature": "class CC"
+          },
+          {
+            "name": "C",
+            "type": "class",
+            "signature": "class C"
+          },
+          {
+            "name": "BB",
+            "type": "class",
+            "signature": "class BB"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "AA",
+            "type": "class",
+            "signature": "class AA"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          },
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      },
+      {
+        "name": "on-module-destroy.spec.ts",
+        "path": "integration/hooks/e2e/on-module-destroy.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 80,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hooks/e2e/on-module-destroy.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "OnModuleDestroy"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          },
+          {
+            "name": "BB",
+            "type": "class",
+            "signature": "class BB"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "AA",
+            "type": "class",
+            "signature": "class AA"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          }
+        ]
+      },
+      {
+        "name": "on-app-shutdown.spec.ts",
+        "path": "integration/hooks/e2e/on-app-shutdown.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 59,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hooks/e2e/on-app-shutdown.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 37,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "OnApplicationShutdown"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          },
+          {
+            "name": "BB",
+            "type": "class",
+            "signature": "class BB"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "AA",
+            "type": "class",
+            "signature": "class AA"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          }
+        ]
+      },
+      {
+        "name": "on-app-boostrap.spec.ts",
+        "path": "integration/hooks/e2e/on-app-boostrap.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 86,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hooks/e2e/on-app-boostrap.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 63,
+              "endLine": 63
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-app-boostrap.spec.ts",
+            "functionName": "onApplicationBootstrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hooks/e2e/on-app-boostrap.spec.ts",
+            "functionName": "onApplicationBootstrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "OnApplicationBootstrap"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          },
+          {
+            "name": "BB",
+            "type": "class",
+            "signature": "class BB"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "AA",
+            "type": "class",
+            "signature": "class AA"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          }
+        ]
+      },
+      {
+        "name": "lifecycle-hook-order.spec.ts",
+        "path": "integration/hooks/e2e/lifecycle-hook-order.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "OnApplicationBootstrap",
+              "OnApplicationShutdown",
+              "OnModuleDestroy",
+              "OnModuleInit",
+              "BeforeApplicationShutdown"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          }
+        ]
+      },
+      {
+        "name": "enable-shutdown-hook.spec.ts",
+        "path": "integration/hooks/e2e/enable-shutdown-hook.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 55,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "spawnSync",
+            "sourceModule": "child_process",
+            "isDefault": false,
+            "namedImports": [
+              "spawnSync"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "before-app-shutdown.spec.ts",
+        "path": "integration/hooks/e2e/before-app-shutdown.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 62,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hooks/e2e/before-app-shutdown.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 37,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "BeforeApplicationShutdown",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "BeforeApplicationShutdown",
+              "Injectable",
+              "Module"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as Sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as Sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestInjectable",
+            "type": "class",
+            "signature": "class TestInjectable"
+          },
+          {
+            "name": "BB",
+            "type": "class",
+            "signature": "class BB"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "AA",
+            "type": "class",
+            "signature": "class AA"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

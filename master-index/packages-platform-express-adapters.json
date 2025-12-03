@@ -1,0 +1,1379 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:48.316Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "adapters",
+      "path": "packages/platform-express/adapters",
+      "purpose": "Enhanced directory analysis of adapters",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/platform-express/adapters/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "express-adapter.ts",
+        "path": "packages/platform-express/adapters/express-adapter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 519,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "appendHeader",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 188,
+              "endLine": 190
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "applyVersionFilter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 345,
+              "endLine": 490
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "callNextHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 1,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Function takes no parameters",
+              "Utility function with clear purpose"
+            ],
+            "location": {
+              "startLine": 216,
+              "endLine": 223
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "closeOpenConnections",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 500,
+              "endLine": 505
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "createMiddlewareFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 272,
+              "endLine": 288
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "disable",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 233,
+              "endLine": 235
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "enable",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 229,
+              "endLine": 231
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "enableCors",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 268,
+              "endLine": 270
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "end",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 156,
+              "endLine": 158
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "engine",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 237,
+              "endLine": 239
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "getHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 180,
+              "endLine": 182
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "getRequestHostname",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 256,
+              "endLine": 258
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "getRequestMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 260,
+              "endLine": 262
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "getRequestUrl",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 264,
+              "endLine": 266
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "getType",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 341,
+              "endLine": 343
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "handlerForCustomVersioning",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "handlerForHeaderVersioning",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "handlerForMediaTypeVersioning",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "handlerForNoVersioning",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "initHttpServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 290,
+              "endLine": 304
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "isHeadersSent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 176,
+              "endLine": 178
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "isMiddlewareApplied",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 507,
+              "endLine": 517
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "listen",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 212,
+              "endLine": 214
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "normalizePath",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 192,
+              "endLine": 204
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "redirect",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 164,
+              "endLine": 166
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "registerParserMiddleware",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 306,
+              "endLine": 319
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "render",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 160,
+              "endLine": 162
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "reply",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; External interaction (I/O, network, DB) suggests legitimacy; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 103,
+              "endLine": 150
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "set",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 225,
+              "endLine": 227
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setBaseViewsDir",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 248,
+              "endLine": 250
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setErrorHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 168,
+              "endLine": 170
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 184,
+              "endLine": 186
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setLocal",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 336,
+              "endLine": 339
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setNotFoundHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 172,
+              "endLine": 174
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setOnRequestHook",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 84,
+              "endLine": 92
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setOnResponseHook",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 94,
+              "endLine": 101
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "setViewEngine",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 252,
+              "endLine": 254
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "status",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 152,
+              "endLine": 154
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "trackOpenConnections",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 492,
+              "endLine": 498
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "useBodyParser",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 321,
+              "endLine": 334
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/adapters/express-adapter.ts",
+            "functionName": "useStaticAssets",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 241,
+              "endLine": 246
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpStatus",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus",
+              "InternalServerErrorException",
+              "Logger",
+              "RequestMethod",
+              "StreamableFile",
+              "VERSION_NEUTRAL",
+              "VersioningOptions",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "CorsOptions",
+            "sourceModule": "@nestjs/common/interfaces/external/cors-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CorsOptions",
+              "CorsOptionsDelegate"
+            ]
+          },
+          {
+            "name": "NestApplicationOptions",
+            "sourceModule": "@nestjs/common/interfaces/nest-application-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationOptions"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction",
+              "isNil",
+              "isObject",
+              "isString",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "AbstractHttpAdapter",
+            "sourceModule": "@nestjs/core/adapters/http-adapter",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractHttpAdapter"
+            ]
+          },
+          {
+            "name": "RouterMethodFactory",
+            "sourceModule": "@nestjs/core/helpers/router-method-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RouterMethodFactory"
+            ]
+          },
+          {
+            "name": "LegacyRouteConverter",
+            "sourceModule": "@nestjs/core/router/legacy-route-converter",
+            "isDefault": false,
+            "namedImports": [
+              "LegacyRouteConverter"
+            ]
+          },
+          {
+            "name": "* as cors",
+            "sourceModule": "cors",
+            "isDefault": false,
+            "namedImports": [
+              "* as cors"
+            ]
+          },
+          {
+            "name": "* as express",
+            "sourceModule": "express",
+            "isDefault": false,
+            "namedImports": [
+              "* as express"
+            ]
+          },
+          {
+            "name": "Server",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "Server"
+            ]
+          },
+          {
+            "name": "* as http",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "* as http"
+            ]
+          },
+          {
+            "name": "* as https",
+            "sourceModule": "https",
+            "isDefault": false,
+            "namedImports": [
+              "* as https"
+            ]
+          },
+          {
+            "name": "pathToRegexp",
+            "sourceModule": "path-to-regexp",
+            "isDefault": false,
+            "namedImports": [
+              "pathToRegexp"
+            ]
+          },
+          {
+            "name": "Duplex",
+            "sourceModule": "stream",
+            "isDefault": false,
+            "namedImports": [
+              "Duplex",
+              "Writable"
+            ]
+          },
+          {
+            "name": "NestExpressBodyParserOptions",
+            "sourceModule": "../interfaces/nest-express-body-parser-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestExpressBodyParserOptions"
+            ]
+          },
+          {
+            "name": "NestExpressBodyParserType",
+            "sourceModule": "../interfaces/nest-express-body-parser.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestExpressBodyParserType"
+            ]
+          },
+          {
+            "name": "ServeStaticOptions",
+            "sourceModule": "../interfaces/serve-static-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ServeStaticOptions"
+            ]
+          },
+          {
+            "name": "getBodyParserOptions",
+            "sourceModule": "./utils/get-body-parser-options.util",
+            "isDefault": false,
+            "namedImports": [
+              "getBodyParserOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExpressAdapter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExpressAdapter",
+            "type": "class",
+            "signature": "class ExpressAdapter"
+          },
+          {
+            "name": "MEDIA_TYPE_HEADER",
+            "type": "const",
+            "signature": "const MEDIA_TYPE_HEADER"
+          },
+          {
+            "name": "VersionedRoute",
+            "type": "type",
+            "signature": "type VersionedRoute"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

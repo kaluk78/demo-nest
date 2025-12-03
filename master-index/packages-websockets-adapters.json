@@ -1,0 +1,306 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:51.246Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "adapters",
+      "path": "packages/websockets/adapters",
+      "purpose": "Enhanced directory analysis of adapters",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-adapter.ts",
+        "path": "packages/websockets/adapters/ws-adapter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 60,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "bindClientConnect",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 38,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "bindClientDisconnect",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 46,
+              "endLine": 49
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "dispose",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 51,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "forceCloseConnections",
+            "classification": "definite-legitimate",
+            "confidence": 7,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/adapters/ws-adapter.ts",
+            "functionName": "forceCloseConnections",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplicationContext",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplicationContext",
+              "WebSocketAdapter"
+            ]
+          },
+          {
+            "name": "WsMessageHandler",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "WsMessageHandler"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction"
+            ]
+          },
+          {
+            "name": "NestApplication",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplication"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "CONNECTION_EVENT",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "CONNECTION_EVENT",
+              "DISCONNECT_EVENT"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "BaseWsInstance",
+            "type": "interface"
+          },
+          {
+            "name": "AbstractWsAdapter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AbstractWsAdapter",
+            "type": "class",
+            "signature": "class AbstractWsAdapter"
+          },
+          {
+            "name": "BaseWsInstance",
+            "type": "interface",
+            "signature": "interface BaseWsInstance"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/websockets/adapters/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

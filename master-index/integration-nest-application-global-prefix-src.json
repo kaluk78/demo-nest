@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:10.979Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "integration/nest-application/global-prefix/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "app.module.ts",
+        "path": "integration/nest-application/global-prefix/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 46,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.module.ts",
+            "functionName": "configure",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "MiddlewareConsumer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConsumer",
+              "Module",
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "AppController",
+            "sourceModule": "./app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AppController"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MIDDLEWARE_VALUE",
+            "type": "const"
+          },
+          {
+            "name": "MIDDLEWARE_PARAM_VALUE",
+            "type": "const"
+          },
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          },
+          {
+            "name": "MIDDLEWARE_VALUE",
+            "type": "const",
+            "signature": "const MIDDLEWARE_VALUE"
+          },
+          {
+            "name": "MIDDLEWARE_PARAM_VALUE",
+            "type": "const",
+            "signature": "const MIDDLEWARE_PARAM_VALUE"
+          }
+        ]
+      },
+      {
+        "name": "app.controller.ts",
+        "path": "integration/nest-application/global-prefix/src/app.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 40,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getCount",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 35,
+              "endLine": 38
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getHealth",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getHello",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getHome",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 33
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getParams",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "getTest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return 'test'\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/nest-application/global-prefix/src/app.controller.ts",
+            "functionName": "postTest",
+            "classification": "likely-legitimate",
+            "confidence": 29,
+            "isPlaceholder": true,
+            "reasons": [
+              "Returns hardcoded value: \"return 'test'\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Get",
+              "Post",
+              "Req"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppController",
+            "type": "class",
+            "signature": "class AppController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

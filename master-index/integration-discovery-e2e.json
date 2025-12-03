@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:37:58.580Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/discovery/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "discover-by-meta.spec.ts",
+        "path": "integration/discovery/e2e/discover-by-meta.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 60,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "DiscoveryService",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "DiscoveryService"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          },
+          {
+            "name": "WebhooksExplorer",
+            "sourceModule": "../src/webhooks.explorer",
+            "isDefault": false,
+            "namedImports": [
+              "WebhooksExplorer"
+            ]
+          },
+          {
+            "name": "NonAppliedDecorator",
+            "sourceModule": "../src/decorators/non-applied.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "NonAppliedDecorator"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

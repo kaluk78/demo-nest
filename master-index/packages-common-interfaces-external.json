@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:21.020Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "external",
+      "path": "packages/common/interfaces/external",
+      "purpose": "Enhanced directory analysis of external",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "validator-package.interface.ts",
+        "path": "packages/common/interfaces/external/validator-package.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "ValidationError",
+            "sourceModule": "./validation-error.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ValidationError"
+            ]
+          },
+          {
+            "name": "ValidatorOptions",
+            "sourceModule": "./validator-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ValidatorOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ValidatorPackage",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ValidatorPackage",
+            "type": "interface",
+            "signature": "interface ValidatorPackage"
+          }
+        ]
+      },
+      {
+        "name": "validator-options.interface.ts",
+        "path": "packages/common/interfaces/external/validator-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 77,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ValidatorOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ValidatorOptions",
+            "type": "interface",
+            "signature": "interface ValidatorOptions"
+          }
+        ]
+      },
+      {
+        "name": "validation-error.interface.ts",
+        "path": "packages/common/interfaces/external/validation-error.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ValidationError",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ValidationError",
+            "type": "interface",
+            "signature": "interface ValidationError"
+          }
+        ]
+      },
+      {
+        "name": "transformer-package.interface.ts",
+        "path": "packages/common/interfaces/external/transformer-package.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 15,
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "ClassTransformOptions",
+            "sourceModule": "./class-transform-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ClassTransformOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "TransformerPackage",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TransformerPackage",
+            "type": "interface",
+            "signature": "interface TransformerPackage"
+          }
+        ]
+      },
+      {
+        "name": "https-options.interface.ts",
+        "path": "packages/common/interfaces/external/https-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 106,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "HttpsOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpsOptions",
+            "type": "interface",
+            "signature": "interface HttpsOptions"
+          }
+        ]
+      },
+      {
+        "name": "cors-options.interface.ts",
+        "path": "packages/common/interfaces/external/cors-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 64,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CustomOrigin",
+            "type": "type"
+          },
+          {
+            "name": "CorsOptions",
+            "type": "interface"
+          },
+          {
+            "name": "CorsOptionsCallback",
+            "type": "interface"
+          },
+          {
+            "name": "CorsOptionsDelegate",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CorsOptions",
+            "type": "interface",
+            "signature": "interface CorsOptions"
+          },
+          {
+            "name": "CorsOptionsCallback",
+            "type": "interface",
+            "signature": "interface CorsOptionsCallback"
+          },
+          {
+            "name": "CorsOptionsDelegate",
+            "type": "interface",
+            "signature": "interface CorsOptionsDelegate"
+          },
+          {
+            "name": "StaticOrigin",
+            "type": "type",
+            "signature": "type StaticOrigin"
+          },
+          {
+            "name": "CustomOrigin",
+            "type": "type",
+            "signature": "type CustomOrigin"
+          }
+        ]
+      },
+      {
+        "name": "class-transform-options.interface.ts",
+        "path": "packages/common/interfaces/external/class-transform-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 66,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ClassTransformOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "transformer",
+            "type": "class",
+            "signature": "class transformer"
+          },
+          {
+            "name": "transformer",
+            "type": "class",
+            "signature": "class transformer"
+          },
+          {
+            "name": "properties",
+            "type": "class",
+            "signature": "class properties"
+          },
+          {
+            "name": "transformer",
+            "type": "class",
+            "signature": "class transformer"
+          },
+          {
+            "name": "and",
+            "type": "class",
+            "signature": "class and"
+          },
+          {
+            "name": "to",
+            "type": "class",
+            "signature": "class to"
+          },
+          {
+            "name": "ClassTransformOptions",
+            "type": "interface",
+            "signature": "interface ClassTransformOptions"
+          },
+          {
+            "name": "metadata",
+            "type": "type",
+            "signature": "type metadata"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

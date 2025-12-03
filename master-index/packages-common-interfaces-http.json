@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:21.311Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "http",
+      "path": "packages/common/interfaces/http",
+      "purpose": "Enhanced directory analysis of http",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "raw-body-request.interface.ts",
+        "path": "packages/common/interfaces/http/raw-body-request.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "RawBodyRequest",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RawBodyRequest",
+            "type": "type",
+            "signature": "type RawBodyRequest"
+          }
+        ]
+      },
+      {
+        "name": "message-event.interface.ts",
+        "path": "packages/common/interfaces/http/message-event.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MessageEvent",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MessageEvent",
+            "type": "interface",
+            "signature": "interface MessageEvent"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/interfaces/http/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 6,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "http-server.interface.ts",
+        "path": "packages/common/interfaces/http/http-server.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 103,
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../enums",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "NestApplicationOptions",
+            "sourceModule": "../../interfaces/nest-application-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationOptions"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "../version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue",
+              "VersioningOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ErrorHandler",
+            "type": "type"
+          },
+          {
+            "name": "RequestHandler",
+            "type": "type"
+          },
+          {
+            "name": "HttpServer",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpServer",
+            "type": "interface",
+            "signature": "interface HttpServer"
+          },
+          {
+            "name": "ErrorHandler",
+            "type": "type",
+            "signature": "type ErrorHandler"
+          },
+          {
+            "name": "RequestHandler",
+            "type": "type",
+            "signature": "type RequestHandler"
+          }
+        ]
+      },
+      {
+        "name": "http-redirect-response.interface.ts",
+        "path": "packages/common/interfaces/http/http-redirect-response.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../../enums",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HttpRedirectResponse",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpRedirectResponse",
+            "type": "interface",
+            "signature": "interface HttpRedirectResponse"
+          }
+        ]
+      },
+      {
+        "name": "http-exception-body.interface.ts",
+        "path": "packages/common/interfaces/http/http-exception-body.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "HttpExceptionBodyMessage",
+            "type": "type"
+          },
+          {
+            "name": "HttpExceptionBody",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpExceptionBody",
+            "type": "interface",
+            "signature": "interface HttpExceptionBody"
+          },
+          {
+            "name": "HttpExceptionBodyMessage",
+            "type": "type",
+            "signature": "type HttpExceptionBodyMessage"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:50.884Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/testing/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "override-module.interface.ts",
+        "path": "packages/testing/interfaces/override-module.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "ModuleDefinition",
+            "sourceModule": "@nestjs/core/interfaces/module-definition.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleDefinition"
+            ]
+          },
+          {
+            "name": "TestingModuleBuilder",
+            "sourceModule": "../testing-module.builder",
+            "isDefault": false,
+            "namedImports": [
+              "TestingModuleBuilder"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "OverrideModule",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OverrideModule",
+            "type": "interface",
+            "signature": "interface OverrideModule"
+          }
+        ]
+      },
+      {
+        "name": "override-by.interface.ts",
+        "path": "packages/testing/interfaces/override-by.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "name": "TestingModuleBuilder",
+            "sourceModule": "../testing-module.builder",
+            "isDefault": false,
+            "namedImports": [
+              "TestingModuleBuilder"
+            ]
+          },
+          {
+            "name": "OverrideByFactoryOptions",
+            "sourceModule": "./override-by-factory-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "OverrideByFactoryOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "OverrideBy",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OverrideBy",
+            "type": "interface",
+            "signature": "interface OverrideBy"
+          }
+        ]
+      },
+      {
+        "name": "override-by-factory-options.interface.ts",
+        "path": "packages/testing/interfaces/override-by-factory-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "OverrideByFactoryOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OverrideByFactoryOptions",
+            "type": "interface",
+            "signature": "interface OverrideByFactoryOptions"
+          }
+        ]
+      },
+      {
+        "name": "mock-factory.ts",
+        "path": "packages/testing/interfaces/mock-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [
+          {
+            "name": "InjectionToken",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "InjectionToken"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MockFactory",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MockFactory",
+            "type": "type",
+            "signature": "type MockFactory"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/testing/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

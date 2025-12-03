@@ -1,0 +1,1154 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:35.434Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "injector",
+      "path": "packages/core/test/injector",
+      "purpose": "Enhanced directory analysis of injector",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nested-transient-isolation.spec.ts",
+        "path": "packages/core/test/injector/nested-transient-isolation.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 194,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/injector/nested-transient-isolation.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/nested-transient-isolation.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/nested-transient-isolation.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/nested-transient-isolation.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common/decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "NestedTransientService",
+            "type": "class",
+            "signature": "class NestedTransientService"
+          },
+          {
+            "name": "TransientService",
+            "type": "class",
+            "signature": "class TransientService"
+          },
+          {
+            "name": "RequestScopedParent1",
+            "type": "class",
+            "signature": "class RequestScopedParent1"
+          },
+          {
+            "name": "RequestScopedParent2",
+            "type": "class",
+            "signature": "class RequestScopedParent2"
+          }
+        ]
+      },
+      {
+        "name": "module.spec.ts",
+        "path": "packages/core/test/injector/module.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 520,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/injector/module.spec.ts",
+            "functionName": "value",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Scope"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "ModuleDecorator",
+            "sourceModule": "../../../common/decorators/modules/module.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleDecorator"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "../../errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "UnknownElementException",
+            "sourceModule": "../../errors/exceptions/unknown-element.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownElementException"
+            ]
+          },
+          {
+            "name": "UnknownExportException",
+            "sourceModule": "../../errors/exceptions/unknown-export.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownExportException"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "value",
+            "type": "function",
+            "signature": "const value = () =>"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "TestProvider",
+            "type": "class",
+            "signature": "class TestProvider"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          },
+          {
+            "name": "Random",
+            "type": "class",
+            "signature": "class Random"
+          },
+          {
+            "name": "C",
+            "type": "const",
+            "signature": "const C"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "does",
+            "type": "type",
+            "signature": "type does"
+          },
+          {
+            "name": "exists",
+            "type": "type",
+            "signature": "type exists"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "instance-wrapper.spec.ts",
+        "path": "packages/core/test/injector/instance-wrapper.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 1024,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/injector/instance-wrapper.spec.ts",
+            "functionName": "factory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Intentionally unused parameter/variable (prefixed with _); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/instance-wrapper.spec.ts",
+            "functionName": "factory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Intentionally unused parameter/variable (prefixed with _); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "createContextId",
+            "sourceModule": "../../helpers",
+            "isDefault": false,
+            "namedImports": [
+              "createContextId"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "factory",
+            "type": "function",
+            "signature": "const factory = () =>"
+          },
+          {
+            "name": "factory",
+            "type": "function",
+            "signature": "const factory = () =>"
+          },
+          {
+            "name": "TestClass",
+            "type": "class",
+            "signature": "class TestClass"
+          },
+          {
+            "name": "TestService",
+            "type": "class",
+            "signature": "class TestService"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          },
+          {
+            "name": "only",
+            "type": "type",
+            "signature": "type only"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          },
+          {
+            "name": "and",
+            "type": "type",
+            "signature": "type and"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "instance-loader.spec.ts",
+        "path": "packages/core/test/injector/instance-loader.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 196,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "../../../common/decorators/core/controller.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceLoader",
+            "sourceModule": "../../injector/instance-loader",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceLoader"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestCtrl",
+            "type": "class",
+            "signature": "class TestCtrl"
+          },
+          {
+            "name": "TestProvider",
+            "type": "class",
+            "signature": "class TestProvider"
+          }
+        ]
+      },
+      {
+        "name": "injector.spec.ts",
+        "path": "packages/core/test/injector/injector.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 854,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/injector/injector.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 763,
+              "endLine": 763
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/injector.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 763,
+              "endLine": 763
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/injector.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 763,
+              "endLine": 763
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Optional",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "PARAMTYPES_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "PARAMTYPES_METADATA"
+            ]
+          },
+          {
+            "name": "* as chai",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "* as chai"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as chaiAsPromised",
+            "sourceModule": "chai-as-promised",
+            "isDefault": false,
+            "namedImports": [
+              "* as chaiAsPromised"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Inject",
+            "sourceModule": "../../../common/decorators/core/inject.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Inject"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common/decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector",
+              "PropertyDependency"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DependencyOne",
+            "type": "class",
+            "signature": "class DependencyOne"
+          },
+          {
+            "name": "DependencyTwo",
+            "type": "class",
+            "signature": "class DependencyTwo"
+          },
+          {
+            "name": "MainTest",
+            "type": "class",
+            "signature": "class MainTest"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          },
+          {
+            "name": "TestClass",
+            "type": "class",
+            "signature": "class TestClass"
+          },
+          {
+            "name": "TestClass",
+            "type": "class",
+            "signature": "class TestClass"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "FixtureDep1",
+            "type": "class",
+            "signature": "class FixtureDep1"
+          },
+          {
+            "name": "FixtureDep2",
+            "type": "class",
+            "signature": "class FixtureDep2"
+          },
+          {
+            "name": "FixtureClass",
+            "type": "class",
+            "signature": "class FixtureClass"
+          },
+          {
+            "name": "FixtureDep1",
+            "type": "class",
+            "signature": "class FixtureDep1"
+          },
+          {
+            "name": "FixtureClass",
+            "type": "class",
+            "signature": "class FixtureClass"
+          },
+          {
+            "name": "FixtureDep1",
+            "type": "class",
+            "signature": "class FixtureDep1"
+          },
+          {
+            "name": "FixtureDep2",
+            "type": "class",
+            "signature": "class FixtureDep2"
+          },
+          {
+            "name": "IInjector",
+            "type": "interface",
+            "signature": "interface IInjector"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          },
+          {
+            "name": "of",
+            "type": "type",
+            "signature": "type of"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      },
+      {
+        "name": "container.spec.ts",
+        "path": "packages/core/test/injector/container.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 253,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../../common/decorators/modules/module.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "Global",
+            "sourceModule": "../../../common/index",
+            "isDefault": false,
+            "namedImports": [
+              "Global"
+            ]
+          },
+          {
+            "name": "CircularDependencyException",
+            "sourceModule": "../../errors/exceptions/circular-dependency.exception",
+            "isDefault": false,
+            "namedImports": [
+              "CircularDependencyException"
+            ]
+          },
+          {
+            "name": "UnknownModuleException",
+            "sourceModule": "../../errors/exceptions/unknown-module.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownModuleException"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "NoopHttpAdapter",
+            "sourceModule": "../utils/noop-adapter.spec",
+            "isDefault": false,
+            "namedImports": [
+              "NoopHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "GlobalTestModule",
+            "type": "class",
+            "signature": "class GlobalTestModule"
+          },
+          {
+            "name": "ReplaceTestModule",
+            "type": "class",
+            "signature": "class ReplaceTestModule"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          }
+        ]
+      },
+      {
+        "name": "compiler.spec.ts",
+        "path": "packages/core/test/injector/compiler.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 46,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ModuleCompiler",
+            "sourceModule": "../../injector/compiler",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleCompiler"
+            ]
+          },
+          {
+            "name": "ByReferenceModuleOpaqueKeyFactory",
+            "sourceModule": "../../injector/opaque-key-factory/by-reference-module-opaque-key-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ByReferenceModuleOpaqueKeyFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "helpers",
+        "relativePath": "helpers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of helpers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "internal-core-module",
+        "relativePath": "internal-core-module",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of internal-core-module",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "lazy-module-loader",
+        "relativePath": "lazy-module-loader",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of lazy-module-loader",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "opaque-key-factory",
+        "relativePath": "opaque-key-factory",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of opaque-key-factory",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

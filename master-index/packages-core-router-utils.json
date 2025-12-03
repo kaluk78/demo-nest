@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:32.009Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/core/router/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/core/router/utils/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "flatten-route-paths.util.ts",
+        "path": "packages/core/router/utils/flatten-route-paths.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/utils/flatten-route-paths.util.ts",
+            "functionName": "flattenRoutePaths",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "High context score suggests legitimate implementation; Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -75,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "isString",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isString",
+              "normalizePath"
+            ]
+          },
+          {
+            "name": "Routes",
+            "sourceModule": "../interfaces/routes.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Routes"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "flattenRoutePaths",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "flattenRoutePaths",
+            "type": "function",
+            "signature": "function flattenRoutePaths()"
+          }
+        ]
+      },
+      {
+        "name": "exclude-route.util.ts",
+        "path": "packages/core/router/utils/exclude-route.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 24,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/utils/exclude-route.util.ts",
+            "functionName": "isRequestMethodAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/utils/exclude-route.util.ts",
+            "functionName": "isRouteExcluded",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -67,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash"
+            ]
+          },
+          {
+            "name": "ExcludeRouteMetadata",
+            "sourceModule": "../interfaces/exclude-route-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExcludeRouteMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "isRequestMethodAll",
+            "type": "const"
+          },
+          {
+            "name": "isRouteExcluded",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "isRouteExcluded",
+            "type": "function",
+            "signature": "function isRouteExcluded()"
+          },
+          {
+            "name": "isRequestMethodAll",
+            "type": "function",
+            "signature": "const isRequestMethodAll = () =>"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

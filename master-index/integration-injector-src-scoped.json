@@ -1,0 +1,393 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:03.337Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "scoped",
+      "path": "integration/injector/src/scoped",
+      "purpose": "Enhanced directory analysis of scoped",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "transient3.service.ts",
+        "path": "integration/injector/src/scoped/transient3.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/injector/src/scoped/transient3.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Scope"
+            ]
+          },
+          {
+            "name": "TransientService",
+            "sourceModule": "./transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "TransientService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Transient3Service",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Transient3Service",
+            "type": "class",
+            "signature": "class Transient3Service"
+          }
+        ]
+      },
+      {
+        "name": "transient2.service.ts",
+        "path": "integration/injector/src/scoped/transient2.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Logger",
+              "Scope"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Transient2Service",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Transient2Service",
+            "type": "class",
+            "signature": "class Transient2Service"
+          }
+        ]
+      },
+      {
+        "name": "transient.service.ts",
+        "path": "integration/injector/src/scoped/transient.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/injector/src/scoped/transient.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Scope"
+            ]
+          },
+          {
+            "name": "Transient2Service",
+            "sourceModule": "./transient2.service",
+            "isDefault": false,
+            "namedImports": [
+              "Transient2Service"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "TransientService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TransientService",
+            "type": "class",
+            "signature": "class TransientService"
+          }
+        ]
+      },
+      {
+        "name": "scoped.service.ts",
+        "path": "integration/injector/src/scoped/scoped.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/injector/src/scoped/scoped.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Inject",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Inject",
+              "Injectable",
+              "Scope"
+            ]
+          },
+          {
+            "name": "REQUEST",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ScopedService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ScopedService",
+            "type": "class",
+            "signature": "class ScopedService"
+          }
+        ]
+      },
+      {
+        "name": "scoped.module.ts",
+        "path": "integration/injector/src/scoped/scoped.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 36,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module",
+              "Scope"
+            ]
+          },
+          {
+            "name": "ScopedController",
+            "sourceModule": "./scoped.controller",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedController"
+            ]
+          },
+          {
+            "name": "ScopedService",
+            "sourceModule": "./scoped.service",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedService"
+            ]
+          },
+          {
+            "name": "TransientService",
+            "sourceModule": "./transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "TransientService"
+            ]
+          },
+          {
+            "name": "Transient2Service",
+            "sourceModule": "./transient2.service",
+            "isDefault": false,
+            "namedImports": [
+              "Transient2Service"
+            ]
+          },
+          {
+            "name": "Transient3Service",
+            "sourceModule": "./transient3.service",
+            "isDefault": false,
+            "namedImports": [
+              "Transient3Service"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "STATIC_FACTORY",
+            "type": "const"
+          },
+          {
+            "name": "REQUEST_SCOPED_FACTORY",
+            "type": "const"
+          },
+          {
+            "name": "TRANSIENT_SCOPED_FACTORY",
+            "type": "const"
+          },
+          {
+            "name": "ScopedModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ScopedModule",
+            "type": "class",
+            "signature": "class ScopedModule"
+          },
+          {
+            "name": "STATIC_FACTORY",
+            "type": "const",
+            "signature": "const STATIC_FACTORY"
+          },
+          {
+            "name": "REQUEST_SCOPED_FACTORY",
+            "type": "const",
+            "signature": "const REQUEST_SCOPED_FACTORY"
+          },
+          {
+            "name": "TRANSIENT_SCOPED_FACTORY",
+            "type": "const",
+            "signature": "const TRANSIENT_SCOPED_FACTORY"
+          }
+        ]
+      },
+      {
+        "name": "scoped.controller.ts",
+        "path": "integration/injector/src/scoped/scoped.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Scope"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ScopedController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ScopedController",
+            "type": "class",
+            "signature": "class ScopedController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

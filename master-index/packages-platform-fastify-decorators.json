@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:50.253Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "decorators",
+      "path": "packages/platform-fastify/decorators",
+      "purpose": "Enhanced directory analysis of decorators",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "route-schema.decorator.ts",
+        "path": "packages/platform-fastify/decorators/route-schema.decorator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/decorators/route-schema.decorator.ts",
+            "functionName": "RouteSchema",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SetMetadata",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "SetMetadata"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_SCHEMA_METADATA",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_SCHEMA_METADATA"
+            ]
+          },
+          {
+            "name": "FastifySchema",
+            "sourceModule": "fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifySchema"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteSchema",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouteSchema",
+            "type": "function",
+            "signature": "const RouteSchema = () =>"
+          },
+          {
+            "name": "R",
+            "type": "const",
+            "signature": "const R"
+          }
+        ]
+      },
+      {
+        "name": "route-constraints.decorator.ts",
+        "path": "packages/platform-fastify/decorators/route-constraints.decorator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/decorators/route-constraints.decorator.ts",
+            "functionName": "RouteConstraints",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SetMetadata",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "SetMetadata"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_CONSTRAINTS_METADATA",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_CONSTRAINTS_METADATA"
+            ]
+          },
+          {
+            "name": "RouteShorthandOptions",
+            "sourceModule": "fastify",
+            "isDefault": false,
+            "namedImports": [
+              "RouteShorthandOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteConstraints",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouteConstraints",
+            "type": "function",
+            "signature": "const RouteConstraints = () =>"
+          },
+          {
+            "name": "R",
+            "type": "const",
+            "signature": "const R"
+          }
+        ]
+      },
+      {
+        "name": "route-config.decorator.ts",
+        "path": "packages/platform-fastify/decorators/route-config.decorator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/decorators/route-config.decorator.ts",
+            "functionName": "RouteConfig",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SetMetadata",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "SetMetadata"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_CONFIG_METADATA",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_CONFIG_METADATA"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteConfig",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouteConfig",
+            "type": "function",
+            "signature": "const RouteConfig = () =>"
+          },
+          {
+            "name": "R",
+            "type": "const",
+            "signature": "const R"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-fastify/decorators/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

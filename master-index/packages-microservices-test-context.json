@@ -1,0 +1,499 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:43.209Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "context",
+      "path": "packages/microservices/test/context",
+      "purpose": "Enhanced directory analysis of context",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "rpc-proxy.spec.ts",
+        "path": "packages/microservices/test/context/rpc-proxy.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 45,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of",
+              "throwError"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "RpcProxy",
+            "sourceModule": "../../context/rpc-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RpcProxy"
+            ]
+          },
+          {
+            "name": "RpcException",
+            "sourceModule": "../../exceptions/rpc-exception",
+            "isDefault": false,
+            "namedImports": [
+              "RpcException"
+            ]
+          },
+          {
+            "name": "RpcExceptionsHandler",
+            "sourceModule": "../../exceptions/rpc-exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "RpcExceptionsHandler"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "rpc-context-creator.spec.ts",
+        "path": "packages/microservices/test/context/rpc-context-creator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 232,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/context/rpc-context-creator.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/context/rpc-context-creator.spec.ts",
+            "functionName": "transform",
+            "classification": "likely-legitimate",
+            "confidence": 30,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function returns a parameter (simple pass-through)",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "UseGuards",
+              "UsePipes"
+            ]
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "../../../common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../../core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "../../../core/guards/guards-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer"
+            ]
+          },
+          {
+            "name": "GuardsContextCreator",
+            "sourceModule": "../../../core/guards/guards-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../../core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "../../../core/interceptors/interceptors-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer"
+            ]
+          },
+          {
+            "name": "InterceptorsContextCreator",
+            "sourceModule": "../../../core/interceptors/interceptors-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../../../core/pipes/pipes-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer"
+            ]
+          },
+          {
+            "name": "PipesContextCreator",
+            "sourceModule": "../../../core/pipes/pipes-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "../../context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          },
+          {
+            "name": "RpcContextCreator",
+            "sourceModule": "../../context/rpc-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "RpcContextCreator"
+            ]
+          },
+          {
+            "name": "RpcProxy",
+            "sourceModule": "../../context/rpc-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RpcProxy"
+            ]
+          },
+          {
+            "name": "RpcParamtype",
+            "sourceModule": "../../enums/rpc-paramtype.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RpcParamtype"
+            ]
+          },
+          {
+            "name": "RpcParamsFactory",
+            "sourceModule": "../../factories/rpc-params-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RpcParamsFactory"
+            ]
+          },
+          {
+            "name": "RpcException",
+            "sourceModule": "../../index",
+            "isDefault": false,
+            "namedImports": [
+              "RpcException"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGuard",
+            "type": "class",
+            "signature": "class TestGuard"
+          },
+          {
+            "name": "TestPipe",
+            "type": "class",
+            "signature": "class TestPipe"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          }
+        ]
+      },
+      {
+        "name": "request-context-host.spec.ts",
+        "path": "packages/microservices/test/context/request-context-host.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RequestContextHost",
+            "sourceModule": "../../context/request-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "RequestContextHost"
+            ]
+          },
+          {
+            "name": "BaseRpcContext",
+            "sourceModule": "../../ctx-host/base-rpc.context",
+            "isDefault": false,
+            "namedImports": [
+              "BaseRpcContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "exception-filters-context.spec.ts",
+        "path": "packages/microservices/test/context/exception-filters-context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 89,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/context/exception-filters-context.spec.ts",
+            "functionName": "catch",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 17,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Catch",
+            "sourceModule": "../../../common/decorators/core/catch.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Catch"
+            ]
+          },
+          {
+            "name": "UseFilters",
+            "sourceModule": "../../../common/decorators/core/exception-filters.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "UseFilters"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../../core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../../core/injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "../../context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CustomException",
+            "type": "class",
+            "signature": "class CustomException"
+          },
+          {
+            "name": "ExceptionFilter",
+            "type": "class",
+            "signature": "class ExceptionFilter"
+          },
+          {
+            "name": "EmptyMetadata",
+            "type": "class",
+            "signature": "class EmptyMetadata"
+          },
+          {
+            "name": "WithMetadata",
+            "type": "class",
+            "signature": "class WithMetadata"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

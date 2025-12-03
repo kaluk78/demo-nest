@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:05.407Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "09-babel-example",
+      "path": "sample/09-babel-example",
+      "purpose": "Enhanced directory analysis of 09-babel-example",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.js",
+        "path": "sample/09-babel-example/index.js",
+        "filePurpose": "JavaScript ES2022 implementation file",
+        "languageDetail": "JavaScript ES2022",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "src",
+        "relativePath": "src",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of src",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

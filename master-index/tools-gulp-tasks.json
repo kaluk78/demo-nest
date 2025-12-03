@@ -1,0 +1,469 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:18.386Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "tasks",
+      "path": "tools/gulp/tasks",
+      "purpose": "Enhanced directory analysis of tasks",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "samples.ts",
+        "path": "tools/gulp/tasks/samples.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 127,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/tools/gulp/tasks/samples.ts",
+            "functionName": "executeNPMScriptInDirectory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Intentionally unused parameter/variable (prefixed with _); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 75,
+              "endLine": 112
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/tools/gulp/tasks/samples.ts",
+            "functionName": "executeNpmScriptInSamples",
+            "classification": "likely-placeholder",
+            "confidence": 70,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker: \"TODO\"",
+              "Moderate context score"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 85,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "blue",
+            "sourceModule": "ansis",
+            "isDefault": false,
+            "namedImports": [
+              "blue",
+              "magenta"
+            ]
+          },
+          {
+            "name": "* as childProcess",
+            "sourceModule": "child_process",
+            "isDefault": false,
+            "namedImports": [
+              "* as childProcess"
+            ]
+          },
+          {
+            "name": "execFileCb",
+            "sourceModule": "child_process",
+            "isDefault": false,
+            "namedImports": [
+              "execFileCb"
+            ]
+          },
+          {
+            "name": "* as log",
+            "sourceModule": "fancy-log",
+            "isDefault": false,
+            "namedImports": [
+              "* as log"
+            ]
+          },
+          {
+            "name": "task",
+            "sourceModule": "gulp",
+            "isDefault": false,
+            "namedImports": [
+              "task"
+            ]
+          },
+          {
+            "name": "resolve",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "resolve"
+            ]
+          },
+          {
+            "name": "promisify",
+            "sourceModule": "util",
+            "isDefault": false,
+            "namedImports": [
+              "promisify"
+            ]
+          },
+          {
+            "name": "samplePath",
+            "sourceModule": "../config",
+            "isDefault": false,
+            "namedImports": [
+              "samplePath"
+            ]
+          },
+          {
+            "name": "containsPackageJson",
+            "sourceModule": "../util/task-helpers",
+            "isDefault": false,
+            "namedImports": [
+              "containsPackageJson",
+              "getDirs"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "executeNpmScriptInSamples",
+            "type": "function",
+            "signature": "function executeNpmScriptInSamples()"
+          },
+          {
+            "name": "executeNPMScriptInDirectory",
+            "type": "function",
+            "signature": "function executeNPMScriptInDirectory()"
+          }
+        ]
+      },
+      {
+        "name": "move.ts",
+        "path": "tools/gulp/tasks/move.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 44,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/tools/gulp/tasks/move.ts",
+            "functionName": "moveToNodeModules",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/tools/gulp/tasks/move.ts",
+            "functionName": "moveToSamples",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "dest",
+            "sourceModule": "gulp",
+            "isDefault": false,
+            "namedImports": [
+              "dest",
+              "src",
+              "task"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "samplePath",
+            "sourceModule": "../config",
+            "isDefault": false,
+            "namedImports": [
+              "samplePath"
+            ]
+          },
+          {
+            "name": "containsPackageJson",
+            "sourceModule": "../util/task-helpers",
+            "isDefault": false,
+            "namedImports": [
+              "containsPackageJson",
+              "getDirs"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "moveToNodeModules",
+            "type": "function",
+            "signature": "function moveToNodeModules()"
+          },
+          {
+            "name": "moveToSamples",
+            "type": "function",
+            "signature": "function moveToSamples()"
+          }
+        ]
+      },
+      {
+        "name": "copy-misc.ts",
+        "path": "tools/gulp/tasks/copy-misc.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/tools/gulp/tasks/copy-misc.ts",
+            "functionName": "copyMisc",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "External interaction (I/O, network, DB) suggests legitimacy; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 16
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "task",
+            "sourceModule": "gulp",
+            "isDefault": false,
+            "namedImports": [
+              "task",
+              "src",
+              "dest"
+            ]
+          },
+          {
+            "name": "packagePaths",
+            "sourceModule": "../config",
+            "isDefault": false,
+            "namedImports": [
+              "packagePaths"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "copyMisc",
+            "type": "function",
+            "signature": "function copyMisc()"
+          }
+        ]
+      },
+      {
+        "name": "clean.ts",
+        "path": "tools/gulp/tasks/clean.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 34,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/tools/gulp/tasks/clean.ts",
+            "functionName": "cleanDirs",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/tools/gulp/tasks/clean.ts",
+            "functionName": "cleanOutput",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "task",
+            "sourceModule": "gulp",
+            "isDefault": false,
+            "namedImports": [
+              "task",
+              "src",
+              "series"
+            ]
+          },
+          {
+            "name": "source",
+            "sourceModule": "../config",
+            "isDefault": false,
+            "namedImports": [
+              "source"
+            ]
+          },
+          {
+            "name": "* as clean",
+            "sourceModule": "gulp-clean",
+            "isDefault": false,
+            "namedImports": [
+              "* as clean"
+            ]
+          },
+          {
+            "name": "* as deleteEmpty",
+            "sourceModule": "delete-empty",
+            "isDefault": false,
+            "namedImports": [
+              "* as deleteEmpty"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "cleanOutput",
+            "type": "function",
+            "signature": "function cleanOutput()"
+          },
+          {
+            "name": "cleanDirs",
+            "type": "function",
+            "signature": "function cleanDirs()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

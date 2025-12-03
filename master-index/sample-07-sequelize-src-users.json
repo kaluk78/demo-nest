@@ -1,0 +1,580 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:04.825Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "users",
+      "path": "sample/07-sequelize/src/users",
+      "purpose": "Enhanced directory analysis of users",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "users.service.ts",
+        "path": "sample/07-sequelize/src/users/users.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 37,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.service.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.service.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.service.ts",
+            "functionName": "findOne",
+            "classification": "definite-legitimate",
+            "confidence": 5,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.service.ts",
+            "functionName": "remove",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 35
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "InjectModel",
+            "sourceModule": "@nestjs/sequelize",
+            "isDefault": false,
+            "namedImports": [
+              "InjectModel"
+            ]
+          },
+          {
+            "name": "CreateUserDto",
+            "sourceModule": "./dto/create-user.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateUserDto"
+            ]
+          },
+          {
+            "name": "User",
+            "sourceModule": "./models/user.model",
+            "isDefault": false,
+            "namedImports": [
+              "User"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UsersService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UsersService",
+            "type": "class",
+            "signature": "class UsersService"
+          }
+        ]
+      },
+      {
+        "name": "users.service.spec.ts",
+        "path": "sample/07-sequelize/src/users/users.service.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 92,
+        "importedModules": [
+          {
+            "name": "getModelToken",
+            "sourceModule": "@nestjs/sequelize",
+            "isDefault": false,
+            "namedImports": [
+              "getModelToken"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "User",
+            "sourceModule": "./models/user.model",
+            "isDefault": false,
+            "namedImports": [
+              "User"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "users.module.ts",
+        "path": "sample/07-sequelize/src/users/users.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "SequelizeModule",
+            "sourceModule": "@nestjs/sequelize",
+            "isDefault": false,
+            "namedImports": [
+              "SequelizeModule"
+            ]
+          },
+          {
+            "name": "User",
+            "sourceModule": "./models/user.model",
+            "isDefault": false,
+            "namedImports": [
+              "User"
+            ]
+          },
+          {
+            "name": "UsersController",
+            "sourceModule": "./users.controller",
+            "isDefault": false,
+            "namedImports": [
+              "UsersController"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UsersModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UsersModule",
+            "type": "class",
+            "signature": "class UsersModule"
+          }
+        ]
+      },
+      {
+        "name": "users.controller.ts",
+        "path": "sample/07-sequelize/src/users/users.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.controller.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.controller.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.controller.ts",
+            "functionName": "findOne",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/07-sequelize/src/users/users.controller.ts",
+            "functionName": "remove",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Body",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Body",
+              "Controller",
+              "Delete",
+              "Get",
+              "Param",
+              "Post"
+            ]
+          },
+          {
+            "name": "CreateUserDto",
+            "sourceModule": "./dto/create-user.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateUserDto"
+            ]
+          },
+          {
+            "name": "User",
+            "sourceModule": "./models/user.model",
+            "isDefault": false,
+            "namedImports": [
+              "User"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UsersController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UsersController",
+            "type": "class",
+            "signature": "class UsersController"
+          }
+        ]
+      },
+      {
+        "name": "users.controller.spec.ts",
+        "path": "sample/07-sequelize/src/users/users.controller.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 95,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "CreateUserDto",
+            "sourceModule": "./dto/create-user.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateUserDto"
+            ]
+          },
+          {
+            "name": "UsersController",
+            "sourceModule": "./users.controller",
+            "isDefault": false,
+            "namedImports": [
+              "UsersController"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "dto",
+        "relativePath": "dto",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dto",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "models",
+        "relativePath": "models",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of models",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

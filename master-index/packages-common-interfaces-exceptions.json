@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:20.931Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "exceptions",
+      "path": "packages/common/interfaces/exceptions",
+      "purpose": "Enhanced directory analysis of exceptions",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-exception-filter.interface.ts",
+        "path": "packages/common/interfaces/exceptions/ws-exception-filter.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "importedModules": [
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "../features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "WsExceptionFilter",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WsExceptionFilter",
+            "type": "interface",
+            "signature": "interface WsExceptionFilter"
+          }
+        ]
+      },
+      {
+        "name": "rpc-exception-filter.interface.ts",
+        "path": "packages/common/interfaces/exceptions/rpc-exception-filter.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "importedModules": [
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "../features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RpcExceptionFilter",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RpcExceptionFilter",
+            "type": "interface",
+            "signature": "interface RpcExceptionFilter"
+          }
+        ]
+      },
+      {
+        "name": "rpc-exception-filter-metadata.interface.ts",
+        "path": "packages/common/interfaces/exceptions/rpc-exception-filter-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "RpcExceptionFilter",
+            "sourceModule": "./rpc-exception-filter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "RpcExceptionFilter"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RpcExceptionFilterMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RpcExceptionFilterMetadata",
+            "type": "interface",
+            "signature": "interface RpcExceptionFilterMetadata"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/interfaces/exceptions/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 6,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "exception-filter.interface.ts",
+        "path": "packages/common/interfaces/exceptions/exception-filter.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "importedModules": [
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "../features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExceptionFilter",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "of",
+            "type": "class",
+            "signature": "class of"
+          },
+          {
+            "name": "ExceptionFilter",
+            "type": "interface",
+            "signature": "interface ExceptionFilter"
+          }
+        ]
+      },
+      {
+        "name": "exception-filter-metadata.interface.ts",
+        "path": "packages/common/interfaces/exceptions/exception-filter-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "ExceptionFilter",
+            "sourceModule": "./exception-filter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilter"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExceptionFilterMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExceptionFilterMetadata",
+            "type": "interface",
+            "signature": "interface ExceptionFilterMetadata"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

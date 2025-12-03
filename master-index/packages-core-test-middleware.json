@@ -1,0 +1,1652 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:35.732Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "middleware",
+      "path": "packages/core/test/middleware",
+      "purpose": "Enhanced directory analysis of middleware",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "utils.spec.ts",
+        "path": "packages/core/test/middleware/utils.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 157,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/utils.spec.ts",
+            "functionName": "fnMiddleware",
+            "classification": "definite-legitimate",
+            "confidence": 13,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Moderate context score; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "pathToRegexp",
+            "sourceModule": "path-to-regexp",
+            "isDefault": false,
+            "namedImports": [
+              "pathToRegexp"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "assignToken",
+            "sourceModule": "../../middleware/utils",
+            "isDefault": false,
+            "namedImports": [
+              "assignToken",
+              "filterMiddleware",
+              "isMiddlewareClass",
+              "isMiddlewareRouteExcluded",
+              "mapToClass",
+              "mapToExcludeRoute"
+            ]
+          },
+          {
+            "name": "NoopHttpAdapter",
+            "sourceModule": "../utils/noop-adapter.spec",
+            "isDefault": false,
+            "namedImports": [
+              "NoopHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "fnMiddleware",
+            "type": "function",
+            "signature": "function fnMiddleware()"
+          },
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          },
+          {
+            "name": "A",
+            "type": "const",
+            "signature": "const A"
+          },
+          {
+            "name": "A",
+            "type": "const",
+            "signature": "const A"
+          }
+        ]
+      },
+      {
+        "name": "routes-mapper.spec.ts",
+        "path": "packages/core/test/middleware/routes-mapper.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 131,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "getAnother",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 64,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "getAnother",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 64,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "getTest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 61,
+              "endLine": 62
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "getTest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 61,
+              "endLine": 62
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "getVersioned",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "hello",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 93,
+              "endLine": 96
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "multiple",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 109,
+              "endLine": 112
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/routes-mapper.spec.ts",
+            "functionName": "override",
+            "classification": "definite-legitimate",
+            "confidence": 8,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 98,
+              "endLine": 102
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 28,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Version",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Version",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "../../../common/decorators/core/controller.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "Get",
+            "sourceModule": "../../../common/decorators/http/request-mapping.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Get",
+              "RequestMapping"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../../common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "MiddlewareConfiguration",
+            "sourceModule": "../../../common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConfiguration"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "RoutesMapper",
+            "sourceModule": "../../middleware/routes-mapper",
+            "isDefault": false,
+            "namedImports": [
+              "RoutesMapper"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestRoute",
+            "type": "class",
+            "signature": "class TestRoute"
+          },
+          {
+            "name": "TestRouteWithMultiplePaths",
+            "type": "class",
+            "signature": "class TestRouteWithMultiplePaths"
+          },
+          {
+            "name": "VersionedController",
+            "type": "class",
+            "signature": "class VersionedController"
+          },
+          {
+            "name": "MultipleVersionController",
+            "type": "class",
+            "signature": "class MultipleVersionController"
+          }
+        ]
+      },
+      {
+        "name": "route-info-path-extractor.spec.ts",
+        "path": "packages/core/test/middleware/route-info-path-extractor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 186,
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "mapToExcludeRoute",
+            "sourceModule": "@nestjs/core/middleware/utils",
+            "isDefault": false,
+            "namedImports": [
+              "mapToExcludeRoute"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RouteInfoPathExtractor",
+            "sourceModule": "./../../middleware/route-info-path-extractor",
+            "isDefault": false,
+            "namedImports": [
+              "RouteInfoPathExtractor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "resolver.spec.ts",
+        "path": "packages/core/test/middleware/resolver.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 47,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/resolver.spec.ts",
+            "functionName": "use",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "NestMiddleware",
+            "sourceModule": "../../../common/interfaces/middleware/nest-middleware.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestMiddleware"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "MiddlewareContainer",
+            "sourceModule": "../../middleware/container",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareContainer"
+            ]
+          },
+          {
+            "name": "MiddlewareResolver",
+            "sourceModule": "../../middleware/resolver",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareResolver"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestMiddleware",
+            "type": "class",
+            "signature": "class TestMiddleware"
+          }
+        ]
+      },
+      {
+        "name": "middleware-module.spec.ts",
+        "path": "packages/core/test/middleware/middleware-module.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 280,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/middleware-module.spec.ts",
+            "functionName": "getAnother",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 38,
+              "endLine": 39
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/middleware-module.spec.ts",
+            "functionName": "getTest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 35,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/middleware-module.spec.ts",
+            "functionName": "use",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 44,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "RouteInfoPathExtractor",
+            "sourceModule": "@nestjs/core/middleware/route-info-path-extractor",
+            "isDefault": false,
+            "namedImports": [
+              "RouteInfoPathExtractor"
+            ]
+          },
+          {
+            "name": "* as chai",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "* as chai"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as chaiAsPromised",
+            "sourceModule": "chai-as-promised",
+            "isDefault": false,
+            "namedImports": [
+              "* as chaiAsPromised"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "../../../common/decorators/core/controller.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "RequestMapping",
+            "sourceModule": "../../../common/decorators/http/request-mapping.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMapping"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../../common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "NestMiddleware",
+            "sourceModule": "../../../common/interfaces/middleware/nest-middleware.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestMiddleware"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "InvalidMiddlewareException",
+            "sourceModule": "../../errors/exceptions/invalid-middleware.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidMiddlewareException"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "../../errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "MiddlewareBuilder",
+            "sourceModule": "../../middleware/builder",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareBuilder"
+            ]
+          },
+          {
+            "name": "MiddlewareContainer",
+            "sourceModule": "../../middleware/container",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareContainer"
+            ]
+          },
+          {
+            "name": "MiddlewareModule",
+            "sourceModule": "../../middleware/middleware-module",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareModule"
+            ]
+          },
+          {
+            "name": "RouterExceptionFilters",
+            "sourceModule": "../../router/router-exception-filters",
+            "isDefault": false,
+            "namedImports": [
+              "RouterExceptionFilters"
+            ]
+          },
+          {
+            "name": "NoopHttpAdapter",
+            "sourceModule": "../utils/noop-adapter.spec",
+            "isDefault": false,
+            "namedImports": [
+              "NoopHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "BasicController",
+            "type": "class",
+            "signature": "class BasicController"
+          },
+          {
+            "name": "BaseController",
+            "type": "class",
+            "signature": "class BaseController"
+          },
+          {
+            "name": "TestMiddleware",
+            "type": "class",
+            "signature": "class TestMiddleware"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "InvalidMiddleware",
+            "type": "class",
+            "signature": "class InvalidMiddleware"
+          }
+        ]
+      },
+      {
+        "name": "container.spec.ts",
+        "path": "packages/core/test/middleware/container.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 75,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/container.spec.ts",
+            "functionName": "getAnother",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/container.spec.ts",
+            "functionName": "getTest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/container.spec.ts",
+            "functionName": "use",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "../../../common/decorators/core/controller.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "RequestMapping",
+            "sourceModule": "../../../common/decorators/http/request-mapping.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMapping"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../../common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "MiddlewareConfiguration",
+            "sourceModule": "../../../common/interfaces/middleware/middleware-configuration.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConfiguration"
+            ]
+          },
+          {
+            "name": "NestMiddleware",
+            "sourceModule": "../../../common/interfaces/middleware/nest-middleware.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestMiddleware"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "MiddlewareContainer",
+            "sourceModule": "../../middleware/container",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareContainer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExampleModule",
+            "type": "class",
+            "signature": "class ExampleModule"
+          },
+          {
+            "name": "TestRoute",
+            "type": "class",
+            "signature": "class TestRoute"
+          },
+          {
+            "name": "TestMiddleware",
+            "type": "class",
+            "signature": "class TestMiddleware"
+          }
+        ]
+      },
+      {
+        "name": "builder.spec.ts",
+        "path": "packages/core/test/middleware/builder.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 202,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 108,
+              "endLine": 109
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "dRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 105,
+              "endLine": 106
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 111,
+              "endLine": 112
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "findOne",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 114,
+              "endLine": 115
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "getAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 51,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "getAllVersioned",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 54,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "gRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 93,
+              "endLine": 94
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "hRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 87,
+              "endLine": 88
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "oRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 90,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "pRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 96,
+              "endLine": 97
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "ptRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 102,
+              "endLine": 103
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "puRsvp",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 99,
+              "endLine": 100
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "remove",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 120,
+              "endLine": 121
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/middleware/builder.spec.ts",
+            "functionName": "update",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 117,
+              "endLine": 118
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Delete",
+              "Get",
+              "Head",
+              "Options",
+              "Patch",
+              "Post",
+              "Put",
+              "RequestMethod",
+              "Version",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "MiddlewareConfigProxy",
+            "sourceModule": "../../../common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConfigProxy"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "MiddlewareBuilder",
+            "sourceModule": "../../middleware/builder",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareBuilder"
+            ]
+          },
+          {
+            "name": "RouteInfoPathExtractor",
+            "sourceModule": "../../middleware/route-info-path-extractor",
+            "isDefault": false,
+            "namedImports": [
+              "RouteInfoPathExtractor"
+            ]
+          },
+          {
+            "name": "RoutesMapper",
+            "sourceModule": "../../middleware/routes-mapper",
+            "isDefault": false,
+            "namedImports": [
+              "RoutesMapper"
+            ]
+          },
+          {
+            "name": "NoopHttpAdapter",
+            "sourceModule": "./../utils/noop-adapter.spec",
+            "isDefault": false,
+            "namedImports": [
+              "NoopHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          },
+          {
+            "name": "UsersController",
+            "type": "class",
+            "signature": "class UsersController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,662 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:21.912Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/common/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "version-options.interface.ts",
+        "path": "packages/common/interfaces/version-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 111,
+        "importedModules": [
+          {
+            "name": "VersioningType",
+            "sourceModule": "../enums/version-type.enum",
+            "isDefault": false,
+            "namedImports": [
+              "VersioningType"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "VERSION_NEUTRAL",
+            "type": "const"
+          },
+          {
+            "name": "VersionValue",
+            "type": "type"
+          },
+          {
+            "name": "VersionOptions",
+            "type": "interface"
+          },
+          {
+            "name": "HeaderVersioningOptions",
+            "type": "interface"
+          },
+          {
+            "name": "UriVersioningOptions",
+            "type": "interface"
+          },
+          {
+            "name": "MediaTypeVersioningOptions",
+            "type": "interface"
+          },
+          {
+            "name": "CustomVersioningOptions",
+            "type": "interface"
+          },
+          {
+            "name": "VersioningOptions",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "VERSION_NEUTRAL",
+            "type": "const",
+            "signature": "const VERSION_NEUTRAL"
+          },
+          {
+            "name": "VersionOptions",
+            "type": "interface",
+            "signature": "interface VersionOptions"
+          },
+          {
+            "name": "HeaderVersioningOptions",
+            "type": "interface",
+            "signature": "interface HeaderVersioningOptions"
+          },
+          {
+            "name": "UriVersioningOptions",
+            "type": "interface",
+            "signature": "interface UriVersioningOptions"
+          },
+          {
+            "name": "MediaTypeVersioningOptions",
+            "type": "interface",
+            "signature": "interface MediaTypeVersioningOptions"
+          },
+          {
+            "name": "CustomVersioningOptions",
+            "type": "interface",
+            "signature": "interface CustomVersioningOptions"
+          },
+          {
+            "name": "VersioningCommonOptions",
+            "type": "interface",
+            "signature": "interface VersioningCommonOptions"
+          },
+          {
+            "name": "VersionValue",
+            "type": "type",
+            "signature": "type VersionValue"
+          },
+          {
+            "name": "assertion",
+            "type": "type",
+            "signature": "type assertion"
+          },
+          {
+            "name": "VersioningOptions",
+            "type": "type",
+            "signature": "type VersioningOptions"
+          }
+        ]
+      },
+      {
+        "name": "type.interface.ts",
+        "path": "packages/common/interfaces/type.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "Type",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Type",
+            "type": "interface",
+            "signature": "interface Type"
+          }
+        ]
+      },
+      {
+        "name": "scope-options.interface.ts",
+        "path": "packages/common/interfaces/scope-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ScopeOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ScopeOptions",
+            "type": "interface",
+            "signature": "interface ScopeOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-microservice.interface.ts",
+        "path": "packages/common/interfaces/nest-microservice.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 93,
+        "importedModules": [
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "ExceptionFilter",
+            "sourceModule": "./exceptions/exception-filter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilter"
+            ]
+          },
+          {
+            "name": "CanActivate",
+            "sourceModule": "./features/can-activate.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate"
+            ]
+          },
+          {
+            "name": "NestInterceptor",
+            "sourceModule": "./features/nest-interceptor.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestInterceptor"
+            ]
+          },
+          {
+            "name": "PipeTransform",
+            "sourceModule": "./features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "INestApplicationContext",
+            "sourceModule": "./nest-application-context.interface",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplicationContext"
+            ]
+          },
+          {
+            "name": "WebSocketAdapter",
+            "sourceModule": "./websockets/web-socket-adapter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "INestMicroservice",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "INestMicroservice",
+            "type": "interface",
+            "signature": "interface INestMicroservice"
+          }
+        ]
+      },
+      {
+        "name": "nest-application.interface.ts",
+        "path": "packages/common/interfaces/nest-application.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 166,
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "./features/can-activate.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate"
+            ]
+          },
+          {
+            "name": "NestInterceptor",
+            "sourceModule": "./features/nest-interceptor.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestInterceptor"
+            ]
+          },
+          {
+            "name": "GlobalPrefixOptions",
+            "sourceModule": "./global-prefix-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "GlobalPrefixOptions"
+            ]
+          },
+          {
+            "name": "HttpServer",
+            "sourceModule": "./http/http-server.interface",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer"
+            ]
+          },
+          {
+            "name": "ExceptionFilter",
+            "sourceModule": "./index",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilter",
+              "INestMicroservice",
+              "NestHybridApplicationOptions",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "INestApplicationContext",
+            "sourceModule": "./nest-application-context.interface",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplicationContext"
+            ]
+          },
+          {
+            "name": "VersioningOptions",
+            "sourceModule": "./version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersioningOptions"
+            ]
+          },
+          {
+            "name": "WebSocketAdapter",
+            "sourceModule": "./websockets/web-socket-adapter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "INestApplication",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "INestApplication",
+            "type": "interface",
+            "signature": "interface INestApplication"
+          }
+        ]
+      },
+      {
+        "name": "nest-application-options.interface.ts",
+        "path": "packages/common/interfaces/nest-application-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 34,
+        "importedModules": [
+          {
+            "name": "CorsOptions",
+            "sourceModule": "./external/cors-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CorsOptions",
+              "CorsOptionsDelegate"
+            ]
+          },
+          {
+            "name": "HttpsOptions",
+            "sourceModule": "./external/https-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "HttpsOptions"
+            ]
+          },
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "./nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestApplicationOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestApplicationOptions",
+            "type": "interface",
+            "signature": "interface NestApplicationOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-application-context.interface.ts",
+        "path": "packages/common/interfaces/nest-application-context.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 159,
+        "importedModules": [
+          {
+            "name": "ShutdownSignal",
+            "sourceModule": "../enums/shutdown-signal.enum",
+            "isDefault": false,
+            "namedImports": [
+              "ShutdownSignal"
+            ]
+          },
+          {
+            "name": "LoggerService",
+            "sourceModule": "../services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "LoggerService",
+              "LogLevel"
+            ]
+          },
+          {
+            "name": "DynamicModule",
+            "sourceModule": "./modules",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule"
+            ]
+          },
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "./nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "./type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SelectOptions",
+            "type": "type"
+          },
+          {
+            "name": "GetOrResolveOptions",
+            "type": "interface"
+          },
+          {
+            "name": "INestApplicationContext",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GetOrResolveOptions",
+            "type": "interface",
+            "signature": "interface GetOrResolveOptions"
+          },
+          {
+            "name": "INestApplicationContext",
+            "type": "interface",
+            "signature": "interface INestApplicationContext"
+          },
+          {
+            "name": "SelectOptions",
+            "type": "type",
+            "signature": "type SelectOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-application-context-options.interface.ts",
+        "path": "packages/common/interfaces/nest-application-context-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 78,
+        "importedModules": [
+          {
+            "name": "LoggerService",
+            "sourceModule": "../services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "LoggerService",
+              "LogLevel"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestApplicationContextOptions",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestApplicationContextOptions",
+            "type": "class",
+            "signature": "class NestApplicationContextOptions"
+          }
+        ]
+      },
+      {
+        "name": "injectable.interface.ts",
+        "path": "packages/common/interfaces/injectable.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "Injectable",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Injectable",
+            "type": "type",
+            "signature": "type Injectable"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "global-prefix-options.interface.ts",
+        "path": "packages/common/interfaces/global-prefix-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "RouteInfo",
+            "sourceModule": "./middleware",
+            "isDefault": false,
+            "namedImports": [
+              "RouteInfo"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "GlobalPrefixOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GlobalPrefixOptions",
+            "type": "interface",
+            "signature": "interface GlobalPrefixOptions"
+          }
+        ]
+      },
+      {
+        "name": "abstract.interface.ts",
+        "path": "packages/common/interfaces/abstract.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "Abstract",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Abstract",
+            "type": "interface",
+            "signature": "interface Abstract"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "controllers",
+        "relativePath": "controllers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of controllers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exceptions",
+        "relativePath": "exceptions",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exceptions",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "external",
+        "relativePath": "external",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of external",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "features",
+        "relativePath": "features",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of features",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "hooks",
+        "relativePath": "hooks",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of hooks",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "http",
+        "relativePath": "http",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of http",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "microservices",
+        "relativePath": "microservices",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of microservices",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "middleware",
+        "relativePath": "middleware",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of middleware",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "modules",
+        "relativePath": "modules",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of modules",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "websockets",
+        "relativePath": "websockets",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of websockets",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

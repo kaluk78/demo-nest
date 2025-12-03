@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:11.086Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/nest-application/listen/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "fastify.spec.ts",
+        "path": "integration/nest-application/listen/e2e/fastify.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 47,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "express.spec.ts",
+        "path": "integration/nest-application/listen/e2e/express.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "ExpressAdapter",
+            "sourceModule": "@nestjs/platform-express",
+            "isDefault": false,
+            "namedImports": [
+              "ExpressAdapter"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as express",
+            "sourceModule": "express",
+            "isDefault": false,
+            "namedImports": [
+              "* as express"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

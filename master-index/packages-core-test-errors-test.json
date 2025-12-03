@@ -1,0 +1,457 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:32.926Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "test",
+      "path": "packages/core/test/errors/test",
+      "purpose": "Enhanced directory analysis of test",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "messages.spec.ts",
+        "path": "packages/core/test/errors/test/messages.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 326,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/errors/test/messages.spec.ts",
+            "functionName": "CatFunction",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 103,
+              "endLine": 103
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "UnknownDependenciesException",
+            "sourceModule": "../../../errors/exceptions/unknown-dependencies.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownDependenciesException"
+            ]
+          },
+          {
+            "name": "INVALID_MODULE_MESSAGE",
+            "sourceModule": "../../../errors/messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_MODULE_MESSAGE",
+              "UNDEFINED_MODULE_MESSAGE",
+              "UNKNOWN_EXPORT_MESSAGE"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "stringCleaner",
+            "sourceModule": "../../utils/string.cleaner",
+            "isDefault": false,
+            "namedImports": [
+              "stringCleaner"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CatFunction",
+            "type": "function",
+            "signature": "function CatFunction()"
+          },
+          {
+            "name": "CatService",
+            "type": "class",
+            "signature": "class CatService"
+          },
+          {
+            "name": "MetaType",
+            "type": "class",
+            "signature": "class MetaType"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "is",
+            "type": "class",
+            "signature": "class is"
+          },
+          {
+            "name": "is",
+            "type": "class",
+            "signature": "class is"
+          },
+          {
+            "name": "is",
+            "type": "class",
+            "signature": "class is"
+          },
+          {
+            "name": "is",
+            "type": "class",
+            "signature": "class is"
+          },
+          {
+            "name": "ValidService",
+            "type": "class",
+            "signature": "class ValidService"
+          },
+          {
+            "name": "AnotherService",
+            "type": "class",
+            "signature": "class AnotherService"
+          },
+          {
+            "name": "C",
+            "type": "const",
+            "signature": "const C"
+          },
+          {
+            "name": "A",
+            "type": "const",
+            "signature": "const A"
+          },
+          {
+            "name": "issue",
+            "type": "type",
+            "signature": "type issue"
+          },
+          {
+            "name": "checking",
+            "type": "type",
+            "signature": "type checking"
+          },
+          {
+            "name": "issue",
+            "type": "type",
+            "signature": "type issue"
+          },
+          {
+            "name": "issue",
+            "type": "type",
+            "signature": "type issue"
+          },
+          {
+            "name": "checking",
+            "type": "type",
+            "signature": "type checking"
+          },
+          {
+            "name": "of",
+            "type": "type",
+            "signature": "type of"
+          }
+        ]
+      },
+      {
+        "name": "exceptions-zone.spec.ts",
+        "path": "packages/core/test/errors/test/exceptions-zone.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 118,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/errors/test/exceptions-zone.spec.ts",
+            "functionName": "rethrow",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Contains throw statement",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 20,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/errors/test/exceptions-zone.spec.ts",
+            "functionName": "throwsCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/errors/test/exceptions-zone.spec.ts",
+            "functionName": "throwsCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/errors/test/exceptions-zone.spec.ts",
+            "functionName": "throwsCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/errors/test/exceptions-zone.spec.ts",
+            "functionName": "throwsCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "ExceptionsZone",
+            "sourceModule": "../../../errors/exceptions-zone",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionsZone"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "throwsCallback",
+            "type": "function",
+            "signature": "const throwsCallback = () =>"
+          },
+          {
+            "name": "throwsCallback",
+            "type": "function",
+            "signature": "const throwsCallback = () =>"
+          },
+          {
+            "name": "throwsCallback",
+            "type": "function",
+            "signature": "const throwsCallback = () =>"
+          },
+          {
+            "name": "throwsCallback",
+            "type": "function",
+            "signature": "const throwsCallback = () =>"
+          }
+        ]
+      },
+      {
+        "name": "exception-handler.spec.ts",
+        "path": "packages/core/test/errors/test/exception-handler.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 28,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "ExceptionHandler",
+            "sourceModule": "../../../errors/exception-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionHandler"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "../../../errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

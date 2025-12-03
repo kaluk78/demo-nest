@@ -1,0 +1,1210 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:27.022Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "exceptions",
+      "path": "packages/core/errors/exceptions",
+      "purpose": "Enhanced directory analysis of exceptions",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "unknown-request-mapping.exception.ts",
+        "path": "packages/core/errors/exceptions/unknown-request-mapping.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/unknown-request-mapping.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "UNKNOWN_REQUEST_MAPPING",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNKNOWN_REQUEST_MAPPING"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UnknownRequestMappingException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UnknownRequestMappingException",
+            "type": "class",
+            "signature": "class UnknownRequestMappingException"
+          }
+        ]
+      },
+      {
+        "name": "unknown-module.exception.ts",
+        "path": "packages/core/errors/exceptions/unknown-module.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/unknown-module.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UnknownModuleException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UnknownModuleException",
+            "type": "class",
+            "signature": "class UnknownModuleException"
+          }
+        ]
+      },
+      {
+        "name": "unknown-export.exception.ts",
+        "path": "packages/core/errors/exceptions/unknown-export.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/unknown-export.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "UNKNOWN_EXPORT_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNKNOWN_EXPORT_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UnknownExportException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UnknownExportException",
+            "type": "class",
+            "signature": "class UnknownExportException"
+          }
+        ]
+      },
+      {
+        "name": "unknown-element.exception.ts",
+        "path": "packages/core/errors/exceptions/unknown-element.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/unknown-element.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UnknownElementException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UnknownElementException",
+            "type": "class",
+            "signature": "class UnknownElementException"
+          }
+        ]
+      },
+      {
+        "name": "unknown-dependencies.exception.ts",
+        "path": "packages/core/errors/exceptions/unknown-dependencies.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/unknown-dependencies.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "InjectorDependencyContext",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "InjectorDependencyContext"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "UNKNOWN_DEPENDENCIES_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNKNOWN_DEPENDENCIES_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UnknownDependenciesException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UnknownDependenciesException",
+            "type": "class",
+            "signature": "class UnknownDependenciesException"
+          }
+        ]
+      },
+      {
+        "name": "undefined-module.exception.ts",
+        "path": "packages/core/errors/exceptions/undefined-module.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/undefined-module.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "UNDEFINED_MODULE_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNDEFINED_MODULE_MESSAGE"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UndefinedModuleException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UndefinedModuleException",
+            "type": "class",
+            "signature": "class UndefinedModuleException"
+          }
+        ]
+      },
+      {
+        "name": "undefined-forwardref.exception.ts",
+        "path": "packages/core/errors/exceptions/undefined-forwardref.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/undefined-forwardref.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "UNDEFINED_FORWARDREF_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNDEFINED_FORWARDREF_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UndefinedForwardRefException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UndefinedForwardRefException",
+            "type": "class",
+            "signature": "class UndefinedForwardRefException"
+          }
+        ]
+      },
+      {
+        "name": "undefined-dependency.exception.ts",
+        "path": "packages/core/errors/exceptions/undefined-dependency.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 17,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/undefined-dependency.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "InjectorDependencyContext",
+            "sourceModule": "../../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "InjectorDependencyContext"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "UNKNOWN_DEPENDENCIES_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "UNKNOWN_DEPENDENCIES_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UndefinedDependencyException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UndefinedDependencyException",
+            "type": "class",
+            "signature": "class UndefinedDependencyException"
+          }
+        ]
+      },
+      {
+        "name": "runtime.exception.ts",
+        "path": "packages/core/errors/exceptions/runtime.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/runtime.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 2,
+              "endLine": 4
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/errors/exceptions/runtime.exception.ts",
+            "functionName": "what",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "RuntimeException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RuntimeException",
+            "type": "class",
+            "signature": "class RuntimeException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-module.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-module.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-module.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INVALID_MODULE_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_MODULE_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidModuleException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidModuleException",
+            "type": "class",
+            "signature": "class InvalidModuleException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-middleware.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-middleware.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-middleware.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INVALID_MIDDLEWARE_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_MIDDLEWARE_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidMiddlewareException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidMiddlewareException",
+            "type": "class",
+            "signature": "class InvalidMiddlewareException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-middleware-configuration.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-middleware-configuration.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-middleware-configuration.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "INVALID_MIDDLEWARE_CONFIGURATION",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_MIDDLEWARE_CONFIGURATION"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidMiddlewareConfigurationException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidMiddlewareConfigurationException",
+            "type": "class",
+            "signature": "class InvalidMiddlewareConfigurationException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-exception-filter.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-exception-filter.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-exception-filter.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "INVALID_EXCEPTION_FILTER",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_EXCEPTION_FILTER"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidExceptionFilterException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidExceptionFilterException",
+            "type": "class",
+            "signature": "class InvalidExceptionFilterException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-class.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-class.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-class.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INVALID_CLASS_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_CLASS_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidClassException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidClassException",
+            "type": "class",
+            "signature": "class InvalidClassException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-class-scope.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-class-scope.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-class-scope.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Abstract",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Abstract",
+              "Type"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction"
+            ]
+          },
+          {
+            "name": "INVALID_CLASS_SCOPE_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "INVALID_CLASS_SCOPE_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidClassScopeException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidClassScopeException",
+            "type": "class",
+            "signature": "class InvalidClassScopeException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-class-module.exception.ts",
+        "path": "packages/core/errors/exceptions/invalid-class-module.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/invalid-class-module.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "USING_INVALID_CLASS_AS_A_MODULE_MESSAGE",
+            "sourceModule": "../messages",
+            "isDefault": false,
+            "namedImports": [
+              "USING_INVALID_CLASS_AS_A_MODULE_MESSAGE"
+            ]
+          },
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidClassModuleException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidClassModuleException",
+            "type": "class",
+            "signature": "class InvalidClassModuleException"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/core/errors/exceptions/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular-dependency.exception.ts",
+        "path": "packages/core/errors/exceptions/circular-dependency.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/errors/exceptions/circular-dependency.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "./runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CircularDependencyException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CircularDependencyException",
+            "type": "class",
+            "signature": "class CircularDependencyException"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

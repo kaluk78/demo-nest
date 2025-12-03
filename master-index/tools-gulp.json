@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:18.533Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "gulp",
+      "path": "tools/gulp",
+      "purpose": "Enhanced directory analysis of gulp",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "gulpfile.ts",
+        "path": "tools/gulp/gulpfile.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [
+          {
+            "name": "./tasks/clean",
+            "sourceModule": "./tasks/clean",
+            "isDefault": false
+          },
+          {
+            "name": "./tasks/copy-misc",
+            "sourceModule": "./tasks/copy-misc",
+            "isDefault": false
+          },
+          {
+            "name": "./tasks/move",
+            "sourceModule": "./tasks/move",
+            "isDefault": false
+          },
+          {
+            "name": "./tasks/samples",
+            "sourceModule": "./tasks/samples",
+            "isDefault": false
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "config.ts",
+        "path": "tools/gulp/config.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "getDirs",
+            "sourceModule": "./util/task-helpers",
+            "isDefault": false,
+            "namedImports": [
+              "getDirs"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "source",
+            "type": "const"
+          },
+          {
+            "name": "samplePath",
+            "type": "const"
+          },
+          {
+            "name": "packagePaths",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "tasks",
+        "relativePath": "tasks",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of tasks",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "util",
+        "relativePath": "util",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of util",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

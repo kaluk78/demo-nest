@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:03.638Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "integration/injector/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "app.module.ts",
+        "path": "integration/injector/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "ExportsModule",
+            "sourceModule": "./exports/exports.module",
+            "isDefault": false,
+            "namedImports": [
+              "ExportsModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ApplicationModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ApplicationModule",
+            "type": "class",
+            "signature": "class ApplicationModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "circular",
+        "relativePath": "circular",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of circular",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "circular-modules",
+        "relativePath": "circular-modules",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of circular-modules",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "circular-properties",
+        "relativePath": "circular-properties",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of circular-properties",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "circular-structure-dynamic-module",
+        "relativePath": "circular-structure-dynamic-module",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of circular-structure-dynamic-module",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "core-injectables",
+        "relativePath": "core-injectables",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of core-injectables",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "defaults",
+        "relativePath": "defaults",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of defaults",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "dynamic",
+        "relativePath": "dynamic",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dynamic",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exports",
+        "relativePath": "exports",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exports",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "inject",
+        "relativePath": "inject",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of inject",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "multiple-providers",
+        "relativePath": "multiple-providers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of multiple-providers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "properties",
+        "relativePath": "properties",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of properties",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "scoped",
+        "relativePath": "scoped",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of scoped",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "self-injection",
+        "relativePath": "self-injection",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of self-injection",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

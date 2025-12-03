@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:12.229Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "dto",
+      "path": "sample/30-event-emitter/src/orders/dto",
+      "purpose": "Enhanced directory analysis of dto",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "create-order.dto.ts",
+        "path": "sample/30-event-emitter/src/orders/dto/create-order.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CreateOrderDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CreateOrderDto",
+            "type": "class",
+            "signature": "class CreateOrderDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

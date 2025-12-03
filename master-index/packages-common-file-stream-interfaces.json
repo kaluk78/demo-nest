@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:20.699Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/common/file-stream/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "streamable-options.interface.ts",
+        "path": "packages/common/file-stream/interfaces/streamable-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 23,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "StreamableFileOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "StreamableFileOptions",
+            "type": "interface",
+            "signature": "interface StreamableFileOptions"
+          }
+        ]
+      },
+      {
+        "name": "streamable-handler-response.interface.ts",
+        "path": "packages/common/file-stream/interfaces/streamable-handler-response.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "StreamableHandlerResponse",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "StreamableHandlerResponse",
+            "type": "interface",
+            "signature": "interface StreamableHandlerResponse"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/file-stream/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

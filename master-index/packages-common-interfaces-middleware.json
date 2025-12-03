@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:21.434Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "middleware",
+      "path": "packages/common/interfaces/middleware",
+      "purpose": "Enhanced directory analysis of middleware",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nest-middleware.interface.ts",
+        "path": "packages/common/interfaces/middleware/nest-middleware.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NestMiddleware",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestMiddleware",
+            "type": "interface",
+            "signature": "interface NestMiddleware"
+          }
+        ]
+      },
+      {
+        "name": "middleware-consumer.interface.ts",
+        "path": "packages/common/interfaces/middleware/middleware-consumer.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "MiddlewareConfigProxy",
+            "sourceModule": "./middleware-config-proxy.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConfigProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MiddlewareConsumer",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MiddlewareConsumer",
+            "type": "interface",
+            "signature": "interface MiddlewareConsumer"
+          }
+        ]
+      },
+      {
+        "name": "middleware-configuration.interface.ts",
+        "path": "packages/common/interfaces/middleware/middleware-configuration.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 15,
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../enums",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "../version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteInfo",
+            "type": "interface"
+          },
+          {
+            "name": "MiddlewareConfiguration",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouteInfo",
+            "type": "interface",
+            "signature": "interface RouteInfo"
+          },
+          {
+            "name": "MiddlewareConfiguration",
+            "type": "interface",
+            "signature": "interface MiddlewareConfiguration"
+          }
+        ]
+      },
+      {
+        "name": "middleware-config-proxy.interface.ts",
+        "path": "packages/common/interfaces/middleware/middleware-config-proxy.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 27,
+        "importedModules": [
+          {
+            "name": "Type",
+            "sourceModule": "../type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "RouteInfo",
+            "sourceModule": "./middleware-configuration.interface",
+            "isDefault": false,
+            "namedImports": [
+              "RouteInfo"
+            ]
+          },
+          {
+            "name": "MiddlewareConsumer",
+            "sourceModule": "./middleware-consumer.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MiddlewareConsumer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MiddlewareConfigProxy",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MiddlewareConfigProxy",
+            "type": "interface",
+            "signature": "interface MiddlewareConfigProxy"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/interfaces/middleware/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

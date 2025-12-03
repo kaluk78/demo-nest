@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:44.551Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "module",
+      "path": "packages/microservices/test/module",
+      "purpose": "Enhanced directory analysis of module",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "clients.module.spec.ts",
+        "path": "packages/microservices/test/module/clients.module.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 125,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/module/clients.module.spec.ts",
+            "functionName": "createClientOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 70,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/module/clients.module.spec.ts",
+            "functionName": "useFactory",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "FactoryProvider",
+              "Injectable",
+              "ValueProvider"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "ClientProxyFactory",
+            "sourceModule": "../../client",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxyFactory"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "../../enums",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "ClientOptions",
+            "sourceModule": "../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientOptions"
+            ]
+          },
+          {
+            "name": "ClientsModule",
+            "sourceModule": "../../module",
+            "isDefault": false,
+            "namedImports": [
+              "ClientsModule",
+              "ClientsModuleOptionsFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "useFactory",
+            "type": "function",
+            "signature": "const useFactory = () =>"
+          },
+          {
+            "name": "ClientOptionService",
+            "type": "class",
+            "signature": "class ClientOptionService"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

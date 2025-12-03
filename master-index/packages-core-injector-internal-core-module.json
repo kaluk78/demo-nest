@@ -1,0 +1,341 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:28.184Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "internal-core-module",
+      "path": "packages/core/injector/internal-core-module",
+      "purpose": "Enhanced directory analysis of internal-core-module",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "internal-core-module.ts",
+        "path": "packages/core/injector/internal-core-module/internal-core-module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 42,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/injector/internal-core-module/internal-core-module.ts",
+            "functionName": "register",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Global",
+              "Module"
+            ]
+          },
+          {
+            "name": "ExistingProvider",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ExistingProvider",
+              "FactoryProvider",
+              "ValueProvider"
+            ]
+          },
+          {
+            "name": "requestProvider",
+            "sourceModule": "../../router/request/request-providers",
+            "isDefault": false,
+            "namedImports": [
+              "requestProvider"
+            ]
+          },
+          {
+            "name": "Reflector",
+            "sourceModule": "../../services",
+            "isDefault": false,
+            "namedImports": [
+              "Reflector"
+            ]
+          },
+          {
+            "name": "inquirerProvider",
+            "sourceModule": "../inquirer/inquirer-providers",
+            "isDefault": false,
+            "namedImports": [
+              "inquirerProvider"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InternalCoreModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InternalCoreModule",
+            "type": "class",
+            "signature": "class InternalCoreModule"
+          },
+          {
+            "name": "R",
+            "type": "const",
+            "signature": "const R"
+          }
+        ]
+      },
+      {
+        "name": "internal-core-module-factory.ts",
+        "path": "packages/core/injector/internal-core-module/internal-core-module-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 76,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/injector/internal-core-module/internal-core-module-factory.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 74
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/injector/internal-core-module/internal-core-module-factory.ts",
+            "functionName": "lazyModuleLoaderFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "ExternalContextCreator",
+            "sourceModule": "../../helpers/external-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalContextCreator"
+            ]
+          },
+          {
+            "name": "HttpAdapterHost",
+            "sourceModule": "../../helpers/http-adapter-host",
+            "isDefault": false,
+            "namedImports": [
+              "HttpAdapterHost"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "InitializeOnPreviewAllowlist",
+            "sourceModule": "../../inspector/initialize-on-preview.allowlist",
+            "isDefault": false,
+            "namedImports": [
+              "InitializeOnPreviewAllowlist"
+            ]
+          },
+          {
+            "name": "SerializedGraph",
+            "sourceModule": "../../inspector/serialized-graph",
+            "isDefault": false,
+            "namedImports": [
+              "SerializedGraph"
+            ]
+          },
+          {
+            "name": "ModuleOverride",
+            "sourceModule": "../../interfaces/module-override.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleOverride"
+            ]
+          },
+          {
+            "name": "DependenciesScanner",
+            "sourceModule": "../../scanner",
+            "isDefault": false,
+            "namedImports": [
+              "DependenciesScanner"
+            ]
+          },
+          {
+            "name": "ModuleCompiler",
+            "sourceModule": "../compiler",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleCompiler"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceLoader",
+            "sourceModule": "../instance-loader",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceLoader"
+            ]
+          },
+          {
+            "name": "LazyModuleLoader",
+            "sourceModule": "../lazy-module-loader/lazy-module-loader",
+            "isDefault": false,
+            "namedImports": [
+              "LazyModuleLoader"
+            ]
+          },
+          {
+            "name": "ModulesContainer",
+            "sourceModule": "../modules-container",
+            "isDefault": false,
+            "namedImports": [
+              "ModulesContainer"
+            ]
+          },
+          {
+            "name": "InternalCoreModule",
+            "sourceModule": "./internal-core-module",
+            "isDefault": false,
+            "namedImports": [
+              "InternalCoreModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InternalCoreModuleFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "lazyModuleLoaderFactory",
+            "type": "function",
+            "signature": "const lazyModuleLoaderFactory = () =>"
+          },
+          {
+            "name": "InternalCoreModuleFactory",
+            "type": "class",
+            "signature": "class InternalCoreModuleFactory"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/core/injector/internal-core-module/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

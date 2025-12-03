@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:22.060Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/common/module-utils/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/common/module-utils/utils/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "get-injection-providers.util.ts",
+        "path": "packages/common/module-utils/utils/get-injection-providers.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 53,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/module-utils/utils/get-injection-providers.util.ts",
+            "functionName": "getInjectionProviders",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -70,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/module-utils/utils/get-injection-providers.util.ts",
+            "functionName": "isOptionalFactoryDependency",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/module-utils/utils/get-injection-providers.util.ts",
+            "functionName": "mapInjectToTokens",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isUndefined",
+            "sourceModule": "../../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "FactoryProvider",
+            "sourceModule": "../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "FactoryProvider",
+              "InjectionToken",
+              "OptionalFactoryDependency",
+              "Provider"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "getInjectionProviders",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "isOptionalFactoryDependency",
+            "type": "function",
+            "signature": "function isOptionalFactoryDependency()"
+          },
+          {
+            "name": "getInjectionProviders",
+            "type": "function",
+            "signature": "function getInjectionProviders()"
+          },
+          {
+            "name": "mapInjectToTokens",
+            "type": "function",
+            "signature": "const mapInjectToTokens = () =>"
+          }
+        ]
+      },
+      {
+        "name": "generate-options-injection-token.util.ts",
+        "path": "packages/common/module-utils/utils/generate-options-injection-token.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/module-utils/utils/generate-options-injection-token.util.ts",
+            "functionName": "generateOptionsInjectionToken",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 3,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "randomStringGenerator",
+            "sourceModule": "../../utils/random-string-generator.util",
+            "isDefault": false,
+            "namedImports": [
+              "randomStringGenerator"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "generateOptionsInjectionToken",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "generateOptionsInjectionToken",
+            "type": "function",
+            "signature": "function generateOptionsInjectionToken()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

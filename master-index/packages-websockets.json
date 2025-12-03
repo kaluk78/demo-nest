@@ -1,0 +1,1748 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:54.285Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "websockets",
+      "path": "packages/websockets",
+      "purpose": "Enhanced directory analysis of websockets",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "web-sockets-controller.ts",
+        "path": "packages/websockets/web-sockets-controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 253,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "assignServerToProperties",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 227,
+              "endLine": 236
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "connectGatewayToServer",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 45,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 37,
+              "endLine": 43
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "getConnectionHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 129,
+              "endLine": 146
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "inspectEntrypointDefinitions",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 203,
+              "endLine": 225
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "pickResult",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 190,
+              "endLine": 201
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "printSubscriptionLogs",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 238,
+              "endLine": 251
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeConnectionEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 154,
+              "endLine": 162
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeDisconnectEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 164,
+              "endLine": 170
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeEvents",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 106,
+              "endLine": 127
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeInitEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 148,
+              "endLine": 152
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeMessages",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 172,
+              "endLine": 188
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/web-sockets-controller.ts",
+            "functionName": "subscribeToServerEvents",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 66,
+              "endLine": 104
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "@nestjs/common/interfaces/nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "@nestjs/core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "fromPromise",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "fromPromise",
+              "isObservable",
+              "Observable",
+              "of",
+              "Subject"
+            ]
+          },
+          {
+            "name": "distinctUntilChanged",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "distinctUntilChanged",
+              "mergeAll"
+            ]
+          },
+          {
+            "name": "GATEWAY_OPTIONS",
+            "sourceModule": "./constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_OPTIONS",
+              "PORT_METADATA"
+            ]
+          },
+          {
+            "name": "WsContextCreator",
+            "sourceModule": "./context/ws-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "WsContextCreator"
+            ]
+          },
+          {
+            "name": "InvalidSocketPortException",
+            "sourceModule": "./errors/invalid-socket-port.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidSocketPortException"
+            ]
+          },
+          {
+            "name": "GatewayMetadataExplorer",
+            "sourceModule": "./gateway-metadata-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "GatewayMetadataExplorer",
+              "MessageMappingProperties"
+            ]
+          },
+          {
+            "name": "GatewayMetadata",
+            "sourceModule": "./interfaces/gateway-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "GatewayMetadata"
+            ]
+          },
+          {
+            "name": "NestGateway",
+            "sourceModule": "./interfaces/nest-gateway.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestGateway"
+            ]
+          },
+          {
+            "name": "ServerAndEventStreamsHost",
+            "sourceModule": "./interfaces/server-and-event-streams-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ServerAndEventStreamsHost"
+            ]
+          },
+          {
+            "name": "WebsocketEntrypointMetadata",
+            "sourceModule": "./interfaces/websockets-entrypoint-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "WebsocketEntrypointMetadata"
+            ]
+          },
+          {
+            "name": "SocketServerProvider",
+            "sourceModule": "./socket-server-provider",
+            "isDefault": false,
+            "namedImports": [
+              "SocketServerProvider"
+            ]
+          },
+          {
+            "name": "compareElementAt",
+            "sourceModule": "./utils/compare-element.util",
+            "isDefault": false,
+            "namedImports": [
+              "compareElementAt"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "WebSocketsController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WebSocketsController",
+            "type": "class",
+            "signature": "class WebSocketsController"
+          }
+        ]
+      },
+      {
+        "name": "sockets-container.ts",
+        "path": "packages/websockets/sockets-container.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/sockets-container.ts",
+            "functionName": "addOne",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/sockets-container.ts",
+            "functionName": "clear",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/sockets-container.ts",
+            "functionName": "generateHashByOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/sockets-container.ts",
+            "functionName": "getAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/sockets-container.ts",
+            "functionName": "getOneByConfig",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "* as hash",
+            "sourceModule": "object-hash",
+            "isDefault": false,
+            "namedImports": [
+              "* as hash"
+            ]
+          },
+          {
+            "name": "GatewayMetadata",
+            "sourceModule": "./interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "GatewayMetadata",
+              "ServerAndEventStreamsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SocketsContainer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SocketsContainer",
+            "type": "class",
+            "signature": "class SocketsContainer"
+          }
+        ]
+      },
+      {
+        "name": "socket-server-provider.ts",
+        "path": "packages/websockets/socket-server-provider.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 95,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "createSocketServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 34,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "decorateWithNamespace",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 74
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "getServerOfNamespace",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 76,
+              "endLine": 86
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "scanForSocketServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-server-provider.ts",
+            "functionName": "validateNamespace",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 88,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash",
+              "isString"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "ServerAndEventStreamsFactory",
+            "sourceModule": "./factories/server-and-event-streams-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ServerAndEventStreamsFactory"
+            ]
+          },
+          {
+            "name": "GatewayMetadata",
+            "sourceModule": "./interfaces/gateway-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "GatewayMetadata"
+            ]
+          },
+          {
+            "name": "ServerAndEventStreamsHost",
+            "sourceModule": "./interfaces/server-and-event-streams-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ServerAndEventStreamsHost"
+            ]
+          },
+          {
+            "name": "SocketsContainer",
+            "sourceModule": "./sockets-container",
+            "isDefault": false,
+            "namedImports": [
+              "SocketsContainer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SocketServerProvider",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SocketServerProvider",
+            "type": "class",
+            "signature": "class SocketServerProvider"
+          }
+        ]
+      },
+      {
+        "name": "socket-module.ts",
+        "path": "packages/websockets/socket-module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 151,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 97,
+              "endLine": 114
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "connectAllGateways",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 68,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "connectGatewayToServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 95
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "getContextCreator",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 138,
+              "endLine": 149
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "initializeAdapter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 116,
+              "endLine": 136
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/socket-module.ts",
+            "functionName": "register",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 66
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestApplicationOptions",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationOptions"
+            ]
+          },
+          {
+            "name": "InjectionToken",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "InjectionToken"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common/interfaces/injectable.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "@nestjs/common/interfaces/nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "@nestjs/core/guards/guards-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer"
+            ]
+          },
+          {
+            "name": "GuardsContextCreator",
+            "sourceModule": "@nestjs/core/guards/guards-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "loadAdapter",
+            "sourceModule": "@nestjs/core/helpers/load-adapter",
+            "isDefault": false,
+            "namedImports": [
+              "loadAdapter"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "@nestjs/core/injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "@nestjs/core/interceptors/interceptors-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer"
+            ]
+          },
+          {
+            "name": "InterceptorsContextCreator",
+            "sourceModule": "@nestjs/core/interceptors/interceptors-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "@nestjs/core/pipes/pipes-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer"
+            ]
+          },
+          {
+            "name": "PipesContextCreator",
+            "sourceModule": "@nestjs/core/pipes/pipes-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "AbstractWsAdapter",
+            "sourceModule": "./adapters",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractWsAdapter"
+            ]
+          },
+          {
+            "name": "GATEWAY_METADATA",
+            "sourceModule": "./constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_METADATA"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "./context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          },
+          {
+            "name": "WsContextCreator",
+            "sourceModule": "./context/ws-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "WsContextCreator"
+            ]
+          },
+          {
+            "name": "WsProxy",
+            "sourceModule": "./context/ws-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "WsProxy"
+            ]
+          },
+          {
+            "name": "NestGateway",
+            "sourceModule": "./interfaces/nest-gateway.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestGateway"
+            ]
+          },
+          {
+            "name": "SocketServerProvider",
+            "sourceModule": "./socket-server-provider",
+            "isDefault": false,
+            "namedImports": [
+              "SocketServerProvider"
+            ]
+          },
+          {
+            "name": "SocketsContainer",
+            "sourceModule": "./sockets-container",
+            "isDefault": false,
+            "namedImports": [
+              "SocketsContainer"
+            ]
+          },
+          {
+            "name": "WebSocketsController",
+            "sourceModule": "./web-sockets-controller",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketsController"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SocketModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "SocketModule",
+            "type": "class",
+            "signature": "class SocketModule"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/websockets/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 15,
+        "importedModules": [
+          {
+            "name": "reflect-metadata",
+            "sourceModule": "reflect-metadata",
+            "isDefault": false
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MessageMappingProperties",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "gateway-metadata-explorer.ts",
+        "path": "packages/websockets/gateway-metadata-explorer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 98,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/gateway-metadata-explorer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/gateway-metadata-explorer.ts",
+            "functionName": "explore",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/gateway-metadata-explorer.ts",
+            "functionName": "exploreMethodMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\""
+            ],
+            "location": {
+              "startLine": 34,
+              "endLine": 58
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/gateway-metadata-explorer.ts",
+            "functionName": "hasAckDecorator",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 60,
+              "endLine": 79
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/websockets/gateway-metadata-explorer.ts",
+            "functionName": "scanForServerHooks",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 81,
+              "endLine": 96
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "@nestjs/core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "GATEWAY_SERVER_METADATA",
+            "sourceModule": "./constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_SERVER_METADATA",
+              "MESSAGE_MAPPING_METADATA",
+              "MESSAGE_METADATA",
+              "PARAM_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "NestGateway",
+            "sourceModule": "./interfaces/nest-gateway.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestGateway"
+            ]
+          },
+          {
+            "name": "ParamsMetadata",
+            "sourceModule": "@nestjs/core/helpers/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ParamsMetadata"
+            ]
+          },
+          {
+            "name": "WsParamtype",
+            "sourceModule": "./enums/ws-paramtype.enum",
+            "isDefault": false,
+            "namedImports": [
+              "WsParamtype"
+            ]
+          },
+          {
+            "name": "ContextUtils",
+            "sourceModule": "@nestjs/core/helpers/context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ContextUtils"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MessageMappingProperties",
+            "type": "interface"
+          },
+          {
+            "name": "GatewayMetadataExplorer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GatewayMetadataExplorer",
+            "type": "class",
+            "signature": "class GatewayMetadataExplorer"
+          },
+          {
+            "name": "MessageMappingProperties",
+            "type": "interface",
+            "signature": "interface MessageMappingProperties"
+          }
+        ]
+      },
+      {
+        "name": "constants.ts",
+        "path": "packages/websockets/constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "importedModules": [
+          {
+            "name": "ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "ROUTE_ARGS_METADATA"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MESSAGE_MAPPING_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "MESSAGE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "GATEWAY_SERVER_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "GATEWAY_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "NAMESPACE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "PORT_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "GATEWAY_OPTIONS",
+            "type": "const"
+          },
+          {
+            "name": "PARAM_ARGS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "CONNECTION_EVENT",
+            "type": "const"
+          },
+          {
+            "name": "DISCONNECT_EVENT",
+            "type": "const"
+          },
+          {
+            "name": "CLOSE_EVENT",
+            "type": "const"
+          },
+          {
+            "name": "ERROR_EVENT",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MESSAGE_MAPPING_METADATA",
+            "type": "const",
+            "signature": "const MESSAGE_MAPPING_METADATA"
+          },
+          {
+            "name": "MESSAGE_METADATA",
+            "type": "const",
+            "signature": "const MESSAGE_METADATA"
+          },
+          {
+            "name": "GATEWAY_SERVER_METADATA",
+            "type": "const",
+            "signature": "const GATEWAY_SERVER_METADATA"
+          },
+          {
+            "name": "GATEWAY_METADATA",
+            "type": "const",
+            "signature": "const GATEWAY_METADATA"
+          },
+          {
+            "name": "NAMESPACE_METADATA",
+            "type": "const",
+            "signature": "const NAMESPACE_METADATA"
+          },
+          {
+            "name": "PORT_METADATA",
+            "type": "const",
+            "signature": "const PORT_METADATA"
+          },
+          {
+            "name": "GATEWAY_OPTIONS",
+            "type": "const",
+            "signature": "const GATEWAY_OPTIONS"
+          },
+          {
+            "name": "PARAM_ARGS_METADATA",
+            "type": "const",
+            "signature": "const PARAM_ARGS_METADATA"
+          },
+          {
+            "name": "CONNECTION_EVENT",
+            "type": "const",
+            "signature": "const CONNECTION_EVENT"
+          },
+          {
+            "name": "DISCONNECT_EVENT",
+            "type": "const",
+            "signature": "const DISCONNECT_EVENT"
+          },
+          {
+            "name": "CLOSE_EVENT",
+            "type": "const",
+            "signature": "const CLOSE_EVENT"
+          },
+          {
+            "name": "ERROR_EVENT",
+            "type": "const",
+            "signature": "const ERROR_EVENT"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "adapters",
+        "relativePath": "adapters",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of adapters",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "context",
+        "relativePath": "context",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of context",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "decorators",
+        "relativePath": "decorators",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of decorators",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "enums",
+        "relativePath": "enums",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of enums",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "errors",
+        "relativePath": "errors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of errors",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exceptions",
+        "relativePath": "exceptions",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exceptions",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "factories",
+        "relativePath": "factories",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of factories",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "test",
+        "relativePath": "test",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of test",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:24.213Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "exceptions",
+      "path": "packages/common/test/exceptions",
+      "purpose": "Enhanced directory analysis of exceptions",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "http.exception.spec.ts",
+        "path": "packages/common/test/exceptions/http.exception.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 272,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../../../common",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "BadGatewayException",
+            "sourceModule": "../../exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "BadGatewayException",
+              "BadRequestException",
+              "ConflictException",
+              "ForbiddenException",
+              "GatewayTimeoutException",
+              "GoneException",
+              "HttpException",
+              "HttpVersionNotSupportedException",
+              "ImATeapotException",
+              "InternalServerErrorException",
+              "MethodNotAllowedException",
+              "MisdirectedException",
+              "NotAcceptableException",
+              "NotFoundException",
+              "NotImplementedException",
+              "PayloadTooLargeException",
+              "PreconditionFailedException",
+              "RequestTimeoutException",
+              "ServiceUnavailableException",
+              "UnauthorizedException",
+              "UnprocessableEntityException",
+              "UnsupportedMediaTypeException"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

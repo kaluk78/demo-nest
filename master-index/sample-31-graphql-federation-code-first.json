@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:13.618Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "31-graphql-federation-code-first",
+      "path": "sample/31-graphql-federation-code-first",
+      "purpose": "Enhanced directory analysis of 31-graphql-federation-code-first",
+      "ownKeyElements": []
+    },
+    "files": [],
+    "subdirectories": [
+      {
+        "name": "gateway",
+        "relativePath": "gateway",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of gateway",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "posts-application",
+        "relativePath": "posts-application",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of posts-application",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "users-application",
+        "relativePath": "users-application",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of users-application",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

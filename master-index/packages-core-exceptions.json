@@ -1,0 +1,1027 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:27.325Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "exceptions",
+      "path": "packages/core/exceptions",
+      "purpose": "Enhanced directory analysis of exceptions",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/core/exceptions/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "external-exceptions-handler.ts",
+        "path": "packages/core/exceptions/external-exceptions-handler.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 38,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/external-exceptions-handler.ts",
+            "functionName": "invokeCustomFilters",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Properly uses assigned variables"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/external-exceptions-handler.ts",
+            "functionName": "next",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/external-exceptions-handler.ts",
+            "functionName": "setCustomFilters",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ExceptionFilterMetadata",
+            "sourceModule": "@nestjs/common/interfaces/exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilterMetadata"
+            ]
+          },
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "@nestjs/common/interfaces/features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost"
+            ]
+          },
+          {
+            "name": "selectExceptionFilterMetadata",
+            "sourceModule": "@nestjs/common/utils/select-exception-filter-metadata.util",
+            "isDefault": false,
+            "namedImports": [
+              "selectExceptionFilterMetadata"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "InvalidExceptionFilterException",
+            "sourceModule": "../errors/exceptions/invalid-exception-filter.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidExceptionFilterException"
+            ]
+          },
+          {
+            "name": "ExternalExceptionFilter",
+            "sourceModule": "./external-exception-filter",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionFilter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExternalExceptionsHandler",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExternalExceptionsHandler",
+            "type": "class",
+            "signature": "class ExternalExceptionsHandler"
+          }
+        ]
+      },
+      {
+        "name": "external-exception-filter.ts",
+        "path": "packages/core/exceptions/external-exception-filter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 17,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/external-exception-filter.ts",
+            "functionName": "catch",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost",
+              "IntrinsicException",
+              "Logger"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExternalExceptionFilter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExternalExceptionFilter",
+            "type": "class",
+            "signature": "class ExternalExceptionFilter"
+          }
+        ]
+      },
+      {
+        "name": "external-exception-filter-context.ts",
+        "path": "packages/core/exceptions/external-exception-filter-context.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 68,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/external-exception-filter-context.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/external-exception-filter-context.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 22,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -68,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/external-exception-filter-context.ts",
+            "functionName": "getGlobalMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 46,
+              "endLine": 66
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "EXCEPTION_FILTERS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "EXCEPTION_FILTERS_METADATA"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "ExceptionFilterMetadata",
+            "sourceModule": "@nestjs/common/interfaces/exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilterMetadata"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "RouterProxyCallback",
+            "sourceModule": "../router/router-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RouterProxyCallback"
+            ]
+          },
+          {
+            "name": "BaseExceptionFilterContext",
+            "sourceModule": "./base-exception-filter-context",
+            "isDefault": false,
+            "namedImports": [
+              "BaseExceptionFilterContext"
+            ]
+          },
+          {
+            "name": "ExternalExceptionsHandler",
+            "sourceModule": "./external-exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionsHandler"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExternalExceptionFilterContext",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExternalExceptionFilterContext",
+            "type": "class",
+            "signature": "class ExternalExceptionFilterContext"
+          }
+        ]
+      },
+      {
+        "name": "exceptions-handler.ts",
+        "path": "packages/core/exceptions/exceptions-handler.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/exceptions-handler.ts",
+            "functionName": "invokeCustomFilters",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\""
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/exceptions-handler.ts",
+            "functionName": "next",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/exceptions-handler.ts",
+            "functionName": "setCustomFilters",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpException",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpException"
+            ]
+          },
+          {
+            "name": "ExceptionFilterMetadata",
+            "sourceModule": "@nestjs/common/interfaces/exceptions/exception-filter-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilterMetadata"
+            ]
+          },
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "@nestjs/common/interfaces/features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost"
+            ]
+          },
+          {
+            "name": "selectExceptionFilterMetadata",
+            "sourceModule": "@nestjs/common/utils/select-exception-filter-metadata.util",
+            "isDefault": false,
+            "namedImports": [
+              "selectExceptionFilterMetadata"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "InvalidExceptionFilterException",
+            "sourceModule": "../errors/exceptions/invalid-exception-filter.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidExceptionFilterException"
+            ]
+          },
+          {
+            "name": "BaseExceptionFilter",
+            "sourceModule": "./base-exception-filter",
+            "isDefault": false,
+            "namedImports": [
+              "BaseExceptionFilter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExceptionsHandler",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExceptionsHandler",
+            "type": "class",
+            "signature": "class ExceptionsHandler"
+          }
+        ]
+      },
+      {
+        "name": "base-exception-filter.ts",
+        "path": "packages/core/exceptions/base-exception-filter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 89,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter.ts",
+            "functionName": "catch",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter.ts",
+            "functionName": "handleUnknownError",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 50,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter.ts",
+            "functionName": "isExceptionObject",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 79
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter.ts",
+            "functionName": "isHttpError",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 85,
+              "endLine": 87
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ArgumentsHost",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentsHost",
+              "ExceptionFilter",
+              "HttpException",
+              "HttpServer",
+              "HttpStatus",
+              "Inject",
+              "IntrinsicException",
+              "Logger",
+              "Optional"
+            ]
+          },
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "AbstractHttpAdapter",
+            "sourceModule": "../adapters",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractHttpAdapter"
+            ]
+          },
+          {
+            "name": "MESSAGES",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "MESSAGES"
+            ]
+          },
+          {
+            "name": "HttpAdapterHost",
+            "sourceModule": "../helpers/http-adapter-host",
+            "isDefault": false,
+            "namedImports": [
+              "HttpAdapterHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "BaseExceptionFilter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "BaseExceptionFilter",
+            "type": "class",
+            "signature": "class BaseExceptionFilter"
+          }
+        ]
+      },
+      {
+        "name": "base-exception-filter-context.ts",
+        "path": "packages/core/exceptions/base-exception-filter-context.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 80,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter-context.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 16
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter-context.ts",
+            "functionName": "createConcreteContext",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter-context.ts",
+            "functionName": "getFilterInstance",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter-context.ts",
+            "functionName": "getInstanceByMetatype",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 71
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/exceptions/base-exception-filter-context.ts",
+            "functionName": "reflectCatchExceptions",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 73,
+              "endLine": 78
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "FILTER_CATCH_EXCEPTIONS",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "FILTER_CATCH_EXCEPTIONS"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "ExceptionFilter",
+            "sourceModule": "@nestjs/common/interfaces/exceptions/exception-filter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilter"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty",
+              "isFunction"
+            ]
+          },
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "ContextCreator",
+            "sourceModule": "../helpers/context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "ContextCreator"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "BaseExceptionFilterContext",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "BaseExceptionFilterContext",
+            "type": "class",
+            "signature": "class BaseExceptionFilterContext"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

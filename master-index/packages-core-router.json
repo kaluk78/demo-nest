@@ -1,0 +1,3709 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:32.745Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "router",
+      "path": "packages/core/router",
+      "purpose": "Enhanced directory analysis of router",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "sse-stream.ts",
+        "path": "packages/core/router/sse-stream.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 126,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/sse-stream.ts",
+            "functionName": "_transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 93,
+              "endLine": 105
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/sse-stream.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 56,
+              "endLine": 63
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/sse-stream.ts",
+            "functionName": "pipe",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/sse-stream.ts",
+            "functionName": "toDataString",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -67,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/sse-stream.ts",
+            "functionName": "writeMessage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 110,
+              "endLine": 124
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "MessageEvent",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MessageEvent"
+            ]
+          },
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "IncomingMessage",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingMessage",
+              "OutgoingHttpHeaders"
+            ]
+          },
+          {
+            "name": "Transform",
+            "sourceModule": "stream",
+            "isDefault": false,
+            "namedImports": [
+              "Transform"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AdditionalHeaders",
+            "type": "type"
+          },
+          {
+            "name": "WritableHeaderStream",
+            "type": "type"
+          },
+          {
+            "name": "HeaderStream",
+            "type": "type"
+          },
+          {
+            "name": "SseStream",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "toDataString",
+            "type": "function",
+            "signature": "function toDataString()"
+          },
+          {
+            "name": "SseStream",
+            "type": "class",
+            "signature": "class SseStream"
+          },
+          {
+            "name": "ReadHeaders",
+            "type": "interface",
+            "signature": "interface ReadHeaders"
+          },
+          {
+            "name": "WriteHeaders",
+            "type": "interface",
+            "signature": "interface WriteHeaders"
+          },
+          {
+            "name": "AdditionalHeaders",
+            "type": "type",
+            "signature": "type AdditionalHeaders"
+          },
+          {
+            "name": "WritableHeaderStream",
+            "type": "type",
+            "signature": "type WritableHeaderStream"
+          },
+          {
+            "name": "HeaderStream",
+            "type": "type",
+            "signature": "type HeaderStream"
+          }
+        ]
+      },
+      {
+        "name": "routes-resolver.ts",
+        "path": "packages/core/router/routes-resolver.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 237,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 44,
+              "endLine": 69
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "getHostMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 219,
+              "endLine": 223
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "getModulePathMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 210,
+              "endLine": 217
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "getVersionMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 225,
+              "endLine": 235
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "isHttpFastifyError",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 199,
+              "endLine": 208
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "mapExternalException",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 185,
+              "endLine": 197
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "registerExceptionHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 162,
+              "endLine": 183
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "registerNotFoundHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 146,
+              "endLine": 160
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "registerRouters",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 88,
+              "endLine": 144
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/routes-resolver.ts",
+            "functionName": "resolve",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 71,
+              "endLine": 86
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "BadRequestException",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "BadRequestException",
+              "HttpException",
+              "NotFoundException"
+            ]
+          },
+          {
+            "name": "HOST_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "HOST_METADATA",
+              "MODULE_PATH",
+              "VERSION_METADATA"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "HttpServer",
+              "Type",
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "CONTROLLER_MAPPING_MESSAGE",
+            "sourceModule": "../helpers/messages",
+            "isDefault": false,
+            "namedImports": [
+              "CONTROLLER_MAPPING_MESSAGE",
+              "VERSIONED_CONTROLLER_MAPPING_MESSAGE"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "../metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "Resolver",
+            "sourceModule": "./interfaces/resolver.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Resolver"
+            ]
+          },
+          {
+            "name": "RoutePathMetadata",
+            "sourceModule": "./interfaces/route-path-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "RoutePathMetadata"
+            ]
+          },
+          {
+            "name": "RoutePathFactory",
+            "sourceModule": "./route-path-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RoutePathFactory"
+            ]
+          },
+          {
+            "name": "RouterExceptionFilters",
+            "sourceModule": "./router-exception-filters",
+            "isDefault": false,
+            "namedImports": [
+              "RouterExceptionFilters"
+            ]
+          },
+          {
+            "name": "RouterExplorer",
+            "sourceModule": "./router-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "RouterExplorer"
+            ]
+          },
+          {
+            "name": "RouterProxy",
+            "sourceModule": "./router-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RouterProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RoutesResolver",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RoutesResolver",
+            "type": "class",
+            "signature": "class RoutesResolver"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      },
+      {
+        "name": "router-response-controller.ts",
+        "path": "packages/core/router/router-response-controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 170,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "apply",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 39
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "assertObservable",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 162,
+              "endLine": 168
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "getStatusByMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 73,
+              "endLine": 80
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "redirect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "render",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "setHeaders",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 82,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "setStatus",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 95,
+              "endLine": 100
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "sse",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; External interaction (I/O, network, DB) suggests legitimacy; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 102,
+              "endLine": 160
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-response-controller.ts",
+            "functionName": "transformToResult",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 66,
+              "endLine": 71
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer",
+              "HttpStatus",
+              "Logger",
+              "RequestMethod",
+              "MessageEvent"
+            ]
+          },
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "IncomingMessage",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingMessage"
+            ]
+          },
+          {
+            "name": "EMPTY",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "EMPTY",
+              "lastValueFrom",
+              "Observable",
+              "isObservable"
+            ]
+          },
+          {
+            "name": "catchError",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "catchError",
+              "concatMap",
+              "map"
+            ]
+          },
+          {
+            "name": "AdditionalHeaders",
+            "sourceModule": "./sse-stream",
+            "isDefault": false,
+            "namedImports": [
+              "AdditionalHeaders",
+              "WritableHeaderStream",
+              "SseStream"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CustomHeader",
+            "type": "interface"
+          },
+          {
+            "name": "RedirectResponse",
+            "type": "interface"
+          },
+          {
+            "name": "RouterResponseController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterResponseController",
+            "type": "class",
+            "signature": "class RouterResponseController"
+          },
+          {
+            "name": "CustomHeader",
+            "type": "interface",
+            "signature": "interface CustomHeader"
+          },
+          {
+            "name": "RedirectResponse",
+            "type": "interface",
+            "signature": "interface RedirectResponse"
+          }
+        ]
+      },
+      {
+        "name": "router-proxy.ts",
+        "path": "packages/core/router/router-proxy.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 55,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-proxy.ts",
+            "functionName": "createExceptionLayerProxy",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 53
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-proxy.ts",
+            "functionName": "createProxy",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ExceptionsHandler",
+            "sourceModule": "../exceptions/exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionsHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouterProxyCallback",
+            "type": "type"
+          },
+          {
+            "name": "RouterProxy",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterProxy",
+            "type": "class",
+            "signature": "class RouterProxy"
+          },
+          {
+            "name": "RouterProxyCallback",
+            "type": "type",
+            "signature": "type RouterProxyCallback"
+          }
+        ]
+      },
+      {
+        "name": "router-module.ts",
+        "path": "packages/core/router/router-module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 95,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "deepCloneRoutes",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "initialize",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "register",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 39
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "registerModulePathMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 76
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-module.ts",
+            "functionName": "updateTargetModulesCache",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 78,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Inject",
+              "Module",
+              "Type"
+            ]
+          },
+          {
+            "name": "MODULE_PATH",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "MODULE_PATH"
+            ]
+          },
+          {
+            "name": "normalizePath",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "normalizePath"
+            ]
+          },
+          {
+            "name": "ModuleClass",
+            "sourceModule": "../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleClass"
+            ]
+          },
+          {
+            "name": "ModulesContainer",
+            "sourceModule": "../injector/modules-container",
+            "isDefault": false,
+            "namedImports": [
+              "ModulesContainer"
+            ]
+          },
+          {
+            "name": "Routes",
+            "sourceModule": "./interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Routes",
+              "RouteTree"
+            ]
+          },
+          {
+            "name": "flattenRoutePaths",
+            "sourceModule": "./utils",
+            "isDefault": false,
+            "namedImports": [
+              "flattenRoutePaths"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ROUTES",
+            "type": "const"
+          },
+          {
+            "name": "targetModulesByContainer",
+            "type": "const"
+          },
+          {
+            "name": "RouterModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterModule",
+            "type": "class",
+            "signature": "class RouterModule"
+          },
+          {
+            "name": "ROUTES",
+            "type": "const",
+            "signature": "const ROUTES"
+          }
+        ]
+      },
+      {
+        "name": "router-explorer.ts",
+        "path": "packages/core/router/router-explorer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 464,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "applyCallbackToRouter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 155,
+              "endLine": 273
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "applyHostFilter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Translates or wraps errors; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 275,
+              "endLine": 335
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -22,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "applyPathsToRouterProxy",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 132,
+              "endLine": 153
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "applyVersionFilter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 337,
+              "endLine": 348
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 66,
+              "endLine": 99
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "copyMetadataToCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 451,
+              "endLine": 462
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "createCallbackProxy",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 350,
+              "endLine": 376
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "createRequestScopedHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 378,
+              "endLine": 428
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "explore",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 101,
+              "endLine": 118
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "extractRouterPath",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 120,
+              "endLine": 130
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-explorer.ts",
+            "functionName": "getContextId",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 430,
+              "endLine": 449
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer"
+            ]
+          },
+          {
+            "name": "PATH_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "PATH_METADATA"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common/enums",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "InternalServerErrorException",
+            "sourceModule": "@nestjs/common/exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "InternalServerErrorException"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces/version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "pathToRegexp",
+            "sourceModule": "path-to-regexp",
+            "isDefault": false,
+            "namedImports": [
+              "pathToRegexp"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "UnknownRequestMappingException",
+            "sourceModule": "../errors/exceptions/unknown-request-mapping.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownRequestMappingException"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "../guards",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer",
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "ContextIdFactory",
+            "sourceModule": "../helpers/context-id-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ContextIdFactory"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "ROUTE_MAPPED_MESSAGE",
+            "sourceModule": "../helpers/messages",
+            "isDefault": false,
+            "namedImports": [
+              "ROUTE_MAPPED_MESSAGE",
+              "VERSIONED_ROUTE_MAPPED_MESSAGE"
+            ]
+          },
+          {
+            "name": "RouterMethodFactory",
+            "sourceModule": "../helpers/router-method-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RouterMethodFactory"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "../injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "ContextId",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId",
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "Entrypoint",
+            "sourceModule": "../inspector/interfaces/entrypoint.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Entrypoint",
+              "HttpEntrypointMetadata"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "../interceptors",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer",
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "../metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../pipes",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer",
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "ExceptionsFilter",
+            "sourceModule": "./interfaces/exceptions-filter.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionsFilter"
+            ]
+          },
+          {
+            "name": "RoutePathMetadata",
+            "sourceModule": "./interfaces/route-path-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "RoutePathMetadata"
+            ]
+          },
+          {
+            "name": "PathsExplorer",
+            "sourceModule": "./paths-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "PathsExplorer"
+            ]
+          },
+          {
+            "name": "REQUEST_CONTEXT_ID",
+            "sourceModule": "./request/request-constants",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST_CONTEXT_ID"
+            ]
+          },
+          {
+            "name": "RouteParamsFactory",
+            "sourceModule": "./route-params-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamsFactory"
+            ]
+          },
+          {
+            "name": "RoutePathFactory",
+            "sourceModule": "./route-path-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RoutePathFactory"
+            ]
+          },
+          {
+            "name": "RouterExecutionContext",
+            "sourceModule": "./router-execution-context",
+            "isDefault": false,
+            "namedImports": [
+              "RouterExecutionContext"
+            ]
+          },
+          {
+            "name": "RouterProxy",
+            "sourceModule": "./router-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RouterProxy",
+              "RouterProxyCallback"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteDefinition",
+            "type": "interface"
+          },
+          {
+            "name": "RouterExplorer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterExplorer",
+            "type": "class",
+            "signature": "class RouterExplorer"
+          },
+          {
+            "name": "RouteDefinition",
+            "type": "interface",
+            "signature": "interface RouteDefinition"
+          }
+        ]
+      },
+      {
+        "name": "router-execution-context.ts",
+        "path": "packages/core/router/router-execution-context.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 478,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "canActivateFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 78
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score; Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 175
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "createGuardsFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 357,
+              "endLine": 376
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "createHandleResponseFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 414,
+              "endLine": 460
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "createPipesFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 378,
+              "endLine": 412
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "exchangeKeysForValues",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 283,
+              "endLine": 324
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "extractValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "getMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 177,
+              "endLine": 253
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "getParamsMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "getParamValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 326,
+              "endLine": 343
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "handler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "isPipeable",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 345,
+              "endLine": 355
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "isResponseHandled",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 462,
+              "endLine": 476
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "pipesFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "reflectHttpStatusCode",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 261,
+              "endLine": 265
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "reflectRedirect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 255,
+              "endLine": 259
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "reflectRenderTemplate",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 267,
+              "endLine": 271
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "reflectResponseHeaders",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 273,
+              "endLine": 277
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "reflectSse",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 279,
+              "endLine": 281
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-execution-context.ts",
+            "functionName": "resolveParamValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate",
+              "ForbiddenException",
+              "HttpServer",
+              "ParamData",
+              "PipeTransform",
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA",
+              "HEADERS_METADATA",
+              "HTTP_CODE_METADATA",
+              "REDIRECT_METADATA",
+              "RENDER_METADATA",
+              "ROUTE_ARGS_METADATA",
+              "SSE_METADATA"
+            ]
+          },
+          {
+            "name": "RouteParamMetadata",
+            "sourceModule": "@nestjs/common/decorators",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamMetadata"
+            ]
+          },
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "@nestjs/common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType",
+              "Controller"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty",
+              "isString"
+            ]
+          },
+          {
+            "name": "IncomingMessage",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingMessage"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "FORBIDDEN_MESSAGE",
+            "sourceModule": "../guards",
+            "isDefault": false,
+            "namedImports": [
+              "FORBIDDEN_MESSAGE",
+              "GuardsConsumer",
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "ContextUtils",
+            "sourceModule": "../helpers/context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ContextUtils"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "HandleResponseFn",
+            "sourceModule": "../helpers/handler-metadata-storage",
+            "isDefault": false,
+            "namedImports": [
+              "HandleResponseFn",
+              "HandlerMetadata",
+              "HandlerMetadataStorage",
+              "HandlerResponseBasicFn"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "../interceptors/interceptors-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer"
+            ]
+          },
+          {
+            "name": "InterceptorsContextCreator",
+            "sourceModule": "../interceptors/interceptors-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../pipes/pipes-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer"
+            ]
+          },
+          {
+            "name": "PipesContextCreator",
+            "sourceModule": "../pipes/pipes-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "IRouteParamsFactory",
+            "sourceModule": "./interfaces/route-params-factory.interface",
+            "isDefault": false,
+            "namedImports": [
+              "IRouteParamsFactory"
+            ]
+          },
+          {
+            "name": "CustomHeader",
+            "sourceModule": "./router-response-controller",
+            "isDefault": false,
+            "namedImports": [
+              "CustomHeader",
+              "RedirectResponse",
+              "RouterResponseController"
+            ]
+          },
+          {
+            "name": "HeaderStream",
+            "sourceModule": "./sse-stream",
+            "isDefault": false,
+            "namedImports": [
+              "HeaderStream"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParamProperties",
+            "type": "interface"
+          },
+          {
+            "name": "RouterExecutionContext",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "getParamsMetadata",
+            "type": "function",
+            "signature": "const getParamsMetadata = () =>"
+          },
+          {
+            "name": "canActivateFn",
+            "type": "function",
+            "signature": "const canActivateFn = () =>"
+          },
+          {
+            "name": "resolveParamValue",
+            "type": "function",
+            "signature": "const resolveParamValue = () =>"
+          },
+          {
+            "name": "RouterExecutionContext",
+            "type": "class",
+            "signature": "class RouterExecutionContext"
+          },
+          {
+            "name": "ParamProperties",
+            "type": "interface",
+            "signature": "interface ParamProperties"
+          }
+        ]
+      },
+      {
+        "name": "router-exception-filters.ts",
+        "path": "packages/core/router/router-exception-filters.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 66,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/router-exception-filters.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-exception-filters.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 45
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -68,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/router-exception-filters.ts",
+            "functionName": "getGlobalMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer"
+            ]
+          },
+          {
+            "name": "EXCEPTION_FILTERS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "EXCEPTION_FILTERS_METADATA"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "BaseExceptionFilterContext",
+            "sourceModule": "../exceptions/base-exception-filter-context",
+            "isDefault": false,
+            "namedImports": [
+              "BaseExceptionFilterContext"
+            ]
+          },
+          {
+            "name": "ExceptionsHandler",
+            "sourceModule": "../exceptions/exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionsHandler"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "RouterProxyCallback",
+            "sourceModule": "./router-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RouterProxyCallback"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouterExceptionFilters",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterExceptionFilters",
+            "type": "class",
+            "signature": "class RouterExceptionFilters"
+          }
+        ]
+      },
+      {
+        "name": "route-path-factory.ts",
+        "path": "packages/core/router/route-path-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 171,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "appendToAllIfDefined",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 98,
+              "endLine": 115
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "concatPaths",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Moderate context score; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 78
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "getVersion",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 84
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "getVersionPrefix",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return '';\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 86,
+              "endLine": 96
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "isExcludedFromGlobalPrefix",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 117,
+              "endLine": 144
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/route-path-factory.ts",
+            "functionName": "truncateVersionPrefixFromPath",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 146,
+              "endLine": 169
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod",
+              "VERSION_NEUTRAL",
+              "VersioningOptions",
+              "VersioningType",
+              "flatten"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash",
+              "isUndefined",
+              "stripEndSlash"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "RoutePathMetadata",
+            "sourceModule": "./interfaces/route-path-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "RoutePathMetadata"
+            ]
+          },
+          {
+            "name": "isRouteExcluded",
+            "sourceModule": "./utils",
+            "isDefault": false,
+            "namedImports": [
+              "isRouteExcluded"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RoutePathFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "concatPaths",
+            "type": "function",
+            "signature": "const concatPaths = () =>"
+          },
+          {
+            "name": "RoutePathFactory",
+            "type": "class",
+            "signature": "class RoutePathFactory"
+          }
+        ]
+      },
+      {
+        "name": "route-params-factory.ts",
+        "path": "packages/core/router/route-params-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/route-params-factory.ts",
+            "functionName": "exchangeKeyForValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "@nestjs/common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "IRouteParamsFactory",
+            "sourceModule": "./interfaces/route-params-factory.interface",
+            "isDefault": false,
+            "namedImports": [
+              "IRouteParamsFactory"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteParamsFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouteParamsFactory",
+            "type": "class",
+            "signature": "class RouteParamsFactory"
+          }
+        ]
+      },
+      {
+        "name": "paths-explorer.ts",
+        "path": "packages/core/router/paths-explorer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 85,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/paths-explorer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/paths-explorer.ts",
+            "functionName": "exploreMethodMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 53,
+              "endLine": 83
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/paths-explorer.ts",
+            "functionName": "scanForPaths",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 28,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "METHOD_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "METHOD_METADATA",
+              "PATH_METADATA",
+              "VERSION_METADATA"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common/enums",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces/controllers/controller.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Controller"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces/version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "addLeadingSlash",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "addLeadingSlash",
+              "isString",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "../metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "RouterProxyCallback",
+            "sourceModule": "./router-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "RouterProxyCallback"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RouteDefinition",
+            "type": "interface"
+          },
+          {
+            "name": "PathsExplorer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "PathsExplorer",
+            "type": "class",
+            "signature": "class PathsExplorer"
+          },
+          {
+            "name": "RouteDefinition",
+            "type": "interface",
+            "signature": "interface RouteDefinition"
+          }
+        ]
+      },
+      {
+        "name": "legacy-route-converter.ts",
+        "path": "packages/core/router/legacy-route-converter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 77,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/router/legacy-route-converter.ts",
+            "functionName": "printError",
+            "classification": "likely-placeholder",
+            "confidence": 63,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only logging statements",
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 69
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/legacy-route-converter.ts",
+            "functionName": "printWarning",
+            "classification": "uncertain",
+            "confidence": 57,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only logging statements",
+              "Low cyclomatic complexity (1)"
+            ],
+            "location": {
+              "startLine": 71,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/legacy-route-converter.ts",
+            "functionName": "tryConvert",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 17,
+              "endLine": 65
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/router/legacy-route-converter.ts",
+            "functionName": "UNSUPPORTED_PATH_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "LegacyRouteConverter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UNSUPPORTED_PATH_MESSAGE",
+            "type": "function",
+            "signature": "const UNSUPPORTED_PATH_MESSAGE = () =>"
+          },
+          {
+            "name": "LegacyRouteConverter",
+            "type": "class",
+            "signature": "class LegacyRouteConverter"
+          },
+          {
+            "name": "UNSUPPORTED_PATH_MESSAGE",
+            "type": "const",
+            "signature": "const UNSUPPORTED_PATH_MESSAGE"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/core/router/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "RouterModule",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "request",
+        "relativePath": "request",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of request",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

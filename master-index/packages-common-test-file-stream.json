@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:24.256Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "file-stream",
+      "path": "packages/common/test/file-stream",
+      "purpose": "Enhanced directory analysis of file-stream",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "streamable-file.spec.ts",
+        "path": "packages/common/test/file-stream/streamable-file.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 65,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Readable",
+            "sourceModule": "stream",
+            "isDefault": false,
+            "namedImports": [
+              "Readable"
+            ]
+          },
+          {
+            "name": "StreamableFile",
+            "sourceModule": "../../file-stream",
+            "isDefault": false,
+            "namedImports": [
+              "StreamableFile"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "property",
+            "type": "class",
+            "signature": "class property"
+          },
+          {
+            "name": "property",
+            "type": "class",
+            "signature": "class property"
+          },
+          {
+            "name": "and",
+            "type": "type",
+            "signature": "type and"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

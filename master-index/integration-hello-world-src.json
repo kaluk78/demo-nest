@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:01.746Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "integration/hello-world/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "app.module.ts",
+        "path": "integration/hello-world/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "HelloModule",
+            "sourceModule": "./hello/hello.module",
+            "isDefault": false,
+            "namedImports": [
+              "HelloModule"
+            ]
+          },
+          {
+            "name": "HostArrayModule",
+            "sourceModule": "./host-array/host-array.module",
+            "isDefault": false,
+            "namedImports": [
+              "HostArrayModule"
+            ]
+          },
+          {
+            "name": "HostModule",
+            "sourceModule": "./host/host.module",
+            "isDefault": false,
+            "namedImports": [
+              "HostModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "errors",
+        "relativePath": "errors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of errors",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "hello",
+        "relativePath": "hello",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of hello",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "host",
+        "relativePath": "host",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of host",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "host-array",
+        "relativePath": "host-array",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of host-array",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

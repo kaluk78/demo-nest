@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:05.217Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "dto",
+      "path": "integration/inspector/src/database/dto",
+      "purpose": "Enhanced directory analysis of dto",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "update-database.dto.ts",
+        "path": "integration/inspector/src/database/dto/update-database.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [
+          {
+            "name": "PartialType",
+            "sourceModule": "@nestjs/mapped-types",
+            "isDefault": false,
+            "namedImports": [
+              "PartialType"
+            ]
+          },
+          {
+            "name": "CreateDatabaseDto",
+            "sourceModule": "./create-database.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateDatabaseDto"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UpdateDatabaseDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UpdateDatabaseDto",
+            "type": "class",
+            "signature": "class UpdateDatabaseDto"
+          }
+        ]
+      },
+      {
+        "name": "create-database.dto.ts",
+        "path": "integration/inspector/src/database/dto/create-database.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CreateDatabaseDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CreateDatabaseDto",
+            "type": "class",
+            "signature": "class CreateDatabaseDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

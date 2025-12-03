@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:01.553Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "users",
+      "path": "integration/hello-world/src/host-array/users",
+      "purpose": "Enhanced directory analysis of users",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "users.service.ts",
+        "path": "integration/hello-world/src/host-array/users/users.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hello-world/src/host-array/users/users.service.ts",
+            "functionName": "findById",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UsersService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UsersService",
+            "type": "class",
+            "signature": "class UsersService"
+          }
+        ]
+      },
+      {
+        "name": "user-by-id.pipe.ts",
+        "path": "integration/hello-world/src/host-array/users/user-by-id.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/hello-world/src/host-array/users/user-by-id.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/hello-world/src/host-array/users/user-by-id.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "PipeTransform",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform",
+              "Injectable",
+              "ArgumentMetadata"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UserByIdPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UserByIdPipe",
+            "type": "class",
+            "signature": "class UserByIdPipe"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

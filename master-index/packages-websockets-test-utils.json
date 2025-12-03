@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:53.700Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/websockets/test/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "subscribe-message.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/subscribe-message.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/test/utils/subscribe-message.decorator.spec.ts",
+            "functionName": "fn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Very generic function name",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 29,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "MESSAGE_MAPPING_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "MESSAGE_MAPPING_METADATA"
+            ]
+          },
+          {
+            "name": "SubscribeMessage",
+            "sourceModule": "../../decorators/subscribe-message.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "SubscribeMessage"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          }
+        ]
+      },
+      {
+        "name": "socket-gateway.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/socket-gateway.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "GATEWAY_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_METADATA",
+              "GATEWAY_OPTIONS"
+            ]
+          },
+          {
+            "name": "WebSocketGateway",
+            "sourceModule": "../../decorators/socket-gateway.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketGateway"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          },
+          {
+            "name": "TestGateway2",
+            "type": "class",
+            "signature": "class TestGateway2"
+          },
+          {
+            "name": "TestGateway3",
+            "type": "class",
+            "signature": "class TestGateway3"
+          }
+        ]
+      },
+      {
+        "name": "gateway-server.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/gateway-server.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "WebSocketServer",
+            "sourceModule": "../../decorators/gateway-server.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketServer"
+            ]
+          },
+          {
+            "name": "GATEWAY_SERVER_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_SERVER_METADATA"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          }
+        ]
+      },
+      {
+        "name": "compare-element.util.spec.ts",
+        "path": "packages/websockets/test/utils/compare-element.util.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "compareElementAt",
+            "sourceModule": "../../utils/compare-element.util",
+            "isDefault": false,
+            "namedImports": [
+              "compareElementAt"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

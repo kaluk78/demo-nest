@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:44.387Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "data",
+      "path": "packages/microservices/test/json-socket/data",
+      "purpose": "Enhanced directory analysis of data",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "long-payload-with-special-chars.ts",
+        "path": "packages/microservices/test/json-socket/data/long-payload-with-special-chars.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 263,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "longPayload",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

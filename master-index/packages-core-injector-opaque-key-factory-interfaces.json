@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:28.295Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/core/injector/opaque-key-factory/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "module-opaque-key-factory.interface.ts",
+        "path": "packages/core/injector/opaque-key-factory/interfaces/module-opaque-key-factory.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 27,
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common/interfaces/modules/dynamic-module.interface",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule"
+            ]
+          },
+          {
+            "name": "ForwardReference",
+            "sourceModule": "@nestjs/common/interfaces/modules/forward-reference.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ForwardReference"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ModuleOpaqueKeyFactory",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "reference",
+            "type": "class",
+            "signature": "class reference"
+          },
+          {
+            "name": "ModuleOpaqueKeyFactory",
+            "type": "interface",
+            "signature": "interface ModuleOpaqueKeyFactory"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:27.426Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "guards",
+      "path": "packages/core/guards",
+      "purpose": "Enhanced directory analysis of guards",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/core/guards/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "guards-context-creator.ts",
+        "path": "packages/core/guards/guards-context-creator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 122,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 22,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "createConcreteContext",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "getGlobalMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 95,
+              "endLine": 120
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "getGuardInstance",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return null;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 78
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-context-creator.ts",
+            "functionName": "getInstanceByMetatype",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate"
+            ]
+          },
+          {
+            "name": "GUARDS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "GUARDS_METADATA"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Type"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty",
+              "isFunction"
+            ]
+          },
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "ContextCreator",
+            "sourceModule": "../helpers/context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "ContextCreator"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "GuardsContextCreator",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GuardsContextCreator",
+            "type": "class",
+            "signature": "class GuardsContextCreator"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      },
+      {
+        "name": "guards-consumer.ts",
+        "path": "packages/core/guards/guards-consumer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 58,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/guards/guards-consumer.ts",
+            "functionName": "createContext",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 37,
+              "endLine": 47
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-consumer.ts",
+            "functionName": "pickResult",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 49,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/guards/guards-consumer.ts",
+            "functionName": "tryActivate",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\""
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 35
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate"
+            ]
+          },
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType",
+              "Controller"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "lastValueFrom",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "lastValueFrom",
+              "Observable"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "GuardsConsumer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GuardsConsumer",
+            "type": "class",
+            "signature": "class GuardsConsumer"
+          }
+        ]
+      },
+      {
+        "name": "constants.ts",
+        "path": "packages/core/guards/constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "FORBIDDEN_MESSAGE",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "FORBIDDEN_MESSAGE",
+            "type": "const",
+            "signature": "const FORBIDDEN_MESSAGE"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

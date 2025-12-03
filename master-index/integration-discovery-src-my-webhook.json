@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:37:58.683Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "my-webhook",
+      "path": "integration/discovery/src/my-webhook",
+      "purpose": "Enhanced directory analysis of my-webhook",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "my-webhook.module.ts",
+        "path": "integration/discovery/src/my-webhook/my-webhook.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "CleanupWebhook",
+            "sourceModule": "./cleanup.webhook",
+            "isDefault": false,
+            "namedImports": [
+              "CleanupWebhook"
+            ]
+          },
+          {
+            "name": "FlushWebhook",
+            "sourceModule": "./flush.webhook",
+            "isDefault": false,
+            "namedImports": [
+              "FlushWebhook"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MyWebhookModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MyWebhookModule",
+            "type": "class",
+            "signature": "class MyWebhookModule"
+          }
+        ]
+      },
+      {
+        "name": "flush.webhook.ts",
+        "path": "integration/discovery/src/my-webhook/flush.webhook.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/discovery/src/my-webhook/flush.webhook.ts",
+            "functionName": "onStart",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Webhook",
+            "sourceModule": "../decorators/webhook.decorators",
+            "isDefault": false,
+            "namedImports": [
+              "Webhook",
+              "WebhookHandler"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "FlushWebhook",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "FlushWebhook",
+            "type": "class",
+            "signature": "class FlushWebhook"
+          }
+        ]
+      },
+      {
+        "name": "cleanup.webhook.ts",
+        "path": "integration/discovery/src/my-webhook/cleanup.webhook.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/discovery/src/my-webhook/cleanup.webhook.ts",
+            "functionName": "onStart",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Webhook",
+            "sourceModule": "../decorators/webhook.decorators",
+            "isDefault": false,
+            "namedImports": [
+              "Webhook",
+              "WebhookHandler"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CleanupWebhook",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CleanupWebhook",
+            "type": "class",
+            "signature": "class CleanupWebhook"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:41.578Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/microservices/module/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/microservices/module/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "clients-module.interface.ts",
+        "path": "packages/microservices/module/interfaces/clients-module.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 37,
+        "importedModules": [
+          {
+            "name": "ClientOptions",
+            "sourceModule": "../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientOptions",
+              "CustomClientOptions"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Type",
+              "Provider",
+              "ModuleMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientProvider",
+            "type": "type"
+          },
+          {
+            "name": "ClientProviderOptions",
+            "type": "type"
+          },
+          {
+            "name": "ClientsModuleOptions",
+            "type": "type"
+          },
+          {
+            "name": "ClientsModuleOptionsFactory",
+            "type": "interface"
+          },
+          {
+            "name": "ClientsProviderAsyncOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ClientsModuleAsyncOptions",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientsModuleOptionsFactory",
+            "type": "interface",
+            "signature": "interface ClientsModuleOptionsFactory"
+          },
+          {
+            "name": "ClientsProviderAsyncOptions",
+            "type": "interface",
+            "signature": "interface ClientsProviderAsyncOptions"
+          },
+          {
+            "name": "ClientProvider",
+            "type": "type",
+            "signature": "type ClientProvider"
+          },
+          {
+            "name": "ClientProviderOptions",
+            "type": "type",
+            "signature": "type ClientProviderOptions"
+          },
+          {
+            "name": "ClientsModuleOptions",
+            "type": "type",
+            "signature": "type ClientsModuleOptions"
+          },
+          {
+            "name": "ClientsModuleAsyncOptions",
+            "type": "type",
+            "signature": "type ClientsModuleAsyncOptions"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

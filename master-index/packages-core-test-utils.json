@@ -1,0 +1,775 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:36.554Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/core/test/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "string.cleaner.ts",
+        "path": "packages/core/test/utils/string.cleaner.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/utils/string.cleaner.ts",
+            "functionName": "stringCleaner",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Very short function (3 lines)",
+              "High context score suggests legitimate implementation; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 3
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "stringCleaner",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "stringCleaner",
+            "type": "function",
+            "signature": "function stringCleaner()"
+          }
+        ]
+      },
+      {
+        "name": "noop-adapter.spec.ts",
+        "path": "packages/core/test/utils/noop-adapter.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "appendHeader",
+            "classification": "likely-legitimate",
+            "confidence": 28,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "applyVersionFilter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 41
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "createMiddlewareFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "enableCors",
+            "classification": "likely-legitimate",
+            "confidence": 28,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 28,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "end",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 17,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "getHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "getRequestHostname",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "getRequestMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "getRequestUrl",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "getType",
+            "classification": "definite-legitimate",
+            "confidence": 19,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Returns hardcoded value: \"return '';\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 35,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "initHttpServer",
+            "classification": "likely-legitimate",
+            "confidence": 28,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "isHeadersSent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "redirect",
+            "classification": "likely-legitimate",
+            "confidence": 28,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "registerParserMiddleware",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "render",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "reply",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 16
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "setErrorHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "setHeader",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "setNotFoundHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 22,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "setViewEngine",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "status",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/utils/noop-adapter.spec.ts",
+            "functionName": "useStaticAssets",
+            "classification": "likely-legitimate",
+            "confidence": 28,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod",
+              "VersioningOptions"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue"
+            ]
+          },
+          {
+            "name": "AbstractHttpAdapter",
+            "sourceModule": "../../adapters",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NoopHttpAdapter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NoopHttpAdapter",
+            "type": "class",
+            "signature": "class NoopHttpAdapter"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

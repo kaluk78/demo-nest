@@ -1,0 +1,689 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:48.870Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "interceptors",
+      "path": "packages/platform-express/test/multer/interceptors",
+      "purpose": "Enhanced directory analysis of interceptors",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "no-files.inteceptor.spec.ts",
+        "path": "packages/platform-express/test/multer/interceptors/no-files.inteceptor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 45,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/no-files.inteceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/no-files.inteceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "NoFilesInterceptor",
+            "sourceModule": "../../../multer/interceptors/no-files.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "NoFilesInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "files.interceptor.spec.ts",
+        "path": "packages/platform-express/test/multer/interceptors/files.interceptor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 49,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/files.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/files.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "FilesInterceptor",
+            "sourceModule": "../../../multer/interceptors/files.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "FilesInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "file.interceptor.spec.ts",
+        "path": "packages/platform-express/test/multer/interceptors/file.interceptor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 47,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/file.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/file.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "FileInterceptor",
+            "sourceModule": "../../../multer/interceptors/file.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "FileInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "file-fields.interceptor.spec.ts",
+        "path": "packages/platform-express/test/multer/interceptors/file-fields.interceptor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 65,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/file-fields.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/file-fields.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "FileFieldsInterceptor",
+            "sourceModule": "../../../multer/interceptors/file-fields.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "FileFieldsInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      },
+      {
+        "name": "any-files.interceptor.spec.ts",
+        "path": "packages/platform-express/test/multer/interceptors/any-files.interceptor.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 46,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/any-files.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/test/multer/interceptors/any-files.interceptor.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CallHandler",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CallHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "AnyFilesInterceptor",
+            "sourceModule": "../../../multer/interceptors/any-files.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "AnyFilesInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "callback",
+            "type": "function",
+            "signature": "const callback = () =>"
+          },
+          {
+            "name": "with",
+            "type": "type",
+            "signature": "type with"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

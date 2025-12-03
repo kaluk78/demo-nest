@@ -1,0 +1,1860 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:22.705Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "pipes",
+      "path": "packages/common/pipes",
+      "purpose": "Enhanced directory analysis of pipes",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "validation.pipe.ts",
+        "path": "packages/common/pipes/validation.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 329,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 83
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "createExceptionFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Factory function pattern; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 175,
+              "endLine": 183
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "flattenValidationErrors",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 279,
+              "endLine": 289
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "isPrimitive",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 268,
+              "endLine": 270
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "loadTransformer",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 96,
+              "endLine": 105
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "loadValidator",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 85,
+              "endLine": 94
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "mapChildrenToValidationErrors",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 291,
+              "endLine": 313
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "prependConstraintsWithParentProp",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 315,
+              "endLine": 327
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "stripProtoKeys",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 248,
+              "endLine": 266
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "toEmptyIfNil",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return '';\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 228,
+              "endLine": 246
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "toValidate",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 185,
+              "endLine": 192
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 107,
+              "endLine": 173
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "transformPrimitive",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 194,
+              "endLine": 226
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/validation.pipe.ts",
+            "functionName": "validate",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 272,
+              "endLine": 277
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "iterate",
+            "sourceModule": "iterare",
+            "isDefault": false,
+            "namedImports": [
+              "iterate"
+            ]
+          },
+          {
+            "name": "types",
+            "sourceModule": "util",
+            "isDefault": false,
+            "namedImports": [
+              "types"
+            ]
+          },
+          {
+            "name": "Optional",
+            "sourceModule": "../decorators",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "ClassTransformOptions",
+            "sourceModule": "../interfaces/external/class-transform-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ClassTransformOptions"
+            ]
+          },
+          {
+            "name": "TransformerPackage",
+            "sourceModule": "../interfaces/external/transformer-package.interface",
+            "isDefault": false,
+            "namedImports": [
+              "TransformerPackage"
+            ]
+          },
+          {
+            "name": "ValidationError",
+            "sourceModule": "../interfaces/external/validation-error.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ValidationError"
+            ]
+          },
+          {
+            "name": "ValidatorOptions",
+            "sourceModule": "../interfaces/external/validator-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ValidatorOptions"
+            ]
+          },
+          {
+            "name": "ValidatorPackage",
+            "sourceModule": "../interfaces/external/validator-package.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ValidatorPackage"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "../utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "isUndefined"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ValidationPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ValidationPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ValidationPipe",
+            "type": "class",
+            "signature": "class ValidationPipe"
+          },
+          {
+            "name": "instance",
+            "type": "class",
+            "signature": "class instance"
+          },
+          {
+            "name": "ValidationPipeOptions",
+            "type": "interface",
+            "signature": "interface ValidationPipeOptions"
+          },
+          {
+            "name": "defined",
+            "type": "type",
+            "signature": "type defined"
+          },
+          {
+            "name": "is",
+            "type": "type",
+            "signature": "type is"
+          }
+        ]
+      },
+      {
+        "name": "parse-uuid.pipe.ts",
+        "path": "packages/common/pipes/parse-uuid.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 95,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-uuid.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 71
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-uuid.pipe.ts",
+            "functionName": "isUUID",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 87,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-uuid.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 73,
+              "endLine": 85
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Optional",
+            "sourceModule": "../decorators/core/optional.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "isString"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseUUIDPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseUUIDPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseUUIDPipe",
+            "type": "class",
+            "signature": "class ParseUUIDPipe"
+          },
+          {
+            "name": "ParseUUIDPipeOptions",
+            "type": "interface",
+            "signature": "interface ParseUUIDPipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-int.pipe.ts",
+        "path": "packages/common/pipes/parse-int.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 88,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-int.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-int.pipe.ts",
+            "functionName": "isNumeric",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 86
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-int.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 64,
+              "endLine": 74
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Optional",
+            "sourceModule": "../decorators/core/optional.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseIntPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseIntPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseIntPipe",
+            "type": "class",
+            "signature": "class ParseIntPipe"
+          },
+          {
+            "name": "ParseIntPipeOptions",
+            "type": "interface",
+            "signature": "interface ParseIntPipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-float.pipe.ts",
+        "path": "packages/common/pipes/parse-float.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 84,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-float.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 43,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-float.pipe.ts",
+            "functionName": "isNumeric",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 76,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-float.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 60,
+              "endLine": 70
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Optional"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../index",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "PipeTransform",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseFloatPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseFloatPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseFloatPipe",
+            "type": "class",
+            "signature": "class ParseFloatPipe"
+          },
+          {
+            "name": "ParseFloatPipeOptions",
+            "type": "interface",
+            "signature": "interface ParseFloatPipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-enum.pipe.ts",
+        "path": "packages/common/pipes/parse-enum.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 86,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-enum.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 58
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-enum.pipe.ts",
+            "functionName": "isEnum",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 79,
+              "endLine": 84
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-enum.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 77
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Optional"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../index",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "PipeTransform",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseEnumPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseEnumPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseEnumPipe",
+            "type": "class",
+            "signature": "class ParseEnumPipe"
+          },
+          {
+            "name": "ParseEnumPipeOptions",
+            "type": "interface",
+            "signature": "interface ParseEnumPipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-date.pipe.ts",
+        "path": "packages/common/pipes/parse-date.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 75,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-date.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-date.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 55,
+              "endLine": 73
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "PipeTransform",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseDatePipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseDatePipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseDatePipe",
+            "type": "class",
+            "signature": "class ParseDatePipe"
+          },
+          {
+            "name": "ParseDatePipeOptions",
+            "type": "interface",
+            "signature": "interface ParseDatePipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-bool.pipe.ts",
+        "path": "packages/common/pipes/parse-bool.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 101,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-bool.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 49,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-bool.pipe.ts",
+            "functionName": "isFalse",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 97,
+              "endLine": 99
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-bool.pipe.ts",
+            "functionName": "isTrue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 88,
+              "endLine": 90
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-bool.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 17,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Contains throw statement"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 81
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Optional",
+            "sourceModule": "../decorators/core/optional.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorHttpStatusCode",
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseBoolPipeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseBoolPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParseBoolPipe",
+            "type": "class",
+            "signature": "class ParseBoolPipe"
+          },
+          {
+            "name": "ParseBoolPipeOptions",
+            "type": "interface",
+            "signature": "interface ParseBoolPipeOptions"
+          }
+        ]
+      },
+      {
+        "name": "parse-array.pipe.ts",
+        "path": "packages/common/pipes/parse-array.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 187,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/parse-array.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 71
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-array.pipe.ts",
+            "functionName": "isExpectedTypePrimitive",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 157,
+              "endLine": 159
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-array.pipe.ts",
+            "functionName": "toClassInstance",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-array.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 80,
+              "endLine": 155
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/parse-array.pipe.ts",
+            "functionName": "validatePrimitive",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 161,
+              "endLine": 185
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "Optional",
+            "sourceModule": "../decorators/core/optional.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Optional"
+            ]
+          },
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums/http-status.enum",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "HttpErrorByCode",
+            "sourceModule": "../utils/http-error-by-code.util",
+            "isDefault": false,
+            "namedImports": [
+              "HttpErrorByCode"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "isString",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "ValidationPipe",
+            "sourceModule": "./validation.pipe",
+            "isDefault": false,
+            "namedImports": [
+              "ValidationPipe",
+              "ValidationPipeOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParseArrayOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ParseArrayPipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "toClassInstance",
+            "type": "function",
+            "signature": "const toClassInstance = () =>"
+          },
+          {
+            "name": "ParseArrayPipe",
+            "type": "class",
+            "signature": "class ParseArrayPipe"
+          },
+          {
+            "name": "VALIDATION_ERROR_MESSAGE",
+            "type": "const",
+            "signature": "const VALIDATION_ERROR_MESSAGE"
+          },
+          {
+            "name": "DEFAULT_ARRAY_SEPARATOR",
+            "type": "const",
+            "signature": "const DEFAULT_ARRAY_SEPARATOR"
+          },
+          {
+            "name": "ParseArrayOptions",
+            "type": "interface",
+            "signature": "interface ParseArrayOptions"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/pipes/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "default-value.pipe.ts",
+        "path": "packages/common/pipes/default-value.pipe.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 31,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/pipes/default-value.pipe.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/pipes/default-value.pipe.ts",
+            "functionName": "transform",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "../decorators/core/injectable.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "ArgumentMetadata",
+            "sourceModule": "../interfaces/features/pipe-transform.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ArgumentMetadata",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "../utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "isNumber"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "DefaultValuePipe",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DefaultValuePipe",
+            "type": "class",
+            "signature": "class DefaultValuePipe"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "file",
+        "relativePath": "file",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of file",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

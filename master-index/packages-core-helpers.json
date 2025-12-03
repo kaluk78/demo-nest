@@ -1,0 +1,2935 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:27.871Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "helpers",
+      "path": "packages/core/helpers",
+      "purpose": "Enhanced directory analysis of helpers",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "router-method-factory.ts",
+        "path": "packages/core/helpers/router-method-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 33,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/router-method-factory.ts",
+            "functionName": "get",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "REQUEST_METHOD_MAP",
+            "type": "const"
+          },
+          {
+            "name": "RouterMethodFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RouterMethodFactory",
+            "type": "class",
+            "signature": "class RouterMethodFactory"
+          },
+          {
+            "name": "REQUEST_METHOD_MAP",
+            "type": "const",
+            "signature": "const REQUEST_METHOD_MAP"
+          }
+        ]
+      },
+      {
+        "name": "rethrow.ts",
+        "path": "packages/core/helpers/rethrow.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/rethrow.ts",
+            "functionName": "rethrow",
+            "classification": "definite-legitimate",
+            "confidence": 5,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Contains throw statement",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 20,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "rethrow",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "rethrow",
+            "type": "function",
+            "signature": "const rethrow = () =>"
+          }
+        ]
+      },
+      {
+        "name": "optional-require.ts",
+        "path": "packages/core/helpers/optional-require.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/optional-require.ts",
+            "functionName": "optionalRequire",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return {};\"",
+              "High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "optionalRequire",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "optionalRequire",
+            "type": "function",
+            "signature": "function optionalRequire()"
+          }
+        ]
+      },
+      {
+        "name": "messages.ts",
+        "path": "packages/core/helpers/messages.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 49,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "CONTROLLER_MAPPING_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "INVALID_EXECUTION_CONTEXT",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "MODULE_INIT_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "ROUTE_MAPPED_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "VERSIONED_CONTROLLER_MAPPING_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/messages.ts",
+            "functionName": "VERSIONED_ROUTE_MAPPED_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RequestMethod",
+            "sourceModule": "@nestjs/common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "VersionValue",
+            "sourceModule": "@nestjs/common/interfaces/version-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "VersionValue",
+              "VERSION_NEUTRAL"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MODULE_INIT_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "ROUTE_MAPPED_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "VERSIONED_ROUTE_MAPPED_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "CONTROLLER_MAPPING_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "VERSIONED_CONTROLLER_MAPPING_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "INVALID_EXECUTION_CONTEXT",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MODULE_INIT_MESSAGE",
+            "type": "function",
+            "signature": "const MODULE_INIT_MESSAGE = () =>"
+          },
+          {
+            "name": "ROUTE_MAPPED_MESSAGE",
+            "type": "function",
+            "signature": "const ROUTE_MAPPED_MESSAGE = () =>"
+          },
+          {
+            "name": "VERSIONED_ROUTE_MAPPED_MESSAGE",
+            "type": "function",
+            "signature": "const VERSIONED_ROUTE_MAPPED_MESSAGE = () =>"
+          },
+          {
+            "name": "CONTROLLER_MAPPING_MESSAGE",
+            "type": "function",
+            "signature": "const CONTROLLER_MAPPING_MESSAGE = () =>"
+          },
+          {
+            "name": "VERSIONED_CONTROLLER_MAPPING_MESSAGE",
+            "type": "function",
+            "signature": "const VERSIONED_CONTROLLER_MAPPING_MESSAGE = () =>"
+          },
+          {
+            "name": "INVALID_EXECUTION_CONTEXT",
+            "type": "function",
+            "signature": "const INVALID_EXECUTION_CONTEXT = () =>"
+          },
+          {
+            "name": "MODULE_INIT_MESSAGE",
+            "type": "const",
+            "signature": "const MODULE_INIT_MESSAGE"
+          },
+          {
+            "name": "ROUTE_MAPPED_MESSAGE",
+            "type": "const",
+            "signature": "const ROUTE_MAPPED_MESSAGE"
+          },
+          {
+            "name": "VERSIONED_ROUTE_MAPPED_MESSAGE",
+            "type": "const",
+            "signature": "const VERSIONED_ROUTE_MAPPED_MESSAGE"
+          },
+          {
+            "name": "CONTROLLER_MAPPING_MESSAGE",
+            "type": "const",
+            "signature": "const CONTROLLER_MAPPING_MESSAGE"
+          },
+          {
+            "name": "VERSIONED_CONTROLLER_MAPPING_MESSAGE",
+            "type": "const",
+            "signature": "const VERSIONED_CONTROLLER_MAPPING_MESSAGE"
+          },
+          {
+            "name": "INVALID_EXECUTION_CONTEXT",
+            "type": "const",
+            "signature": "const INVALID_EXECUTION_CONTEXT"
+          }
+        ]
+      },
+      {
+        "name": "load-adapter.ts",
+        "path": "packages/core/helpers/load-adapter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 23,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/load-adapter.ts",
+            "functionName": "loadAdapter",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/load-adapter.ts",
+            "functionName": "MISSING_REQUIRED_DEPENDENCY",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "loadAdapter",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "loadAdapter",
+            "type": "function",
+            "signature": "function loadAdapter()"
+          },
+          {
+            "name": "MISSING_REQUIRED_DEPENDENCY",
+            "type": "function",
+            "signature": "const MISSING_REQUIRED_DEPENDENCY = () =>"
+          },
+          {
+            "name": "MISSING_REQUIRED_DEPENDENCY",
+            "type": "const",
+            "signature": "const MISSING_REQUIRED_DEPENDENCY"
+          }
+        ]
+      },
+      {
+        "name": "is-durable.ts",
+        "path": "packages/core/helpers/is-durable.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/is-durable.ts",
+            "functionName": "isDurable",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SCOPE_OPTIONS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "SCOPE_OPTIONS_METADATA"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "isDurable",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "isDurable",
+            "type": "function",
+            "signature": "function isDurable()"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/core/helpers/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "http-adapter-host.ts",
+        "path": "packages/core/helpers/http-adapter-host.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 81,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "httpAdapter",
+            "classification": "definite-legitimate",
+            "confidence": 7,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "httpAdapter",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "init$",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 60
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "listen$",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 50,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "listening",
+            "classification": "definite-legitimate",
+            "confidence": 7,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 79
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/http-adapter-host.ts",
+            "functionName": "listening",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 79
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable",
+              "ReplaySubject",
+              "Subject"
+            ]
+          },
+          {
+            "name": "AbstractHttpAdapter",
+            "sourceModule": "../adapters/http-adapter",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractHttpAdapter"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HttpAdapterHost",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpAdapterHost",
+            "type": "class",
+            "signature": "class HttpAdapterHost"
+          }
+        ]
+      },
+      {
+        "name": "handler-metadata-storage.ts",
+        "path": "packages/core/helpers/handler-metadata-storage.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 65,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/handler-metadata-storage.ts",
+            "functionName": "get",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 54,
+              "endLine": 57
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -53,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/handler-metadata-storage.ts",
+            "functionName": "getMetadataKey",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Simple arithmetic helper; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 59,
+              "endLine": 63
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/handler-metadata-storage.ts",
+            "functionName": "set",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 49,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Type"
+            ]
+          },
+          {
+            "name": "IncomingMessage",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingMessage"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          },
+          {
+            "name": "CONTROLLER_ID_KEY",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CONTROLLER_ID_KEY"
+            ]
+          },
+          {
+            "name": "ContextId",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId"
+            ]
+          },
+          {
+            "name": "HeaderStream",
+            "sourceModule": "../router/sse-stream",
+            "isDefault": false,
+            "namedImports": [
+              "HeaderStream"
+            ]
+          },
+          {
+            "name": "ParamProperties",
+            "sourceModule": "./context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ParamProperties"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HANDLER_METADATA_SYMBOL",
+            "type": "const"
+          },
+          {
+            "name": "HandleResponseFn",
+            "type": "type"
+          },
+          {
+            "name": "HandlerResponseBasicFn",
+            "type": "type"
+          },
+          {
+            "name": "HandleSseResponseFn",
+            "type": "type"
+          },
+          {
+            "name": "HandlerMetadata",
+            "type": "interface"
+          },
+          {
+            "name": "HandlerMetadataStorage",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HandlerMetadataStorage",
+            "type": "class",
+            "signature": "class HandlerMetadataStorage"
+          },
+          {
+            "name": "HANDLER_METADATA_SYMBOL",
+            "type": "const",
+            "signature": "const HANDLER_METADATA_SYMBOL"
+          },
+          {
+            "name": "HandlerMetadata",
+            "type": "interface",
+            "signature": "interface HandlerMetadata"
+          },
+          {
+            "name": "HandleResponseFn",
+            "type": "type",
+            "signature": "type HandleResponseFn"
+          },
+          {
+            "name": "HandlerResponseBasicFn",
+            "type": "type",
+            "signature": "type HandlerResponseBasicFn"
+          },
+          {
+            "name": "HandleSseResponseFn",
+            "type": "type",
+            "signature": "type HandleSseResponseFn"
+          }
+        ]
+      },
+      {
+        "name": "get-class-scope.ts",
+        "path": "packages/core/helpers/get-class-scope.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/get-class-scope.ts",
+            "functionName": "getClassScope",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "SCOPE_OPTIONS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "SCOPE_OPTIONS_METADATA"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces/type.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "getClassScope",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "getClassScope",
+            "type": "function",
+            "signature": "function getClassScope()"
+          }
+        ]
+      },
+      {
+        "name": "external-proxy.ts",
+        "path": "packages/core/helpers/external-proxy.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/external-proxy.ts",
+            "functionName": "createProxy",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType"
+            ]
+          },
+          {
+            "name": "ExternalExceptionsHandler",
+            "sourceModule": "../exceptions/external-exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionsHandler"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExternalErrorProxy",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExternalErrorProxy",
+            "type": "class",
+            "signature": "class ExternalErrorProxy"
+          }
+        ]
+      },
+      {
+        "name": "external-context-creator.ts",
+        "path": "packages/core/helpers/external-context-creator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 363,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "canActivateFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 45,
+              "endLine": 54
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 91,
+              "endLine": 185
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "createGuardsFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 338,
+              "endLine": 357
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "createPipesFn",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 292,
+              "endLine": 319
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "exchangeKeysForValues",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 255,
+              "endLine": 290
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "extractValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "fromContainer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 56,
+              "endLine": 89
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "getContextModuleKey",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 241,
+              "endLine": 253
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "getMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 187,
+              "endLine": 239
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "getParamsMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "getParamValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 321,
+              "endLine": 329
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "handler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "pipesFn",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "registerRequestProvider",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 359,
+              "endLine": 361
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "resolveParamValue",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "target",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/external-context-creator.ts",
+            "functionName": "transformToResult",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 331,
+              "endLine": 336
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ForbiddenException",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ForbiddenException",
+              "ParamData"
+            ]
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType",
+              "Controller",
+              "PipeTransform"
+            ]
+          },
+          {
+            "name": "isEmpty",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isEmpty"
+            ]
+          },
+          {
+            "name": "isObservable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "isObservable",
+              "lastValueFrom"
+            ]
+          },
+          {
+            "name": "ExternalExceptionFilterContext",
+            "sourceModule": "../exceptions/external-exception-filter-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionFilterContext"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "../guards",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer",
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "FORBIDDEN_MESSAGE",
+            "sourceModule": "../guards/constants",
+            "isDefault": false,
+            "namedImports": [
+              "FORBIDDEN_MESSAGE"
+            ]
+          },
+          {
+            "name": "STATIC_CONTEXT",
+            "sourceModule": "../injector/constants",
+            "isDefault": false,
+            "namedImports": [
+              "STATIC_CONTEXT"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "ContextId",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId"
+            ]
+          },
+          {
+            "name": "ModulesContainer",
+            "sourceModule": "../injector/modules-container",
+            "isDefault": false,
+            "namedImports": [
+              "ModulesContainer"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "../interceptors",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer",
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../pipes",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer",
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "ContextUtils",
+            "sourceModule": "./context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ContextUtils",
+              "ParamProperties"
+            ]
+          },
+          {
+            "name": "ExternalErrorProxy",
+            "sourceModule": "./external-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalErrorProxy"
+            ]
+          },
+          {
+            "name": "HandlerMetadataStorage",
+            "sourceModule": "./handler-metadata-storage",
+            "isDefault": false,
+            "namedImports": [
+              "HandlerMetadataStorage"
+            ]
+          },
+          {
+            "name": "ExternalHandlerMetadata",
+            "sourceModule": "./interfaces/external-handler-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalHandlerMetadata"
+            ]
+          },
+          {
+            "name": "ParamsMetadata",
+            "sourceModule": "./interfaces/params-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ParamsMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParamsFactory",
+            "type": "interface"
+          },
+          {
+            "name": "ExternalContextOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ExternalContextCreator",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "handler",
+            "type": "function",
+            "signature": "const handler = () =>"
+          },
+          {
+            "name": "target",
+            "type": "function",
+            "signature": "const target = () =>"
+          },
+          {
+            "name": "getParamsMetadata",
+            "type": "function",
+            "signature": "const getParamsMetadata = () =>"
+          },
+          {
+            "name": "extractValue",
+            "type": "function",
+            "signature": "const extractValue = () =>"
+          },
+          {
+            "name": "pipesFn",
+            "type": "function",
+            "signature": "const pipesFn = () =>"
+          },
+          {
+            "name": "resolveParamValue",
+            "type": "function",
+            "signature": "const resolveParamValue = () =>"
+          },
+          {
+            "name": "canActivateFn",
+            "type": "function",
+            "signature": "const canActivateFn = () =>"
+          },
+          {
+            "name": "ExternalContextCreator",
+            "type": "class",
+            "signature": "class ExternalContextCreator"
+          },
+          {
+            "name": "ParamsFactory",
+            "type": "interface",
+            "signature": "interface ParamsFactory"
+          },
+          {
+            "name": "ExternalContextOptions",
+            "type": "interface",
+            "signature": "interface ExternalContextOptions"
+          }
+        ]
+      },
+      {
+        "name": "execution-context-host.ts",
+        "path": "packages/core/helpers/execution-context-host.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 66,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "getArgByIndex",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 41
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "getArgs",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 35,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "getClass",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "getHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 33
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "getType",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 25
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "setType",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "switchToHttp",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 50,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "switchToRpc",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 43,
+              "endLine": 48
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/execution-context-host.ts",
+            "functionName": "switchToWs",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ExecutionContext",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContext"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          },
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces/features/arguments-host.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType",
+              "HttpArgumentsHost",
+              "RpcArgumentsHost",
+              "WsArgumentsHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExecutionContextHost",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExecutionContextHost",
+            "type": "class",
+            "signature": "class ExecutionContextHost"
+          }
+        ]
+      },
+      {
+        "name": "context-utils.ts",
+        "path": "packages/core/helpers/context-utils.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 100,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "createNullArray",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 58,
+              "endLine": 62
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "getArgumentsLength",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 52,
+              "endLine": 56
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "getContextFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 87,
+              "endLine": 98
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "getCustomFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 85
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "mapParamType",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 27
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "mergeParamsMetatypes",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 64,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "reflectCallbackMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 36,
+              "endLine": 42
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "reflectCallbackParamtypes",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 34
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-utils.ts",
+            "functionName": "reflectPassthrough",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 44,
+              "endLine": 50
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ParamData",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ParamData"
+            ]
+          },
+          {
+            "name": "PARAMTYPES_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "PARAMTYPES_METADATA",
+              "RESPONSE_PASSTHROUGH_METADATA"
+            ]
+          },
+          {
+            "name": "ContextType",
+            "sourceModule": "@nestjs/common/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ContextType",
+              "Controller",
+              "PipeTransform",
+              "Type"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "./execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParamProperties",
+            "type": "interface"
+          },
+          {
+            "name": "ContextUtils",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ContextUtils",
+            "type": "class",
+            "signature": "class ContextUtils"
+          },
+          {
+            "name": "ParamProperties",
+            "type": "interface",
+            "signature": "interface ParamProperties"
+          }
+        ]
+      },
+      {
+        "name": "context-id-factory.ts",
+        "path": "packages/core/helpers/context-id-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 101,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/context-id-factory.ts",
+            "functionName": "apply",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 91,
+              "endLine": 93
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-id-factory.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 49,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-id-factory.ts",
+            "functionName": "createContextId",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation; Factory function pattern; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 15
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-id-factory.ts",
+            "functionName": "getByRequest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 84
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/context-id-factory.ts",
+            "functionName": "isContextIdResolverWithPayload",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 95,
+              "endLine": 99
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "ContextId",
+            "sourceModule": "../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId",
+              "HostComponentInfo"
+            ]
+          },
+          {
+            "name": "REQUEST_CONTEXT_ID",
+            "sourceModule": "../router/request/request-constants",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST_CONTEXT_ID"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "createContextId",
+            "type": "function"
+          },
+          {
+            "name": "ContextIdResolverFn",
+            "type": "type"
+          },
+          {
+            "name": "ContextIdResolver",
+            "type": "interface"
+          },
+          {
+            "name": "ContextIdStrategy",
+            "type": "interface"
+          },
+          {
+            "name": "ContextIdFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createContextId",
+            "type": "function",
+            "signature": "function createContextId()"
+          },
+          {
+            "name": "ContextIdFactory",
+            "type": "class",
+            "signature": "class ContextIdFactory"
+          },
+          {
+            "name": "ContextIdResolver",
+            "type": "interface",
+            "signature": "interface ContextIdResolver"
+          },
+          {
+            "name": "ContextIdStrategy",
+            "type": "interface",
+            "signature": "interface ContextIdStrategy"
+          },
+          {
+            "name": "ContextIdResolverFn",
+            "type": "type",
+            "signature": "type ContextIdResolverFn"
+          }
+        ]
+      },
+      {
+        "name": "context-creator.ts",
+        "path": "packages/core/helpers/context-creator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 67,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ContextCreator",
+            "type": "class",
+            "signature": "class ContextCreator"
+          }
+        ]
+      },
+      {
+        "name": "barrier.ts",
+        "path": "packages/core/helpers/barrier.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 52,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/helpers/barrier.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/barrier.ts",
+            "functionName": "signal",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/barrier.ts",
+            "functionName": "signalAndWait",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 50
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/helpers/barrier.ts",
+            "functionName": "wait",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 36,
+              "endLine": 38
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "Barrier",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Barrier",
+            "type": "class",
+            "signature": "class Barrier"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

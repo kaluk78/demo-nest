@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:37:58.627Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "decorators",
+      "path": "integration/discovery/src/decorators",
+      "purpose": "Enhanced directory analysis of decorators",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "webhook.decorators.ts",
+        "path": "integration/discovery/src/decorators/webhook.decorators.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "DiscoveryService",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "DiscoveryService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Webhook",
+            "type": "const"
+          },
+          {
+            "name": "WebhookHandler",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "W",
+            "type": "const",
+            "signature": "const W"
+          },
+          {
+            "name": "W",
+            "type": "const",
+            "signature": "const W"
+          }
+        ]
+      },
+      {
+        "name": "non-applied.decorator.ts",
+        "path": "integration/discovery/src/decorators/non-applied.decorator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "DiscoveryService",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "DiscoveryService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NonAppliedDecorator",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "N",
+            "type": "const",
+            "signature": "const N"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

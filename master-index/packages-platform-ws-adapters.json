@@ -1,0 +1,497 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:50.779Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "adapters",
+      "path": "packages/platform-ws/adapters",
+      "purpose": "Enhanced directory analysis of adapters",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-adapter.ts",
+        "path": "packages/platform-ws/adapters/ws-adapter.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 255,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "addWsServerToRegistry",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 243,
+              "endLine": 253
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "bindClientDisconnect",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 180,
+              "endLine": 182
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "bindErrorHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 172,
+              "endLine": 178
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "bindMessageHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 154,
+              "endLine": 170
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "bindMessageHandlers",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 128,
+              "endLine": 152
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Moderate context score; Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 184,
+              "endLine": 192
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 53,
+              "endLine": 63
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Utility function with clear purpose; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 65,
+              "endLine": 126
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -53,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "dispose",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 194,
+              "endLine": 202
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "ensureHttpServerExists",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 208,
+              "endLine": 241
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "onMessage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-ws/adapters/ws-adapter.ts",
+            "functionName": "setMessageParser",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 204,
+              "endLine": 206
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplicationContext",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplicationContext",
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "normalizePath"
+            ]
+          },
+          {
+            "name": "AbstractWsAdapter",
+            "sourceModule": "@nestjs/websockets",
+            "isDefault": false,
+            "namedImports": [
+              "AbstractWsAdapter"
+            ]
+          },
+          {
+            "name": "CLOSE_EVENT",
+            "sourceModule": "@nestjs/websockets/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CLOSE_EVENT",
+              "CONNECTION_EVENT",
+              "ERROR_EVENT"
+            ]
+          },
+          {
+            "name": "MessageMappingProperties",
+            "sourceModule": "@nestjs/websockets/gateway-metadata-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "MessageMappingProperties"
+            ]
+          },
+          {
+            "name": "* as http",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "* as http"
+            ]
+          },
+          {
+            "name": "EMPTY",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "EMPTY",
+              "fromEvent",
+              "Observable"
+            ]
+          },
+          {
+            "name": "filter",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "filter",
+              "first",
+              "mergeMap",
+              "share",
+              "takeUntil"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "WsAdapter",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "onMessage",
+            "type": "function",
+            "signature": "const onMessage = () =>"
+          },
+          {
+            "name": "WsAdapter",
+            "type": "class",
+            "signature": "class WsAdapter"
+          },
+          {
+            "name": "UNDERLYING_HTTP_SERVER_PORT",
+            "type": "const",
+            "signature": "const UNDERLYING_HTTP_SERVER_PORT"
+          },
+          {
+            "name": "HttpServerRegistryKey",
+            "type": "type",
+            "signature": "type HttpServerRegistryKey"
+          },
+          {
+            "name": "HttpServerRegistryEntry",
+            "type": "type",
+            "signature": "type HttpServerRegistryEntry"
+          },
+          {
+            "name": "WsServerRegistryKey",
+            "type": "type",
+            "signature": "type WsServerRegistryKey"
+          },
+          {
+            "name": "WsServerRegistryEntry",
+            "type": "type",
+            "signature": "type WsServerRegistryEntry"
+          },
+          {
+            "name": "WsData",
+            "type": "type",
+            "signature": "type WsData"
+          },
+          {
+            "name": "WsMessageParser",
+            "type": "type",
+            "signature": "type WsMessageParser"
+          },
+          {
+            "name": "WsAdapterOptions",
+            "type": "type",
+            "signature": "type WsAdapterOptions"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-ws/adapters/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

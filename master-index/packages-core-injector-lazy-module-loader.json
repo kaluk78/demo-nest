@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:28.250Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "lazy-module-loader",
+      "path": "packages/core/injector/lazy-module-loader",
+      "purpose": "Enhanced directory analysis of lazy-module-loader",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "lazy-module-loader.ts",
+        "path": "packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 75,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+            "functionName": "createLazyModulesContainer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 63,
+              "endLine": 68
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+            "functionName": "getTargetModuleRef",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 70,
+              "endLine": 73
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+            "functionName": "load",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 21,
+              "endLine": 55
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/core/injector/lazy-module-loader/lazy-module-loader.ts",
+            "functionName": "registerLoggerConfiguration",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 61
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Type"
+            ]
+          },
+          {
+            "name": "ModuleOverride",
+            "sourceModule": "../../interfaces/module-override.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleOverride"
+            ]
+          },
+          {
+            "name": "DependenciesScanner",
+            "sourceModule": "../../scanner",
+            "isDefault": false,
+            "namedImports": [
+              "DependenciesScanner"
+            ]
+          },
+          {
+            "name": "ModuleCompiler",
+            "sourceModule": "../compiler",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleCompiler"
+            ]
+          },
+          {
+            "name": "SilentLogger",
+            "sourceModule": "../helpers/silent-logger",
+            "isDefault": false,
+            "namedImports": [
+              "SilentLogger"
+            ]
+          },
+          {
+            "name": "InstanceLoader",
+            "sourceModule": "../instance-loader",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceLoader"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "ModuleRef",
+            "sourceModule": "../module-ref",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleRef"
+            ]
+          },
+          {
+            "name": "ModulesContainer",
+            "sourceModule": "../modules-container",
+            "isDefault": false,
+            "namedImports": [
+              "ModulesContainer"
+            ]
+          },
+          {
+            "name": "LazyModuleLoaderLoadOptions",
+            "sourceModule": "./lazy-module-loader-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "LazyModuleLoaderLoadOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "LazyModuleLoader",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "LazyModuleLoader",
+            "type": "class",
+            "signature": "class LazyModuleLoader"
+          }
+        ]
+      },
+      {
+        "name": "lazy-module-loader-options.interface.ts",
+        "path": "packages/core/injector/lazy-module-loader/lazy-module-loader-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "LazyModuleLoaderLoadOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "LazyModuleLoaderLoadOptions",
+            "type": "interface",
+            "signature": "interface LazyModuleLoaderLoadOptions"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

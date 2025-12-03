@@ -1,0 +1,1388 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:07.554Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/microservices/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "topic-exchange-rmq.spec.ts",
+        "path": "integration/microservices/e2e/topic-exchange-rmq.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "RMQTopicExchangeController",
+            "sourceModule": "../src/rmq/topic-exchange-rmq.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RMQTopicExchangeController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-rpc.spec.ts",
+        "path": "integration/microservices/e2e/sum-rpc.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 128,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppController",
+            "sourceModule": "../src/app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AppController"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-rpc-tls.spec.ts",
+        "path": "integration/microservices/e2e/sum-rpc-tls.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 143,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as fs",
+            "sourceModule": "fs",
+            "isDefault": false,
+            "namedImports": [
+              "* as fs"
+            ]
+          },
+          {
+            "name": "* as path",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "* as path"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppController",
+            "sourceModule": "../src/tcp-tls/app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AppController"
+            ]
+          },
+          {
+            "name": "ApplicationModule",
+            "sourceModule": "../src/tcp-tls/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-rpc-async.spec.ts",
+        "path": "integration/microservices/e2e/sum-rpc-async.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 99,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/microservices/e2e/sum-rpc-async.spec.ts",
+            "functionName": "getOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 28,
+              "endLine": 36
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -62,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/microservices/e2e/sum-rpc-async.spec.ts",
+            "functionName": "sumPayload",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "INestMicroservice",
+              "Injectable",
+              "Module"
+            ]
+          },
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "AsyncOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncOptions",
+              "ClientTCP",
+              "ClientsModule",
+              "MessagePattern",
+              "MicroserviceOptions",
+              "Payload",
+              "TcpOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RpcOptionsProvider",
+            "type": "class",
+            "signature": "class RpcOptionsProvider"
+          },
+          {
+            "name": "RpcController",
+            "type": "class",
+            "signature": "class RpcController"
+          },
+          {
+            "name": "RpcModule",
+            "type": "class",
+            "signature": "class RpcModule"
+          }
+        ]
+      },
+      {
+        "name": "sum-rmq.spec.ts",
+        "path": "integration/microservices/e2e/sum-rmq.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 117,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "RMQController",
+            "sourceModule": "../src/rmq/rmq.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RMQController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-redis.spec.ts",
+        "path": "integration/microservices/e2e/sum-redis.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 96,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "RedisController",
+            "sourceModule": "../src/redis/redis.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RedisController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-nats.spec.ts",
+        "path": "integration/microservices/e2e/sum-nats.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 116,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "NatsController",
+            "sourceModule": "../src/nats/nats.controller",
+            "isDefault": false,
+            "namedImports": [
+              "NatsController"
+            ]
+          },
+          {
+            "name": "NatsService",
+            "sourceModule": "../src/nats/nats.service",
+            "isDefault": false,
+            "namedImports": [
+              "NatsService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-mqtt.spec.ts",
+        "path": "integration/microservices/e2e/sum-mqtt.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 169,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "MqttController",
+            "sourceModule": "../src/mqtt/mqtt.controller",
+            "isDefault": false,
+            "namedImports": [
+              "MqttController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "sum-kafka.spec.ts",
+        "path": "integration/microservices/e2e/sum-kafka.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 139,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "BusinessDto",
+            "sourceModule": "../src/kafka/dtos/business.dto",
+            "isDefault": false,
+            "namedImports": [
+              "BusinessDto"
+            ]
+          },
+          {
+            "name": "UserDto",
+            "sourceModule": "../src/kafka/dtos/user.dto",
+            "isDefault": false,
+            "namedImports": [
+              "UserDto"
+            ]
+          },
+          {
+            "name": "UserEntity",
+            "sourceModule": "../src/kafka/entities/user.entity",
+            "isDefault": false,
+            "namedImports": [
+              "UserEntity"
+            ]
+          },
+          {
+            "name": "KafkaController",
+            "sourceModule": "../src/kafka/kafka.controller",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaController"
+            ]
+          },
+          {
+            "name": "KafkaMessagesController",
+            "sourceModule": "../src/kafka/kafka.messages.controller",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaMessagesController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "orders-grpc.spec.ts",
+        "path": "integration/microservices/e2e/orders-grpc.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 230,
+        "importedModules": [
+          {
+            "name": "* as GRPC",
+            "sourceModule": "@grpc/grpc-js",
+            "isDefault": false,
+            "namedImports": [
+              "* as GRPC"
+            ]
+          },
+          {
+            "name": "* as ProtoLoader",
+            "sourceModule": "@grpc/proto-loader",
+            "isDefault": false,
+            "namedImports": [
+              "* as ProtoLoader"
+            ]
+          },
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "ExpressAdapter",
+            "sourceModule": "@nestjs/platform-express",
+            "isDefault": false,
+            "namedImports": [
+              "ExpressAdapter"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "fail",
+            "sourceModule": "assert",
+            "isDefault": false,
+            "namedImports": [
+              "fail"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as express",
+            "sourceModule": "express",
+            "isDefault": false,
+            "namedImports": [
+              "* as express"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AdvancedGrpcController",
+            "sourceModule": "../src/grpc-advanced/advanced.grpc.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AdvancedGrpcController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "mqtt-record-builder.spec.ts",
+        "path": "integration/microservices/e2e/mqtt-record-builder.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 47,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "MqttController",
+            "sourceModule": "../src/mqtt/mqtt.controller",
+            "isDefault": false,
+            "namedImports": [
+              "MqttController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "math-grpc.spec.ts",
+        "path": "integration/microservices/e2e/math-grpc.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 205,
+        "importedModules": [
+          {
+            "name": "* as GRPC",
+            "sourceModule": "@grpc/grpc-js",
+            "isDefault": false,
+            "namedImports": [
+              "* as GRPC"
+            ]
+          },
+          {
+            "name": "* as ProtoLoader",
+            "sourceModule": "@grpc/proto-loader",
+            "isDefault": false,
+            "namedImports": [
+              "* as ProtoLoader"
+            ]
+          },
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "fail",
+            "sourceModule": "assert",
+            "isDefault": false,
+            "namedImports": [
+              "fail"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect",
+              "use"
+            ]
+          },
+          {
+            "name": "* as chaiAsPromised",
+            "sourceModule": "chai-as-promised",
+            "isDefault": false,
+            "namedImports": [
+              "* as chaiAsPromised"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "GrpcController",
+            "sourceModule": "../src/grpc/grpc.controller",
+            "isDefault": false,
+            "namedImports": [
+              "GrpcController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "fanout-exchange-rmq.spec.ts",
+        "path": "integration/microservices/e2e/fanout-exchange-rmq.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 47,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "INestMicroservice"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "RMQFanoutExchangeProducerController",
+            "sourceModule": "../src/rmq/fanout-exchange-producer-rmq.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RMQFanoutExchangeProducerController"
+            ]
+          },
+          {
+            "name": "RMQFanoutExchangeConsumerController",
+            "sourceModule": "../src/rmq/fanout-exchange-consumer-rmq.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RMQFanoutExchangeConsumerController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "disconnected-client.spec.ts",
+        "path": "integration/microservices/e2e/disconnected-client.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 86,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "App",
+            "sourceModule": "supertest/types",
+            "isDefault": false,
+            "namedImports": [
+              "App"
+            ]
+          },
+          {
+            "name": "DisconnectedClientController",
+            "sourceModule": "../src/disconnected.controller",
+            "isDefault": false,
+            "namedImports": [
+              "DisconnectedClientController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "concurrent-kafka.spec.ts",
+        "path": "integration/microservices/e2e/concurrent-kafka.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 292,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/microservices/e2e/concurrent-kafka.spec.ts",
+            "functionName": "startServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "Logger"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "Admin",
+            "sourceModule": "kafkajs",
+            "isDefault": false,
+            "namedImports": [
+              "Admin",
+              "ITopicMetadata",
+              "Kafka"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "* as util",
+            "sourceModule": "util",
+            "isDefault": false,
+            "namedImports": [
+              "* as util"
+            ]
+          },
+          {
+            "name": "KafkaConcurrentController",
+            "sourceModule": "../src/kafka-concurrent/kafka-concurrent.controller",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaConcurrentController"
+            ]
+          },
+          {
+            "name": "KafkaConcurrentMessagesController",
+            "sourceModule": "../src/kafka-concurrent/kafka-concurrent.messages.controller",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaConcurrentMessagesController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "startServer",
+            "type": "function",
+            "signature": "const startServer = () =>"
+          }
+        ]
+      },
+      {
+        "name": "broadcast-redis.spec.ts",
+        "path": "integration/microservices/e2e/broadcast-redis.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 45,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "RedisBroadcastController",
+            "sourceModule": "../src/redis/redis-broadcast.controller",
+            "isDefault": false,
+            "namedImports": [
+              "RedisBroadcastController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "broadcast-nats.spec.ts",
+        "path": "integration/microservices/e2e/broadcast-nats.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "NatsBroadcastController",
+            "sourceModule": "../src/nats/nats-broadcast.controller",
+            "isDefault": false,
+            "namedImports": [
+              "NatsBroadcastController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "broadcast-mqtt.spec.ts",
+        "path": "integration/microservices/e2e/broadcast-mqtt.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "MicroserviceOptions",
+            "sourceModule": "@nestjs/microservices",
+            "isDefault": false,
+            "namedImports": [
+              "MicroserviceOptions",
+              "Transport"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "MqttBroadcastController",
+            "sourceModule": "../src/mqtt/mqtt-broadcast.controller",
+            "isDefault": false,
+            "namedImports": [
+              "MqttBroadcastController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": []
+  }
+}

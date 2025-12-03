@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:50.464Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "decorators",
+      "path": "packages/platform-fastify/test/decorators",
+      "purpose": "Enhanced directory analysis of decorators",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "router-schema.decorator.spec.ts",
+        "path": "packages/platform-fastify/test/decorators/router-schema.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 18,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/test/decorators/router-schema.decorator.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_SCHEMA_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_SCHEMA_METADATA"
+            ]
+          },
+          {
+            "name": "RouteSchema",
+            "sourceModule": "../../decorators/route-schema.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "RouteSchema"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          }
+        ]
+      },
+      {
+        "name": "router-constraints.decorator.spec.ts",
+        "path": "packages/platform-fastify/test/decorators/router-constraints.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 40,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/test/decorators/router-constraints.decorator.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-fastify/test/decorators/router-constraints.decorator.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 27,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_CONSTRAINTS_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_CONSTRAINTS_METADATA"
+            ]
+          },
+          {
+            "name": "RouteConstraints",
+            "sourceModule": "../../decorators/route-constraints.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "RouteConstraints"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestVersionConstraints",
+            "type": "class",
+            "signature": "class TestVersionConstraints"
+          },
+          {
+            "name": "TestConstraints",
+            "type": "class",
+            "signature": "class TestConstraints"
+          }
+        ]
+      },
+      {
+        "name": "router-config.decorator.spec.ts",
+        "path": "packages/platform-fastify/test/decorators/router-config.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 18,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-fastify/test/decorators/router-config.decorator.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "FASTIFY_ROUTE_CONFIG_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "FASTIFY_ROUTE_CONFIG_METADATA"
+            ]
+          },
+          {
+            "name": "RouteConfig",
+            "sourceModule": "../../decorators/route-config.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "RouteConfig"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

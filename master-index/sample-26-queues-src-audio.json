@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:11.632Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "audio",
+      "path": "sample/26-queues/src/audio",
+      "purpose": "Enhanced directory analysis of audio",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "audio.processor.ts",
+        "path": "sample/26-queues/src/audio/audio.processor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/26-queues/src/audio/audio.processor.ts",
+            "functionName": "handleTranscode",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only logging statements",
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Process",
+            "sourceModule": "@nestjs/bull",
+            "isDefault": false,
+            "namedImports": [
+              "Process",
+              "Processor"
+            ]
+          },
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "Job",
+            "sourceModule": "bull",
+            "isDefault": false,
+            "namedImports": [
+              "Job"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AudioProcessor",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AudioProcessor",
+            "type": "class",
+            "signature": "class AudioProcessor"
+          }
+        ]
+      },
+      {
+        "name": "audio.module.ts",
+        "path": "sample/26-queues/src/audio/audio.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "importedModules": [
+          {
+            "name": "BullModule",
+            "sourceModule": "@nestjs/bull",
+            "isDefault": false,
+            "namedImports": [
+              "BullModule"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "AudioController",
+            "sourceModule": "./audio.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AudioController"
+            ]
+          },
+          {
+            "name": "AudioProcessor",
+            "sourceModule": "./audio.processor",
+            "isDefault": false,
+            "namedImports": [
+              "AudioProcessor"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AudioModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AudioModule",
+            "type": "class",
+            "signature": "class AudioModule"
+          }
+        ]
+      },
+      {
+        "name": "audio.controller.ts",
+        "path": "sample/26-queues/src/audio/audio.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/26-queues/src/audio/audio.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/26-queues/src/audio/audio.controller.ts",
+            "functionName": "transcode",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "InjectQueue",
+            "sourceModule": "@nestjs/bull",
+            "isDefault": false,
+            "namedImports": [
+              "InjectQueue"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Post"
+            ]
+          },
+          {
+            "name": "Queue",
+            "sourceModule": "bull",
+            "isDefault": false,
+            "namedImports": [
+              "Queue"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AudioController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AudioController",
+            "type": "class",
+            "signature": "class AudioController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

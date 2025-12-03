@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:04.490Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "guards",
+      "path": "integration/inspector/src/circular-hello/guards",
+      "purpose": "Enhanced directory analysis of guards",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "request-scoped.guard.ts",
+        "path": "integration/inspector/src/circular-hello/guards/request-scoped.guard.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/inspector/src/circular-hello/guards/request-scoped.guard.ts",
+            "functionName": "canActivate",
+            "classification": "definite-legitimate",
+            "confidence": 9,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Returns hardcoded value: \"return true;\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 35,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/inspector/src/circular-hello/guards/request-scoped.guard.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 14
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CanActivate",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "CanActivate",
+              "ExecutionContext",
+              "Injectable",
+              "Scope"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Guard",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Guard",
+            "type": "class",
+            "signature": "class Guard"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

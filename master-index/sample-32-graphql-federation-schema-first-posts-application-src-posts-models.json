@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:13.785Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "models",
+      "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/models",
+      "purpose": "Enhanced directory analysis of models",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "user.model.ts",
+        "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/models/user.model.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 15,
+        "importedModules": [
+          {
+            "name": "Directive",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "Directive",
+              "Field",
+              "ID",
+              "ObjectType"
+            ]
+          },
+          {
+            "name": "Post",
+            "sourceModule": "./post.model",
+            "isDefault": false,
+            "namedImports": [
+              "Post"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "User",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "User",
+            "type": "class",
+            "signature": "class User"
+          }
+        ]
+      },
+      {
+        "name": "post.model.ts",
+        "path": "sample/32-graphql-federation-schema-first/posts-application/src/posts/models/post.model.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "importedModules": [
+          {
+            "name": "Directive",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "Directive",
+              "Field",
+              "ID",
+              "Int",
+              "ObjectType"
+            ]
+          },
+          {
+            "name": "User",
+            "sourceModule": "./user.model",
+            "isDefault": false,
+            "namedImports": [
+              "User"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Post",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Post",
+            "type": "class",
+            "signature": "class Post"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

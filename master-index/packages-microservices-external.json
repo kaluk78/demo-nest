@@ -1,0 +1,644 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:41.191Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "external",
+      "path": "packages/microservices/external",
+      "purpose": "Enhanced directory analysis of external",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "rmq-url.interface.ts",
+        "path": "packages/microservices/external/rmq-url.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 71,
+        "importedModules": [
+          {
+            "name": "ConnectionOptions",
+            "sourceModule": "tls",
+            "isDefault": false,
+            "namedImports": [
+              "ConnectionOptions"
+            ]
+          },
+          {
+            "name": "TcpSocketConnectOpts",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "TcpSocketConnectOpts"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RmqUrl",
+            "type": "interface"
+          },
+          {
+            "name": "AmqpConnectionManagerSocketOptions",
+            "type": "interface"
+          },
+          {
+            "name": "AmqplibQueueOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RmqUrl",
+            "type": "interface",
+            "signature": "interface RmqUrl"
+          },
+          {
+            "name": "ClientProperties",
+            "type": "interface",
+            "signature": "interface ClientProperties"
+          },
+          {
+            "name": "AmqpConnectionManagerSocketOptions",
+            "type": "interface",
+            "signature": "interface AmqpConnectionManagerSocketOptions"
+          },
+          {
+            "name": "AmqplibQueueOptions",
+            "type": "interface",
+            "signature": "interface AmqplibQueueOptions"
+          },
+          {
+            "name": "AmqpConnectionOptions",
+            "type": "type",
+            "signature": "type AmqpConnectionOptions"
+          }
+        ]
+      },
+      {
+        "name": "redis.interface.ts",
+        "path": "packages/microservices/external/redis.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 216,
+        "importedModules": [
+          {
+            "name": "ConnectionOptions",
+            "sourceModule": "tls",
+            "isDefault": false,
+            "namedImports": [
+              "ConnectionOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IORedisOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "IORedisOptions",
+            "type": "interface",
+            "signature": "interface IORedisOptions"
+          }
+        ]
+      },
+      {
+        "name": "nats-codec.interface.ts",
+        "path": "packages/microservices/external/nats-codec.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NatsCodec",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NatsCodec",
+            "type": "interface",
+            "signature": "interface NatsCodec"
+          }
+        ]
+      },
+      {
+        "name": "mqtt-options.interface.ts",
+        "path": "packages/microservices/external/mqtt-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 181,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "QoS",
+            "type": "type"
+          },
+          {
+            "name": "MqttClientOptions",
+            "type": "interface"
+          },
+          {
+            "name": "ISecureClientOptions",
+            "type": "interface"
+          },
+          {
+            "name": "IClientPublishOptions",
+            "type": "interface"
+          },
+          {
+            "name": "IClientSubscribeOptions",
+            "type": "interface"
+          },
+          {
+            "name": "IClientReconnectOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MqttClientOptions",
+            "type": "interface",
+            "signature": "interface MqttClientOptions"
+          },
+          {
+            "name": "ISecureClientOptions",
+            "type": "interface",
+            "signature": "interface ISecureClientOptions"
+          },
+          {
+            "name": "IClientPublishOptions",
+            "type": "interface",
+            "signature": "interface IClientPublishOptions"
+          },
+          {
+            "name": "IClientSubscribeOptions",
+            "type": "interface",
+            "signature": "interface IClientSubscribeOptions"
+          },
+          {
+            "name": "IClientReconnectOptions",
+            "type": "interface",
+            "signature": "interface IClientReconnectOptions"
+          },
+          {
+            "name": "QoS",
+            "type": "type",
+            "signature": "type QoS"
+          }
+        ]
+      },
+      {
+        "name": "kafka.interface.ts",
+        "path": "packages/microservices/external/kafka.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 1326,
+        "importedModules": [
+          {
+            "name": "* as net",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "* as net"
+            ]
+          },
+          {
+            "name": "* as tls",
+            "sourceModule": "tls",
+            "isDefault": false,
+            "namedImports": [
+              "* as tls"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Kafka",
+            "type": "class"
+          },
+          {
+            "name": "BrokersFunction",
+            "type": "type"
+          },
+          {
+            "name": "SaslAuthenticateArgs",
+            "type": "type"
+          },
+          {
+            "name": "KafkaConfig",
+            "type": "interface"
+          },
+          {
+            "name": "ISocketFactoryArgs",
+            "type": "interface"
+          },
+          {
+            "name": "ISocketFactory",
+            "type": "type"
+          },
+          {
+            "name": "OauthbearerProviderResponse",
+            "type": "interface"
+          },
+          {
+            "name": "SASLMechanism",
+            "type": "type"
+          },
+          {
+            "name": "SASLOptions",
+            "type": "type"
+          },
+          {
+            "name": "ProducerConfig",
+            "type": "interface"
+          },
+          {
+            "name": "Message",
+            "type": "interface"
+          },
+          {
+            "name": "PartitionerArgs",
+            "type": "interface"
+          },
+          {
+            "name": "ICustomPartitioner",
+            "type": "type"
+          },
+          {
+            "name": "DefaultPartitioner",
+            "type": "type"
+          },
+          {
+            "name": "LegacyPartitioner",
+            "type": "type"
+          },
+          {
+            "name": "Partitioners",
+            "type": "const"
+          },
+          {
+            "name": "PartitionMetadata",
+            "type": "type"
+          },
+          {
+            "name": "IHeaders",
+            "type": "interface"
+          },
+          {
+            "name": "ConsumerConfig",
+            "type": "interface"
+          },
+          {
+            "name": "PartitionAssigner",
+            "type": "type"
+          },
+          {
+            "name": "CoordinatorMetadata",
+            "type": "interface"
+          },
+          {
+            "name": "Cluster",
+            "type": "type"
+          },
+          {
+            "name": "Assignment",
+            "type": "type"
+          },
+          {
+            "name": "GroupMember",
+            "type": "type"
+          },
+          {
+            "name": "GroupMemberAssignment",
+            "type": "type"
+          },
+          {
+            "name": "GroupState",
+            "type": "type"
+          },
+          {
+            "name": "Assigner",
+            "type": "type"
+          },
+          {
+            "name": "RetryOptions",
+            "type": "interface"
+          },
+          {
+            "name": "AdminConfig",
+            "type": "interface"
+          },
+          {
+            "name": "ITopicConfig",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Kafka",
+            "type": "class",
+            "signature": "class Kafka"
+          },
+          {
+            "name": "KafkaJSError",
+            "type": "class",
+            "signature": "class KafkaJSError"
+          },
+          {
+            "name": "KafkaJSNonRetriableError",
+            "type": "class",
+            "signature": "class KafkaJSNonRetriableError"
+          },
+          {
+            "name": "KafkaJSProtocolError",
+            "type": "class",
+            "signature": "class KafkaJSProtocolError"
+          },
+          {
+            "name": "KafkaJSOffsetOutOfRange",
+            "type": "class",
+            "signature": "class KafkaJSOffsetOutOfRange"
+          },
+          {
+            "name": "KafkaJSNumberOfRetriesExceeded",
+            "type": "class",
+            "signature": "class KafkaJSNumberOfRetriesExceeded"
+          },
+          {
+            "name": "KafkaJSConnectionError",
+            "type": "class",
+            "signature": "class KafkaJSConnectionError"
+          },
+          {
+            "name": "KafkaJSRequestTimeoutError",
+            "type": "class",
+            "signature": "class KafkaJSRequestTimeoutError"
+          },
+          {
+            "name": "KafkaJSMetadataNotLoaded",
+            "type": "class",
+            "signature": "class KafkaJSMetadataNotLoaded"
+          },
+          {
+            "name": "KafkaJSTopicMetadataNotLoaded",
+            "type": "class",
+            "signature": "class KafkaJSTopicMetadataNotLoaded"
+          },
+          {
+            "name": "KafkaJSStaleTopicMetadataAssignment",
+            "type": "class",
+            "signature": "class KafkaJSStaleTopicMetadataAssignment"
+          },
+          {
+            "name": "KafkaJSServerDoesNotSupportApiKey",
+            "type": "class",
+            "signature": "class KafkaJSServerDoesNotSupportApiKey"
+          },
+          {
+            "name": "KafkaJSBrokerNotFound",
+            "type": "class",
+            "signature": "class KafkaJSBrokerNotFound"
+          },
+          {
+            "name": "KafkaJSPartialMessageError",
+            "type": "class",
+            "signature": "class KafkaJSPartialMessageError"
+          },
+          {
+            "name": "KafkaJSSASLAuthenticationError",
+            "type": "class",
+            "signature": "class KafkaJSSASLAuthenticationError"
+          },
+          {
+            "name": "KafkaJSGroupCoordinatorNotFound",
+            "type": "class",
+            "signature": "class KafkaJSGroupCoordinatorNotFound"
+          },
+          {
+            "name": "KafkaJSNotImplemented",
+            "type": "class",
+            "signature": "class KafkaJSNotImplemented"
+          },
+          {
+            "name": "KafkaJSTimeout",
+            "type": "class",
+            "signature": "class KafkaJSTimeout"
+          },
+          {
+            "name": "KafkaJSLockTimeout",
+            "type": "class",
+            "signature": "class KafkaJSLockTimeout"
+          },
+          {
+            "name": "KafkaJSUnsupportedMagicByteInMessageSet",
+            "type": "class",
+            "signature": "class KafkaJSUnsupportedMagicByteInMessageSet"
+          },
+          {
+            "name": "KafkaJSDeleteGroupsError",
+            "type": "class",
+            "signature": "class KafkaJSDeleteGroupsError"
+          },
+          {
+            "name": "KafkaJSDeleteTopicRecordsError",
+            "type": "class",
+            "signature": "class KafkaJSDeleteTopicRecordsError"
+          },
+          {
+            "name": "KafkaConfig",
+            "type": "interface",
+            "signature": "interface KafkaConfig"
+          },
+          {
+            "name": "ISocketFactoryArgs",
+            "type": "interface",
+            "signature": "interface ISocketFactoryArgs"
+          },
+          {
+            "name": "OauthbearerProviderResponse",
+            "type": "interface",
+            "signature": "interface OauthbearerProviderResponse"
+          },
+          {
+            "name": "ProducerConfig",
+            "type": "interface",
+            "signature": "interface ProducerConfig"
+          },
+          {
+            "name": "Message",
+            "type": "interface",
+            "signature": "interface Message"
+          },
+          {
+            "name": "PartitionerArgs",
+            "type": "interface",
+            "signature": "interface PartitionerArgs"
+          },
+          {
+            "name": "IHeaders",
+            "type": "interface",
+            "signature": "interface IHeaders"
+          },
+          {
+            "name": "ConsumerConfig",
+            "type": "interface",
+            "signature": "interface ConsumerConfig"
+          },
+          {
+            "name": "CoordinatorMetadata",
+            "type": "interface",
+            "signature": "interface CoordinatorMetadata"
+          },
+          {
+            "name": "RetryOptions",
+            "type": "interface",
+            "signature": "interface RetryOptions"
+          },
+          {
+            "name": "AdminConfig",
+            "type": "interface",
+            "signature": "interface AdminConfig"
+          },
+          {
+            "name": "ITopicConfig",
+            "type": "interface",
+            "signature": "interface ITopicConfig"
+          },
+          {
+            "name": "ITopicPartitionConfig",
+            "type": "interface",
+            "signature": "interface ITopicPartitionConfig"
+          },
+          {
+            "name": "ITopicMetadata",
+            "type": "interface",
+            "signature": "interface ITopicMetadata"
+          },
+          {
+            "name": "ResourceConfigQuery",
+            "type": "interface",
+            "signature": "interface ResourceConfigQuery"
+          },
+          {
+            "name": "ConfigEntries",
+            "type": "interface",
+            "signature": "interface ConfigEntries"
+          },
+          {
+            "name": "ConfigSynonyms",
+            "type": "interface",
+            "signature": "interface ConfigSynonyms"
+          },
+          {
+            "name": "DescribeConfigResponse",
+            "type": "interface",
+            "signature": "interface DescribeConfigResponse"
+          },
+          {
+            "name": "IResourceConfigEntry",
+            "type": "interface",
+            "signature": "interface IResourceConfigEntry"
+          },
+          {
+            "name": "IResourceConfig",
+            "type": "interface",
+            "signature": "interface IResourceConfig"
+          },
+          {
+            "name": "InstrumentationEvent",
+            "type": "interface",
+            "signature": "interface InstrumentationEvent"
+          },
+          {
+            "name": "Acl",
+            "type": "interface",
+            "signature": "interface Acl"
+          },
+          {
+            "name": "AclResource",
+            "type": "interface",
+            "signature": "interface AclResource"
+          },
+          {
+            "name": "DescribeAclResponse",
+            "type": "interface",
+            "signature": "interface DescribeAclResponse"
+          },
+          {
+            "name": "AclFilter",
+            "type": "interface",
+            "signature": "interface AclFilter"
+          },
+          {
+            "name": "MatchingAcl",
+            "type": "interface",
+            "signature": "interface MatchingAcl"
+          },
+          {
+            "name": "DeleteAclFilterResponses",
+            "type": "interface",
+            "signature": "interface DeleteAclFilterResponses"
+          },
+          {
+            "name": "DeleteAclResponse",
+            "type": "interface",
+            "signature": "interface DeleteAclResponse"
+          }
+        ]
+      },
+      {
+        "name": "grpc-options.interface.ts",
+        "path": "packages/microservices/external/grpc-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 23,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ChannelOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "that",
+            "type": "interface",
+            "signature": "interface that"
+          },
+          {
+            "name": "ChannelOptions",
+            "type": "interface",
+            "signature": "interface ChannelOptions"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,1367 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:25.592Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/common/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "validate-module-keys.util.ts",
+        "path": "packages/common/utils/validate-module-keys.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 24,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/validate-module-keys.util.ts",
+            "functionName": "INVALID_MODULE_CONFIG_MESSAGE",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Moderate context score",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/validate-module-keys.util.ts",
+            "functionName": "validateKey",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/validate-module-keys.util.ts",
+            "functionName": "validateModuleKeys",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "metadataConstants",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "metadataConstants"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "INVALID_MODULE_CONFIG_MESSAGE",
+            "type": "const"
+          },
+          {
+            "name": "validateModuleKeys",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "validateModuleKeys",
+            "type": "function",
+            "signature": "function validateModuleKeys()"
+          },
+          {
+            "name": "INVALID_MODULE_CONFIG_MESSAGE",
+            "type": "function",
+            "signature": "const INVALID_MODULE_CONFIG_MESSAGE = () =>"
+          },
+          {
+            "name": "validateKey",
+            "type": "function",
+            "signature": "const validateKey = () =>"
+          },
+          {
+            "name": "INVALID_MODULE_CONFIG_MESSAGE",
+            "type": "const",
+            "signature": "const INVALID_MODULE_CONFIG_MESSAGE"
+          }
+        ]
+      },
+      {
+        "name": "validate-each.util.ts",
+        "path": "packages/common/utils/validate-each.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 32,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/validate-each.util.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/validate-each.util.ts",
+            "functionName": "validateEach",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return true;\"",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/validate-each.util.ts",
+            "functionName": "what",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "InvalidDecoratorItemException",
+            "type": "class"
+          },
+          {
+            "name": "validateEach",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "validateEach",
+            "type": "function",
+            "signature": "function validateEach()"
+          },
+          {
+            "name": "InvalidDecoratorItemException",
+            "type": "class",
+            "signature": "class InvalidDecoratorItemException"
+          }
+        ]
+      },
+      {
+        "name": "shared.utils.ts",
+        "path": "packages/common/utils/shared.utils.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 52,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "addLeadingSlash",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isConstructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isEmpty",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isFunction",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isNil",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isNumber",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isObject",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isPlainObject",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility); High context score suggests legitimate implementation"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isString",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isSymbol",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "isUndefined",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "normalizePath",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/shared.utils.ts",
+            "functionName": "stripEndSlash",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "isUndefined",
+            "type": "const"
+          },
+          {
+            "name": "isObject",
+            "type": "const"
+          },
+          {
+            "name": "isPlainObject",
+            "type": "const"
+          },
+          {
+            "name": "addLeadingSlash",
+            "type": "const"
+          },
+          {
+            "name": "normalizePath",
+            "type": "const"
+          },
+          {
+            "name": "stripEndSlash",
+            "type": "const"
+          },
+          {
+            "name": "isFunction",
+            "type": "const"
+          },
+          {
+            "name": "isString",
+            "type": "const"
+          },
+          {
+            "name": "isNumber",
+            "type": "const"
+          },
+          {
+            "name": "isConstructor",
+            "type": "const"
+          },
+          {
+            "name": "isNil",
+            "type": "const"
+          },
+          {
+            "name": "isEmpty",
+            "type": "const"
+          },
+          {
+            "name": "isSymbol",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "stripEndSlash",
+            "type": "function",
+            "signature": "const stripEndSlash = () =>"
+          }
+        ]
+      },
+      {
+        "name": "select-exception-filter-metadata.util.ts",
+        "path": "packages/common/utils/select-exception-filter-metadata.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 14,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/select-exception-filter-metadata.util.ts",
+            "functionName": "selectExceptionFilterMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ExceptionFilterMetadata",
+            "sourceModule": "../interfaces/exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFilterMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "selectExceptionFilterMetadata",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "random-string-generator.util.ts",
+        "path": "packages/common/utils/random-string-generator.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/random-string-generator.util.ts",
+            "functionName": "randomStringGenerator",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "uid",
+            "sourceModule": "uid",
+            "isDefault": false,
+            "namedImports": [
+              "uid"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "randomStringGenerator",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "randomStringGenerator",
+            "type": "function",
+            "signature": "const randomStringGenerator = () =>"
+          }
+        ]
+      },
+      {
+        "name": "merge-with-values.util.ts",
+        "path": "packages/common/utils/merge-with-values.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/merge-with-values.util.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/merge-with-values.util.ts",
+            "functionName": "MergeWithValues",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -60,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "Constructor",
+            "type": "type"
+          },
+          {
+            "name": "MergeWithValues",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          },
+          {
+            "name": "M",
+            "type": "const",
+            "signature": "const M"
+          },
+          {
+            "name": "T",
+            "type": "const",
+            "signature": "const T"
+          },
+          {
+            "name": "Constructor",
+            "type": "type",
+            "signature": "type Constructor"
+          }
+        ]
+      },
+      {
+        "name": "load-package.util.ts",
+        "path": "packages/common/utils/load-package.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/load-package.util.ts",
+            "functionName": "loadPackage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/load-package.util.ts",
+            "functionName": "MISSING_REQUIRED_DEPENDENCY",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "../services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "loadPackage",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "loadPackage",
+            "type": "function",
+            "signature": "function loadPackage()"
+          },
+          {
+            "name": "MISSING_REQUIRED_DEPENDENCY",
+            "type": "function",
+            "signature": "const MISSING_REQUIRED_DEPENDENCY = () =>"
+          },
+          {
+            "name": "MISSING_REQUIRED_DEPENDENCY",
+            "type": "const",
+            "signature": "const MISSING_REQUIRED_DEPENDENCY"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/common/utils/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "http-error-by-code.util.ts",
+        "path": "packages/common/utils/http-error-by-code.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 67,
+        "importedModules": [
+          {
+            "name": "HttpStatus",
+            "sourceModule": "../enums",
+            "isDefault": false,
+            "namedImports": [
+              "HttpStatus"
+            ]
+          },
+          {
+            "name": "BadGatewayException",
+            "sourceModule": "../exceptions",
+            "isDefault": false,
+            "namedImports": [
+              "BadGatewayException",
+              "BadRequestException",
+              "ConflictException",
+              "ForbiddenException",
+              "GatewayTimeoutException",
+              "GoneException",
+              "ImATeapotException",
+              "InternalServerErrorException",
+              "MethodNotAllowedException",
+              "NotAcceptableException",
+              "NotFoundException",
+              "NotImplementedException",
+              "PayloadTooLargeException",
+              "PreconditionFailedException",
+              "RequestTimeoutException",
+              "ServiceUnavailableException",
+              "UnauthorizedException",
+              "UnprocessableEntityException",
+              "UnsupportedMediaTypeException"
+            ]
+          },
+          {
+            "name": "Type",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Type"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ErrorHttpStatusCode",
+            "type": "type"
+          },
+          {
+            "name": "HttpErrorByCode",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "H",
+            "type": "const",
+            "signature": "const H"
+          },
+          {
+            "name": "ErrorHttpStatusCode",
+            "type": "type",
+            "signature": "type ErrorHttpStatusCode"
+          }
+        ]
+      },
+      {
+        "name": "forward-ref.util.ts",
+        "path": "packages/common/utils/forward-ref.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/forward-ref.util.ts",
+            "functionName": "forwardRef",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ForwardReference",
+            "sourceModule": "../interfaces/modules/forward-reference.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ForwardReference"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "forwardRef",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "forwardRef",
+            "type": "function",
+            "signature": "const forwardRef = () =>"
+          }
+        ]
+      },
+      {
+        "name": "extend-metadata.util.ts",
+        "path": "packages/common/utils/extend-metadata.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/extend-metadata.util.ts",
+            "functionName": "extendArrayMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "extendArrayMetadata",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "cli-colors.util.ts",
+        "path": "packages/common/utils/cli-colors.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 18,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/cli-colors.util.ts",
+            "functionName": "colorIfAllowed",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/common/utils/cli-colors.util.ts",
+            "functionName": "isColorAllowed",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "isColorAllowed",
+            "type": "const"
+          },
+          {
+            "name": "clc",
+            "type": "const"
+          },
+          {
+            "name": "yellow",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "isColorAllowed",
+            "type": "function",
+            "signature": "const isColorAllowed = () =>"
+          },
+          {
+            "name": "colorIfAllowed",
+            "type": "function",
+            "signature": "const colorIfAllowed = () =>"
+          },
+          {
+            "name": "ColorTextFn",
+            "type": "type",
+            "signature": "type ColorTextFn"
+          }
+        ]
+      },
+      {
+        "name": "assign-custom-metadata.util.ts",
+        "path": "packages/common/utils/assign-custom-metadata.util.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 27,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/common/utils/assign-custom-metadata.util.ts",
+            "functionName": "assignCustomParameterMetadata",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "ParamData",
+            "sourceModule": "../decorators/http/route-params.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "ParamData",
+              "RouteParamMetadata"
+            ]
+          },
+          {
+            "name": "PipeTransform",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "PipeTransform",
+              "Type"
+            ]
+          },
+          {
+            "name": "CustomParamFactory",
+            "sourceModule": "../interfaces/features/custom-route-param-factory.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CustomParamFactory"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "assignCustomParameterMetadata",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "assignCustomParameterMetadata",
+            "type": "function",
+            "signature": "function assignCustomParameterMetadata()"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:40.641Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "deserializers",
+      "path": "packages/microservices/deserializers",
+      "purpose": "Enhanced directory analysis of deserializers",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nats-response-json.deserializer.ts",
+        "path": "packages/microservices/deserializers/nats-response-json.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 32,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/nats-response-json.deserializer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/nats-response-json.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "NatsCodec",
+            "sourceModule": "../external/nats-codec.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NatsCodec"
+            ]
+          },
+          {
+            "name": "IncomingResponse",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponse"
+            ]
+          },
+          {
+            "name": "IncomingResponseDeserializer",
+            "sourceModule": "./incoming-response.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponseDeserializer"
+            ]
+          },
+          {
+            "name": "NatsRequestJSONDeserializer",
+            "sourceModule": "./nats-request-json.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "NatsRequestJSONDeserializer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NatsResponseJSONDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NatsResponseJSONDeserializer",
+            "type": "class",
+            "signature": "class NatsResponseJSONDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "nats-request-json.deserializer.ts",
+        "path": "packages/microservices/deserializers/nats-request-json.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 31,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/nats-request-json.deserializer.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 21
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/nats-request-json.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 23,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "NatsCodec",
+            "sourceModule": "../external/nats-codec.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NatsCodec"
+            ]
+          },
+          {
+            "name": "IncomingEvent",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingEvent",
+              "IncomingRequest"
+            ]
+          },
+          {
+            "name": "IncomingRequestDeserializer",
+            "sourceModule": "./incoming-request.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingRequestDeserializer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NatsRequestJSONDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NatsRequestJSONDeserializer",
+            "type": "class",
+            "signature": "class NatsRequestJSONDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "kafka-response.deserializer.ts",
+        "path": "packages/microservices/deserializers/kafka-response.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 34,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/kafka-response.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isUndefined",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "KafkaHeaders",
+            "sourceModule": "../enums/kafka-headers.enum",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaHeaders"
+            ]
+          },
+          {
+            "name": "Deserializer",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Deserializer",
+              "IncomingResponse"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "KafkaResponseDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "KafkaResponseDeserializer",
+            "type": "class",
+            "signature": "class KafkaResponseDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "kafka-request.deserializer.ts",
+        "path": "packages/microservices/deserializers/kafka-request.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 25,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/kafka-request.deserializer.ts",
+            "functionName": "mapToSchema",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "IncomingEvent",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingEvent",
+              "IncomingRequest"
+            ]
+          },
+          {
+            "name": "KafkaRequest",
+            "sourceModule": "../serializers/kafka-request.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaRequest"
+            ]
+          },
+          {
+            "name": "IncomingRequestDeserializer",
+            "sourceModule": "./incoming-request.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingRequestDeserializer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "KafkaRequestDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "KafkaRequestDeserializer",
+            "type": "class",
+            "signature": "class KafkaRequestDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/microservices/deserializers/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "incoming-response.deserializer.ts",
+        "path": "packages/microservices/deserializers/incoming-response.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 34,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-response.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "likely-legitimate",
+            "confidence": 26,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only a return statement",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 10
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-response.deserializer.ts",
+            "functionName": "isExternal",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-response.deserializer.ts",
+            "functionName": "mapToSchema",
+            "classification": "likely-legitimate",
+            "confidence": 20,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 32
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isUndefined",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "IncomingResponse",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponse",
+              "ProducerDeserializer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IncomingResponseDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "IncomingResponseDeserializer",
+            "type": "class",
+            "signature": "class IncomingResponseDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "incoming-request.deserializer.ts",
+        "path": "packages/microservices/deserializers/incoming-request.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-request.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "likely-legitimate",
+            "confidence": 20,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only a return statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-request.deserializer.ts",
+            "functionName": "isExternal",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return false;\"",
+              "Legitimate simple function pattern (getter/setter/utility)"
+            ],
+            "location": {
+              "startLine": 19,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/deserializers/incoming-request.deserializer.ts",
+            "functionName": "mapToSchema",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 32,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "isUndefined",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "ConsumerDeserializer",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ConsumerDeserializer",
+              "IncomingEvent",
+              "IncomingRequest"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IncomingRequestDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "IncomingRequestDeserializer",
+            "type": "class",
+            "signature": "class IncomingRequestDeserializer"
+          }
+        ]
+      },
+      {
+        "name": "identity.deserializer.ts",
+        "path": "packages/microservices/deserializers/identity.deserializer.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/deserializers/identity.deserializer.ts",
+            "functionName": "deserialize",
+            "classification": "uncertain",
+            "confidence": 50,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function returns a parameter (simple pass-through)",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Deserializer",
+            "sourceModule": "../interfaces/deserializer.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Deserializer"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IdentityDeserializer",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "IdentityDeserializer",
+            "type": "class",
+            "signature": "class IdentityDeserializer"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

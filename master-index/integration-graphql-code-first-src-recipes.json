@@ -1,0 +1,539 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:37:59.795Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "recipes",
+      "path": "integration/graphql-code-first/src/recipes",
+      "purpose": "Enhanced directory analysis of recipes",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "recipes.service.ts",
+        "path": "integration/graphql-code-first/src/recipes/recipes.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 32,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.service.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.service.ts",
+            "functionName": "findAll",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.service.ts",
+            "functionName": "findOneById",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.service.ts",
+            "functionName": "remove",
+            "classification": "definite-legitimate",
+            "confidence": 7,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return true;\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 28,
+              "endLine": 30
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "NewRecipeInput",
+            "sourceModule": "./dto/new-recipe.input",
+            "isDefault": false,
+            "namedImports": [
+              "NewRecipeInput"
+            ]
+          },
+          {
+            "name": "RecipesArgs",
+            "sourceModule": "./dto/recipes.args",
+            "isDefault": false,
+            "namedImports": [
+              "RecipesArgs"
+            ]
+          },
+          {
+            "name": "Recipe",
+            "sourceModule": "./models/recipe",
+            "isDefault": false,
+            "namedImports": [
+              "Recipe"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RecipesService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RecipesService",
+            "type": "class",
+            "signature": "class RecipesService"
+          }
+        ]
+      },
+      {
+        "name": "recipes.resolver.ts",
+        "path": "integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 52,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "addRecipe",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 16
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "recipe",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Utility function with clear purpose; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "recipeAdded",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 47,
+              "endLine": 50
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "recipes",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 28,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/graphql-code-first/src/recipes/recipes.resolver.ts",
+            "functionName": "removeRecipe",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 45
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NotFoundException",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "NotFoundException",
+              "UseGuards",
+              "UseInterceptors"
+            ]
+          },
+          {
+            "name": "Args",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "Args",
+              "Mutation",
+              "Query",
+              "Resolver",
+              "Subscription"
+            ]
+          },
+          {
+            "name": "PubSub",
+            "sourceModule": "graphql-subscriptions",
+            "isDefault": false,
+            "namedImports": [
+              "PubSub"
+            ]
+          },
+          {
+            "name": "AuthGuard",
+            "sourceModule": "../common/guards/auth.guard",
+            "isDefault": false,
+            "namedImports": [
+              "AuthGuard"
+            ]
+          },
+          {
+            "name": "DataInterceptor",
+            "sourceModule": "../common/interceptors/data.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "DataInterceptor"
+            ]
+          },
+          {
+            "name": "NewRecipeInput",
+            "sourceModule": "./dto/new-recipe.input",
+            "isDefault": false,
+            "namedImports": [
+              "NewRecipeInput"
+            ]
+          },
+          {
+            "name": "RecipesArgs",
+            "sourceModule": "./dto/recipes.args",
+            "isDefault": false,
+            "namedImports": [
+              "RecipesArgs"
+            ]
+          },
+          {
+            "name": "Recipe",
+            "sourceModule": "./models/recipe",
+            "isDefault": false,
+            "namedImports": [
+              "Recipe"
+            ]
+          },
+          {
+            "name": "RecipesService",
+            "sourceModule": "./recipes.service",
+            "isDefault": false,
+            "namedImports": [
+              "RecipesService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RecipesResolver",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RecipesResolver",
+            "type": "class",
+            "signature": "class RecipesResolver"
+          }
+        ]
+      },
+      {
+        "name": "recipes.module.ts",
+        "path": "integration/graphql-code-first/src/recipes/recipes.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "APP_FILTER",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "APP_FILTER"
+            ]
+          },
+          {
+            "name": "UnauthorizedFilter",
+            "sourceModule": "../common/filters/unauthorized.filter",
+            "isDefault": false,
+            "namedImports": [
+              "UnauthorizedFilter"
+            ]
+          },
+          {
+            "name": "DateScalar",
+            "sourceModule": "../common/scalars/date.scalar",
+            "isDefault": false,
+            "namedImports": [
+              "DateScalar"
+            ]
+          },
+          {
+            "name": "RecipesResolver",
+            "sourceModule": "./recipes.resolver",
+            "isDefault": false,
+            "namedImports": [
+              "RecipesResolver"
+            ]
+          },
+          {
+            "name": "RecipesService",
+            "sourceModule": "./recipes.service",
+            "isDefault": false,
+            "namedImports": [
+              "RecipesService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RecipesModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "RecipesModule",
+            "type": "class",
+            "signature": "class RecipesModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "dto",
+        "relativePath": "dto",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dto",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "models",
+        "relativePath": "models",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of models",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

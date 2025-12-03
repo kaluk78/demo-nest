@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:39:08.681Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "client",
+      "path": "sample/16-gateways-ws/client",
+      "purpose": "Enhanced directory analysis of client",
+      "ownKeyElements": []
+    },
+    "files": [],
+    "subdirectories": []
+  }
+}

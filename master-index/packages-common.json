@@ -1,0 +1,524 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:26.489Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "common",
+      "path": "packages/common",
+      "purpose": "Enhanced directory analysis of common",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/common/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 71,
+        "importedModules": [
+          {
+            "name": "reflect-metadata",
+            "sourceModule": "reflect-metadata",
+            "isDefault": false
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "Abstract",
+            "type": "const"
+          },
+          {
+            "name": "ArgumentMetadata",
+            "type": "const"
+          },
+          {
+            "name": "ArgumentsHost",
+            "type": "const"
+          },
+          {
+            "name": "BeforeApplicationShutdown",
+            "type": "const"
+          },
+          {
+            "name": "CallHandler",
+            "type": "const"
+          },
+          {
+            "name": "CanActivate",
+            "type": "const"
+          },
+          {
+            "name": "ClassProvider",
+            "type": "const"
+          },
+          {
+            "name": "ContextType",
+            "type": "const"
+          },
+          {
+            "name": "DynamicModule",
+            "type": "const"
+          },
+          {
+            "name": "ExceptionFilter",
+            "type": "const"
+          },
+          {
+            "name": "ExecutionContext",
+            "type": "const"
+          },
+          {
+            "name": "ExistingProvider",
+            "type": "const"
+          },
+          {
+            "name": "FactoryProvider",
+            "type": "const"
+          },
+          {
+            "name": "ForwardReference",
+            "type": "const"
+          },
+          {
+            "name": "HttpServer",
+            "type": "const"
+          },
+          {
+            "name": "HttpExceptionBody",
+            "type": "const"
+          },
+          {
+            "name": "HttpExceptionBodyMessage",
+            "type": "const"
+          },
+          {
+            "name": "HttpRedirectResponse",
+            "type": "const"
+          },
+          {
+            "name": "INestApplication",
+            "type": "const"
+          },
+          {
+            "name": "INestApplicationContext",
+            "type": "const"
+          },
+          {
+            "name": "INestMicroservice",
+            "type": "const"
+          },
+          {
+            "name": "InjectionToken",
+            "type": "const"
+          },
+          {
+            "name": "IntrospectionResult",
+            "type": "const"
+          },
+          {
+            "name": "MessageEvent",
+            "type": "const"
+          },
+          {
+            "name": "MiddlewareConsumer",
+            "type": "const"
+          },
+          {
+            "name": "ModuleMetadata",
+            "type": "const"
+          },
+          {
+            "name": "NestApplicationOptions",
+            "type": "const"
+          },
+          {
+            "name": "NestHybridApplicationOptions",
+            "type": "const"
+          },
+          {
+            "name": "NestInterceptor",
+            "type": "const"
+          },
+          {
+            "name": "NestMiddleware",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "constants.ts",
+        "path": "packages/common/constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MODULE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "GLOBAL_MODULE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "HOST_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "PATH_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "PARAMTYPES_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "SELF_DECLARED_DEPS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "OPTIONAL_DEPS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "PROPERTY_DEPS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "OPTIONAL_PROPERTY_DEPS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "SCOPE_OPTIONS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "METHOD_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "ROUTE_ARGS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "FILTER_CATCH_EXCEPTIONS",
+            "type": "const"
+          },
+          {
+            "name": "PIPES_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "GUARDS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "INTERCEPTORS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "EXCEPTION_FILTERS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "ENHANCER_KEY_TO_SUBTYPE_MAP",
+            "type": "const"
+          },
+          {
+            "name": "EnhancerSubtype",
+            "type": "type"
+          },
+          {
+            "name": "RENDER_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "HTTP_CODE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "MODULE_PATH",
+            "type": "const"
+          },
+          {
+            "name": "HEADERS_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "REDIRECT_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "RESPONSE_PASSTHROUGH_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "SSE_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "VERSION_METADATA",
+            "type": "const"
+          },
+          {
+            "name": "INJECTABLE_WATERMARK",
+            "type": "const"
+          },
+          {
+            "name": "CONTROLLER_WATERMARK",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MODULE_METADATA",
+            "type": "const",
+            "signature": "const MODULE_METADATA"
+          },
+          {
+            "name": "GLOBAL_MODULE_METADATA",
+            "type": "const",
+            "signature": "const GLOBAL_MODULE_METADATA"
+          },
+          {
+            "name": "HOST_METADATA",
+            "type": "const",
+            "signature": "const HOST_METADATA"
+          },
+          {
+            "name": "PATH_METADATA",
+            "type": "const",
+            "signature": "const PATH_METADATA"
+          },
+          {
+            "name": "PARAMTYPES_METADATA",
+            "type": "const",
+            "signature": "const PARAMTYPES_METADATA"
+          },
+          {
+            "name": "SELF_DECLARED_DEPS_METADATA",
+            "type": "const",
+            "signature": "const SELF_DECLARED_DEPS_METADATA"
+          },
+          {
+            "name": "OPTIONAL_DEPS_METADATA",
+            "type": "const",
+            "signature": "const OPTIONAL_DEPS_METADATA"
+          },
+          {
+            "name": "PROPERTY_DEPS_METADATA",
+            "type": "const",
+            "signature": "const PROPERTY_DEPS_METADATA"
+          },
+          {
+            "name": "OPTIONAL_PROPERTY_DEPS_METADATA",
+            "type": "const",
+            "signature": "const OPTIONAL_PROPERTY_DEPS_METADATA"
+          },
+          {
+            "name": "SCOPE_OPTIONS_METADATA",
+            "type": "const",
+            "signature": "const SCOPE_OPTIONS_METADATA"
+          },
+          {
+            "name": "METHOD_METADATA",
+            "type": "const",
+            "signature": "const METHOD_METADATA"
+          },
+          {
+            "name": "ROUTE_ARGS_METADATA",
+            "type": "const",
+            "signature": "const ROUTE_ARGS_METADATA"
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "type": "const",
+            "signature": "const CUSTOM_ROUTE_ARGS_METADATA"
+          },
+          {
+            "name": "FILTER_CATCH_EXCEPTIONS",
+            "type": "const",
+            "signature": "const FILTER_CATCH_EXCEPTIONS"
+          },
+          {
+            "name": "PIPES_METADATA",
+            "type": "const",
+            "signature": "const PIPES_METADATA"
+          },
+          {
+            "name": "GUARDS_METADATA",
+            "type": "const",
+            "signature": "const GUARDS_METADATA"
+          },
+          {
+            "name": "INTERCEPTORS_METADATA",
+            "type": "const",
+            "signature": "const INTERCEPTORS_METADATA"
+          },
+          {
+            "name": "EXCEPTION_FILTERS_METADATA",
+            "type": "const",
+            "signature": "const EXCEPTION_FILTERS_METADATA"
+          },
+          {
+            "name": "ENHANCER_KEY_TO_SUBTYPE_MAP",
+            "type": "const",
+            "signature": "const ENHANCER_KEY_TO_SUBTYPE_MAP"
+          },
+          {
+            "name": "RENDER_METADATA",
+            "type": "const",
+            "signature": "const RENDER_METADATA"
+          },
+          {
+            "name": "HTTP_CODE_METADATA",
+            "type": "const",
+            "signature": "const HTTP_CODE_METADATA"
+          },
+          {
+            "name": "MODULE_PATH",
+            "type": "const",
+            "signature": "const MODULE_PATH"
+          },
+          {
+            "name": "HEADERS_METADATA",
+            "type": "const",
+            "signature": "const HEADERS_METADATA"
+          },
+          {
+            "name": "REDIRECT_METADATA",
+            "type": "const",
+            "signature": "const REDIRECT_METADATA"
+          },
+          {
+            "name": "RESPONSE_PASSTHROUGH_METADATA",
+            "type": "const",
+            "signature": "const RESPONSE_PASSTHROUGH_METADATA"
+          },
+          {
+            "name": "SSE_METADATA",
+            "type": "const",
+            "signature": "const SSE_METADATA"
+          },
+          {
+            "name": "VERSION_METADATA",
+            "type": "const",
+            "signature": "const VERSION_METADATA"
+          },
+          {
+            "name": "INJECTABLE_WATERMARK",
+            "type": "const",
+            "signature": "const INJECTABLE_WATERMARK"
+          },
+          {
+            "name": "CONTROLLER_WATERMARK",
+            "type": "const",
+            "signature": "const CONTROLLER_WATERMARK"
+          },
+          {
+            "name": "CATCH_WATERMARK",
+            "type": "const",
+            "signature": "const CATCH_WATERMARK"
+          },
+          {
+            "name": "ENTRY_PROVIDER_WATERMARK",
+            "type": "const",
+            "signature": "const ENTRY_PROVIDER_WATERMARK"
+          },
+          {
+            "name": "EnhancerSubtype",
+            "type": "type",
+            "signature": "type EnhancerSubtype"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "decorators",
+        "relativePath": "decorators",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of decorators",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "enums",
+        "relativePath": "enums",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of enums",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exceptions",
+        "relativePath": "exceptions",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exceptions",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "file-stream",
+        "relativePath": "file-stream",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of file-stream",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "module-utils",
+        "relativePath": "module-utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of module-utils",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "pipes",
+        "relativePath": "pipes",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of pipes",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "serializer",
+        "relativePath": "serializer",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of serializer",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "services",
+        "relativePath": "services",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of services",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "test",
+        "relativePath": "test",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of test",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

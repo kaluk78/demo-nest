@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:13.724Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "inject-inquirer",
+      "path": "integration/scopes/src/inject-inquirer",
+      "purpose": "Enhanced directory analysis of inject-inquirer",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "hello.module.ts",
+        "path": "integration/scopes/src/inject-inquirer/hello.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module",
+              "Logger"
+            ]
+          },
+          {
+            "name": "HelloController",
+            "sourceModule": "./hello.controller",
+            "isDefault": false,
+            "namedImports": [
+              "HelloController"
+            ]
+          },
+          {
+            "name": "HelloRequestService",
+            "sourceModule": "./hello-request/hello-request.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloRequestService"
+            ]
+          },
+          {
+            "name": "HelloTransientService",
+            "sourceModule": "./hello-transient/hello-transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloTransientService"
+            ]
+          },
+          {
+            "name": "RequestLogger",
+            "sourceModule": "./hello-request/request-logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "RequestLogger"
+            ]
+          },
+          {
+            "name": "TransientLogger",
+            "sourceModule": "./hello-transient/transient-logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "TransientLogger"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HelloModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HelloModule",
+            "type": "class",
+            "signature": "class HelloModule"
+          }
+        ]
+      },
+      {
+        "name": "hello.controller.ts",
+        "path": "integration/scopes/src/inject-inquirer/hello.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 26,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/scopes/src/inject-inquirer/hello.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 10,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/scopes/src/inject-inquirer/hello.controller.ts",
+            "functionName": "greetingRequest",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/scopes/src/inject-inquirer/hello.controller.ts",
+            "functionName": "greetingTransient",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 15,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Get",
+              "Scope"
+            ]
+          },
+          {
+            "name": "HelloRequestService",
+            "sourceModule": "./hello-request/hello-request.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloRequestService"
+            ]
+          },
+          {
+            "name": "HelloTransientService",
+            "sourceModule": "./hello-transient/hello-transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloTransientService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HelloController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HelloController",
+            "type": "class",
+            "signature": "class HelloController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "hello-request",
+        "relativePath": "hello-request",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of hello-request",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "hello-transient",
+        "relativePath": "hello-transient",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of hello-transient",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}

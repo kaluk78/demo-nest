@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:24.299Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/common/test/module-utils/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "get-injection-providers.util.spec.ts",
+        "path": "packages/common/test/module-utils/utils/get-injection-providers.util.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 74,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Provider",
+            "sourceModule": "../../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "Provider"
+            ]
+          },
+          {
+            "name": "getInjectionProviders",
+            "sourceModule": "../../../module-utils/utils/get-injection-providers.util",
+            "isDefault": false,
+            "namedImports": [
+              "getInjectionProviders"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "C",
+            "type": "class",
+            "signature": "class C"
+          },
+          {
+            "name": "G",
+            "type": "class",
+            "signature": "class G"
+          },
+          {
+            "name": "H",
+            "type": "class",
+            "signature": "class H"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

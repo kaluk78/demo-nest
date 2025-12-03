@@ -1,0 +1,5380 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:40.072Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "client",
+      "path": "packages/microservices/client",
+      "purpose": "Enhanced directory analysis of client",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "index.ts",
+        "path": "packages/microservices/client/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ClientProxyFactory",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "client-tcp.ts",
+        "path": "packages/microservices/client/client-tcp.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 207,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 114,
+              "endLine": 118
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 40,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 38
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "createSocket",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Factory function pattern; External interaction (I/O, network, DB) suggests legitimacy",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 97,
+              "endLine": 112
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 198,
+              "endLine": 205
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "handleClose",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 147,
+              "endLine": 158
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -57,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "handleError",
+            "classification": "likely-legitimate",
+            "confidence": 21,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only logging statements",
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function"
+            ],
+            "location": {
+              "startLine": 143,
+              "endLine": 145
+            },
+            "detectionMethods": {
+              "explicitMarkers": 45,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "handleResponse",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 95
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 160,
+              "endLine": 169
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 180,
+              "endLine": 196
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "registerCloseListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 136,
+              "endLine": 141
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "registerConnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 120,
+              "endLine": 124
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "registerErrorListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 126,
+              "endLine": 134
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-tcp.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 171,
+              "endLine": 178
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Logger",
+              "Type"
+            ]
+          },
+          {
+            "name": "* as net",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "* as net"
+            ]
+          },
+          {
+            "name": "EmptyError",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "EmptyError",
+              "lastValueFrom"
+            ]
+          },
+          {
+            "name": "share",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "share",
+              "tap"
+            ]
+          },
+          {
+            "name": "ConnectionOptions",
+            "sourceModule": "tls",
+            "isDefault": false,
+            "namedImports": [
+              "ConnectionOptions",
+              "tlsConnect",
+              "TLSSocket"
+            ]
+          },
+          {
+            "name": "ECONNREFUSED",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "ECONNREFUSED",
+              "TCP_DEFAULT_HOST",
+              "TCP_DEFAULT_PORT"
+            ]
+          },
+          {
+            "name": "TcpEvents",
+            "sourceModule": "../events/tcp.events",
+            "isDefault": false,
+            "namedImports": [
+              "TcpEvents",
+              "TcpEventsMap",
+              "TcpStatus"
+            ]
+          },
+          {
+            "name": "JsonSocket",
+            "sourceModule": "../helpers",
+            "isDefault": false,
+            "namedImports": [
+              "JsonSocket",
+              "TcpSocket"
+            ]
+          },
+          {
+            "name": "PacketId",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "PacketId",
+              "ReadPacket",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "TcpClientOptions",
+            "sourceModule": "../interfaces/client-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "TcpClientOptions"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientTCP",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientTCP",
+            "type": "class",
+            "signature": "class ClientTCP"
+          }
+        ]
+      },
+      {
+        "name": "client-rmq.ts",
+        "path": "packages/microservices/client/client-rmq.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 493,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 99,
+              "endLine": 105
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 107,
+              "endLine": 140
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 72,
+              "endLine": 97
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "consumeChannel",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 241,
+              "endLine": 251
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "convertConnectionToPromise",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 188,
+              "endLine": 197
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "createChannel",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Moderate context score; Factory function pattern; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 142,
+              "endLine": 149
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 151,
+              "endLine": 155
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 425,
+              "endLine": 465
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "errorCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "eventToError",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "handleMessage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 323,
+              "endLine": 351
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "initializeSerializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 467,
+              "endLine": 469
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "listener",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "mergeDisconnectEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 157,
+              "endLine": 186
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "mergeHeaders",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\""
+            ],
+            "location": {
+              "startLine": 471,
+              "endLine": 482
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 294,
+              "endLine": 303
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "parseMessageContent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 484,
+              "endLine": 491
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 353,
+              "endLine": 423
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "registerConnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 277,
+              "endLine": 292
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "registerDisconnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 259,
+              "endLine": 275
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "registerErrorListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 253,
+              "endLine": 257
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "setupChannel",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 199,
+              "endLine": 239
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-rmq.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 305,
+              "endLine": 312
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "randomStringGenerator",
+            "sourceModule": "@nestjs/common/utils/random-string-generator.util",
+            "isDefault": false,
+            "namedImports": [
+              "randomStringGenerator"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction",
+              "isString"
+            ]
+          },
+          {
+            "name": "EventEmitter",
+            "sourceModule": "events",
+            "isDefault": false,
+            "namedImports": [
+              "EventEmitter"
+            ]
+          },
+          {
+            "name": "EmptyError",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "EmptyError",
+              "firstValueFrom",
+              "fromEvent",
+              "merge",
+              "Observable",
+              "ReplaySubject"
+            ]
+          },
+          {
+            "name": "first",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "first",
+              "map",
+              "retryWhen",
+              "scan",
+              "skip",
+              "switchMap"
+            ]
+          },
+          {
+            "name": "DISCONNECTED_RMQ_MESSAGE",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "DISCONNECTED_RMQ_MESSAGE",
+              "RQM_DEFAULT_IS_GLOBAL_PREFETCH_COUNT",
+              "RQM_DEFAULT_NO_ASSERT",
+              "RQM_DEFAULT_NOACK",
+              "RQM_DEFAULT_PERSISTENT",
+              "RQM_DEFAULT_PREFETCH_COUNT",
+              "RQM_DEFAULT_QUEUE",
+              "RQM_DEFAULT_QUEUE_OPTIONS",
+              "RQM_DEFAULT_URL"
+            ]
+          },
+          {
+            "name": "RmqEvents",
+            "sourceModule": "../events/rmq.events",
+            "isDefault": false,
+            "namedImports": [
+              "RmqEvents",
+              "RmqEventsMap",
+              "RmqStatus"
+            ]
+          },
+          {
+            "name": "ReadPacket",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ReadPacket",
+              "RmqOptions",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "RmqRecord",
+            "sourceModule": "../record-builders",
+            "isDefault": false,
+            "namedImports": [
+              "RmqRecord"
+            ]
+          },
+          {
+            "name": "RmqRecordSerializer",
+            "sourceModule": "../serializers/rmq-record.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "RmqRecordSerializer"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientRMQ",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "eventToError",
+            "type": "function",
+            "signature": "const eventToError = () =>"
+          },
+          {
+            "name": "listener",
+            "type": "function",
+            "signature": "const listener = () =>"
+          },
+          {
+            "name": "errorCallback",
+            "type": "function",
+            "signature": "const errorCallback = () =>"
+          },
+          {
+            "name": "ClientRMQ",
+            "type": "class",
+            "signature": "class ClientRMQ"
+          },
+          {
+            "name": "REPLY_QUEUE",
+            "type": "const",
+            "signature": "const REPLY_QUEUE"
+          },
+          {
+            "name": "safety",
+            "type": "type",
+            "signature": "type safety"
+          },
+          {
+            "name": "AmqpConnectionManager",
+            "type": "type",
+            "signature": "type AmqpConnectionManager"
+          },
+          {
+            "name": "ChannelWrapper",
+            "type": "type",
+            "signature": "type ChannelWrapper"
+          },
+          {
+            "name": "Channel",
+            "type": "type",
+            "signature": "type Channel"
+          },
+          {
+            "name": "ConsumeMessage",
+            "type": "type",
+            "signature": "type ConsumeMessage"
+          },
+          {
+            "name": "Channel",
+            "type": "type",
+            "signature": "type Channel"
+          },
+          {
+            "name": "ChannelWrapper",
+            "type": "type",
+            "signature": "type ChannelWrapper"
+          },
+          {
+            "name": "ConsumeMessage",
+            "type": "type",
+            "signature": "type ConsumeMessage"
+          },
+          {
+            "name": "AmqpConnectionManager",
+            "type": "type",
+            "signature": "type AmqpConnectionManager"
+          }
+        ]
+      },
+      {
+        "name": "client-redis.ts",
+        "path": "packages/microservices/client/client-redis.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 307,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 56,
+              "endLine": 62
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 64,
+              "endLine": 89
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 37,
+              "endLine": 46
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 1,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 91,
+              "endLine": 98
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "createResponseCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 219,
+              "endLine": 244
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "createRetryStrategy",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 202,
+              "endLine": 217
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 287,
+              "endLine": 296
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "getClientOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 172,
+              "endLine": 179
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "getReplyPattern",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 52,
+              "endLine": 54
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "getRequestPattern",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 48,
+              "endLine": 50
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 181,
+              "endLine": 191
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 246,
+              "endLine": 285
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "publishPacket",
+            "classification": "definite-legitimate",
+            "confidence": 16,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "registerEndListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 145,
+              "endLine": 170
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "registerErrorListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 100,
+              "endLine": 104
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "registerReadyListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 129,
+              "endLine": 143
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "registerReconnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 106,
+              "endLine": 127
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "retryStrategy",
+            "classification": "definite-legitimate",
+            "confidence": 18,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "unsubscribeFromChannel",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 298,
+              "endLine": 305
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-redis.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 193,
+              "endLine": 200
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "REDIS_DEFAULT_HOST",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "REDIS_DEFAULT_HOST",
+              "REDIS_DEFAULT_PORT"
+            ]
+          },
+          {
+            "name": "RedisEvents",
+            "sourceModule": "../events/redis.events",
+            "isDefault": false,
+            "namedImports": [
+              "RedisEvents",
+              "RedisEventsMap",
+              "RedisStatus"
+            ]
+          },
+          {
+            "name": "ReadPacket",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ReadPacket",
+              "RedisOptions",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientRedis",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "retryStrategy",
+            "type": "function",
+            "signature": "const retryStrategy = () =>"
+          },
+          {
+            "name": "publishPacket",
+            "type": "function",
+            "signature": "const publishPacket = () =>"
+          },
+          {
+            "name": "ClientRedis",
+            "type": "class",
+            "signature": "class ClientRedis"
+          },
+          {
+            "name": "safety",
+            "type": "type",
+            "signature": "type safety"
+          },
+          {
+            "name": "Redis",
+            "type": "type",
+            "signature": "type Redis"
+          },
+          {
+            "name": "Redis",
+            "type": "type",
+            "signature": "type Redis"
+          }
+        ]
+      },
+      {
+        "name": "client-proxy.ts",
+        "path": "packages/microservices/client/client-proxy.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 234,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "assignPacketId",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 160,
+              "endLine": 163
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -77,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "connect$",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 165,
+              "endLine": 177
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "createObserver",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 136,
+              "endLine": 150
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "emit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 111,
+              "endLine": 127
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "getOptionsProp",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 192,
+              "endLine": 202
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "initializeDeserializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 221,
+              "endLine": 232
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "initializeSerializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 208,
+              "endLine": 219
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "normalizePattern",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 204,
+              "endLine": 206
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains explicit placeholder marker: \"not implemented\"",
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Utility function with clear purpose"
+            ],
+            "location": {
+              "startLine": 67,
+              "endLine": 72
+            },
+            "detectionMethods": {
+              "explicitMarkers": 10,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "send",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 86,
+              "endLine": 102
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "serializeError",
+            "classification": "likely-legitimate",
+            "confidence": 30,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 152,
+              "endLine": 154
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "serializeResponse",
+            "classification": "likely-legitimate",
+            "confidence": 30,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 156,
+              "endLine": 158
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy.ts",
+            "functionName": "status",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 50,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "randomStringGenerator",
+            "sourceModule": "@nestjs/common/utils/random-string-generator.util",
+            "isDefault": false,
+            "namedImports": [
+              "randomStringGenerator"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil"
+            ]
+          },
+          {
+            "name": "_throw",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "_throw",
+              "connectable",
+              "defer",
+              "fromEvent",
+              "merge",
+              "Observable",
+              "Observer",
+              "ReplaySubject",
+              "Subject"
+            ]
+          },
+          {
+            "name": "distinctUntilChanged",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "distinctUntilChanged",
+              "map",
+              "mergeMap",
+              "take"
+            ]
+          },
+          {
+            "name": "IncomingResponseDeserializer",
+            "sourceModule": "../deserializers/incoming-response.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponseDeserializer"
+            ]
+          },
+          {
+            "name": "InvalidMessageException",
+            "sourceModule": "../errors/invalid-message.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidMessageException"
+            ]
+          },
+          {
+            "name": "ClientOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientOptions",
+              "KafkaOptions",
+              "MqttOptions",
+              "MsPattern",
+              "NatsOptions",
+              "PacketId",
+              "ReadPacket",
+              "RedisOptions",
+              "RmqOptions",
+              "TcpClientOptions",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "ProducerDeserializer",
+            "sourceModule": "../interfaces/deserializer.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ProducerDeserializer"
+            ]
+          },
+          {
+            "name": "ProducerSerializer",
+            "sourceModule": "../interfaces/serializer.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ProducerSerializer"
+            ]
+          },
+          {
+            "name": "IdentitySerializer",
+            "sourceModule": "../serializers/identity.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "IdentitySerializer"
+            ]
+          },
+          {
+            "name": "transformPatternToRoute",
+            "sourceModule": "../utils",
+            "isDefault": false,
+            "namedImports": [
+              "transformPatternToRoute"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientProxy",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientProxy",
+            "type": "class",
+            "signature": "class ClientProxy"
+          }
+        ]
+      },
+      {
+        "name": "client-proxy-factory.ts",
+        "path": "packages/microservices/client/client-proxy-factory.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 83,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy-factory.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 41,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-proxy-factory.ts",
+            "functionName": "isCustomClientOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 81
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Transport",
+            "sourceModule": "../enums/transport.enum",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "ClientKafkaProxy",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientKafkaProxy"
+            ]
+          },
+          {
+            "name": "ClientOptions",
+            "sourceModule": "../interfaces/client-metadata.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ClientOptions",
+              "CustomClientOptions",
+              "TcpClientOptions"
+            ]
+          },
+          {
+            "name": "GrpcOptions",
+            "sourceModule": "../interfaces/microservice-configuration.interface",
+            "isDefault": false,
+            "namedImports": [
+              "GrpcOptions",
+              "KafkaOptions",
+              "MqttOptions",
+              "NatsOptions",
+              "RedisOptions",
+              "RmqOptions"
+            ]
+          },
+          {
+            "name": "ClientGrpcProxy",
+            "sourceModule": "./client-grpc",
+            "isDefault": false,
+            "namedImports": [
+              "ClientGrpcProxy"
+            ]
+          },
+          {
+            "name": "ClientKafka",
+            "sourceModule": "./client-kafka",
+            "isDefault": false,
+            "namedImports": [
+              "ClientKafka"
+            ]
+          },
+          {
+            "name": "ClientMqtt",
+            "sourceModule": "./client-mqtt",
+            "isDefault": false,
+            "namedImports": [
+              "ClientMqtt"
+            ]
+          },
+          {
+            "name": "ClientNats",
+            "sourceModule": "./client-nats",
+            "isDefault": false,
+            "namedImports": [
+              "ClientNats"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          },
+          {
+            "name": "ClientRedis",
+            "sourceModule": "./client-redis",
+            "isDefault": false,
+            "namedImports": [
+              "ClientRedis"
+            ]
+          },
+          {
+            "name": "ClientRMQ",
+            "sourceModule": "./client-rmq",
+            "isDefault": false,
+            "namedImports": [
+              "ClientRMQ"
+            ]
+          },
+          {
+            "name": "ClientTCP",
+            "sourceModule": "./client-tcp",
+            "isDefault": false,
+            "namedImports": [
+              "ClientTCP"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IClientProxyFactory",
+            "type": "interface"
+          },
+          {
+            "name": "ClientProxyFactory",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientProxyFactory",
+            "type": "class",
+            "signature": "class ClientProxyFactory"
+          },
+          {
+            "name": "IClientProxyFactory",
+            "type": "interface",
+            "signature": "interface IClientProxyFactory"
+          }
+        ]
+      },
+      {
+        "name": "client-nats.ts",
+        "path": "packages/microservices/client/client-nats.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 278,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 46,
+              "endLine": 52
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 54,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 38,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 69,
+              "endLine": 75
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "createSubscriptionHandler",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 166,
+              "endLine": 202
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 236,
+              "endLine": 251
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "handleStatusUpdates",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 77,
+              "endLine": 148
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -57,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "initializeDeserializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 257,
+              "endLine": 260
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "initializeSerializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 253,
+              "endLine": 255
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "mergeHeaders",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\""
+            ],
+            "location": {
+              "startLine": 262,
+              "endLine": 276
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 150,
+              "endLine": 155
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 204,
+              "endLine": 234
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-nats.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 157,
+              "endLine": 164
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "EventEmitter",
+            "sourceModule": "stream",
+            "isDefault": false,
+            "namedImports": [
+              "EventEmitter"
+            ]
+          },
+          {
+            "name": "NATS_DEFAULT_URL",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "NATS_DEFAULT_URL"
+            ]
+          },
+          {
+            "name": "NatsResponseJSONDeserializer",
+            "sourceModule": "../deserializers/nats-response-json.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "NatsResponseJSONDeserializer"
+            ]
+          },
+          {
+            "name": "EmptyResponseException",
+            "sourceModule": "../errors/empty-response.exception",
+            "isDefault": false,
+            "namedImports": [
+              "EmptyResponseException"
+            ]
+          },
+          {
+            "name": "NatsEvents",
+            "sourceModule": "../events/nats.events",
+            "isDefault": false,
+            "namedImports": [
+              "NatsEvents",
+              "NatsEventsMap",
+              "NatsStatus"
+            ]
+          },
+          {
+            "name": "NatsOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "NatsOptions",
+              "PacketId",
+              "ReadPacket",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "NatsRecord",
+            "sourceModule": "../record-builders",
+            "isDefault": false,
+            "namedImports": [
+              "NatsRecord"
+            ]
+          },
+          {
+            "name": "NatsRecordSerializer",
+            "sourceModule": "../serializers/nats-record.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "NatsRecordSerializer"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientNats",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientNats",
+            "type": "class",
+            "signature": "class ClientNats"
+          },
+          {
+            "name": "safety",
+            "type": "type",
+            "signature": "type safety"
+          },
+          {
+            "name": "Client",
+            "type": "type",
+            "signature": "type Client"
+          },
+          {
+            "name": "NatsMsg",
+            "type": "type",
+            "signature": "type NatsMsg"
+          },
+          {
+            "name": "Client",
+            "type": "type",
+            "signature": "type Client"
+          },
+          {
+            "name": "NatsMsg",
+            "type": "type",
+            "signature": "type NatsMsg"
+          }
+        ]
+      },
+      {
+        "name": "client-mqtt.ts",
+        "path": "packages/microservices/client/client-mqtt.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 329,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 60,
+              "endLine": 67
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 69,
+              "endLine": 96
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 50
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 115,
+              "endLine": 117
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "createResponseCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 196,
+              "endLine": 218
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 271,
+              "endLine": 288
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "getRequestPattern",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 52,
+              "endLine": 54
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "getResponsePattern",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 56,
+              "endLine": 58
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "initializeSerializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 299,
+              "endLine": 301
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "mergeCloseEvent",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 98,
+              "endLine": 113
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "mergePacketOptions",
+            "classification": "definite-legitimate",
+            "confidence": 15,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\""
+            ],
+            "location": {
+              "startLine": 303,
+              "endLine": 327
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 176,
+              "endLine": 185
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 220,
+              "endLine": 269
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "publishPacket",
+            "classification": "definite-legitimate",
+            "confidence": 4,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerCloseListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 155,
+              "endLine": 159
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerConnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 161,
+              "endLine": 174
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerDisconnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 149,
+              "endLine": 153
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerErrorListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 119,
+              "endLine": 126
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerOfflineListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 128,
+              "endLine": 138
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "registerReconnectListener",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Event handler or callback function; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 140,
+              "endLine": 147
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "unsubscribeFromChannel",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 290,
+              "endLine": 297
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-mqtt.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 187,
+              "endLine": 194
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isObject",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isObject"
+            ]
+          },
+          {
+            "name": "EmptyError",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "EmptyError",
+              "fromEvent",
+              "lastValueFrom",
+              "merge",
+              "Observable"
+            ]
+          },
+          {
+            "name": "first",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "first",
+              "map",
+              "share",
+              "tap"
+            ]
+          },
+          {
+            "name": "ECONNREFUSED",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "ECONNREFUSED",
+              "ENOTFOUND",
+              "MQTT_DEFAULT_URL"
+            ]
+          },
+          {
+            "name": "MqttEvents",
+            "sourceModule": "../events/mqtt.events",
+            "isDefault": false,
+            "namedImports": [
+              "MqttEvents",
+              "MqttEventsMap",
+              "MqttStatus"
+            ]
+          },
+          {
+            "name": "MqttOptions",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "MqttOptions",
+              "ReadPacket",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "MqttRecord",
+            "sourceModule": "../record-builders/mqtt.record-builder",
+            "isDefault": false,
+            "namedImports": [
+              "MqttRecord",
+              "MqttRecordOptions"
+            ]
+          },
+          {
+            "name": "MqttRecordSerializer",
+            "sourceModule": "../serializers/mqtt-record.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "MqttRecordSerializer"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientMqtt",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "publishPacket",
+            "type": "function",
+            "signature": "const publishPacket = () =>"
+          },
+          {
+            "name": "ClientMqtt",
+            "type": "class",
+            "signature": "class ClientMqtt"
+          },
+          {
+            "name": "safety",
+            "type": "type",
+            "signature": "type safety"
+          },
+          {
+            "name": "MqttClient",
+            "type": "type",
+            "signature": "type MqttClient"
+          },
+          {
+            "name": "MqttClient",
+            "type": "type",
+            "signature": "type MqttClient"
+          }
+        ]
+      },
+      {
+        "name": "client-kafka.ts",
+        "path": "packages/microservices/client/client-kafka.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 462,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "bindTopics",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 196,
+              "endLine": 215
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "cleanup",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Intentionally unused parameter/variable (prefixed with _); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 136,
+              "endLine": 143
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -58,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "commitOffsets",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Moderate context score; Intentionally unused parameter/variable (prefixed with _); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 280,
+              "endLine": 288
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -52,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "connect",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Intentionally unused parameter/variable (prefixed with _); Properly uses assigned variables; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 145,
+              "endLine": 194
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -80,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 93,
+              "endLine": 129
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "consumer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 75,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 1,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 217,
+              "endLine": 225
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "createResponseCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 227,
+              "endLine": 256
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -54,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "dispatchBatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 339,
+              "endLine": 361
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 363,
+              "endLine": 377
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "emitBatch",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 262,
+              "endLine": 278
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "errorCallback",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "getConsumerAssignments",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 258,
+              "endLine": 260
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "getReplyTopicPartition",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 379,
+              "endLine": 387
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "getResponsePatternName",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 433,
+              "endLine": 435
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "initializeDeserializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 457,
+              "endLine": 460
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "initializeSerializer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 452,
+              "endLine": 455
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 299,
+              "endLine": 304
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "producer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 84,
+              "endLine": 91
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 389,
+              "endLine": 431
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "registerConsumerEventListeners",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 306,
+              "endLine": 325
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "registerProducerEventListeners",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Intentionally unused parameter/variable (prefixed with _)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 327,
+              "endLine": 337
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -25,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "setConsumerAssignments",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Legitimate simple function pattern (getter/setter/utility); Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 437,
+              "endLine": 450
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "subscribeToResponseOf",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 131,
+              "endLine": 134
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-kafka.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 290,
+              "endLine": 297
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isNil",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isNil",
+              "isUndefined"
+            ]
+          },
+          {
+            "name": "_throw",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "_throw",
+              "connectable",
+              "defer",
+              "Observable",
+              "Subject"
+            ]
+          },
+          {
+            "name": "mergeMap",
+            "sourceModule": "rxjs/operators",
+            "isDefault": false,
+            "namedImports": [
+              "mergeMap"
+            ]
+          },
+          {
+            "name": "KAFKA_DEFAULT_BROKER",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "KAFKA_DEFAULT_BROKER",
+              "KAFKA_DEFAULT_CLIENT",
+              "KAFKA_DEFAULT_GROUP"
+            ]
+          },
+          {
+            "name": "KafkaResponseDeserializer",
+            "sourceModule": "../deserializers/kafka-response.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaResponseDeserializer"
+            ]
+          },
+          {
+            "name": "KafkaHeaders",
+            "sourceModule": "../enums",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaHeaders"
+            ]
+          },
+          {
+            "name": "InvalidKafkaClientTopicException",
+            "sourceModule": "../errors/invalid-kafka-client-topic.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidKafkaClientTopicException"
+            ]
+          },
+          {
+            "name": "InvalidMessageException",
+            "sourceModule": "../errors/invalid-message.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidMessageException"
+            ]
+          },
+          {
+            "name": "KafkaStatus",
+            "sourceModule": "../events",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaStatus"
+            ]
+          },
+          {
+            "name": "BrokersFunction",
+            "sourceModule": "../external/kafka.interface",
+            "isDefault": false,
+            "namedImports": [
+              "BrokersFunction",
+              "Consumer",
+              "ConsumerConfig",
+              "ConsumerGroupJoinEvent",
+              "EachMessagePayload",
+              "Kafka",
+              "KafkaConfig",
+              "KafkaMessage",
+              "Producer",
+              "TopicPartitionOffsetAndMetadata"
+            ]
+          },
+          {
+            "name": "KafkaLogger",
+            "sourceModule": "../helpers",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaLogger",
+              "KafkaParser",
+              "KafkaReplyPartitionAssigner"
+            ]
+          },
+          {
+            "name": "ClientKafkaProxy",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientKafkaProxy",
+              "KafkaOptions",
+              "MsPattern",
+              "OutgoingEvent",
+              "ReadPacket",
+              "WritePacket"
+            ]
+          },
+          {
+            "name": "KafkaRequest",
+            "sourceModule": "../serializers/kafka-request.serializer",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaRequest",
+              "KafkaRequestSerializer"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientKafka",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "cleanup",
+            "type": "function",
+            "signature": "const cleanup = () =>"
+          },
+          {
+            "name": "errorCallback",
+            "type": "function",
+            "signature": "const errorCallback = () =>"
+          },
+          {
+            "name": "ClientKafka",
+            "type": "class",
+            "signature": "class ClientKafka"
+          }
+        ]
+      },
+      {
+        "name": "client-grpc.ts",
+        "path": "packages/microservices/client/client-grpc.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 403,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "close",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Utility function with clear purpose; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 351,
+              "endLine": 359
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -33,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "connect",
+            "classification": "likely-legitimate",
+            "confidence": 24,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 361,
+              "endLine": 363
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 46,
+              "endLine": 66
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "createClientByServiceName",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 88,
+              "endLine": 122
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "createClients",
+            "classification": "definite-legitimate",
+            "confidence": 3,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 295,
+              "endLine": 319
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "createServiceMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 155,
+              "endLine": 162
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "createStreamServiceMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Properly uses assigned variables"
+            ],
+            "location": {
+              "startLine": 164,
+              "endLine": 225
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -35,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "createUnaryServiceMethod",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Factory function pattern; Mutates state or has side effects; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 227,
+              "endLine": 293
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "dispatchEvent",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 386,
+              "endLine": 390
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "getClient",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 374,
+              "endLine": 378
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "getClientByServiceName",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 84,
+              "endLine": 86
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "getKeepaliveOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns hardcoded value: \"return {};\"",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 124,
+              "endLine": 153
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 4,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "getService",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Contains throw statement",
+              "Legitimate simple function pattern (getter/setter/utility); Properly uses assigned variables",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 68,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -65,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "loadProto",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Properly uses assigned variables; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 321,
+              "endLine": 336
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 6,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "lookupPackage",
+            "classification": "definite-legitimate",
+            "confidence": 12,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 338,
+              "endLine": 349
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "on",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 392,
+              "endLine": 397
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "publish",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 380,
+              "endLine": 384
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "send",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 365,
+              "endLine": 372
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 14,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "status",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 40,
+              "endLine": 44
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/client/client-grpc.ts",
+            "functionName": "unwrap",
+            "classification": "definite-legitimate",
+            "confidence": 6,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Contains throw statement",
+              "Utility function with clear purpose",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 399,
+              "endLine": 401
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -18,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Logger",
+            "sourceModule": "@nestjs/common/services/logger.service",
+            "isDefault": false,
+            "namedImports": [
+              "Logger"
+            ]
+          },
+          {
+            "name": "loadPackage",
+            "sourceModule": "@nestjs/common/utils/load-package.util",
+            "isDefault": false,
+            "namedImports": [
+              "loadPackage"
+            ]
+          },
+          {
+            "name": "isFunction",
+            "sourceModule": "@nestjs/common/utils/shared.utils",
+            "isDefault": false,
+            "namedImports": [
+              "isFunction",
+              "isObject"
+            ]
+          },
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable",
+              "Subscription"
+            ]
+          },
+          {
+            "name": "GRPC_DEFAULT_PROTO_LOADER",
+            "sourceModule": "../constants",
+            "isDefault": false,
+            "namedImports": [
+              "GRPC_DEFAULT_PROTO_LOADER",
+              "GRPC_DEFAULT_URL"
+            ]
+          },
+          {
+            "name": "InvalidGrpcPackageException",
+            "sourceModule": "../errors/invalid-grpc-package.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidGrpcPackageException"
+            ]
+          },
+          {
+            "name": "InvalidGrpcServiceException",
+            "sourceModule": "../errors/invalid-grpc-service.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidGrpcServiceException"
+            ]
+          },
+          {
+            "name": "InvalidProtoDefinitionException",
+            "sourceModule": "../errors/invalid-proto-definition.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidProtoDefinitionException"
+            ]
+          },
+          {
+            "name": "ChannelOptions",
+            "sourceModule": "../external/grpc-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ChannelOptions"
+            ]
+          },
+          {
+            "name": "getGrpcPackageDefinition",
+            "sourceModule": "../helpers",
+            "isDefault": false,
+            "namedImports": [
+              "getGrpcPackageDefinition"
+            ]
+          },
+          {
+            "name": "ClientGrpc",
+            "sourceModule": "../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "ClientGrpc",
+              "GrpcOptions"
+            ]
+          },
+          {
+            "name": "ClientProxy",
+            "sourceModule": "./client-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxy"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ClientGrpcProxy",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ClientGrpcProxy",
+            "type": "class",
+            "signature": "class ClientGrpcProxy"
+          },
+          {
+            "name": "GRPC_CANCELLED",
+            "type": "const",
+            "signature": "const GRPC_CANCELLED"
+          },
+          {
+            "name": "safety",
+            "type": "type",
+            "signature": "type safety"
+          },
+          {
+            "name": "GrpcClient",
+            "type": "type",
+            "signature": "type GrpcClient"
+          },
+          {
+            "name": "GrpcClient",
+            "type": "type",
+            "signature": "type GrpcClient"
+          }
+        ]
+      }
+    ],
+    "subdirectories": []
+  }
+}

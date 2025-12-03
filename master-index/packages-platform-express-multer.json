@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-03T09:38:48.709Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000
+  },
+  "metadata": {
+    "directory": {
+      "name": "multer",
+      "path": "packages/platform-express/multer",
+      "purpose": "Enhanced directory analysis of multer",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "multer.module.ts",
+        "path": "packages/platform-express/multer/multer.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 78,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/platform-express/multer/multer.module.ts",
+            "functionName": "createAsyncOptionsProvider",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Factory function pattern; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 60,
+              "endLine": 76
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -27,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/multer.module.ts",
+            "functionName": "createAsyncProviders",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Factory function pattern",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 45,
+              "endLine": 58
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -15,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/multer.module.ts",
+            "functionName": "register",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 16,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/platform-express/multer/multer.module.ts",
+            "functionName": "registerAsync",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 30,
+              "endLine": 43
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Module",
+              "Provider"
+            ]
+          },
+          {
+            "name": "randomStringGenerator",
+            "sourceModule": "@nestjs/common/utils/random-string-generator.util",
+            "isDefault": false,
+            "namedImports": [
+              "randomStringGenerator"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "sourceModule": "./files.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_OPTIONS"
+            ]
+          },
+          {
+            "name": "MulterModuleAsyncOptions",
+            "sourceModule": "./interfaces/files-upload-module.interface",
+            "isDefault": false,
+            "namedImports": [
+              "MulterModuleAsyncOptions",
+              "MulterModuleOptions",
+              "MulterOptionsFactory"
+            ]
+          },
+          {
+            "name": "MULTER_MODULE_ID",
+            "sourceModule": "./multer.constants",
+            "isDefault": false,
+            "namedImports": [
+              "MULTER_MODULE_ID"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "MulterModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MulterModule",
+            "type": "class",
+            "signature": "class MulterModule"
+          }
+        ]
+      },
+      {
+        "name": "multer.constants.ts",
+        "path": "packages/platform-express/multer/multer.constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MULTER_MODULE_ID",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MULTER_MODULE_ID",
+            "type": "const",
+            "signature": "const MULTER_MODULE_ID"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-express/multer/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "files.constants.ts",
+        "path": "packages/platform-express/multer/files.constants.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MULTER_MODULE_OPTIONS",
+            "type": "const",
+            "signature": "const MULTER_MODULE_OPTIONS"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "interceptors",
+        "relativePath": "interceptors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interceptors",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "interfaces",
+        "relativePath": "interfaces",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interfaces",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "multer",
+        "relativePath": "multer",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of multer",
+        "keyElementsFromChild": []
+      }
+    ]
+  }
+}
