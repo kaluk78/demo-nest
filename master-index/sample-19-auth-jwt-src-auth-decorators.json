@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:57.423Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:57.423Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "decorators",
+      "path": "sample/19-auth-jwt/src/auth/decorators",
+      "purpose": "Enhanced directory analysis of decorators",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "public.decorator.ts",
+        "path": "sample/19-auth-jwt/src/auth/decorators/public.decorator.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/19-auth-jwt/src/auth/decorators/public.decorator.ts",
+            "functionName": "Public",
+            "classification": "likely-legitimate",
+            "confidence": 22,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "SetMetadata",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "SetMetadata",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "SetMetadata"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "IS_PUBLIC_KEY",
+            "type": "const"
+          },
+          {
+            "name": "Public",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Public",
+            "type": "function",
+            "signature": "const Public = () =>"
+          },
+          {
+            "name": "IS_PUBLIC_KEY",
+            "type": "const",
+            "signature": "const IS_PUBLIC_KEY"
+          },
+          {
+            "name": "P",
+            "type": "const",
+            "signature": "const P"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/19-auth-jwt/src/auth/decorators/public.decorator.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

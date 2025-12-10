@@ -1,0 +1,853 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:44.332Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:44.332Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/websockets/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-gateway.spec.ts",
+        "path": "integration/websockets/e2e/ws-gateway.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 280,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/websockets/e2e/ws-gateway.spec.ts",
+            "functionName": "createNestApp",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Moderate context score; Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -70,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "WsAdapter",
+                  "source": "@nestjs/platform-ws",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ApplicationGateway",
+                  "source": "../src/app.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "CoreGateway",
+                  "source": "../src/core.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ExamplePathGateway",
+                  "source": "../src/example-path.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ServerGateway",
+                  "source": "../src/server.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "WsPathGateway",
+                  "source": "../src/ws-path.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "WsPathGateway2",
+                  "source": "../src/ws-path2.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "WsAdapter",
+            "sourceModule": "@nestjs/platform-ws",
+            "isDefault": false,
+            "namedImports": [
+              "WsAdapter"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as WebSocket",
+            "sourceModule": "ws",
+            "isDefault": false,
+            "namedImports": [
+              "* as WebSocket"
+            ]
+          },
+          {
+            "name": "ApplicationGateway",
+            "sourceModule": "../src/app.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationGateway"
+            ]
+          },
+          {
+            "name": "CoreGateway",
+            "sourceModule": "../src/core.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "CoreGateway"
+            ]
+          },
+          {
+            "name": "ExamplePathGateway",
+            "sourceModule": "../src/example-path.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ExamplePathGateway"
+            ]
+          },
+          {
+            "name": "ServerGateway",
+            "sourceModule": "../src/server.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ServerGateway"
+            ]
+          },
+          {
+            "name": "WsPathGateway",
+            "sourceModule": "../src/ws-path.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "WsPathGateway"
+            ]
+          },
+          {
+            "name": "WsPathGateway2",
+            "sourceModule": "../src/ws-path2.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "WsPathGateway2"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createNestApp",
+            "type": "function",
+            "signature": "function createNestApp()"
+          }
+        ]
+      },
+      {
+        "name": "gateway.spec.ts",
+        "path": "integration/websockets/e2e/gateway.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 178,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/websockets/e2e/gateway.spec.ts",
+            "functionName": "createNestApp",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Moderate context score; Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -70,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "EventSource",
+                  "source": "eventsource",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "io",
+                  "source": "socket.io-client",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppController",
+                  "source": "../../nest-application/sse/src/app.controller",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "ApplicationGateway",
+                  "source": "../src/app.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "NamespaceGateway",
+                  "source": "../src/namespace.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ServerGateway",
+                  "source": "../src/server.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "EventSource",
+            "sourceModule": "eventsource",
+            "isDefault": false,
+            "namedImports": [
+              "EventSource"
+            ]
+          },
+          {
+            "name": "io",
+            "sourceModule": "socket.io-client",
+            "isDefault": false,
+            "namedImports": [
+              "io"
+            ]
+          },
+          {
+            "name": "LongConnectionController",
+            "sourceModule": "../../nest-application/sse/src/app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "LongConnectionController"
+            ]
+          },
+          {
+            "name": "ApplicationGateway",
+            "sourceModule": "../src/app.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationGateway"
+            ]
+          },
+          {
+            "name": "NamespaceGateway",
+            "sourceModule": "../src/namespace.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "NamespaceGateway"
+            ]
+          },
+          {
+            "name": "ServerGateway",
+            "sourceModule": "../src/server.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ServerGateway"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createNestApp",
+            "type": "function",
+            "signature": "function createNestApp()"
+          }
+        ]
+      },
+      {
+        "name": "gateway-ack.spec.ts",
+        "path": "integration/websockets/e2e/gateway-ack.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 79,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/websockets/e2e/gateway-ack.spec.ts",
+            "functionName": "createNestApp",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Moderate context score; Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 13
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -70,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "io",
+                  "source": "socket.io-client",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AckGateway",
+                  "source": "../src/ack.gateway",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "io",
+            "sourceModule": "socket.io-client",
+            "isDefault": false,
+            "namedImports": [
+              "io"
+            ]
+          },
+          {
+            "name": "AckGateway",
+            "sourceModule": "../src/ack.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "AckGateway"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createNestApp",
+            "type": "function",
+            "signature": "function createNestApp()"
+          }
+        ]
+      },
+      {
+        "name": "error-gateway.spec.ts",
+        "path": "integration/websockets/e2e/error-gateway.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "io",
+            "sourceModule": "socket.io-client",
+            "isDefault": false,
+            "namedImports": [
+              "io"
+            ]
+          },
+          {
+            "name": "ErrorGateway",
+            "sourceModule": "../src/error.gateway",
+            "isDefault": false,
+            "namedImports": [
+              "ErrorGateway"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/websockets/e2e/ws-gateway.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/ws-gateway.spec.ts",
+          "to": "@nestjs/platform-ws",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/ws-gateway.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/ws-gateway.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/ws-gateway.spec.ts",
+          "to": "ws",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway.spec.ts",
+          "to": "eventsource",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway.spec.ts",
+          "to": "socket.io-client",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway-ack.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway-ack.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway-ack.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/gateway-ack.spec.ts",
+          "to": "socket.io-client",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/error-gateway.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/error-gateway.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/error-gateway.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/websockets/e2e/error-gateway.spec.ts",
+          "to": "socket.io-client",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

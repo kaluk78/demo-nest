@@ -1,0 +1,278 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:33.343Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:33.343Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/platform-express/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "serve-static-options.interface.ts",
+        "path": "packages/platform-express/interfaces/serve-static-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 80,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ServeStaticOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ServeStaticOptions",
+            "type": "interface",
+            "signature": "interface ServeStaticOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-express-body-parser.interface.ts",
+        "path": "packages/platform-express/interfaces/nest-express-body-parser.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NestExpressBodyParserType",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestExpressBodyParserType",
+            "type": "type",
+            "signature": "type NestExpressBodyParserType"
+          }
+        ]
+      },
+      {
+        "name": "nest-express-body-parser-options.interface.ts",
+        "path": "packages/platform-express/interfaces/nest-express-body-parser-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 27,
+        "importedModules": [
+          {
+            "name": "IncomingMessage",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingMessage"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestExpressBodyParserOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestExpressBodyParserOptions",
+            "type": "interface",
+            "signature": "interface NestExpressBodyParserOptions"
+          },
+          {
+            "name": "option",
+            "type": "type",
+            "signature": "type option"
+          },
+          {
+            "name": "the",
+            "type": "type",
+            "signature": "type the"
+          },
+          {
+            "name": "specific",
+            "type": "type",
+            "signature": "type specific"
+          }
+        ]
+      },
+      {
+        "name": "nest-express-application.interface.ts",
+        "path": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 144,
+        "importedModules": [
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer",
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "CorsOptions",
+            "sourceModule": "@nestjs/common/interfaces/external/cors-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CorsOptions",
+              "CorsOptionsDelegate"
+            ]
+          },
+          {
+            "name": "Express",
+            "sourceModule": "express",
+            "isDefault": false,
+            "namedImports": [
+              "Express"
+            ]
+          },
+          {
+            "name": "CoreHttpServer",
+            "sourceModule": "http",
+            "isDefault": false,
+            "namedImports": [
+              "CoreHttpServer"
+            ]
+          },
+          {
+            "name": "CoreHttpsServer",
+            "sourceModule": "https",
+            "isDefault": false,
+            "namedImports": [
+              "CoreHttpsServer"
+            ]
+          },
+          {
+            "name": "NestExpressBodyParserOptions",
+            "sourceModule": "./nest-express-body-parser-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestExpressBodyParserOptions"
+            ]
+          },
+          {
+            "name": "NestExpressBodyParserType",
+            "sourceModule": "./nest-express-body-parser.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestExpressBodyParserType"
+            ]
+          },
+          {
+            "name": "ServeStaticOptions",
+            "sourceModule": "./serve-static-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "ServeStaticOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestExpressApplication",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestExpressApplication",
+            "type": "interface",
+            "signature": "interface NestExpressApplication"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-express/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NestExpressBodyParserOptions",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/platform-express/interfaces/nest-express-body-parser-options.interface.ts",
+          "to": "http",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "@nestjs/common/interfaces/external/cors-options.interface",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "express",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "http",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "https",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "packages/platform-express/interfaces/nest-express-body-parser-options.interface.ts",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "packages/platform-express/interfaces/nest-express-body-parser.interface.ts",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-express/interfaces/nest-express-application.interface.ts",
+          "to": "packages/platform-express/interfaces/serve-static-options.interface.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

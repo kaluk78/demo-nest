@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:20.647Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:20.647Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "dto",
+      "path": "integration/inspector/src/chat/dto",
+      "purpose": "Enhanced directory analysis of dto",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "update-chat.dto.ts",
+        "path": "integration/inspector/src/chat/dto/update-chat.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "PartialType",
+            "sourceModule": "@nestjs/mapped-types",
+            "isDefault": false,
+            "namedImports": [
+              "PartialType"
+            ]
+          },
+          {
+            "name": "CreateChatDto",
+            "sourceModule": "./create-chat.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateChatDto"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UpdateChatDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UpdateChatDto",
+            "type": "class",
+            "signature": "class UpdateChatDto"
+          }
+        ]
+      },
+      {
+        "name": "create-chat.dto.ts",
+        "path": "integration/inspector/src/chat/dto/create-chat.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CreateChatDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CreateChatDto",
+            "type": "class",
+            "signature": "class CreateChatDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/inspector/src/chat/dto/update-chat.dto.ts",
+          "to": "@nestjs/mapped-types",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/chat/dto/update-chat.dto.ts",
+          "to": "integration/inspector/src/chat/dto/create-chat.dto.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

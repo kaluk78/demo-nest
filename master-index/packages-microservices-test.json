@@ -1,0 +1,1931 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:31.139Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:31.139Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "test",
+      "path": "packages/microservices/test",
+      "purpose": "Enhanced directory analysis of test",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nest-microservice.spec.ts",
+        "path": "packages/microservices/test/nest-microservice.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 158,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/nest-microservice.spec.ts",
+            "functionName": "cb",
+            "classification": "likely-legitimate",
+            "confidence": 39,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker: \"stub\"",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 40,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "ApplicationConfig",
+                  "source": "@nestjs/core/application-config",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphInspector",
+                  "source": "@nestjs/core/inspector/graph-inspector",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "@nestjs/microservices/enums",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AsyncMicroserviceOptions",
+                  "source": "@nestjs/microservices/interfaces",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "NestMicroservice",
+                  "source": "@nestjs/microservices/nest-microservice",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ServerTCP",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/nest-microservice.spec.ts",
+            "functionName": "createMockAppConfig",
+            "classification": "uncertain",
+            "confidence": 51,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker: \"Mock\"",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 40,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "ApplicationConfig",
+                  "source": "@nestjs/core/application-config",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphInspector",
+                  "source": "@nestjs/core/inspector/graph-inspector",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "@nestjs/microservices/enums",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AsyncMicroserviceOptions",
+                  "source": "@nestjs/microservices/interfaces",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "NestMicroservice",
+                  "source": "@nestjs/microservices/nest-microservice",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ServerTCP",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/nest-microservice.spec.ts",
+            "functionName": "createMockGraphInspector",
+            "classification": "uncertain",
+            "confidence": 57,
+            "isPlaceholder": true,
+            "reasons": [
+              "Contains explicit placeholder marker: \"Mock\"",
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 40,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "ApplicationConfig",
+                  "source": "@nestjs/core/application-config",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphInspector",
+                  "source": "@nestjs/core/inspector/graph-inspector",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "@nestjs/microservices/enums",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AsyncMicroserviceOptions",
+                  "source": "@nestjs/microservices/interfaces",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "NestMicroservice",
+                  "source": "@nestjs/microservices/nest-microservice",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ServerTCP",
+                  "source": "@nestjs/microservices/server",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core/application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "@nestjs/core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "@nestjs/microservices/enums",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "AsyncMicroserviceOptions",
+            "sourceModule": "@nestjs/microservices/interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncMicroserviceOptions"
+            ]
+          },
+          {
+            "name": "NestMicroservice",
+            "sourceModule": "@nestjs/microservices/nest-microservice",
+            "isDefault": false,
+            "namedImports": [
+              "NestMicroservice"
+            ]
+          },
+          {
+            "name": "Server",
+            "sourceModule": "@nestjs/microservices/server",
+            "isDefault": false,
+            "namedImports": [
+              "Server",
+              "ServerTCP"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "cb",
+            "type": "function",
+            "signature": "const cb = () =>"
+          },
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          },
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          },
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          },
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          },
+          {
+            "name": "extends",
+            "type": "class",
+            "signature": "class extends"
+          }
+        ]
+      },
+      {
+        "name": "listeners-metadata-explorer.spec.ts",
+        "path": "packages/microservices/test/listeners-metadata-explorer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 174,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 31,
+              "endLine": 31
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "noPattern",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 45,
+              "endLine": 45
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testEvent",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 39,
+              "endLine": 40
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testGet",
+            "classification": "uncertain",
+            "confidence": 49,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only a return statement",
+              "Returns hardcoded value: \"return 0;\"",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 26,
+              "endLine": 28
+            },
+            "detectionMethods": {
+              "explicitMarkers": 35,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testMessage",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 33,
+              "endLine": 34
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testMultipleEvent",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 42,
+              "endLine": 43
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testMultipleMessage",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 36,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/listeners-metadata-explorer.spec.ts",
+            "functionName": "testSet",
+            "classification": "uncertain",
+            "confidence": 49,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "[FALLBACK] 1 other unused parameters suggest unfinished functionality",
+              "Note: Using custom analysis - TS/ESLint would be more accurate",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 29,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 8,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MetadataScanner",
+                  "source": "../../core/metadata-scanner",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Client",
+                  "source": "../decorators/client.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "EventPattern",
+                  "source": "../decorators/event-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MessagePattern",
+                  "source": "../decorators/message-pattern.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Transport",
+                  "source": "../enums/transport.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ListenerMetadataExplorer",
+                  "source": "../listener-metadata-explorer",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": [
+                {
+                  "name": "val",
+                  "parameterIndex": 0,
+                  "line": 1,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 1,
+                    "reason": "General parameter - may be intentionally unused"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "../../core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "Client",
+            "sourceModule": "../decorators/client.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "Client"
+            ]
+          },
+          {
+            "name": "EventPattern",
+            "sourceModule": "../decorators/event-pattern.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "EventPattern"
+            ]
+          },
+          {
+            "name": "MessagePattern",
+            "sourceModule": "../decorators/message-pattern.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "MessagePattern"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "../enums/transport.enum",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "ListenerMetadataExplorer",
+            "sourceModule": "../listener-metadata-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "ListenerMetadataExplorer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Test",
+            "type": "class",
+            "signature": "class Test"
+          }
+        ]
+      },
+      {
+        "name": "listeners-controller.spec.ts",
+        "path": "packages/microservices/test/listeners-controller.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 352,
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "@nestjs/core/injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Injector",
+            "sourceModule": "@nestjs/core/injector/injector",
+            "isDefault": false,
+            "namedImports": [
+              "Injector"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "@nestjs/core/injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../../core/inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "MetadataScanner",
+            "sourceModule": "../../core/metadata-scanner",
+            "isDefault": false,
+            "namedImports": [
+              "MetadataScanner"
+            ]
+          },
+          {
+            "name": "ClientProxyFactory",
+            "sourceModule": "../client",
+            "isDefault": false,
+            "namedImports": [
+              "ClientProxyFactory"
+            ]
+          },
+          {
+            "name": "ClientsContainer",
+            "sourceModule": "../container",
+            "isDefault": false,
+            "namedImports": [
+              "ClientsContainer"
+            ]
+          },
+          {
+            "name": "ExceptionFiltersContext",
+            "sourceModule": "../context/exception-filters-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExceptionFiltersContext"
+            ]
+          },
+          {
+            "name": "RpcContextCreator",
+            "sourceModule": "../context/rpc-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "RpcContextCreator"
+            ]
+          },
+          {
+            "name": "Transport",
+            "sourceModule": "../enums/transport.enum",
+            "isDefault": false,
+            "namedImports": [
+              "Transport"
+            ]
+          },
+          {
+            "name": "EventOrMessageListenerDefinition",
+            "sourceModule": "../listener-metadata-explorer",
+            "isDefault": false,
+            "namedImports": [
+              "EventOrMessageListenerDefinition",
+              "ListenerMetadataExplorer"
+            ]
+          },
+          {
+            "name": "ListenersController",
+            "sourceModule": "../listeners-controller",
+            "isDefault": false,
+            "namedImports": [
+              "ListenersController"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestCtrl",
+            "type": "class",
+            "signature": "class TestCtrl"
+          },
+          {
+            "name": "TestClass",
+            "type": "class",
+            "signature": "class TestClass"
+          }
+        ]
+      },
+      {
+        "name": "container.spec.ts",
+        "path": "packages/microservices/test/container.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 32,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ClientsContainer",
+            "sourceModule": "../container",
+            "isDefault": false,
+            "namedImports": [
+              "ClientsContainer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "client",
+        "relativePath": "client",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of client",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "context",
+        "relativePath": "context",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of context",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "ctx-host",
+        "relativePath": "ctx-host",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of ctx-host",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "decorators",
+        "relativePath": "decorators",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of decorators",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "deserializers",
+        "relativePath": "deserializers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of deserializers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "exceptions",
+        "relativePath": "exceptions",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of exceptions",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "factories",
+        "relativePath": "factories",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of factories",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "helpers",
+        "relativePath": "helpers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of helpers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "json-socket",
+        "relativePath": "json-socket",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of json-socket",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "module",
+        "relativePath": "module",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of module",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "serializers",
+        "relativePath": "serializers",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of serializers",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "server",
+        "relativePath": "server",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of server",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "utils",
+        "relativePath": "utils",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of utils",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/core/application-config",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/core/inspector/graph-inspector",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/microservices/enums",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/microservices/interfaces",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/microservices/nest-microservice",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "@nestjs/microservices/server",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/nest-microservice.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-metadata-explorer.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-metadata-explorer.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/core/helpers/execution-context-host",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/core/injector/container",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/core/injector/injector",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "@nestjs/core/injector/instance-wrapper",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/listeners-controller.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/container.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

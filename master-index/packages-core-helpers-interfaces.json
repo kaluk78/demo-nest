@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:00.343Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:00.343Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/core/helpers/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "params-metadata.interface.ts",
+        "path": "packages/core/helpers/interfaces/params-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "ParamData",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ParamData"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ParamsMetadata",
+            "type": "type"
+          },
+          {
+            "name": "ParamMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParamMetadata",
+            "type": "interface",
+            "signature": "interface ParamMetadata"
+          },
+          {
+            "name": "ParamsMetadata",
+            "type": "type",
+            "signature": "type ParamsMetadata"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/core/helpers/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "external-handler-metadata.interface.ts",
+        "path": "packages/core/helpers/interfaces/external-handler-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 14,
+        "importedModules": [
+          {
+            "name": "ContextId",
+            "sourceModule": "../../injector",
+            "isDefault": false,
+            "namedImports": [
+              "ContextId"
+            ]
+          },
+          {
+            "name": "ParamProperties",
+            "sourceModule": "../context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ParamProperties"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ExternalHandlerMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ExternalHandlerMetadata",
+            "type": "interface",
+            "signature": "interface ExternalHandlerMetadata"
+          },
+          {
+            "name": "ParamPropertiesWithMetatype",
+            "type": "type",
+            "signature": "type ParamPropertiesWithMetatype"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/helpers/interfaces/params-metadata.interface.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

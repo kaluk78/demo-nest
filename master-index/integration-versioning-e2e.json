@@ -1,0 +1,910 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:43.825Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:43.825Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/versioning/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "uri-versioning.spec.ts",
+        "path": "integration/versioning/e2e/uri-versioning.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 485,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "uri-versioning-fastify.spec.ts",
+        "path": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 366,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter",
+              "NestFastifyApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "media-type-versioning.spec.ts",
+        "path": "integration/versioning/e2e/media-type-versioning.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 664,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "media-type-versioning-fastify.spec.ts",
+        "path": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 674,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter",
+              "NestFastifyApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "header-versioning.spec.ts",
+        "path": "integration/versioning/e2e/header-versioning.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 664,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "header-versioning-fastify.spec.ts",
+        "path": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 674,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter",
+              "NestFastifyApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "default-versioning.spec.ts",
+        "path": "integration/versioning/e2e/default-versioning.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 99,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter",
+              "NestFastifyApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "by",
+            "type": "type",
+            "signature": "type by"
+          }
+        ]
+      },
+      {
+        "name": "custom-versioning.spec.ts",
+        "path": "integration/versioning/e2e/custom-versioning.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 713,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/versioning/e2e/custom-versioning.spec.ts",
+            "functionName": "extractor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "VersioningType",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Request",
+                  "source": "express",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppModule",
+                  "source": "../src/app.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "Request",
+            "sourceModule": "express",
+            "isDefault": false,
+            "namedImports": [
+              "Request"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "custom-versioning-fastify.spec.ts",
+        "path": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 968,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+            "functionName": "extractor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Properly uses assigned variables; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -55,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "VersioningType",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "FastifyAdapter",
+                  "source": "@nestjs/platform-fastify",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "NestFastifyApplication",
+                  "source": "@nestjs/platform-fastify",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "FastifyRequest",
+                  "source": "fastify",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppModule",
+                  "source": "../src/app.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication",
+              "VersioningType"
+            ]
+          },
+          {
+            "name": "FastifyAdapter",
+            "sourceModule": "@nestjs/platform-fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyAdapter",
+              "NestFastifyApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "FastifyRequest",
+            "sourceModule": "fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyRequest"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/versioning/e2e/uri-versioning.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+          "to": "@nestjs/platform-fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/uri-versioning-fastify.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+          "to": "@nestjs/platform-fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/media-type-versioning-fastify.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+          "to": "@nestjs/platform-fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/header-versioning-fastify.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/default-versioning.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/default-versioning.spec.ts",
+          "to": "@nestjs/platform-fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/default-versioning.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/default-versioning.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning.spec.ts",
+          "to": "express",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+          "to": "@nestjs/platform-fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+          "to": "fastify",
+          "type": "imports"
+        },
+        {
+          "from": "integration/versioning/e2e/custom-versioning-fastify.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:13.242Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:13.242Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "helpers",
+      "path": "packages/core/test/injector/helpers",
+      "purpose": "Enhanced directory analysis of helpers",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "provider-classifier.spec.ts",
+        "path": "packages/core/test/injector/helpers/provider-classifier.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 133,
+        "importedModules": [
+          {
+            "name": "ClassProvider",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ClassProvider",
+              "FactoryProvider",
+              "ValueProvider"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "isClassProvider",
+            "sourceModule": "../../../injector/helpers/provider-classifier",
+            "isDefault": false,
+            "namedImports": [
+              "isClassProvider",
+              "isFactoryProvider",
+              "isValueProvider"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestClass",
+            "type": "class",
+            "signature": "class TestClass"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/test/injector/helpers/provider-classifier.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/injector/helpers/provider-classifier.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

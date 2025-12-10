@@ -1,0 +1,1108 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:12.959Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:12.959Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "helpers",
+      "path": "packages/core/test/helpers",
+      "purpose": "Enhanced directory analysis of helpers",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "router-method-factory.spec.ts",
+        "path": "packages/core/test/helpers/router-method-factory.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 53,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RequestMethod",
+            "sourceModule": "../../../common/enums/request-method.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RequestMethod"
+            ]
+          },
+          {
+            "name": "RouterMethodFactory",
+            "sourceModule": "../../helpers/router-method-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RouterMethodFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "external-proxy.spec.ts",
+        "path": "packages/core/test/helpers/external-proxy.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 45,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "HttpException",
+            "sourceModule": "../../../common/exceptions/http.exception",
+            "isDefault": false,
+            "namedImports": [
+              "HttpException"
+            ]
+          },
+          {
+            "name": "ExternalExceptionsHandler",
+            "sourceModule": "../../exceptions/external-exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionsHandler"
+            ]
+          },
+          {
+            "name": "ExternalErrorProxy",
+            "sourceModule": "../../helpers/external-proxy",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalErrorProxy"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "external-context-creator.spec.ts",
+        "path": "packages/core/test/helpers/external-context-creator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 231,
+        "importedModules": [
+          {
+            "name": "ForbiddenException",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ForbiddenException"
+            ]
+          },
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "@nestjs/common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "of",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "of"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "ExternalExceptionFilterContext",
+            "sourceModule": "../../exceptions/external-exception-filter-context",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalExceptionFilterContext"
+            ]
+          },
+          {
+            "name": "GuardsConsumer",
+            "sourceModule": "../../guards/guards-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsConsumer"
+            ]
+          },
+          {
+            "name": "GuardsContextCreator",
+            "sourceModule": "../../guards/guards-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "GuardsContextCreator"
+            ]
+          },
+          {
+            "name": "ExternalContextCreator",
+            "sourceModule": "../../helpers/external-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "ExternalContextCreator"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "ModulesContainer",
+            "sourceModule": "../../injector/modules-container",
+            "isDefault": false,
+            "namedImports": [
+              "ModulesContainer"
+            ]
+          },
+          {
+            "name": "InterceptorsConsumer",
+            "sourceModule": "../../interceptors/interceptors-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsConsumer"
+            ]
+          },
+          {
+            "name": "InterceptorsContextCreator",
+            "sourceModule": "../../interceptors/interceptors-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "InterceptorsContextCreator"
+            ]
+          },
+          {
+            "name": "PipesConsumer",
+            "sourceModule": "../../pipes/pipes-consumer",
+            "isDefault": false,
+            "namedImports": [
+              "PipesConsumer"
+            ]
+          },
+          {
+            "name": "PipesContextCreator",
+            "sourceModule": "../../pipes/pipes-context-creator",
+            "isDefault": false,
+            "namedImports": [
+              "PipesContextCreator"
+            ]
+          },
+          {
+            "name": "RouteParamsFactory",
+            "sourceModule": "../../router/route-params-factory",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamsFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "execution-context-host.spec.ts",
+        "path": "packages/core/test/helpers/execution-context-host.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 75,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/helpers/execution-context-host.spec.ts",
+            "functionName": "callback",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ExecutionContextHost",
+                  "source": "../../helpers/execution-context-host",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "context-utils.spec.ts",
+        "path": "packages/core/test/helpers/context-utils.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 127,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/helpers/context-utils.spec.ts",
+            "functionName": "callback",
+            "classification": "uncertain",
+            "confidence": 57,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "[FALLBACK] 1 AI-suspicious unused parameters: req, 2 other unused parameters suggest unfinished functionality",
+              "Note: Using custom analysis - TS/ESLint would be more accurate",
+              "External interaction (I/O, network, DB) suggests legitimacy; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -40,
+              "unusedCodeAnalysis": 20,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "CUSTOM_ROUTE_ARGS_METADATA",
+                  "source": "@nestjs/common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Body",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createParamDecorator",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Request",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "RouteParamtypes",
+                  "source": "@nestjs/common/enums/route-paramtypes.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ROUTE_ARGS_METADATA",
+                  "source": "../../../common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ContextUtils",
+                  "source": "../../helpers/context-utils",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "ExecutionContextHost",
+                  "source": "../../helpers/execution-context-host",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": [
+                {
+                  "name": "req",
+                  "parameterIndex": 0,
+                  "line": 2,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 8,
+                    "reason": "Critical parameter - likely missing implementation logic"
+                  }
+                },
+                {
+                  "name": "body",
+                  "parameterIndex": 1,
+                  "line": 3,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 8,
+                    "reason": "Critical parameter - likely missing implementation logic"
+                  }
+                },
+                {
+                  "name": "custom",
+                  "parameterIndex": 2,
+                  "line": 4,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 8,
+                    "reason": "Critical parameter - likely missing implementation logic"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/helpers/context-utils.spec.ts",
+            "functionName": "contextFactory",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "CUSTOM_ROUTE_ARGS_METADATA",
+                  "source": "@nestjs/common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Body",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createParamDecorator",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Request",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "RouteParamtypes",
+                  "source": "@nestjs/common/enums/route-paramtypes.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ROUTE_ARGS_METADATA",
+                  "source": "../../../common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ContextUtils",
+                  "source": "../../helpers/context-utils",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "ExecutionContextHost",
+                  "source": "../../helpers/execution-context-host",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/helpers/context-utils.spec.ts",
+            "functionName": "customFactory",
+            "classification": "definite-legitimate",
+            "confidence": 10,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (1 lines)",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 30,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "CUSTOM_ROUTE_ARGS_METADATA",
+                  "source": "@nestjs/common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Body",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createParamDecorator",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Request",
+                  "source": "@nestjs/common/decorators",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "RouteParamtypes",
+                  "source": "@nestjs/common/enums/route-paramtypes.enum",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ROUTE_ARGS_METADATA",
+                  "source": "../../../common/constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ContextUtils",
+                  "source": "../../helpers/context-utils",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "ExecutionContextHost",
+                  "source": "../../helpers/execution-context-host",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CUSTOM_ROUTE_ARGS_METADATA",
+            "sourceModule": "@nestjs/common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "CUSTOM_ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "Body",
+            "sourceModule": "@nestjs/common/decorators",
+            "isDefault": false,
+            "namedImports": [
+              "Body",
+              "createParamDecorator",
+              "Request"
+            ]
+          },
+          {
+            "name": "RouteParamtypes",
+            "sourceModule": "@nestjs/common/enums/route-paramtypes.enum",
+            "isDefault": false,
+            "namedImports": [
+              "RouteParamtypes"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ROUTE_ARGS_METADATA",
+            "sourceModule": "../../../common/constants",
+            "isDefault": false,
+            "namedImports": [
+              "ROUTE_ARGS_METADATA"
+            ]
+          },
+          {
+            "name": "ContextUtils",
+            "sourceModule": "../../helpers/context-utils",
+            "isDefault": false,
+            "namedImports": [
+              "ContextUtils"
+            ]
+          },
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "../../helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "contextFactory",
+            "type": "function",
+            "signature": "const contextFactory = () =>"
+          },
+          {
+            "name": "customFactory",
+            "type": "function",
+            "signature": "const customFactory = () =>"
+          },
+          {
+            "name": "TestController",
+            "type": "class",
+            "signature": "class TestController"
+          },
+          {
+            "name": "C",
+            "type": "const",
+            "signature": "const C"
+          }
+        ]
+      },
+      {
+        "name": "context-id-factory.spec.ts",
+        "path": "packages/core/test/helpers/context-id-factory.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "createContextId",
+            "sourceModule": "../../helpers/context-id-factory",
+            "isDefault": false,
+            "namedImports": [
+              "createContextId"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "barrier.spec.ts",
+        "path": "packages/core/test/helpers/barrier.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 94,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "application-ref-host.spec.ts",
+        "path": "packages/core/test/helpers/application-ref-host.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 29,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "HttpAdapterHost",
+            "sourceModule": "../../helpers/http-adapter-host",
+            "isDefault": false,
+            "namedImports": [
+              "HttpAdapterHost"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/test/helpers/router-method-factory.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-proxy.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-proxy.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "@nestjs/common/constants",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "@nestjs/common/enums/route-paramtypes.enum",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "rxjs",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/external-context-creator.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/execution-context-host.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/context-utils.spec.ts",
+          "to": "@nestjs/common/constants",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/context-utils.spec.ts",
+          "to": "@nestjs/common/decorators",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/context-utils.spec.ts",
+          "to": "@nestjs/common/enums/route-paramtypes.enum",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/context-utils.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/context-id-factory.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/helpers/application-ref-host.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

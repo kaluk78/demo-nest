@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:40.017Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:40.017Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/websockets/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-response.interface.ts",
+        "path": "packages/websockets/interfaces/ws-response.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "WsResponse",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WsResponse",
+            "type": "interface",
+            "signature": "interface WsResponse"
+          }
+        ]
+      },
+      {
+        "name": "websockets-entrypoint-metadata.interface.ts",
+        "path": "packages/websockets/interfaces/websockets-entrypoint-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "WebsocketEntrypointMetadata",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WebsocketEntrypointMetadata",
+            "type": "type",
+            "signature": "type WebsocketEntrypointMetadata"
+          }
+        ]
+      },
+      {
+        "name": "web-socket-server.interface.ts",
+        "path": "packages/websockets/interfaces/web-socket-server.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "WebSocketServerOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WebSocketServerOptions",
+            "type": "interface",
+            "signature": "interface WebSocketServerOptions"
+          }
+        ]
+      },
+      {
+        "name": "server-and-event-streams-host.interface.ts",
+        "path": "packages/websockets/interfaces/server-and-event-streams-host.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "name": "ReplaySubject",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "ReplaySubject",
+              "Subject"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ServerAndEventStreamsHost",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ServerAndEventStreamsHost",
+            "type": "interface",
+            "signature": "interface ServerAndEventStreamsHost"
+          }
+        ]
+      },
+      {
+        "name": "nest-gateway.interface.ts",
+        "path": "packages/websockets/interfaces/nest-gateway.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NestGateway",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestGateway",
+            "type": "interface",
+            "signature": "interface NestGateway"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/websockets/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 6,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "gateway-metadata.interface.ts",
+        "path": "packages/websockets/interfaces/gateway-metadata.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 124,
+        "importedModules": [
+          {
+            "name": "CorsOptions",
+            "sourceModule": "@nestjs/common/interfaces/external/cors-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "CorsOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "GatewayMetadata",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GatewayMetadata",
+            "type": "interface",
+            "signature": "interface GatewayMetadata"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "hooks",
+        "relativePath": "hooks",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of hooks",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/websockets/interfaces/server-and-event-streams-host.interface.ts",
+          "to": "rxjs",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/interfaces/gateway-metadata.interface.ts",
+          "to": "@nestjs/common/interfaces/external/cors-options.interface",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

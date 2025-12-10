@@ -1,0 +1,799 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:29.137Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:29.137Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "json-socket",
+      "path": "packages/microservices/test/json-socket",
+      "purpose": "Enhanced directory analysis of json-socket",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "message-parsing.spec.ts",
+        "path": "packages/microservices/test/json-socket/message-parsing.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 206,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Socket",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "Socket"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "TcpEventsMap",
+            "sourceModule": "../../events/tcp.events",
+            "isDefault": false,
+            "namedImports": [
+              "TcpEventsMap"
+            ]
+          },
+          {
+            "name": "JsonSocket",
+            "sourceModule": "../../helpers/json-socket",
+            "isDefault": false,
+            "namedImports": [
+              "JsonSocket"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MESSAGE_EVENT",
+            "type": "const",
+            "signature": "const MESSAGE_EVENT"
+          }
+        ]
+      },
+      {
+        "name": "listener-chaining.spec.ts",
+        "path": "packages/microservices/test/json-socket/listener-chaining.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "TcpEventsMap",
+            "sourceModule": "../../events/tcp.events",
+            "isDefault": false,
+            "namedImports": [
+              "TcpEventsMap"
+            ]
+          },
+          {
+            "name": "JsonSocket",
+            "sourceModule": "../../helpers/json-socket",
+            "isDefault": false,
+            "namedImports": [
+              "JsonSocket"
+            ]
+          },
+          {
+            "name": "* as helpers",
+            "sourceModule": "./helpers",
+            "isDefault": false,
+            "namedImports": [
+              "* as helpers"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MESSAGE_EVENT",
+            "type": "const",
+            "signature": "const MESSAGE_EVENT"
+          }
+        ]
+      },
+      {
+        "name": "helpers.ts",
+        "path": "packages/microservices/test/json-socket/helpers.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 83,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/test/json-socket/helpers.ts",
+            "functionName": "createClient",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Contains throw statement",
+              "High context score suggests legitimate implementation; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 25,
+              "endLine": 51
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 2,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "AddressInfo",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createServer",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Socket",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TcpEventsMap",
+                  "source": "../../events/tcp.events",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "JsonSocket",
+                  "source": "../../helpers/json-socket",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/json-socket/helpers.ts",
+            "functionName": "createServer",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 23
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -45,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "AddressInfo",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createServer",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Socket",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TcpEventsMap",
+                  "source": "../../events/tcp.events",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "JsonSocket",
+                  "source": "../../helpers/json-socket",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/json-socket/helpers.ts",
+            "functionName": "createServerAndClient",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 53,
+              "endLine": 74
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -57,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "AddressInfo",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createServer",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Socket",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TcpEventsMap",
+                  "source": "../../events/tcp.events",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "JsonSocket",
+                  "source": "../../helpers/json-socket",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/microservices/test/json-socket/helpers.ts",
+            "functionName": "range",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Returns simple/hardcoded value",
+              "High context score suggests legitimate implementation; Utility function with clear purpose; Mutates state or has side effects; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 76,
+              "endLine": 82
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -78,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "AddressInfo",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "createServer",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Server",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Socket",
+                  "source": "net",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TcpEventsMap",
+                  "source": "../../events/tcp.events",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "JsonSocket",
+                  "source": "../../helpers/json-socket",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "AddressInfo",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "AddressInfo",
+              "netCreateServer",
+              "Server",
+              "Socket"
+            ]
+          },
+          {
+            "name": "TcpEventsMap",
+            "sourceModule": "../../events/tcp.events",
+            "isDefault": false,
+            "namedImports": [
+              "TcpEventsMap"
+            ]
+          },
+          {
+            "name": "JsonSocket",
+            "sourceModule": "../../helpers/json-socket",
+            "isDefault": false,
+            "namedImports": [
+              "JsonSocket"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ip",
+            "type": "const"
+          },
+          {
+            "name": "createServer",
+            "type": "function"
+          },
+          {
+            "name": "createClient",
+            "type": "function"
+          },
+          {
+            "name": "createServerAndClient",
+            "type": "function"
+          },
+          {
+            "name": "range",
+            "type": "function"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "createServer",
+            "type": "function",
+            "signature": "function createServer()"
+          },
+          {
+            "name": "createClient",
+            "type": "function",
+            "signature": "function createClient()"
+          },
+          {
+            "name": "createServerAndClient",
+            "type": "function",
+            "signature": "function createServerAndClient()"
+          },
+          {
+            "name": "range",
+            "type": "function",
+            "signature": "function range()"
+          }
+        ]
+      },
+      {
+        "name": "connection.spec.ts",
+        "path": "packages/microservices/test/json-socket/connection.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 217,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "AddressInfo",
+            "sourceModule": "net",
+            "isDefault": false,
+            "namedImports": [
+              "AddressInfo",
+              "createServer",
+              "Socket"
+            ]
+          },
+          {
+            "name": "TcpEventsMap",
+            "sourceModule": "../../events/tcp.events",
+            "isDefault": false,
+            "namedImports": [
+              "TcpEventsMap"
+            ]
+          },
+          {
+            "name": "JsonSocket",
+            "sourceModule": "../../helpers/json-socket",
+            "isDefault": false,
+            "namedImports": [
+              "JsonSocket"
+            ]
+          },
+          {
+            "name": "longPayload",
+            "sourceModule": "./data/long-payload-with-special-chars",
+            "isDefault": false,
+            "namedImports": [
+              "longPayload"
+            ]
+          },
+          {
+            "name": "* as helpers",
+            "sourceModule": "./helpers",
+            "isDefault": false,
+            "namedImports": [
+              "* as helpers"
+            ]
+          },
+          {
+            "name": "ip",
+            "sourceModule": "./helpers",
+            "isDefault": false,
+            "namedImports": [
+              "ip"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MESSAGE_EVENT",
+            "type": "const",
+            "signature": "const MESSAGE_EVENT"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "data",
+        "relativePath": "data",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of data",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/microservices/test/json-socket/message-parsing.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/message-parsing.spec.ts",
+          "to": "net",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/message-parsing.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/listener-chaining.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/listener-chaining.spec.ts",
+          "to": "packages/microservices/test/json-socket/helpers.ts",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/helpers.ts",
+          "to": "net",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/connection.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/connection.spec.ts",
+          "to": "net",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/json-socket/connection.spec.ts",
+          "to": "packages/microservices/test/json-socket/helpers.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

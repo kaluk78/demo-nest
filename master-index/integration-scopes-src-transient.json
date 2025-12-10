@@ -1,0 +1,840 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:41.569Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:41.569Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "transient",
+      "path": "integration/scopes/src/transient",
+      "purpose": "Enhanced directory analysis of transient",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "test.controller.ts",
+        "path": "integration/scopes/src/transient/test.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/scopes/src/transient/test.controller.ts",
+            "functionName": "greeting",
+            "classification": "likely-legitimate",
+            "confidence": 20,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "[FALLBACK] 1 other unused parameters suggest unfinished functionality",
+              "Note: Using custom analysis - TS/ESLint would be more accurate",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 8,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Controller",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "Get",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Param",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UseGuards",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UseInterceptors",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Guard",
+                  "source": "./guards/request-scoped.guard",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Interceptor",
+                  "source": "./interceptors/logging.interceptor",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UserByIdPipe",
+                  "source": "./users/user-by-id.pipe",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": [
+                {
+                  "name": "id",
+                  "parameterIndex": 0,
+                  "line": 17,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 1,
+                    "reason": "General parameter - may be intentionally unused"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Get",
+              "Param",
+              "UseGuards",
+              "UseInterceptors"
+            ]
+          },
+          {
+            "name": "Guard",
+            "sourceModule": "./guards/request-scoped.guard",
+            "isDefault": false,
+            "namedImports": [
+              "Guard"
+            ]
+          },
+          {
+            "name": "Interceptor",
+            "sourceModule": "./interceptors/logging.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "Interceptor"
+            ]
+          },
+          {
+            "name": "UserByIdPipe",
+            "sourceModule": "./users/user-by-id.pipe",
+            "isDefault": false,
+            "namedImports": [
+              "UserByIdPipe"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "TestController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestController",
+            "type": "class",
+            "signature": "class TestController"
+          }
+        ]
+      },
+      {
+        "name": "hello.service.ts",
+        "path": "integration/scopes/src/transient/hello.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 5
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.service.ts",
+            "functionName": "greeting",
+            "classification": "likely-legitimate",
+            "confidence": 34,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Very short function (3 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 34,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Inject",
+                  "source": "@nestjs/common",
+                  "line": 1,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Inject",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Inject",
+              "Injectable",
+              "Scope"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HelloService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HelloService",
+            "type": "class",
+            "signature": "class HelloService"
+          }
+        ]
+      },
+      {
+        "name": "hello.module.ts",
+        "path": "integration/scopes/src/transient/hello.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.module.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 12,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.module.ts",
+            "functionName": "forRoot",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 14,
+              "endLine": 19
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Inject",
+                  "source": "@nestjs/common",
+                  "line": 1,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Inject",
+              "Module",
+              "Provider"
+            ]
+          },
+          {
+            "name": "HelloController",
+            "sourceModule": "./hello.controller",
+            "isDefault": false,
+            "namedImports": [
+              "HelloController"
+            ]
+          },
+          {
+            "name": "HelloService",
+            "sourceModule": "./hello.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloService"
+            ]
+          },
+          {
+            "name": "TestController",
+            "sourceModule": "./test.controller",
+            "isDefault": false,
+            "namedImports": [
+              "TestController"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users/users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HelloModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HelloModule",
+            "type": "class",
+            "signature": "class HelloModule"
+          }
+        ]
+      },
+      {
+        "name": "hello.controller.ts",
+        "path": "integration/scopes/src/transient/hello.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 31,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 17,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/scopes/src/transient/hello.controller.ts",
+            "functionName": "greeting",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "[FALLBACK] 1 other unused parameters suggest unfinished functionality",
+              "Note: Using custom analysis - TS/ESLint would be more accurate",
+              "Returns computed value from external calls or processing; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 29
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -32,
+              "unusedCodeAnalysis": 8,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Controller",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "Get",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Param",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UseGuards",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UseInterceptors",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Guard",
+                  "source": "./guards/request-scoped.guard",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "HelloService",
+                  "source": "./hello.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "Interceptor",
+                  "source": "./interceptors/logging.interceptor",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UserByIdPipe",
+                  "source": "./users/user-by-id.pipe",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "UsersService",
+                  "source": "./users/users.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": [
+                {
+                  "name": "id",
+                  "parameterIndex": 0,
+                  "line": 27,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 1,
+                    "reason": "General parameter - may be intentionally unused"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Get",
+              "Param",
+              "UseGuards",
+              "UseInterceptors"
+            ]
+          },
+          {
+            "name": "Guard",
+            "sourceModule": "./guards/request-scoped.guard",
+            "isDefault": false,
+            "namedImports": [
+              "Guard"
+            ]
+          },
+          {
+            "name": "HelloService",
+            "sourceModule": "./hello.service",
+            "isDefault": false,
+            "namedImports": [
+              "HelloService"
+            ]
+          },
+          {
+            "name": "Interceptor",
+            "sourceModule": "./interceptors/logging.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "Interceptor"
+            ]
+          },
+          {
+            "name": "UserByIdPipe",
+            "sourceModule": "./users/user-by-id.pipe",
+            "isDefault": false,
+            "namedImports": [
+              "UserByIdPipe"
+            ]
+          },
+          {
+            "name": "UsersService",
+            "sourceModule": "./users/users.service",
+            "isDefault": false,
+            "namedImports": [
+              "UsersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HelloController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HelloController",
+            "type": "class",
+            "signature": "class HelloController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "dto",
+        "relativePath": "dto",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dto",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "guards",
+        "relativePath": "guards",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of guards",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "interceptors",
+        "relativePath": "interceptors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interceptors",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "users",
+        "relativePath": "users",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of users",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/scopes/src/transient/test.controller.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.module.ts",
+          "to": "integration/scopes/src/transient/hello.controller.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.module.ts",
+          "to": "integration/scopes/src/transient/hello.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.module.ts",
+          "to": "integration/scopes/src/transient/test.controller.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.controller.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/scopes/src/transient/hello.controller.ts",
+          "to": "integration/scopes/src/transient/hello.service.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

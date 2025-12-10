@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:14.256Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:14.256Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/core/test/router/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "flat-routes.spec.ts",
+        "path": "packages/core/test/router/utils/flat-routes.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 133,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "flattenRoutePaths",
+            "sourceModule": "../../../router/utils",
+            "isDefault": false,
+            "namedImports": [
+              "flattenRoutePaths"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ParentModule",
+            "type": "class",
+            "signature": "class ParentModule"
+          },
+          {
+            "name": "ChildModule",
+            "type": "class",
+            "signature": "class ChildModule"
+          },
+          {
+            "name": "ChildChildModule",
+            "type": "class",
+            "signature": "class ChildChildModule"
+          },
+          {
+            "name": "ChildModule2",
+            "type": "class",
+            "signature": "class ChildModule2"
+          },
+          {
+            "name": "ChildModule3",
+            "type": "class",
+            "signature": "class ChildModule3"
+          },
+          {
+            "name": "ChildModule4",
+            "type": "class",
+            "signature": "class ChildModule4"
+          },
+          {
+            "name": "ChildModule5",
+            "type": "class",
+            "signature": "class ChildModule5"
+          },
+          {
+            "name": "ChildModule6",
+            "type": "class",
+            "signature": "class ChildModule6"
+          },
+          {
+            "name": "ChildParentPathModule",
+            "type": "class",
+            "signature": "class ChildParentPathModule"
+          },
+          {
+            "name": "ParentChildModule",
+            "type": "class",
+            "signature": "class ParentChildModule"
+          },
+          {
+            "name": "ChildChildModule2",
+            "type": "class",
+            "signature": "class ChildChildModule2"
+          },
+          {
+            "name": "AuthModule",
+            "type": "class",
+            "signature": "class AuthModule"
+          },
+          {
+            "name": "CatsModule",
+            "type": "class",
+            "signature": "class CatsModule"
+          },
+          {
+            "name": "DogsModule",
+            "type": "class",
+            "signature": "class DogsModule"
+          },
+          {
+            "name": "AuthModule2",
+            "type": "class",
+            "signature": "class AuthModule2"
+          },
+          {
+            "name": "CatsModule2",
+            "type": "class",
+            "signature": "class CatsModule2"
+          },
+          {
+            "name": "CatsModule3",
+            "type": "class",
+            "signature": "class CatsModule3"
+          },
+          {
+            "name": "AuthModule3",
+            "type": "class",
+            "signature": "class AuthModule3"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/test/router/utils/flat-routes.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/router/utils/flat-routes.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

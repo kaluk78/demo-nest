@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:28.355Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:28.355Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "dtos",
+      "path": "integration/microservices/src/kafka/dtos",
+      "purpose": "Enhanced directory analysis of dtos",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "user.dto.ts",
+        "path": "integration/microservices/src/kafka/dtos/user.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "UserDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UserDto",
+            "type": "class",
+            "signature": "class UserDto"
+          }
+        ]
+      },
+      {
+        "name": "business.dto.ts",
+        "path": "integration/microservices/src/kafka/dtos/business.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [
+          {
+            "name": "UserEntity",
+            "sourceModule": "../entities/user.entity",
+            "isDefault": false,
+            "namedImports": [
+              "UserEntity"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "BusinessDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "BusinessDto",
+            "type": "class",
+            "signature": "class BusinessDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

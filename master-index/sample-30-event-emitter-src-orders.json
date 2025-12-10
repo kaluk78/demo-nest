@@ -1,0 +1,513 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:01:05.153Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:01:05.153Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "orders",
+      "path": "sample/30-event-emitter/src/orders",
+      "purpose": "Enhanced directory analysis of orders",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "orders.service.ts",
+        "path": "sample/30-event-emitter/src/orders/orders.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/30-event-emitter/src/orders/orders.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 22,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/30-event-emitter/src/orders/orders.service.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Returns simple/hardcoded value",
+              "Utility function with clear purpose; Properly uses assigned variables; Mutates state or has side effects",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 24,
+              "endLine": 37
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 24,
+              "commentAnalysis": 0,
+              "contextFilter": -68,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Injectable",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "EventEmitter2",
+                  "source": "@nestjs/event-emitter",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Order",
+                  "source": "../orders/entities/order.entity",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "CreateOrderDto",
+                  "source": "./dto/create-order.dto",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "OrderCreatedEvent",
+                  "source": "./events/order-created.event",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "EventEmitter2",
+            "sourceModule": "@nestjs/event-emitter",
+            "isDefault": false,
+            "namedImports": [
+              "EventEmitter2"
+            ]
+          },
+          {
+            "name": "Order",
+            "sourceModule": "../orders/entities/order.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Order"
+            ]
+          },
+          {
+            "name": "CreateOrderDto",
+            "sourceModule": "./dto/create-order.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateOrderDto"
+            ]
+          },
+          {
+            "name": "OrderCreatedEvent",
+            "sourceModule": "./events/order-created.event",
+            "isDefault": false,
+            "namedImports": [
+              "OrderCreatedEvent"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "OrdersService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OrdersService",
+            "type": "class",
+            "signature": "class OrdersService"
+          }
+        ]
+      },
+      {
+        "name": "orders.module.ts",
+        "path": "sample/30-event-emitter/src/orders/orders.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "OrderCreatedListener",
+            "sourceModule": "./listeners/order-created.listener",
+            "isDefault": false,
+            "namedImports": [
+              "OrderCreatedListener"
+            ]
+          },
+          {
+            "name": "OrdersController",
+            "sourceModule": "./orders.controller",
+            "isDefault": false,
+            "namedImports": [
+              "OrdersController"
+            ]
+          },
+          {
+            "name": "OrdersService",
+            "sourceModule": "./orders.service",
+            "isDefault": false,
+            "namedImports": [
+              "OrdersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "OrdersModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OrdersModule",
+            "type": "class",
+            "signature": "class OrdersModule"
+          }
+        ]
+      },
+      {
+        "name": "orders.controller.ts",
+        "path": "sample/30-event-emitter/src/orders/orders.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 14,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/30-event-emitter/src/orders/orders.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/30-event-emitter/src/orders/orders.controller.ts",
+            "functionName": "create",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Utility function with clear purpose; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 9,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 18,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Body",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Controller",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "Post",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "CreateOrderDto",
+                  "source": "./dto/create-order.dto",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "OrdersService",
+                  "source": "./orders.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Body",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Body",
+              "Controller",
+              "Post"
+            ]
+          },
+          {
+            "name": "CreateOrderDto",
+            "sourceModule": "./dto/create-order.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateOrderDto"
+            ]
+          },
+          {
+            "name": "OrdersService",
+            "sourceModule": "./orders.service",
+            "isDefault": false,
+            "namedImports": [
+              "OrdersService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "OrdersController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OrdersController",
+            "type": "class",
+            "signature": "class OrdersController"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "dto",
+        "relativePath": "dto",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of dto",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "entities",
+        "relativePath": "entities",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of entities",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "events",
+        "relativePath": "events",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of events",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "listeners",
+        "relativePath": "listeners",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of listeners",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.service.ts",
+          "to": "@nestjs/event-emitter",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.module.ts",
+          "to": "sample/30-event-emitter/src/orders/orders.controller.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.module.ts",
+          "to": "sample/30-event-emitter/src/orders/orders.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.controller.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/30-event-emitter/src/orders/orders.controller.ts",
+          "to": "sample/30-event-emitter/src/orders/orders.service.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

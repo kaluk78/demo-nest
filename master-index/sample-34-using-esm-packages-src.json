@@ -1,0 +1,817 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:01:10.184Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:01:10.184Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "sample/34-using-esm-packages/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "superjson.provider.ts",
+        "path": "sample/34-using-esm-packages/src/superjson.provider.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "name": "FactoryProvider",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "FactoryProvider"
+            ]
+          },
+          {
+            "name": "importEsmPackage",
+            "sourceModule": "./import-esm-package",
+            "isDefault": false,
+            "namedImports": [
+              "importEsmPackage"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SuperJSON",
+            "type": "const"
+          },
+          {
+            "name": "superJSONProvider",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "definition",
+            "type": "type",
+            "signature": "type definition"
+          }
+        ]
+      },
+      {
+        "name": "main.ts",
+        "path": "sample/34-using-esm-packages/src/main.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/main.ts",
+            "functionName": "bootstrap",
+            "classification": "likely-legitimate",
+            "confidence": 37,
+            "isPlaceholder": true,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "NestFactory",
+                  "source": "@nestjs/core",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppModule",
+                  "source": "./app.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "./app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "bootstrap",
+            "type": "function",
+            "signature": "function bootstrap()"
+          }
+        ]
+      },
+      {
+        "name": "import-esm-package.ts",
+        "path": "sample/34-using-esm-packages/src/import-esm-package.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/import-esm-package.ts",
+            "functionName": "importEsmPackage",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "High context score suggests legitimate implementation; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -37,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "importEsmPackage",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "app.service.ts",
+        "path": "sample/34-using-esm-packages/src/app.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/app.service.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/app.service.ts",
+            "functionName": "getHello",
+            "classification": "definite-legitimate",
+            "confidence": 1,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility)",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -30,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Inject",
+                  "source": "@nestjs/common",
+                  "line": 1,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "superJSONProvider",
+                  "source": "./superjson.provider",
+                  "line": 2,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Inject",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Inject",
+              "Injectable"
+            ]
+          },
+          {
+            "name": "superJSONProvider",
+            "sourceModule": "./superjson.provider",
+            "isDefault": false,
+            "namedImports": [
+              "superJSONProvider",
+              "SuperJSON"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppService",
+            "type": "class",
+            "signature": "class AppService"
+          }
+        ]
+      },
+      {
+        "name": "app.module.ts",
+        "path": "sample/34-using-esm-packages/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 28,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/app.module.ts",
+            "functionName": "onModuleInit",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Event handler or callback function",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 18,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -42,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Module",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "OnModuleInit",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppController",
+                  "source": "./app.controller",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "AppService",
+                  "source": "./app.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "superJSONProvider",
+                  "source": "./superjson.provider",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "importEsmPackage",
+                  "source": "./import-esm-package",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module",
+              "OnModuleInit"
+            ]
+          },
+          {
+            "name": "AppController",
+            "sourceModule": "./app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AppController"
+            ]
+          },
+          {
+            "name": "AppService",
+            "sourceModule": "./app.service",
+            "isDefault": false,
+            "namedImports": [
+              "AppService"
+            ]
+          },
+          {
+            "name": "superJSONProvider",
+            "sourceModule": "./superjson.provider",
+            "isDefault": false,
+            "namedImports": [
+              "superJSONProvider"
+            ]
+          },
+          {
+            "name": "importEsmPackage",
+            "sourceModule": "./import-esm-package",
+            "isDefault": false,
+            "namedImports": [
+              "importEsmPackage"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      },
+      {
+        "name": "app.controller.ts",
+        "path": "sample/34-using-esm-packages/src/app.controller.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/app.controller.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 6
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/sample/34-using-esm-packages/src/app.controller.ts",
+            "functionName": "getHello",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Moderate context score; Returns computed value from external calls or processing",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -57,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Controller",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "IMPORTANT",
+                    "score": 7,
+                    "reason": "Business logic import - may indicate incomplete feature"
+                  }
+                },
+                {
+                  "name": "Get",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppService",
+                  "source": "./app.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Get"
+            ]
+          },
+          {
+            "name": "AppService",
+            "sourceModule": "./app.service",
+            "isDefault": false,
+            "namedImports": [
+              "AppService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppController",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppController",
+            "type": "class",
+            "signature": "class AppController"
+          }
+        ]
+      },
+      {
+        "name": "app.controller.spec.ts",
+        "path": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 35,
+        "importedModules": [
+          {
+            "name": "jest",
+            "sourceModule": "@jest/globals",
+            "isDefault": false,
+            "namedImports": [
+              "jest"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "AppController",
+            "sourceModule": "./app.controller",
+            "isDefault": false,
+            "namedImports": [
+              "AppController"
+            ]
+          },
+          {
+            "name": "AppService",
+            "sourceModule": "./app.service",
+            "isDefault": false,
+            "namedImports": [
+              "AppService"
+            ]
+          },
+          {
+            "name": "superJSONProvider",
+            "sourceModule": "./superjson.provider",
+            "isDefault": false,
+            "namedImports": [
+              "superJSONProvider"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/34-using-esm-packages/src/superjson.provider.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/superjson.provider.ts",
+          "to": "sample/34-using-esm-packages/src/import-esm-package.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/main.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/main.ts",
+          "to": "sample/34-using-esm-packages/src/app.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.service.ts",
+          "to": "sample/34-using-esm-packages/src/superjson.provider.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.module.ts",
+          "to": "sample/34-using-esm-packages/src/app.controller.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.module.ts",
+          "to": "sample/34-using-esm-packages/src/app.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.module.ts",
+          "to": "sample/34-using-esm-packages/src/superjson.provider.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.module.ts",
+          "to": "sample/34-using-esm-packages/src/import-esm-package.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.ts",
+          "to": "sample/34-using-esm-packages/src/app.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+          "to": "@jest/globals",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+          "to": "sample/34-using-esm-packages/src/app.controller.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+          "to": "sample/34-using-esm-packages/src/app.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "sample/34-using-esm-packages/src/app.controller.spec.ts",
+          "to": "sample/34-using-esm-packages/src/superjson.provider.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

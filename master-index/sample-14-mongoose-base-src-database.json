@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:55.664Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:55.664Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "database",
+      "path": "sample/14-mongoose-base/src/database",
+      "purpose": "Enhanced directory analysis of database",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "database.providers.ts",
+        "path": "sample/14-mongoose-base/src/database/database.providers.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "* as mongoose",
+            "sourceModule": "mongoose",
+            "isDefault": false,
+            "namedImports": [
+              "* as mongoose"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "databaseProviders",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "database.module.ts",
+        "path": "sample/14-mongoose-base/src/database/database.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "databaseProviders",
+            "sourceModule": "./database.providers",
+            "isDefault": false,
+            "namedImports": [
+              "databaseProviders"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "DatabaseModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DatabaseModule",
+            "type": "class",
+            "signature": "class DatabaseModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/14-mongoose-base/src/database/database.providers.ts",
+          "to": "mongoose",
+          "type": "imports"
+        },
+        {
+          "from": "sample/14-mongoose-base/src/database/database.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/14-mongoose-base/src/database/database.module.ts",
+          "to": "sample/14-mongoose-base/src/database/database.providers.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

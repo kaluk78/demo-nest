@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:16.624Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:16.624Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "dto",
+      "path": "integration/hello-world/src/host/dto",
+      "purpose": "Enhanced directory analysis of dto",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "test.dto.ts",
+        "path": "integration/hello-world/src/host/dto/test.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "name": "IsString",
+            "sourceModule": "class-validator",
+            "isDefault": false,
+            "namedImports": [
+              "IsString",
+              "IsNotEmpty",
+              "IsNumber"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "TestDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestDto",
+            "type": "class",
+            "signature": "class TestDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/hello-world/src/host/dto/test.dto.ts",
+          "to": "class-validator",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

@@ -1,0 +1,1431 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:17.436Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:17.436Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/injector/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "scoped-instances.spec.ts",
+        "path": "integration/injector/e2e/scoped-instances.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 98,
+        "importedModules": [
+          {
+            "name": "createContextId",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "createContextId"
+            ]
+          },
+          {
+            "name": "InvalidClassScopeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/invalid-class-scope.exception",
+            "isDefault": false,
+            "namedImports": [
+              "InvalidClassScopeException"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ScopedController",
+            "sourceModule": "../src/scoped/scoped.controller",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedController"
+            ]
+          },
+          {
+            "name": "REQUEST_SCOPED_FACTORY",
+            "sourceModule": "../src/scoped/scoped.module",
+            "isDefault": false,
+            "namedImports": [
+              "REQUEST_SCOPED_FACTORY",
+              "ScopedModule",
+              "STATIC_FACTORY",
+              "TRANSIENT_SCOPED_FACTORY"
+            ]
+          },
+          {
+            "name": "ScopedService",
+            "sourceModule": "../src/scoped/scoped.service",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedService"
+            ]
+          },
+          {
+            "name": "TransientService",
+            "sourceModule": "../src/scoped/transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "TransientService"
+            ]
+          },
+          {
+            "name": "Transient3Service",
+            "sourceModule": "../src/scoped/transient3.service",
+            "isDefault": false,
+            "namedImports": [
+              "Transient3Service"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "property-injection.spec.ts",
+        "path": "integration/injector/e2e/property-injection.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 45,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "DependencyService",
+            "sourceModule": "../src/properties/dependency.service",
+            "isDefault": false,
+            "namedImports": [
+              "DependencyService"
+            ]
+          },
+          {
+            "name": "PropertiesModule",
+            "sourceModule": "../src/properties/properties.module",
+            "isDefault": false,
+            "namedImports": [
+              "PropertiesModule"
+            ]
+          },
+          {
+            "name": "PropertiesService",
+            "sourceModule": "../src/properties/properties.service",
+            "isDefault": false,
+            "namedImports": [
+              "PropertiesService"
+            ]
+          },
+          {
+            "name": "UnknownDependenciesException",
+            "sourceModule": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownDependenciesException"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "optional-factory-provider-dep.spec.ts",
+        "path": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 136,
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "UnknownDependenciesException",
+            "sourceModule": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownDependenciesException"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MY_PROVIDER",
+            "type": "const",
+            "signature": "const MY_PROVIDER"
+          },
+          {
+            "name": "FIRST_OPTIONAL_DEPENDENCY",
+            "type": "const",
+            "signature": "const FIRST_OPTIONAL_DEPENDENCY"
+          },
+          {
+            "name": "SECOND_OPTIONAL_DEPENDENCY",
+            "type": "const",
+            "signature": "const SECOND_OPTIONAL_DEPENDENCY"
+          }
+        ]
+      },
+      {
+        "name": "multiple-providers.spec.ts",
+        "path": "integration/injector/e2e/multiple-providers.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 48,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "MultipleProvidersModule",
+            "sourceModule": "../src/multiple-providers/multiple-providers.module",
+            "isDefault": false,
+            "namedImports": [
+              "MultipleProvidersModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "many-global-modules.spec.ts",
+        "path": "integration/injector/e2e/many-global-modules.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 158,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/injector/e2e/many-global-modules.spec.ts",
+            "functionName": "checkDependencies",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Legitimate simple function pattern (getter/setter/utility); Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 66,
+              "endLine": 72
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -50,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Inject",
+                  "source": "@nestjs/common",
+                  "line": 4,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/integration/injector/e2e/many-global-modules.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 57,
+              "endLine": 64
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "Global",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Global",
+              "Inject",
+              "Injectable",
+              "Module",
+              "Scope"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "GlobalModule1",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule2",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule3",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule4",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule5",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule6",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule7",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule8",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule9",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModule10",
+            "type": "class"
+          },
+          {
+            "name": "Dependant",
+            "type": "class"
+          },
+          {
+            "name": "ModuleWithForeignTransientProvider",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModuleWithTransientProviderAndDependant",
+            "type": "class"
+          },
+          {
+            "name": "GlobalModuleWithRequestProvider",
+            "type": "class"
+          },
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "GlobalModule1",
+            "type": "class",
+            "signature": "class GlobalModule1"
+          },
+          {
+            "name": "GlobalModule2",
+            "type": "class",
+            "signature": "class GlobalModule2"
+          },
+          {
+            "name": "GlobalModule3",
+            "type": "class",
+            "signature": "class GlobalModule3"
+          },
+          {
+            "name": "GlobalModule4",
+            "type": "class",
+            "signature": "class GlobalModule4"
+          },
+          {
+            "name": "GlobalModule5",
+            "type": "class",
+            "signature": "class GlobalModule5"
+          },
+          {
+            "name": "GlobalModule6",
+            "type": "class",
+            "signature": "class GlobalModule6"
+          },
+          {
+            "name": "GlobalModule7",
+            "type": "class",
+            "signature": "class GlobalModule7"
+          },
+          {
+            "name": "GlobalModule8",
+            "type": "class",
+            "signature": "class GlobalModule8"
+          },
+          {
+            "name": "GlobalModule9",
+            "type": "class",
+            "signature": "class GlobalModule9"
+          },
+          {
+            "name": "GlobalModule10",
+            "type": "class",
+            "signature": "class GlobalModule10"
+          },
+          {
+            "name": "TransientProvider",
+            "type": "class",
+            "signature": "class TransientProvider"
+          },
+          {
+            "name": "RequestProvider",
+            "type": "class",
+            "signature": "class RequestProvider"
+          },
+          {
+            "name": "ForeignTransientProvider",
+            "type": "class",
+            "signature": "class ForeignTransientProvider"
+          },
+          {
+            "name": "Dependant",
+            "type": "class",
+            "signature": "class Dependant"
+          },
+          {
+            "name": "ModuleWithForeignTransientProvider",
+            "type": "class",
+            "signature": "class ModuleWithForeignTransientProvider"
+          },
+          {
+            "name": "GlobalModuleWithTransientProviderAndDependant",
+            "type": "class",
+            "signature": "class GlobalModuleWithTransientProviderAndDependant"
+          },
+          {
+            "name": "GlobalModuleWithRequestProvider",
+            "type": "class",
+            "signature": "class GlobalModuleWithRequestProvider"
+          },
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      },
+      {
+        "name": "introspection.spec.ts",
+        "path": "integration/injector/e2e/introspection.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 35,
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "ModuleRef",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "ModuleRef"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ScopedModule",
+            "sourceModule": "../src/scoped/scoped.module",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedModule",
+              "STATIC_FACTORY"
+            ]
+          },
+          {
+            "name": "ScopedService",
+            "sourceModule": "../src/scoped/scoped.service",
+            "isDefault": false,
+            "namedImports": [
+              "ScopedService"
+            ]
+          },
+          {
+            "name": "TransientService",
+            "sourceModule": "../src/scoped/transient.service",
+            "isDefault": false,
+            "namedImports": [
+              "TransientService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "injector.spec.ts",
+        "path": "integration/injector/e2e/injector.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 114,
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          },
+          {
+            "name": "UnknownDependenciesException",
+            "sourceModule": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownDependenciesException"
+            ]
+          },
+          {
+            "name": "UnknownExportException",
+            "sourceModule": "@nestjs/core/errors/exceptions/unknown-export.exception",
+            "isDefault": false,
+            "namedImports": [
+              "UnknownExportException"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as chai",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "* as chai"
+            ]
+          },
+          {
+            "name": "* as chaiAsPromised",
+            "sourceModule": "chai-as-promised",
+            "isDefault": false,
+            "namedImports": [
+              "* as chaiAsPromised"
+            ]
+          },
+          {
+            "name": "DYNAMIC_TOKEN",
+            "sourceModule": "../src/dynamic/dynamic.module",
+            "isDefault": false,
+            "namedImports": [
+              "DYNAMIC_TOKEN",
+              "DYNAMIC_VALUE",
+              "NestDynamicModule"
+            ]
+          },
+          {
+            "name": "ExportsModule",
+            "sourceModule": "../src/exports/exports.module",
+            "isDefault": false,
+            "namedImports": [
+              "ExportsModule"
+            ]
+          },
+          {
+            "name": "InjectModule",
+            "sourceModule": "../src/inject/inject.module",
+            "isDefault": false,
+            "namedImports": [
+              "InjectModule"
+            ]
+          },
+          {
+            "name": "InjectSameNameModule",
+            "sourceModule": "../src/inject/inject-same-name.module",
+            "isDefault": false,
+            "namedImports": [
+              "InjectSameNameModule"
+            ]
+          },
+          {
+            "name": "SelfInjectionProviderModule",
+            "sourceModule": "../src/self-injection/self-injection-provider.module",
+            "isDefault": false,
+            "namedImports": [
+              "SelfInjectionProviderModule",
+              "SelfInjectionProviderCustomTokenModule",
+              "SelfInjectionForwardProviderModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "injects",
+            "type": "class",
+            "signature": "class injects"
+          },
+          {
+            "name": "reference",
+            "type": "class",
+            "signature": "class reference"
+          },
+          {
+            "name": "reference",
+            "type": "class",
+            "signature": "class reference"
+          }
+        ]
+      },
+      {
+        "name": "default-values.spec.ts",
+        "path": "integration/injector/e2e/default-values.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 17,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "DefaultsModule",
+            "sourceModule": "../src/defaults/defaults.module",
+            "isDefault": false,
+            "namedImports": [
+              "DefaultsModule"
+            ]
+          },
+          {
+            "name": "DefaultsService",
+            "sourceModule": "../src/defaults/defaults.service",
+            "isDefault": false,
+            "namedImports": [
+              "DefaultsService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "core-injectables.spec.ts",
+        "path": "integration/injector/e2e/core-injectables.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test",
+              "TestingModule"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "CoreInjectablesModule",
+            "sourceModule": "../src/core-injectables/core-injectables.module",
+            "isDefault": false,
+            "namedImports": [
+              "CoreInjectablesModule"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig",
+              "ModuleRef"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular.spec.ts",
+        "path": "integration/injector/e2e/circular.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "CircularModule",
+            "sourceModule": "../src/circular/circular.module",
+            "isDefault": false,
+            "namedImports": [
+              "CircularModule"
+            ]
+          },
+          {
+            "name": "CircularService",
+            "sourceModule": "../src/circular/circular.service",
+            "isDefault": false,
+            "namedImports": [
+              "CircularService"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "../src/circular/input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular-structure-dynamic-modules.spec.ts",
+        "path": "integration/injector/e2e/circular-structure-dynamic-modules.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 17,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "CircularModule",
+            "sourceModule": "../src/circular-structure-dynamic-module/circular.module",
+            "isDefault": false,
+            "namedImports": [
+              "CircularModule"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "../src/circular-structure-dynamic-module/input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular-property-injection.spec.ts",
+        "path": "integration/injector/e2e/circular-property-injection.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "CircularPropertiesModule",
+            "sourceModule": "../src/circular-properties/circular-properties.module",
+            "isDefault": false,
+            "namedImports": [
+              "CircularPropertiesModule"
+            ]
+          },
+          {
+            "name": "CircularService",
+            "sourceModule": "../src/circular-properties/circular.service",
+            "isDefault": false,
+            "namedImports": [
+              "CircularService"
+            ]
+          },
+          {
+            "name": "InputPropertiesModule",
+            "sourceModule": "../src/circular-properties/input-properties.module",
+            "isDefault": false,
+            "namedImports": [
+              "InputPropertiesModule"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "../src/circular-properties/input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular-modules.spec.ts",
+        "path": "integration/injector/e2e/circular-modules.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 21,
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "CircularModule",
+            "sourceModule": "../src/circular-modules/circular.module",
+            "isDefault": false,
+            "namedImports": [
+              "CircularModule"
+            ]
+          },
+          {
+            "name": "CircularService",
+            "sourceModule": "../src/circular-modules/circular.service",
+            "isDefault": false,
+            "namedImports": [
+              "CircularService"
+            ]
+          },
+          {
+            "name": "InputModule",
+            "sourceModule": "../src/circular-modules/input.module",
+            "isDefault": false,
+            "namedImports": [
+              "InputModule"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "../src/circular-modules/input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "circular-custom-providers.spec.ts",
+        "path": "integration/injector/e2e/circular-custom-providers.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 64,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/injector/e2e/circular-custom-providers.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/injector/e2e/circular-custom-providers.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          },
+          {
+            "filePath": "/app/integration/injector/e2e/circular-custom-providers.spec.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 20,
+              "endLine": 20
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "Controller",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Controller",
+              "Injectable",
+              "Module"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          },
+          {
+            "name": "BImpl",
+            "type": "class",
+            "signature": "class BImpl"
+          },
+          {
+            "name": "AppController",
+            "type": "class",
+            "signature": "class AppController"
+          },
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/injector/e2e/scoped-instances.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/scoped-instances.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/invalid-class-scope.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/scoped-instances.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/scoped-instances.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/property-injection.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/property-injection.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/property-injection.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/optional-factory-provider-dep.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/multiple-providers.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/multiple-providers.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/many-global-modules.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/many-global-modules.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/many-global-modules.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/many-global-modules.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/introspection.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/introspection.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/introspection.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/introspection.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/unknown-dependencies.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "@nestjs/core/errors/exceptions/unknown-export.exception",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/injector.spec.ts",
+          "to": "chai-as-promised",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/default-values.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/default-values.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/core-injectables.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/core-injectables.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/core-injectables.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-structure-dynamic-modules.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-structure-dynamic-modules.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-property-injection.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-property-injection.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-modules.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-modules.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-custom-providers.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-custom-providers.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/e2e/circular-custom-providers.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

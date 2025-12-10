@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:58.151Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:58.151Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "common",
+      "path": "sample/20-cache/src/common",
+      "purpose": "Enhanced directory analysis of common",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "http-cache.interceptor.ts",
+        "path": "sample/20-cache/src/common/http-cache.interceptor.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 24,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/sample/20-cache/src/common/http-cache.interceptor.ts",
+            "functionName": "trackBy",
+            "classification": "likely-legitimate",
+            "confidence": 33,
+            "isPlaceholder": true,
+            "reasons": [
+              "Returns hardcoded value: \"return undefined;\"",
+              "Returns computed value from external calls or processing"
+            ],
+            "location": {
+              "startLine": 6,
+              "endLine": 22
+            },
+            "detectionMethods": {
+              "explicitMarkers": 15,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": -12,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "CacheInterceptor",
+                  "source": "@nestjs/cache-manager",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ExecutionContext",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Injectable",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "CacheInterceptor",
+            "sourceModule": "@nestjs/cache-manager",
+            "isDefault": false,
+            "namedImports": [
+              "CacheInterceptor"
+            ]
+          },
+          {
+            "name": "ExecutionContext",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContext",
+              "Injectable"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "HttpCacheInterceptor",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "HttpCacheInterceptor",
+            "type": "class",
+            "signature": "class HttpCacheInterceptor"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/20-cache/src/common/http-cache.interceptor.ts",
+          "to": "@nestjs/cache-manager",
+          "type": "imports"
+        },
+        {
+          "from": "sample/20-cache/src/common/http-cache.interceptor.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

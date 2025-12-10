@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:40.618Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:40.618Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "utils",
+      "path": "packages/websockets/test/utils",
+      "purpose": "Enhanced directory analysis of utils",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "subscribe-message.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/subscribe-message.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/websockets/test/utils/subscribe-message.decorator.spec.ts",
+            "functionName": "fn",
+            "classification": "likely-legitimate",
+            "confidence": 21,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (2 lines)",
+              "Function takes no parameters",
+              "Very generic function name",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 29,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "MESSAGE_MAPPING_METADATA",
+                  "source": "../../constants",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "SubscribeMessage",
+                  "source": "../../decorators/subscribe-message.decorator",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "MESSAGE_MAPPING_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "MESSAGE_MAPPING_METADATA"
+            ]
+          },
+          {
+            "name": "SubscribeMessage",
+            "sourceModule": "../../decorators/subscribe-message.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "SubscribeMessage"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          }
+        ]
+      },
+      {
+        "name": "socket-gateway.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/socket-gateway.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "GATEWAY_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_METADATA",
+              "GATEWAY_OPTIONS"
+            ]
+          },
+          {
+            "name": "WebSocketGateway",
+            "sourceModule": "../../decorators/socket-gateway.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketGateway"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          },
+          {
+            "name": "TestGateway2",
+            "type": "class",
+            "signature": "class TestGateway2"
+          },
+          {
+            "name": "TestGateway3",
+            "type": "class",
+            "signature": "class TestGateway3"
+          }
+        ]
+      },
+      {
+        "name": "gateway-server.decorator.spec.ts",
+        "path": "packages/websockets/test/utils/gateway-server.decorator.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "WebSocketServer",
+            "sourceModule": "../../decorators/gateway-server.decorator",
+            "isDefault": false,
+            "namedImports": [
+              "WebSocketServer"
+            ]
+          },
+          {
+            "name": "GATEWAY_SERVER_METADATA",
+            "sourceModule": "../../constants",
+            "isDefault": false,
+            "namedImports": [
+              "GATEWAY_SERVER_METADATA"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestGateway",
+            "type": "class",
+            "signature": "class TestGateway"
+          }
+        ]
+      },
+      {
+        "name": "compare-element.util.spec.ts",
+        "path": "packages/websockets/test/utils/compare-element.util.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "compareElementAt",
+            "sourceModule": "../../utils/compare-element.util",
+            "isDefault": false,
+            "namedImports": [
+              "compareElementAt"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/websockets/test/utils/subscribe-message.decorator.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/utils/socket-gateway.decorator.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/utils/gateway-server.decorator.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/utils/compare-element.util.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

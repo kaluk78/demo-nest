@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:52.481Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:52.481Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "core",
+      "path": "sample/10-fastify/src/core",
+      "purpose": "Enhanced directory analysis of core",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "core.module.ts",
+        "path": "sample/10-fastify/src/core/core.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "APP_INTERCEPTOR",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "APP_INTERCEPTOR"
+            ]
+          },
+          {
+            "name": "LoggingInterceptor",
+            "sourceModule": "./interceptors/logging.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "LoggingInterceptor"
+            ]
+          },
+          {
+            "name": "TransformInterceptor",
+            "sourceModule": "./interceptors/transform.interceptor",
+            "isDefault": false,
+            "namedImports": [
+              "TransformInterceptor"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CoreModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CoreModule",
+            "type": "class",
+            "signature": "class CoreModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "interceptors",
+        "relativePath": "interceptors",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of interceptors",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/10-fastify/src/core/core.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "sample/10-fastify/src/core/core.module.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

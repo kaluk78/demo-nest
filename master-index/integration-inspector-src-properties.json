@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:24.781Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:24.781Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "properties",
+      "path": "integration/inspector/src/properties",
+      "purpose": "Enhanced directory analysis of properties",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "properties.service.ts",
+        "path": "integration/inspector/src/properties/properties.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "name": "Inject",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Inject",
+              "Injectable"
+            ]
+          },
+          {
+            "name": "DependencyService",
+            "sourceModule": "./dependency.service",
+            "isDefault": false,
+            "namedImports": [
+              "DependencyService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "SYMBOL_TOKEN",
+            "type": "const"
+          },
+          {
+            "name": "PropertiesService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "PropertiesService",
+            "type": "class",
+            "signature": "class PropertiesService"
+          },
+          {
+            "name": "SYMBOL_TOKEN",
+            "type": "const",
+            "signature": "const SYMBOL_TOKEN"
+          }
+        ]
+      },
+      {
+        "name": "properties.module.ts",
+        "path": "integration/inspector/src/properties/properties.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "DependencyService",
+            "sourceModule": "./dependency.service",
+            "isDefault": false,
+            "namedImports": [
+              "DependencyService"
+            ]
+          },
+          {
+            "name": "PropertiesService",
+            "sourceModule": "./properties.service",
+            "isDefault": false,
+            "namedImports": [
+              "PropertiesService",
+              "SYMBOL_TOKEN"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "PropertiesModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "PropertiesModule",
+            "type": "class",
+            "signature": "class PropertiesModule"
+          }
+        ]
+      },
+      {
+        "name": "dependency.service.ts",
+        "path": "integration/inspector/src/properties/dependency.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "DependencyService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DependencyService",
+            "type": "class",
+            "signature": "class DependencyService"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/inspector/src/properties/properties.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/properties/properties.service.ts",
+          "to": "integration/inspector/src/properties/dependency.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/properties/properties.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/properties/properties.module.ts",
+          "to": "integration/inspector/src/properties/dependency.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/properties/properties.module.ts",
+          "to": "integration/inspector/src/properties/properties.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/properties/dependency.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

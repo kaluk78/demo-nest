@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:44.127Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:44.127Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "packages",
+      "path": "packages",
+      "purpose": "Enhanced directory analysis of packages",
+      "ownKeyElements": []
+    },
+    "files": [],
+    "subdirectories": [
+      {
+        "name": "common",
+        "relativePath": "common",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of common",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "core",
+        "relativePath": "core",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of core",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "microservices",
+        "relativePath": "microservices",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of microservices",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "platform-express",
+        "relativePath": "platform-express",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of platform-express",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "platform-fastify",
+        "relativePath": "platform-fastify",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of platform-fastify",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "platform-socket.io",
+        "relativePath": "platform-socket.io",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of platform-socket.io",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "platform-ws",
+        "relativePath": "platform-ws",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of platform-ws",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "testing",
+        "relativePath": "testing",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of testing",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "websockets",
+        "relativePath": "websockets",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of websockets",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

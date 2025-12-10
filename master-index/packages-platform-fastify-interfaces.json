@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:37.492Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:37.492Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "interfaces",
+      "path": "packages/platform-fastify/interfaces",
+      "purpose": "Enhanced directory analysis of interfaces",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nest-fastify-body-parser-options.interface.ts",
+        "path": "packages/platform-fastify/interfaces/nest-fastify-body-parser-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "AddContentTypeParser",
+            "sourceModule": "fastify",
+            "isDefault": false,
+            "namedImports": [
+              "AddContentTypeParser"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestFastifyBodyParserOptions",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestFastifyBodyParserOptions",
+            "type": "type",
+            "signature": "type NestFastifyBodyParserOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-fastify-application.interface.ts",
+        "path": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 129,
+        "importedModules": [
+          {
+            "name": "FastifyCorsOptions",
+            "sourceModule": "@fastify/cors",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyCorsOptions"
+            ]
+          },
+          {
+            "name": "HttpServer",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "HttpServer",
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "FastifyBodyParser",
+            "sourceModule": "fastify",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyBodyParser",
+              "FastifyInstance",
+              "FastifyListenOptions",
+              "FastifyPluginAsync",
+              "FastifyPluginCallback",
+              "FastifyPluginOptions",
+              "FastifyRegisterOptions",
+              "FastifyReply",
+              "FastifyRequest",
+              "RawServerBase",
+              "RawServerDefault"
+            ]
+          },
+          {
+            "name": "InjectOptions",
+            "sourceModule": "light-my-request",
+            "isDefault": false,
+            "namedImports": [
+              "InjectOptions",
+              "LightMyRequestChain",
+              "LightMyRequestResponse"
+            ]
+          },
+          {
+            "name": "FastifyStaticOptions",
+            "sourceModule": "./external",
+            "isDefault": false,
+            "namedImports": [
+              "FastifyStaticOptions",
+              "FastifyViewOptions"
+            ]
+          },
+          {
+            "name": "NestFastifyBodyParserOptions",
+            "sourceModule": "./nest-fastify-body-parser-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestFastifyBodyParserOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestFastifyApplication",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestFastifyApplication",
+            "type": "interface",
+            "signature": "interface NestFastifyApplication"
+          },
+          {
+            "name": "in",
+            "type": "type",
+            "signature": "type in"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/platform-fastify/interfaces/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 3,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "external",
+        "relativePath": "external",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of external",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-body-parser-options.interface.ts",
+          "to": "fastify",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+          "to": "@fastify/cors",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+          "to": "fastify",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+          "to": "light-my-request",
+          "type": "imports"
+        },
+        {
+          "from": "packages/platform-fastify/interfaces/nest-fastify-application.interface.ts",
+          "to": "packages/platform-fastify/interfaces/nest-fastify-body-parser-options.interface.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

@@ -1,0 +1,281 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:28.011Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:28.011Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "ctx-host",
+      "path": "packages/microservices/test/ctx-host",
+      "purpose": "Enhanced directory analysis of ctx-host",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "tcp.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/tcp.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "TcpContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "TcpContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "rmq.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/rmq.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 27,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RmqContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "RmqContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "redis.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/redis.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 17,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "RedisContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "RedisContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "nats.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/nats.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "NatsContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "NatsContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "mqtt.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/mqtt.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 22,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "MqttContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "MqttContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "kafka.context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/kafka.context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 63,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "KafkaContext",
+            "sourceModule": "../../ctx-host",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaContext"
+            ]
+          },
+          {
+            "name": "Consumer",
+            "sourceModule": "../../external/kafka.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Consumer",
+              "KafkaMessage",
+              "Producer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "base-rpc-context.spec.ts",
+        "path": "packages/microservices/test/ctx-host/base-rpc-context.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 24,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "BaseRpcContext",
+            "sourceModule": "../../ctx-host/base-rpc.context",
+            "isDefault": false,
+            "namedImports": [
+              "BaseRpcContext"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/microservices/test/ctx-host/tcp.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/rmq.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/redis.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/nats.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/mqtt.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/kafka.context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/ctx-host/base-rpc-context.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

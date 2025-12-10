@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:42.783Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:42.783Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "circular-dependency",
+      "path": "integration/testing-module-override/circular-dependency",
+      "purpose": "Enhanced directory analysis of circular-dependency",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "b.module.ts",
+        "path": "integration/testing-module-override/circular-dependency/b.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "forwardRef"
+            ]
+          },
+          {
+            "name": "AModule",
+            "sourceModule": "./a.module",
+            "isDefault": false,
+            "namedImports": [
+              "AModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "BProvider",
+            "type": "class"
+          },
+          {
+            "name": "BModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "BProvider",
+            "type": "class",
+            "signature": "class BProvider"
+          },
+          {
+            "name": "BModule",
+            "type": "class",
+            "signature": "class BModule"
+          }
+        ]
+      },
+      {
+        "name": "a.module.ts",
+        "path": "integration/testing-module-override/circular-dependency/a.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable",
+              "Module",
+              "forwardRef"
+            ]
+          },
+          {
+            "name": "BModule",
+            "sourceModule": "./b.module",
+            "isDefault": false,
+            "namedImports": [
+              "BModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AProvider",
+            "type": "class"
+          },
+          {
+            "name": "AModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AProvider",
+            "type": "class",
+            "signature": "class AProvider"
+          },
+          {
+            "name": "AModule",
+            "type": "class",
+            "signature": "class AModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/testing-module-override/circular-dependency/b.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/testing-module-override/circular-dependency/b.module.ts",
+          "to": "integration/testing-module-override/circular-dependency/a.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/testing-module-override/circular-dependency/a.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/testing-module-override/circular-dependency/a.module.ts",
+          "to": "integration/testing-module-override/circular-dependency/b.module.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": [
+        [
+          "integration/testing-module-override/circular-dependency/b.module.ts",
+          "integration/testing-module-override/circular-dependency/a.module.ts",
+          "integration/testing-module-override/circular-dependency/b.module.ts"
+        ]
+      ]
+    }
+  },
+  "verificationSummary": null
+}

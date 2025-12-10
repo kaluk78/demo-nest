@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:28.516Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:28.516Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "deserializers",
+      "path": "packages/microservices/test/deserializers",
+      "purpose": "Enhanced directory analysis of deserializers",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "kafka-response.deserializer.spec.ts",
+        "path": "packages/microservices/test/deserializers/kafka-response.deserializer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 46,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "KafkaResponseDeserializer",
+            "sourceModule": "../../deserializers/kafka-response.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaResponseDeserializer"
+            ]
+          },
+          {
+            "name": "KafkaHeaders",
+            "sourceModule": "../../enums/kafka-headers.enum",
+            "isDefault": false,
+            "namedImports": [
+              "KafkaHeaders"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "incoming-response.deserializer.spec.ts",
+        "path": "packages/microservices/test/deserializers/incoming-response.deserializer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 42,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "IncomingResponseDeserializer",
+            "sourceModule": "../../deserializers/incoming-response.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponseDeserializer"
+            ]
+          },
+          {
+            "name": "IncomingResponse",
+            "sourceModule": "../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingResponse"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "incoming-request.deserializer.spec.ts",
+        "path": "packages/microservices/test/deserializers/incoming-request.deserializer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 51,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "IncomingRequestDeserializer",
+            "sourceModule": "../../deserializers/incoming-request.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingRequestDeserializer"
+            ]
+          },
+          {
+            "name": "IncomingRequest",
+            "sourceModule": "../../interfaces",
+            "isDefault": false,
+            "namedImports": [
+              "IncomingRequest"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "identity.deserializer.spec.ts",
+        "path": "packages/microservices/test/deserializers/identity.deserializer.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 16,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "IdentityDeserializer",
+            "sourceModule": "../../deserializers/identity.deserializer",
+            "isDefault": false,
+            "namedImports": [
+              "IdentityDeserializer"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/microservices/test/deserializers/kafka-response.deserializer.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/deserializers/incoming-response.deserializer.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/deserializers/incoming-request.deserializer.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/test/deserializers/identity.deserializer.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

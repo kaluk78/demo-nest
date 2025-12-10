@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:48.484Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:48.484Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "websockets",
+      "path": "packages/common/interfaces/websockets",
+      "purpose": "Enhanced directory analysis of websockets",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "web-socket-adapter.interface.ts",
+        "path": "packages/common/interfaces/websockets/web-socket-adapter.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "importedModules": [
+          {
+            "name": "Observable",
+            "sourceModule": "rxjs",
+            "isDefault": false,
+            "namedImports": [
+              "Observable"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "WsMessageHandler",
+            "type": "interface"
+          },
+          {
+            "name": "WebSocketAdapter",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "WsMessageHandler",
+            "type": "interface",
+            "signature": "interface WsMessageHandler"
+          },
+          {
+            "name": "WebSocketAdapter",
+            "type": "interface",
+            "signature": "interface WebSocketAdapter"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/common/interfaces/websockets/web-socket-adapter.interface.ts",
+          "to": "rxjs",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

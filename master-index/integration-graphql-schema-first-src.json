@@ -1,0 +1,842 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:15.102Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:15.102Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "integration/graphql-schema-first/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "main.ts",
+        "path": "integration/graphql-schema-first/src/main.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-schema-first/src/main.ts",
+            "functionName": "bootstrap",
+            "classification": "definite-legitimate",
+            "confidence": 17,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "NestFactory",
+                  "source": "@nestjs/core",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppModule",
+                  "source": "./app.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "./app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "bootstrap",
+            "type": "function",
+            "signature": "function bootstrap()"
+          }
+        ]
+      },
+      {
+        "name": "config.service.ts",
+        "path": "integration/graphql-schema-first/src/config.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-schema-first/src/config.service.ts",
+            "functionName": "createGqlOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Intentionally unused parameter/variable (prefixed with _); Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -72,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Injectable",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GqlModuleOptions",
+                  "source": "@nestjs/graphql",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GqlOptionsFactory",
+                  "source": "@nestjs/graphql",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "join",
+                  "source": "path",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Injectable",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Injectable"
+            ]
+          },
+          {
+            "name": "GqlModuleOptions",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GqlModuleOptions",
+              "GqlOptionsFactory"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ConfigService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ConfigService",
+            "type": "class",
+            "signature": "class ConfigService"
+          }
+        ]
+      },
+      {
+        "name": "config.module.ts",
+        "path": "integration/graphql-schema-first/src/config.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "ConfigService",
+            "sourceModule": "./config.service",
+            "isDefault": false,
+            "namedImports": [
+              "ConfigService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "ConfigModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ConfigModule",
+            "type": "class",
+            "signature": "class ConfigModule"
+          }
+        ]
+      },
+      {
+        "name": "async-options.module.ts",
+        "path": "integration/graphql-schema-first/src/async-options.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "importedModules": [
+          {
+            "name": "ApolloDriver",
+            "sourceModule": "@nestjs/apollo",
+            "isDefault": false,
+            "namedImports": [
+              "ApolloDriver",
+              "ApolloDriverConfig"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphQLModule",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GraphQLModule"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "CatsModule",
+            "sourceModule": "./cats/cats.module",
+            "isDefault": false,
+            "namedImports": [
+              "CatsModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncApplicationModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AsyncApplicationModule",
+            "type": "class",
+            "signature": "class AsyncApplicationModule"
+          }
+        ]
+      },
+      {
+        "name": "async-options-existing.module.ts",
+        "path": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "importedModules": [
+          {
+            "name": "ApolloDriver",
+            "sourceModule": "@nestjs/apollo",
+            "isDefault": false,
+            "namedImports": [
+              "ApolloDriver",
+              "ApolloDriverConfig"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphQLModule",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GraphQLModule"
+            ]
+          },
+          {
+            "name": "CatsModule",
+            "sourceModule": "./cats/cats.module",
+            "isDefault": false,
+            "namedImports": [
+              "CatsModule"
+            ]
+          },
+          {
+            "name": "ConfigModule",
+            "sourceModule": "./config.module",
+            "isDefault": false,
+            "namedImports": [
+              "ConfigModule"
+            ]
+          },
+          {
+            "name": "ConfigService",
+            "sourceModule": "./config.service",
+            "isDefault": false,
+            "namedImports": [
+              "ConfigService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncExistingApplicationModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AsyncExistingApplicationModule",
+            "type": "class",
+            "signature": "class AsyncExistingApplicationModule"
+          }
+        ]
+      },
+      {
+        "name": "async-options-class.module.ts",
+        "path": "integration/graphql-schema-first/src/async-options-class.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 25,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-schema-first/src/async-options-class.module.ts",
+            "functionName": "createGqlOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Intentionally unused parameter/variable (prefixed with _); Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 8,
+              "endLine": 12
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -72,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "ApolloDriver",
+                  "source": "@nestjs/apollo",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "ApolloDriverConfig",
+                  "source": "@nestjs/apollo",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Module",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GqlOptionsFactory",
+                  "source": "@nestjs/graphql",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphQLModule",
+                  "source": "@nestjs/graphql",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "join",
+                  "source": "path",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "CatsModule",
+                  "source": "./cats/cats.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ApolloDriver",
+            "sourceModule": "@nestjs/apollo",
+            "isDefault": false,
+            "namedImports": [
+              "ApolloDriver",
+              "ApolloDriverConfig"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GqlOptionsFactory",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GqlOptionsFactory",
+              "GraphQLModule"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "CatsModule",
+            "sourceModule": "./cats/cats.module",
+            "isDefault": false,
+            "namedImports": [
+              "CatsModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncClassApplicationModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ConfigService",
+            "type": "class",
+            "signature": "class ConfigService"
+          },
+          {
+            "name": "AsyncClassApplicationModule",
+            "type": "class",
+            "signature": "class AsyncClassApplicationModule"
+          }
+        ]
+      },
+      {
+        "name": "app.module.ts",
+        "path": "integration/graphql-schema-first/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 18,
+        "importedModules": [
+          {
+            "name": "ApolloDriver",
+            "sourceModule": "@nestjs/apollo",
+            "isDefault": false,
+            "namedImports": [
+              "ApolloDriver",
+              "ApolloDriverConfig"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphQLModule",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GraphQLModule"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "CatsModule",
+            "sourceModule": "./cats/cats.module",
+            "isDefault": false,
+            "namedImports": [
+              "CatsModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "cats",
+        "relativePath": "cats",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of cats",
+        "keyElementsFromChild": []
+      },
+      {
+        "name": "common",
+        "relativePath": "common",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of common",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/graphql-schema-first/src/main.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/main.ts",
+          "to": "integration/graphql-schema-first/src/app.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/config.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/config.service.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/config.service.ts",
+          "to": "path",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/config.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/config.module.ts",
+          "to": "integration/graphql-schema-first/src/config.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options.module.ts",
+          "to": "@nestjs/apollo",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options.module.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options.module.ts",
+          "to": "path",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+          "to": "@nestjs/apollo",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+          "to": "integration/graphql-schema-first/src/config.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-existing.module.ts",
+          "to": "integration/graphql-schema-first/src/config.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-class.module.ts",
+          "to": "@nestjs/apollo",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-class.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-class.module.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/async-options-class.module.ts",
+          "to": "path",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/app.module.ts",
+          "to": "@nestjs/apollo",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/app.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/app.module.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/src/app.module.ts",
+          "to": "path",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

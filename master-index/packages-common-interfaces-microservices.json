@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:48.093Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:48.093Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "microservices",
+      "path": "packages/common/interfaces/microservices",
+      "purpose": "Enhanced directory analysis of microservices",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "nest-microservice-options.interface.ts",
+        "path": "packages/common/interfaces/microservices/nest-microservice-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [
+          {
+            "name": "NestApplicationContextOptions",
+            "sourceModule": "../nest-application-context-options.interface",
+            "isDefault": false,
+            "namedImports": [
+              "NestApplicationContextOptions"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "NestMicroserviceOptions",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestMicroserviceOptions",
+            "type": "type",
+            "signature": "type NestMicroserviceOptions"
+          }
+        ]
+      },
+      {
+        "name": "nest-hybrid-application-options.interface.ts",
+        "path": "packages/common/interfaces/microservices/nest-hybrid-application-options.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NestHybridApplicationOptions",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NestHybridApplicationOptions",
+            "type": "interface",
+            "signature": "interface NestHybridApplicationOptions"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

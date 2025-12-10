@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:18.032Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:18.032Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "circular-properties",
+      "path": "integration/injector/src/circular-properties",
+      "purpose": "Enhanced directory analysis of circular-properties",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "input.service.ts",
+        "path": "integration/injector/src/circular-properties/input.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "forwardRef",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "forwardRef",
+              "Inject",
+              "Injectable"
+            ]
+          },
+          {
+            "name": "CircularService",
+            "sourceModule": "./circular.service",
+            "isDefault": false,
+            "namedImports": [
+              "CircularService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InputService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InputService",
+            "type": "class",
+            "signature": "class InputService"
+          }
+        ]
+      },
+      {
+        "name": "input-properties.module.ts",
+        "path": "integration/injector/src/circular-properties/input-properties.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "name": "forwardRef",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "forwardRef",
+              "Module"
+            ]
+          },
+          {
+            "name": "CircularPropertiesModule",
+            "sourceModule": "./circular-properties.module",
+            "isDefault": false,
+            "namedImports": [
+              "CircularPropertiesModule"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "./input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InputPropertiesModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InputPropertiesModule",
+            "type": "class",
+            "signature": "class InputPropertiesModule"
+          }
+        ]
+      },
+      {
+        "name": "circular.service.ts",
+        "path": "integration/injector/src/circular-properties/circular.service.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "forwardRef",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "forwardRef",
+              "Inject",
+              "Injectable"
+            ]
+          },
+          {
+            "name": "InputService",
+            "sourceModule": "./input.service",
+            "isDefault": false,
+            "namedImports": [
+              "InputService"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CircularService",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CircularService",
+            "type": "class",
+            "signature": "class CircularService"
+          }
+        ]
+      },
+      {
+        "name": "circular-properties.module.ts",
+        "path": "integration/injector/src/circular-properties/circular-properties.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "importedModules": [
+          {
+            "name": "forwardRef",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "forwardRef",
+              "Module"
+            ]
+          },
+          {
+            "name": "CircularService",
+            "sourceModule": "./circular.service",
+            "isDefault": false,
+            "namedImports": [
+              "CircularService"
+            ]
+          },
+          {
+            "name": "InputPropertiesModule",
+            "sourceModule": "./input-properties.module",
+            "isDefault": false,
+            "namedImports": [
+              "InputPropertiesModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "CircularPropertiesModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CircularPropertiesModule",
+            "type": "class",
+            "signature": "class CircularPropertiesModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/injector/src/circular-properties/input.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/input.service.ts",
+          "to": "integration/injector/src/circular-properties/circular.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/input-properties.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/input-properties.module.ts",
+          "to": "integration/injector/src/circular-properties/circular-properties.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/input-properties.module.ts",
+          "to": "integration/injector/src/circular-properties/input.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/circular.service.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/circular.service.ts",
+          "to": "integration/injector/src/circular-properties/input.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/circular-properties.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/circular-properties.module.ts",
+          "to": "integration/injector/src/circular-properties/circular.service.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/injector/src/circular-properties/circular-properties.module.ts",
+          "to": "integration/injector/src/circular-properties/input-properties.module.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": [
+        [
+          "integration/injector/src/circular-properties/input.service.ts",
+          "integration/injector/src/circular-properties/circular.service.ts",
+          "integration/injector/src/circular-properties/input.service.ts"
+        ],
+        [
+          "integration/injector/src/circular-properties/input-properties.module.ts",
+          "integration/injector/src/circular-properties/circular-properties.module.ts",
+          "integration/injector/src/circular-properties/input-properties.module.ts"
+        ]
+      ]
+    }
+  },
+  "verificationSummary": null
+}

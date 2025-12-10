@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:14.321Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:14.321Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "e2e",
+      "path": "integration/graphql-schema-first/e2e",
+      "purpose": "Enhanced directory analysis of e2e",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "graphql.spec.ts",
+        "path": "integration/graphql-schema-first/e2e/graphql.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 41,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "../src/app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "graphql-request-scoped.spec.ts",
+        "path": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 63,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+            "functionName": "performHttpCall",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "External interaction (I/O, network, DB) suggests legitimacy; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 12,
+              "commentAnalysis": 0,
+              "contextFilter": -52,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "ApolloDriver",
+                  "source": "@nestjs/apollo",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "INestApplication",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphQLModule",
+                  "source": "@nestjs/graphql",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Test",
+                  "source": "@nestjs/testing",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "join",
+                  "source": "path",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "CatsRequestScopedService",
+                  "source": "../src/cats/cats-request-scoped.service",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": true,
+                  "likelyPlaceholder": true,
+                  "priority": {
+                    "level": "CRITICAL",
+                    "score": 9,
+                    "reason": "Core service or API import - likely missing implementation"
+                  }
+                },
+                {
+                  "name": "CatsModule",
+                  "source": "../src/cats/cats.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "ApolloDriver",
+            "sourceModule": "@nestjs/apollo",
+            "isDefault": false,
+            "namedImports": [
+              "ApolloDriver"
+            ]
+          },
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "GraphQLModule",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "GraphQLModule"
+            ]
+          },
+          {
+            "name": "Test",
+            "sourceModule": "@nestjs/testing",
+            "isDefault": false,
+            "namedImports": [
+              "Test"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "join",
+            "sourceModule": "path",
+            "isDefault": false,
+            "namedImports": [
+              "join"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "CatsRequestScopedService",
+            "sourceModule": "../src/cats/cats-request-scoped.service",
+            "isDefault": false,
+            "namedImports": [
+              "CatsRequestScopedService"
+            ]
+          },
+          {
+            "name": "CatsModule",
+            "sourceModule": "../src/cats/cats.module",
+            "isDefault": false,
+            "namedImports": [
+              "CatsModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "graphql-async.spec.ts",
+        "path": "integration/graphql-schema-first/e2e/graphql-async.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 37,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AsyncApplicationModule",
+            "sourceModule": "../src/async-options.module",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncApplicationModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "graphql-async-existing.spec.ts",
+        "path": "integration/graphql-schema-first/e2e/graphql-async-existing.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AsyncExistingApplicationModule",
+            "sourceModule": "../src/async-options-existing.module",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncExistingApplicationModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "graphql-async-class.spec.ts",
+        "path": "integration/graphql-schema-first/e2e/graphql-async-class.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 39,
+        "importedModules": [
+          {
+            "name": "INestApplication",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "INestApplication"
+            ]
+          },
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "* as request",
+            "sourceModule": "supertest",
+            "isDefault": false,
+            "namedImports": [
+              "* as request"
+            ]
+          },
+          {
+            "name": "AsyncClassApplicationModule",
+            "sourceModule": "../src/async-options-class.module",
+            "isDefault": false,
+            "namedImports": [
+              "AsyncClassApplicationModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "@nestjs/apollo",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "@nestjs/testing",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "path",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-request-scoped.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-existing.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-existing.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-existing.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-class.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-class.spec.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/graphql-schema-first/e2e/graphql-async-class.spec.ts",
+          "to": "supertest",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:22.971Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:22.971Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "events",
+      "path": "packages/microservices/events",
+      "purpose": "Enhanced directory analysis of events",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "tcp.events.ts",
+        "path": "packages/microservices/events/tcp.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 40,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "TcpEvents",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "VoidCallback",
+            "type": "type",
+            "signature": "type VoidCallback"
+          },
+          {
+            "name": "OnErrorCallback",
+            "type": "type",
+            "signature": "type OnErrorCallback"
+          },
+          {
+            "name": "OnLookupCallback",
+            "type": "type",
+            "signature": "type OnLookupCallback"
+          },
+          {
+            "name": "TcpEvents",
+            "type": "type",
+            "signature": "type TcpEvents"
+          }
+        ]
+      },
+      {
+        "name": "rmq.events.ts",
+        "path": "packages/microservices/events/rmq.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 25,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "RmqEvents",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "VoidCallback",
+            "type": "type",
+            "signature": "type VoidCallback"
+          },
+          {
+            "name": "OnErrorCallback",
+            "type": "type",
+            "signature": "type OnErrorCallback"
+          },
+          {
+            "name": "RmqEvents",
+            "type": "type",
+            "signature": "type RmqEvents"
+          }
+        ]
+      },
+      {
+        "name": "redis.events.ts",
+        "path": "packages/microservices/events/redis.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 35,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "RedisEvents",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "VoidCallback",
+            "type": "type",
+            "signature": "type VoidCallback"
+          },
+          {
+            "name": "OnErrorCallback",
+            "type": "type",
+            "signature": "type OnErrorCallback"
+          },
+          {
+            "name": "OnWarningCallback",
+            "type": "type",
+            "signature": "type OnWarningCallback"
+          },
+          {
+            "name": "RedisEvents",
+            "type": "type",
+            "signature": "type RedisEvents"
+          }
+        ]
+      },
+      {
+        "name": "nats.events.ts",
+        "path": "packages/microservices/events/nats.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 30,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "ServersChangedEvent",
+            "type": "type"
+          },
+          {
+            "name": "NatsEvents",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DefaultCallback",
+            "type": "type",
+            "signature": "type DefaultCallback"
+          },
+          {
+            "name": "ServersChangedEvent",
+            "type": "type",
+            "signature": "type ServersChangedEvent"
+          },
+          {
+            "name": "NatsEvents",
+            "type": "type",
+            "signature": "type NatsEvents"
+          }
+        ]
+      },
+      {
+        "name": "mqtt.events.ts",
+        "path": "packages/microservices/events/mqtt.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 40,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MqttEvents",
+            "type": "type"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "VoidCallback",
+            "type": "type",
+            "signature": "type VoidCallback"
+          },
+          {
+            "name": "OnPacketCallback",
+            "type": "type",
+            "signature": "type OnPacketCallback"
+          },
+          {
+            "name": "OnErrorCallback",
+            "type": "type",
+            "signature": "type OnErrorCallback"
+          },
+          {
+            "name": "MqttEvents",
+            "type": "type",
+            "signature": "type MqttEvents"
+          }
+        ]
+      },
+      {
+        "name": "kafka.events.ts",
+        "path": "packages/microservices/events/kafka.events.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 8,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/microservices/events/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "KafkaStatus",
+            "type": "const"
+          },
+          {
+            "name": "MqttEvents",
+            "type": "const"
+          },
+          {
+            "name": "MqttStatus",
+            "type": "const"
+          },
+          {
+            "name": "NatsEvents",
+            "type": "const"
+          },
+          {
+            "name": "NatsStatus",
+            "type": "const"
+          },
+          {
+            "name": "RedisEvents",
+            "type": "const"
+          },
+          {
+            "name": "RedisStatus",
+            "type": "const"
+          },
+          {
+            "name": "RmqEvents",
+            "type": "const"
+          },
+          {
+            "name": "RmqStatus",
+            "type": "const"
+          },
+          {
+            "name": "TcpEvents",
+            "type": "const"
+          },
+          {
+            "name": "TcpStatus",
+            "type": "const"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

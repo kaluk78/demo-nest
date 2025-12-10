@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:13.781Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:13.781Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "opaque-key-factory",
+      "path": "packages/core/test/injector/opaque-key-factory",
+      "purpose": "Enhanced directory analysis of opaque-key-factory",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "deep-hashed-module-opaque-key-factory.spec.ts",
+        "path": "packages/core/test/injector/opaque-key-factory/deep-hashed-module-opaque-key-factory.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 98,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/injector/opaque-key-factory/deep-hashed-module-opaque-key-factory.spec.ts",
+            "functionName": "metatype",
+            "classification": "definite-legitimate",
+            "confidence": 2,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "DeepHashedModuleOpaqueKeyFactory",
+                  "source": "../../../injector/opaque-key-factory/deep-hashed-module-opaque-key-factory",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          },
+          {
+            "filePath": "/app/packages/core/test/injector/opaque-key-factory/deep-hashed-module-opaque-key-factory.spec.ts",
+            "functionName": "Provider",
+            "classification": "likely-legitimate",
+            "confidence": 32,
+            "isPlaceholder": true,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "DeepHashedModuleOpaqueKeyFactory",
+                  "source": "../../../injector/opaque-key-factory/deep-hashed-module-opaque-key-factory",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "DeepHashedModuleOpaqueKeyFactory",
+            "sourceModule": "../../../injector/opaque-key-factory/deep-hashed-module-opaque-key-factory",
+            "isDefault": false,
+            "namedImports": [
+              "DeepHashedModuleOpaqueKeyFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Provider",
+            "type": "function",
+            "signature": "function Provider()"
+          },
+          {
+            "name": "metatype",
+            "type": "function",
+            "signature": "const metatype = () =>"
+          },
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          },
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          },
+          {
+            "name": "Provider",
+            "type": "class",
+            "signature": "class Provider"
+          },
+          {
+            "name": "function",
+            "type": "class",
+            "signature": "class function"
+          },
+          {
+            "name": "to",
+            "type": "type",
+            "signature": "type to"
+          },
+          {
+            "name": "as",
+            "type": "type",
+            "signature": "type as"
+          }
+        ]
+      },
+      {
+        "name": "by-reference-module-opaque-key-factory.spec.ts",
+        "path": "packages/core/test/injector/opaque-key-factory/by-reference-module-opaque-key-factory.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 112,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "ByReferenceModuleOpaqueKeyFactory",
+            "sourceModule": "../../../injector/opaque-key-factory/by-reference-module-opaque-key-factory",
+            "isDefault": false,
+            "namedImports": [
+              "ByReferenceModuleOpaqueKeyFactory"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          },
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          },
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          },
+          {
+            "name": "Module",
+            "type": "class",
+            "signature": "class Module"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/test/injector/opaque-key-factory/deep-hashed-module-opaque-key-factory.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/injector/opaque-key-factory/deep-hashed-module-opaque-key-factory.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/injector/opaque-key-factory/by-reference-module-opaque-key-factory.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/injector/opaque-key-factory/by-reference-module-opaque-key-factory.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

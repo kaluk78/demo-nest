@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:14.293Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:14.293Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "inspector",
+      "path": "packages/core/test/inspector",
+      "purpose": "Enhanced directory analysis of inspector",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "serialized-graph.spec.ts",
+        "path": "packages/core/test/inspector/serialized-graph.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 161,
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "ApplicationConfig",
+            "sourceModule": "../../application-config",
+            "isDefault": false,
+            "namedImports": [
+              "ApplicationConfig"
+            ]
+          },
+          {
+            "name": "Edge",
+            "sourceModule": "../../inspector/interfaces/edge.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Edge"
+            ]
+          },
+          {
+            "name": "Node",
+            "sourceModule": "../../inspector/interfaces/node.interface",
+            "isDefault": false,
+            "namedImports": [
+              "Node"
+            ]
+          },
+          {
+            "name": "SerializedGraph",
+            "sourceModule": "../../inspector/serialized-graph",
+            "isDefault": false,
+            "namedImports": [
+              "SerializedGraph"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppService",
+            "type": "class",
+            "signature": "class AppService"
+          }
+        ]
+      },
+      {
+        "name": "graph-inspector.spec.ts",
+        "path": "packages/core/test/inspector/graph-inspector.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 220,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/core/test/inspector/graph-inspector.spec.ts",
+            "functionName": "test",
+            "classification": "definite-legitimate",
+            "confidence": 14,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function has empty implementation",
+              "Low cyclomatic complexity (1)",
+              "Very short function (1 lines)",
+              "Function takes no parameters",
+              "Utility function with clear purpose; Test file - simple test helpers expected"
+            ],
+            "location": {
+              "startLine": 1,
+              "endLine": 1
+            },
+            "detectionMethods": {
+              "explicitMarkers": 30,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -38,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Scope",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "expect",
+                  "source": "chai",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "NestContainer",
+                  "source": "../../injector/container",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "InstanceWrapper",
+                  "source": "../../injector/instance-wrapper",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Module",
+                  "source": "../../injector/module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "GraphInspector",
+                  "source": "../../inspector/graph-inspector",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "EnhancerMetadataCacheEntry",
+                  "source": "../../inspector/interfaces/enhancer-metadata-cache-entry.interface",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "SerializedGraph",
+                  "source": "../../inspector/serialized-graph",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Scope",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Scope"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "NestContainer",
+            "sourceModule": "../../injector/container",
+            "isDefault": false,
+            "namedImports": [
+              "NestContainer"
+            ]
+          },
+          {
+            "name": "InstanceWrapper",
+            "sourceModule": "../../injector/instance-wrapper",
+            "isDefault": false,
+            "namedImports": [
+              "InstanceWrapper"
+            ]
+          },
+          {
+            "name": "Module",
+            "sourceModule": "../../injector/module",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "GraphInspector",
+            "sourceModule": "../../inspector/graph-inspector",
+            "isDefault": false,
+            "namedImports": [
+              "GraphInspector"
+            ]
+          },
+          {
+            "name": "EnhancerMetadataCacheEntry",
+            "sourceModule": "../../inspector/interfaces/enhancer-metadata-cache-entry.interface",
+            "isDefault": false,
+            "namedImports": [
+              "EnhancerMetadataCacheEntry"
+            ]
+          },
+          {
+            "name": "SerializedGraph",
+            "sourceModule": "../../inspector/serialized-graph",
+            "isDefault": false,
+            "namedImports": [
+              "SerializedGraph"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "test",
+            "type": "function",
+            "signature": "function test()"
+          },
+          {
+            "name": "AppService",
+            "type": "class",
+            "signature": "class AppService"
+          },
+          {
+            "name": "AppService",
+            "type": "class",
+            "signature": "class AppService"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          },
+          {
+            "name": "AModule",
+            "type": "class",
+            "signature": "class AModule"
+          },
+          {
+            "name": "B",
+            "type": "class",
+            "signature": "class B"
+          },
+          {
+            "name": "BModule",
+            "type": "class",
+            "signature": "class BModule"
+          },
+          {
+            "name": "C",
+            "type": "class",
+            "signature": "class C"
+          },
+          {
+            "name": "CModule",
+            "type": "class",
+            "signature": "class CModule"
+          },
+          {
+            "name": "TestModule",
+            "type": "class",
+            "signature": "class TestModule"
+          },
+          {
+            "name": "AController",
+            "type": "class",
+            "signature": "class AController"
+          },
+          {
+            "name": "RandomPipe",
+            "type": "class",
+            "signature": "class RandomPipe"
+          },
+          {
+            "name": "Enhancer",
+            "type": "class",
+            "signature": "class Enhancer"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          },
+          {
+            "name": "A",
+            "type": "class",
+            "signature": "class A"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/core/test/inspector/serialized-graph.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/inspector/serialized-graph.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/inspector/graph-inspector.spec.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/inspector/graph-inspector.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/core/test/inspector/graph-inspector.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

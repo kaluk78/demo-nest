@@ -1,0 +1,866 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:43.438Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:43.438Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "src",
+      "path": "integration/typeorm/src",
+      "purpose": "Enhanced directory analysis of src",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "main.ts",
+        "path": "integration/typeorm/src/main.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/typeorm/src/main.ts",
+            "functionName": "bootstrap",
+            "classification": "definite-legitimate",
+            "confidence": 17,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Very short function (4 lines)",
+              "Function takes no parameters",
+              "Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 22,
+              "commentAnalysis": 0,
+              "contextFilter": -20,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "NestFactory",
+                  "source": "@nestjs/core",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "AppModule",
+                  "source": "./app.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "NestFactory",
+            "sourceModule": "@nestjs/core",
+            "isDefault": false,
+            "namedImports": [
+              "NestFactory"
+            ]
+          },
+          {
+            "name": "AppModule",
+            "sourceModule": "./app.module",
+            "isDefault": false,
+            "namedImports": [
+              "AppModule"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "bootstrap",
+            "type": "function",
+            "signature": "function bootstrap()"
+          }
+        ]
+      },
+      {
+        "name": "database.module.ts",
+        "path": "integration/typeorm/src/database.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 28,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/typeorm/src/database.module.ts",
+            "functionName": "forRoot",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Moderate context score; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 26
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "DynamicModule",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Module",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmModule",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Photo",
+                  "source": "./photo/photo.entity",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "DynamicModule",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "DynamicModule",
+              "Module"
+            ]
+          },
+          {
+            "name": "TypeOrmModule",
+            "sourceModule": "@nestjs/typeorm",
+            "isDefault": false,
+            "namedImports": [
+              "TypeOrmModule"
+            ]
+          },
+          {
+            "name": "Photo",
+            "sourceModule": "./photo/photo.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Photo"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "DatabaseModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "DatabaseModule",
+            "type": "class",
+            "signature": "class DatabaseModule"
+          }
+        ]
+      },
+      {
+        "name": "async-options.module.ts",
+        "path": "integration/typeorm/src/async-options.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 26,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "TypeOrmModule",
+            "sourceModule": "@nestjs/typeorm",
+            "isDefault": false,
+            "namedImports": [
+              "TypeOrmModule"
+            ]
+          },
+          {
+            "name": "Photo",
+            "sourceModule": "./photo/photo.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Photo"
+            ]
+          },
+          {
+            "name": "PhotoModule",
+            "sourceModule": "./photo/photo.module",
+            "isDefault": false,
+            "namedImports": [
+              "PhotoModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncOptionsFactoryModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AsyncOptionsFactoryModule",
+            "type": "class",
+            "signature": "class AsyncOptionsFactoryModule"
+          }
+        ]
+      },
+      {
+        "name": "async-existing-options.module.ts",
+        "path": "integration/typeorm/src/async-existing-options.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 43,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/typeorm/src/async-existing-options.module.ts",
+            "functionName": "createTypeOrmOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Module",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmModule",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmModuleOptions",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmOptionsFactory",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Photo",
+                  "source": "./photo/photo.entity",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "PhotoModule",
+                  "source": "./photo/photo.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "TypeOrmModule",
+            "sourceModule": "@nestjs/typeorm",
+            "isDefault": false,
+            "namedImports": [
+              "TypeOrmModule",
+              "TypeOrmModuleOptions",
+              "TypeOrmOptionsFactory"
+            ]
+          },
+          {
+            "name": "Photo",
+            "sourceModule": "./photo/photo.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Photo"
+            ]
+          },
+          {
+            "name": "PhotoModule",
+            "sourceModule": "./photo/photo.module",
+            "isDefault": false,
+            "namedImports": [
+              "PhotoModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncOptionsExistingModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ConfigService",
+            "type": "class",
+            "signature": "class ConfigService"
+          },
+          {
+            "name": "ConfigModule",
+            "type": "class",
+            "signature": "class ConfigModule"
+          },
+          {
+            "name": "AsyncOptionsExistingModule",
+            "type": "class",
+            "signature": "class AsyncOptionsExistingModule"
+          }
+        ]
+      },
+      {
+        "name": "async-class-options.module.ts",
+        "path": "integration/typeorm/src/async-class-options.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 36,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/integration/typeorm/src/async-class-options.module.ts",
+            "functionName": "createTypeOrmOptions",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Function contains only a return statement",
+              "Low cyclomatic complexity (1)",
+              "Function takes no parameters",
+              "Factory function pattern; Returns computed value from external calls or processing; Test file - simple test helpers expected",
+              "Safety cap applied: cheap heuristics only"
+            ],
+            "location": {
+              "startLine": 11,
+              "endLine": 24
+            },
+            "detectionMethods": {
+              "explicitMarkers": 20,
+              "namingPatterns": 0,
+              "astAnalysis": 16,
+              "commentAnalysis": 0,
+              "contextFilter": -47,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            },
+            "unusedCode": {
+              "unusedImports": [
+                {
+                  "name": "Module",
+                  "source": "@nestjs/common",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmModule",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmModuleOptions",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "TypeOrmOptionsFactory",
+                  "source": "@nestjs/typeorm",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "Photo",
+                  "source": "./photo/photo.entity",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                },
+                {
+                  "name": "PhotoModule",
+                  "source": "./photo/photo.module",
+                  "line": 0,
+                  "isDefault": false,
+                  "isAISuspicious": false,
+                  "likelyPlaceholder": false,
+                  "priority": {
+                    "level": "TRIVIAL",
+                    "score": 2,
+                    "reason": "General import - low priority for implementation"
+                  }
+                }
+              ],
+              "unusedVariables": [],
+              "unusedMethods": [],
+              "unusedParameters": []
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "TypeOrmModule",
+            "sourceModule": "@nestjs/typeorm",
+            "isDefault": false,
+            "namedImports": [
+              "TypeOrmModule",
+              "TypeOrmModuleOptions",
+              "TypeOrmOptionsFactory"
+            ]
+          },
+          {
+            "name": "Photo",
+            "sourceModule": "./photo/photo.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Photo"
+            ]
+          },
+          {
+            "name": "PhotoModule",
+            "sourceModule": "./photo/photo.module",
+            "isDefault": false,
+            "namedImports": [
+              "PhotoModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncOptionsClassModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "ConfigService",
+            "type": "class",
+            "signature": "class ConfigService"
+          },
+          {
+            "name": "AsyncOptionsClassModule",
+            "type": "class",
+            "signature": "class AsyncOptionsClassModule"
+          }
+        ]
+      },
+      {
+        "name": "app.module.ts",
+        "path": "integration/typeorm/src/app.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 24,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "TypeOrmModule",
+            "sourceModule": "@nestjs/typeorm",
+            "isDefault": false,
+            "namedImports": [
+              "TypeOrmModule"
+            ]
+          },
+          {
+            "name": "Photo",
+            "sourceModule": "./photo/photo.entity",
+            "isDefault": false,
+            "namedImports": [
+              "Photo"
+            ]
+          },
+          {
+            "name": "PhotoModule",
+            "sourceModule": "./photo/photo.module",
+            "isDefault": false,
+            "namedImports": [
+              "PhotoModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AppModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AppModule",
+            "type": "class",
+            "signature": "class AppModule"
+          }
+        ]
+      },
+      {
+        "name": "app-async.module.ts",
+        "path": "integration/typeorm/src/app-async.module.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "importedModules": [
+          {
+            "name": "Module",
+            "sourceModule": "@nestjs/common",
+            "isDefault": false,
+            "namedImports": [
+              "Module"
+            ]
+          },
+          {
+            "name": "DatabaseModule",
+            "sourceModule": "./database.module",
+            "isDefault": false,
+            "namedImports": [
+              "DatabaseModule"
+            ]
+          },
+          {
+            "name": "PhotoModule",
+            "sourceModule": "./photo/photo.module",
+            "isDefault": false,
+            "namedImports": [
+              "PhotoModule"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "AsyncApplicationModule",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "AsyncApplicationModule",
+            "type": "class",
+            "signature": "class AsyncApplicationModule"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [
+      {
+        "name": "photo",
+        "relativePath": "photo",
+        "sourcedPurposeFromChild": "Enhanced directory analysis of photo",
+        "keyElementsFromChild": []
+      }
+    ],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/typeorm/src/main.ts",
+          "to": "@nestjs/core",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/main.ts",
+          "to": "integration/typeorm/src/app.module.ts",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/database.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/database.module.ts",
+          "to": "@nestjs/typeorm",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-options.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-options.module.ts",
+          "to": "@nestjs/typeorm",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-existing-options.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-existing-options.module.ts",
+          "to": "@nestjs/typeorm",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-class-options.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/async-class-options.module.ts",
+          "to": "@nestjs/typeorm",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/app.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/app.module.ts",
+          "to": "@nestjs/typeorm",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/app-async.module.ts",
+          "to": "@nestjs/common",
+          "type": "imports"
+        },
+        {
+          "from": "integration/typeorm/src/app-async.module.ts",
+          "to": "integration/typeorm/src/database.module.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

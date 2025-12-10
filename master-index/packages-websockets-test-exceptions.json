@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:40.411Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:40.411Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "exceptions",
+      "path": "packages/websockets/test/exceptions",
+      "purpose": "Enhanced directory analysis of exceptions",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "ws-exceptions-handler.spec.ts",
+        "path": "packages/websockets/test/exceptions/ws-exceptions-handler.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 174,
+        "importedModules": [
+          {
+            "name": "ExecutionContextHost",
+            "sourceModule": "@nestjs/core/helpers/execution-context-host",
+            "isDefault": false,
+            "namedImports": [
+              "ExecutionContextHost"
+            ]
+          },
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "* as sinon",
+            "sourceModule": "sinon",
+            "isDefault": false,
+            "namedImports": [
+              "* as sinon"
+            ]
+          },
+          {
+            "name": "WsException",
+            "sourceModule": "../../errors/ws-exception",
+            "isDefault": false,
+            "namedImports": [
+              "WsException"
+            ]
+          },
+          {
+            "name": "WsExceptionsHandler",
+            "sourceModule": "../../exceptions/ws-exceptions-handler",
+            "isDefault": false,
+            "namedImports": [
+              "WsExceptionsHandler"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "TestException",
+            "type": "class",
+            "signature": "class TestException"
+          }
+        ]
+      },
+      {
+        "name": "ws-exception.spec.ts",
+        "path": "packages/websockets/test/exceptions/ws-exception.spec.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 42,
+        "importedModules": [
+          {
+            "name": "expect",
+            "sourceModule": "chai",
+            "isDefault": false,
+            "namedImports": [
+              "expect"
+            ]
+          },
+          {
+            "name": "WsException",
+            "sourceModule": "../../errors/ws-exception",
+            "isDefault": false,
+            "namedImports": [
+              "WsException"
+            ]
+          }
+        ],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "name",
+            "type": "class",
+            "signature": "class name"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/websockets/test/exceptions/ws-exceptions-handler.spec.ts",
+          "to": "@nestjs/core/helpers/execution-context-host",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/exceptions/ws-exceptions-handler.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/exceptions/ws-exceptions-handler.spec.ts",
+          "to": "sinon",
+          "type": "imports"
+        },
+        {
+          "from": "packages/websockets/test/exceptions/ws-exception.spec.ts",
+          "to": "chai",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

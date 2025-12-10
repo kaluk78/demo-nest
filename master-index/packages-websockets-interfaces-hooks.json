@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:39.897Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:39.897Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "hooks",
+      "path": "packages/websockets/interfaces/hooks",
+      "purpose": "Enhanced directory analysis of hooks",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "on-gateway-init.interface.ts",
+        "path": "packages/websockets/interfaces/hooks/on-gateway-init.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "OnGatewayInit",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OnGatewayInit",
+            "type": "interface",
+            "signature": "interface OnGatewayInit"
+          }
+        ]
+      },
+      {
+        "name": "on-gateway-disconnect.interface.ts",
+        "path": "packages/websockets/interfaces/hooks/on-gateway-disconnect.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "OnGatewayDisconnect",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OnGatewayDisconnect",
+            "type": "interface",
+            "signature": "interface OnGatewayDisconnect"
+          }
+        ]
+      },
+      {
+        "name": "on-gateway-connection.interface.ts",
+        "path": "packages/websockets/interfaces/hooks/on-gateway-connection.interface.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 7,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "OnGatewayConnection",
+            "type": "interface"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "OnGatewayConnection",
+            "type": "interface",
+            "signature": "interface OnGatewayConnection"
+          }
+        ]
+      },
+      {
+        "name": "index.ts",
+        "path": "packages/websockets/interfaces/hooks/index.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 4,
+        "importedModules": [],
+        "exportedElements": [],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": []
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

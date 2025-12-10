@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T03:59:23.722Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T03:59:23.722Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "dto",
+      "path": "integration/inspector/src/dogs/dto",
+      "purpose": "Enhanced directory analysis of dto",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "update-dog.dto.ts",
+        "path": "integration/inspector/src/dogs/dto/update-dog.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 5,
+        "importedModules": [
+          {
+            "name": "PartialType",
+            "sourceModule": "@nestjs/mapped-types",
+            "isDefault": false,
+            "namedImports": [
+              "PartialType"
+            ]
+          },
+          {
+            "name": "CreateDogDto",
+            "sourceModule": "./create-dog.dto",
+            "isDefault": false,
+            "namedImports": [
+              "CreateDogDto"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "UpdateDogDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "UpdateDogDto",
+            "type": "class",
+            "signature": "class UpdateDogDto"
+          }
+        ]
+      },
+      {
+        "name": "create-dog.dto.ts",
+        "path": "integration/inspector/src/dogs/dto/create-dog.dto.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 2,
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CreateDogDto",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CreateDogDto",
+            "type": "class",
+            "signature": "class CreateDogDto"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "integration/inspector/src/dogs/dto/update-dog.dto.ts",
+          "to": "@nestjs/mapped-types",
+          "type": "imports"
+        },
+        {
+          "from": "integration/inspector/src/dogs/dto/update-dog.dto.ts",
+          "to": "integration/inspector/src/dogs/dto/create-dog.dto.ts",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

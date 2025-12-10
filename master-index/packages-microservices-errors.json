@@ -1,0 +1,854 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:00:22.855Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:00:22.855Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "errors",
+      "path": "packages/microservices/errors",
+      "purpose": "Enhanced directory analysis of errors",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "net-socket-closed.exception.ts",
+        "path": "packages/microservices/errors/net-socket-closed.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/net-socket-closed.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "NetSocketClosedException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "NetSocketClosedException",
+            "type": "class",
+            "signature": "class NetSocketClosedException"
+          }
+        ]
+      },
+      {
+        "name": "max-packet-length-exceeded.exception.ts",
+        "path": "packages/microservices/errors/max-packet-length-exceeded.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/max-packet-length-exceeded.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "MaxPacketLengthExceededException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "MaxPacketLengthExceededException",
+            "type": "class",
+            "signature": "class MaxPacketLengthExceededException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-tcp-data-reception.exception.ts",
+        "path": "packages/microservices/errors/invalid-tcp-data-reception.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 20,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-tcp-data-reception.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 18
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidTcpDataReceptionException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidTcpDataReceptionException",
+            "type": "class",
+            "signature": "class InvalidTcpDataReceptionException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-proto-definition.exception.ts",
+        "path": "packages/microservices/errors/invalid-proto-definition.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-proto-definition.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidProtoDefinitionException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidProtoDefinitionException",
+            "type": "class",
+            "signature": "class InvalidProtoDefinitionException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-message.exception.ts",
+        "path": "packages/microservices/errors/invalid-message.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-message.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidMessageException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidMessageException",
+            "type": "class",
+            "signature": "class InvalidMessageException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-kafka-client-topic.exception.ts",
+        "path": "packages/microservices/errors/invalid-kafka-client-topic.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 13,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-kafka-client-topic.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 11
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidKafkaClientTopicException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidKafkaClientTopicException",
+            "type": "class",
+            "signature": "class InvalidKafkaClientTopicException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-json-format.exception.ts",
+        "path": "packages/microservices/errors/invalid-json-format.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-json-format.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "InvalidJSONFormatException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidJSONFormatException",
+            "type": "class",
+            "signature": "class InvalidJSONFormatException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-grpc-service.exception.ts",
+        "path": "packages/microservices/errors/invalid-grpc-service.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-grpc-service.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidGrpcServiceException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidGrpcServiceException",
+            "type": "class",
+            "signature": "class InvalidGrpcServiceException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-grpc-package.exception.ts",
+        "path": "packages/microservices/errors/invalid-grpc-package.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-grpc-package.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 7,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidGrpcPackageException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidGrpcPackageException",
+            "type": "class",
+            "signature": "class InvalidGrpcPackageException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-grpc-package-definition-mutex.exception.ts",
+        "path": "packages/microservices/errors/invalid-grpc-package-definition-mutex.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-grpc-package-definition-mutex.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidGrpcPackageDefinitionMutexException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidGrpcPackageDefinitionMutexException",
+            "type": "class",
+            "signature": "class InvalidGrpcPackageDefinitionMutexException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-grpc-package-definition-missing-package-definition.exception.ts",
+        "path": "packages/microservices/errors/invalid-grpc-package-definition-missing-package-definition.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 10,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-grpc-package-definition-missing-package-definition.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 4,
+              "endLine": 8
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "InvalidGrpcPackageDefinitionMissingPackageDefinitionException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidGrpcPackageDefinitionMissingPackageDefinitionException",
+            "type": "class",
+            "signature": "class InvalidGrpcPackageDefinitionMissingPackageDefinitionException"
+          }
+        ]
+      },
+      {
+        "name": "invalid-grpc-message-decorator.exception.ts",
+        "path": "packages/microservices/errors/invalid-grpc-message-decorator.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 19,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/invalid-grpc-message-decorator.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 13,
+              "endLine": 17
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [
+          {
+            "name": "RuntimeException",
+            "sourceModule": "@nestjs/core/errors/exceptions/runtime.exception",
+            "isDefault": false,
+            "namedImports": [
+              "RuntimeException"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "RpcDecoratorMetadata",
+            "type": "interface"
+          },
+          {
+            "name": "InvalidGrpcDecoratorException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "InvalidGrpcDecoratorException",
+            "type": "class",
+            "signature": "class InvalidGrpcDecoratorException"
+          },
+          {
+            "name": "RpcDecoratorMetadata",
+            "type": "interface",
+            "signature": "interface RpcDecoratorMetadata"
+          }
+        ]
+      },
+      {
+        "name": "empty-response.exception.ts",
+        "path": "packages/microservices/errors/empty-response.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 11,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/empty-response.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 9
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "EmptyResponseException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "EmptyResponseException",
+            "type": "class",
+            "signature": "class EmptyResponseException"
+          }
+        ]
+      },
+      {
+        "name": "corrupted-packet-length.exception.ts",
+        "path": "packages/microservices/errors/corrupted-packet-length.exception.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 9,
+        "placeholderDetection": [
+          {
+            "filePath": "/app/packages/microservices/errors/corrupted-packet-length.exception.ts",
+            "functionName": "constructor",
+            "classification": "definite-legitimate",
+            "confidence": 0,
+            "isPlaceholder": false,
+            "reasons": [
+              "Constructor method - never a placeholder"
+            ],
+            "location": {
+              "startLine": 5,
+              "endLine": 7
+            },
+            "detectionMethods": {
+              "explicitMarkers": 0,
+              "namingPatterns": 0,
+              "astAnalysis": 0,
+              "commentAnalysis": 0,
+              "contextFilter": 0,
+              "unusedCodeAnalysis": 0,
+              "externalUnusedChecks": 0,
+              "enhancedContext": 0
+            }
+          }
+        ],
+        "importedModules": [],
+        "exportedElements": [
+          {
+            "name": "CorruptedPacketLengthException",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "CorruptedPacketLengthException",
+            "type": "class",
+            "signature": "class CorruptedPacketLengthException"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "packages/microservices/errors/invalid-tcp-data-reception.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-proto-definition.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-message.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-kafka-client-topic.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-grpc-service.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-grpc-package.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-grpc-package-definition-mutex.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-grpc-package-definition-missing-package-definition.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        },
+        {
+          "from": "packages/microservices/errors/invalid-grpc-message-decorator.exception.ts",
+          "to": "@nestjs/core/errors/exceptions/runtime.exception",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}

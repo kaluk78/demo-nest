@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json.schemastore.org/llm-metadata-1.4.json",
+  "version": "2.1.0",
+  "generatedAt": "2025-12-10T04:01:08.026Z",
+  "_TRACE_SOURCE": "RecursiveOrchestratorService.saveDirectoryJson_LINE_730",
+  "_TRACE_TIMESTAMP": "2025-12-10T04:01:08.026Z",
+  "configuration": {
+    "detectPlaceholders": true,
+    "placeholderConfidence": 20,
+    "placeholderAnalysisLevel": "enhanced",
+    "detailLevel": "standard",
+    "includeComplexity": false,
+    "maxFiles": 2000,
+    "_MARKER": "RecursiveOrchestratorService_saveDirectoryJson_WAS_HERE"
+  },
+  "metadata": {
+    "directory": {
+      "name": "models",
+      "path": "sample/32-graphql-federation-schema-first/users-application/src/users/models",
+      "purpose": "Enhanced directory analysis of models",
+      "ownKeyElements": []
+    },
+    "files": [
+      {
+        "name": "user.model.ts",
+        "path": "sample/32-graphql-federation-schema-first/users-application/src/users/models/user.model.ts",
+        "filePurpose": "TypeScript 5.4 implementation file",
+        "languageDetail": "TypeScript 5.4",
+        "lineCount": 12,
+        "importedModules": [
+          {
+            "name": "Directive",
+            "sourceModule": "@nestjs/graphql",
+            "isDefault": false,
+            "namedImports": [
+              "Directive",
+              "Field",
+              "ID",
+              "ObjectType"
+            ]
+          }
+        ],
+        "exportedElements": [
+          {
+            "name": "User",
+            "type": "class"
+          }
+        ],
+        "functions": [],
+        "classes": [],
+        "keyElementsInFile": [
+          {
+            "name": "User",
+            "type": "class",
+            "signature": "class User"
+          }
+        ]
+      }
+    ],
+    "subdirectories": [],
+    "dependencyGraph": {
+      "edges": [
+        {
+          "from": "sample/32-graphql-federation-schema-first/users-application/src/users/models/user.model.ts",
+          "to": "@nestjs/graphql",
+          "type": "imports"
+        }
+      ],
+      "circularDependencies": []
+    }
+  },
+  "verificationSummary": null
+}
